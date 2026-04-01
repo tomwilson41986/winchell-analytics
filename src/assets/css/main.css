@@ -1,0 +1,672 @@
+/* =============================================
+   Winchell Analytics — Maroon & White Theme
+   ============================================= */
+
+:root {
+  --maroon: #800000;
+  --maroon-dark: #5c0000;
+  --maroon-light: #a03030;
+  --white: #ffffff;
+  --off-white: #f8f6f4;
+  --gray-50: #fafafa;
+  --gray-100: #f5f5f5;
+  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;
+  --gray-500: #737373;
+  --gray-700: #404040;
+  --gray-900: #171717;
+  --gold: #c9a84c;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  --container-max: 1200px;
+  --radius: 6px;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--gray-900);
+  background: var(--off-white);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ---- Header ---- */
+.site-header {
+  background: var(--maroon);
+  color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-md);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--white);
+  color: var(--maroon);
+  font-weight: 800;
+  font-size: 1.25rem;
+  border-radius: var(--radius);
+}
+
+/* Navigation */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  transition: transform 0.2s;
+}
+
+.hamburger {
+  position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before {
+  top: -7px;
+}
+
+.hamburger::after {
+  top: 7px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: block;
+  padding: 0 1rem;
+  line-height: 64px;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.nav-link:hover {
+  background: var(--maroon-dark);
+}
+
+/* Dropdown */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background: var(--white);
+  box-shadow: var(--shadow-md);
+  border-radius: 0 0 var(--radius) var(--radius);
+  list-style: none;
+  z-index: 200;
+}
+
+.has-dropdown:hover .dropdown {
+  display: block;
+}
+
+.dropdown a {
+  display: block;
+  padding: 0.65rem 1rem;
+  color: var(--gray-900);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.15s;
+}
+
+.dropdown a:hover {
+  background: var(--gray-100);
+  color: var(--maroon);
+}
+
+/* ---- Breadcrumb ---- */
+.breadcrumb {
+  background: var(--gray-100);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+}
+
+.breadcrumb ol {
+  display: flex;
+  list-style: none;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: "/";
+  margin-left: 0.25rem;
+  color: var(--gray-500);
+}
+
+.breadcrumb a {
+  color: var(--maroon);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb [aria-current] {
+  color: var(--gray-500);
+}
+
+/* ---- Main ---- */
+.site-main {
+  flex: 1;
+  padding: 2rem 0 3rem;
+}
+
+/* ---- Page Header ---- */
+.page-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--maroon);
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--maroon-dark);
+  line-height: 1.2;
+}
+
+.page-header .subtitle {
+  font-size: 1.1rem;
+  color: var(--gray-500);
+  margin-top: 0.25rem;
+}
+
+/* ---- Section Cards (Homepage) ---- */
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.section-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.section-card-accent {
+  height: 4px;
+  background: var(--maroon);
+}
+
+.section-card-body {
+  padding: 1.5rem;
+}
+
+.section-card h2 {
+  font-size: 1.25rem;
+  color: var(--maroon-dark);
+  margin-bottom: 0.5rem;
+}
+
+.section-card p {
+  color: var(--gray-700);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.section-card .card-links {
+  list-style: none;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+.section-card .card-links li + li {
+  margin-top: 0.35rem;
+}
+
+.section-card .card-links a {
+  color: var(--maroon);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.section-card .card-links a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Sub-section Links ---- */
+.subsection-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  margin-top: 1.5rem;
+}
+
+.subsection-list a {
+  display: block;
+  padding: 1.25rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  color: var(--maroon-dark);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  border-left: 4px solid var(--maroon);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.subsection-list a:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--gold);
+}
+
+.subsection-list .sub-desc {
+  display: block;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  margin-top: 0.25rem;
+}
+
+/* ---- Data Tables ---- */
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.5rem 0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  font-size: 0.9rem;
+}
+
+.data-table th {
+  background: var(--maroon);
+  color: var(--white);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+}
+
+.data-table td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid var(--gray-200);
+  white-space: nowrap;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background: var(--gray-50);
+}
+
+.data-table tbody tr:hover {
+  background: #fdf2f2;
+}
+
+.data-table .number {
+  font-family: var(--font-mono);
+  text-align: right;
+}
+
+.no-data {
+  color: var(--gray-500);
+  font-style: italic;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ---- Horse Cards ---- */
+.horse-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.horse-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  background: var(--maroon);
+  color: var(--white);
+}
+
+.horse-card-header h3 {
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.horse-status {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.status-in-training {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.status-racing {
+  background: var(--gold);
+  color: var(--gray-900);
+}
+
+.horse-card-body {
+  padding: 1.25rem;
+}
+
+.horse-card-body dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 1rem;
+}
+
+.horse-card-body dt {
+  font-weight: 600;
+  color: var(--gray-500);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.horse-card-body dd {
+  font-size: 0.95rem;
+}
+
+/* Horse cards grid */
+.horse-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ---- Horse Profile (single page) ---- */
+.horse-profile {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.horse-profile-header {
+  background: var(--maroon);
+  color: var(--white);
+  padding: 2rem 2rem 1.5rem;
+}
+
+.horse-profile-header h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.horse-profile-meta {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.horse-profile-body {
+  padding: 2rem;
+}
+
+.horse-profile-body .info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.info-item {
+  padding: 1rem;
+  background: var(--gray-50);
+  border-radius: var(--radius);
+  border-left: 3px solid var(--maroon);
+}
+
+.info-item .label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray-500);
+  margin-bottom: 0.15rem;
+}
+
+.info-item .value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gray-900);
+}
+
+.horse-profile-body .profile-content {
+  margin-top: 1.5rem;
+  line-height: 1.7;
+}
+
+.horse-profile-body .profile-content h2 {
+  font-size: 1.25rem;
+  color: var(--maroon-dark);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid var(--gray-200);
+}
+
+/* ---- Content Prose ---- */
+.content-body h2 {
+  font-size: 1.35rem;
+  color: var(--maroon-dark);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.content-body h3 {
+  font-size: 1.1rem;
+  color: var(--gray-700);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.content-body p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.content-body ul,
+.content-body ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.content-body li {
+  margin-bottom: 0.35rem;
+}
+
+/* ---- Footer ---- */
+.site-footer {
+  background: var(--gray-900);
+  color: var(--gray-300);
+  padding: 1.5rem 0;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--maroon);
+    box-shadow: var(--shadow-md);
+  }
+
+  .main-nav.is-open {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    line-height: 48px;
+    padding: 0 1.5rem;
+    border-top: 1px solid var(--maroon-dark);
+  }
+
+  .dropdown {
+    position: static;
+    display: none;
+    box-shadow: none;
+    border-radius: 0;
+    background: var(--maroon-dark);
+  }
+
+  .has-dropdown:hover .dropdown,
+  .has-dropdown:focus-within .dropdown {
+    display: block;
+  }
+
+  .dropdown a {
+    color: var(--white);
+    padding-left: 2.5rem;
+  }
+
+  .dropdown a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+  }
+
+  .page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .horse-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .horse-profile-header {
+    padding: 1.25rem;
+  }
+
+  .horse-profile-body {
+    padding: 1.25rem;
+  }
+
+  .horse-profile-meta {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}

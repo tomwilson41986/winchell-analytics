@@ -1,0 +1,20 @@
+---
+layout: base.njk
+title: Historic Sales Data
+description: Historical horse sales records and purchase data
+breadcrumb:
+  - label: Sales
+    url: /sales/
+  - label: Historic Sales
+---
+
+<div class="page-header">
+  <h1>Historic Sales Data</h1>
+  <p class="subtitle">Purchase history and sale records</p>
+</div>
+
+<div class="content-body">
+  <p>Sales records covering purchases at major thoroughbred auctions including Keeneland, Fasig-Tipton, and OBS sales.</p>
+</div>
+
+{% dataTable sales, ["year", "horse", "sale", "price", "buyer", "sire", "dam"] %}

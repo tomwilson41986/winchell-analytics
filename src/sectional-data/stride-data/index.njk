@@ -1,0 +1,20 @@
+---
+layout: base.njk
+title: Stride Data
+description: Detailed sectional times and stride analysis for horses and races
+breadcrumb:
+  - label: Sectional & Stride Data
+    url: /sectional-data/
+  - label: Stride Data
+---
+
+<div class="page-header">
+  <h1>Sectional &amp; Stride Data</h1>
+  <p class="subtitle">Furlong splits, stride length, and stride frequency</p>
+</div>
+
+<div class="content-body">
+  <p>Detailed sectional timing data and stride analysis from recent races. Data includes quarter-mile splits, half-mile times, stretch runs, final times, stride length, and stride frequency.</p>
+</div>
+
+{% dataTable sectionals, ["date", "race", "horse", "distance", "finish", "quarterMile", "halfMile", "stretch", "final", "strideLength", "strideFreq"] %}

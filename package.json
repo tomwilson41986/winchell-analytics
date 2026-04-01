@@ -1,0 +1,12 @@
+{
+  "name": "winchell-analytics",
+  "version": "1.0.0",
+  "description": "Winchell Analytics - Horse Racing Analytics",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5"
+  }
+}

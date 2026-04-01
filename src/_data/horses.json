@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Tapit's Legacy",
+    "sire": "Tapit",
+    "dam": "Midnight Star",
+    "trainer": "Steve Asmussen",
+    "status": "In Training",
+    "color": "Bay",
+    "sex": "Colt",
+    "foaled": 2023,
+    "slug": "tapits-legacy"
+  },
+  {
+    "name": "Winchell's Pride",
+    "sire": "Gun Runner",
+    "dam": "Diamond Queen",
+    "trainer": "Steve Asmussen",
+    "status": "In Training",
+    "color": "Chestnut",
+    "sex": "Filly",
+    "foaled": 2023,
+    "slug": "winchells-pride"
+  },
+  {
+    "name": "Bold Command",
+    "sire": "Into Mischief",
+    "dam": "Graceful Belle",
+    "trainer": "Steve Asmussen",
+    "status": "Racing",
+    "color": "Dark Bay",
+    "sex": "Colt",
+    "foaled": 2022,
+    "slug": "bold-command"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "race": "Oaklawn Stakes",
+    "date": "2026-03-15",
+    "horse": "Bold Command",
+    "distance": "1 1/16m",
+    "finish": "1st",
+    "quarterMile": "23.40",
+    "halfMile": "47.20",
+    "threeFurlongs": "35.60",
+    "stretch": "12.80",
+    "final": "1:43.20",
+    "strideLength": "24.2 ft",
+    "strideFreq": "2.18/sec"
+  },
+  {
+    "race": "Oaklawn Allowance",
+    "date": "2026-03-01",
+    "horse": "Tapit's Legacy",
+    "distance": "6f",
+    "finish": "2nd",
+    "quarterMile": "22.60",
+    "halfMile": "45.80",
+    "threeFurlongs": "34.20",
+    "stretch": "13.00",
+    "final": "1:10.40",
+    "strideLength": "23.8 ft",
+    "strideFreq": "2.22/sec"
+  },
+  {
+    "race": "Oaklawn Maiden Special",
+    "date": "2026-02-15",
+    "horse": "Winchell's Pride",
+    "distance": "1m",
+    "finish": "1st",
+    "quarterMile": "23.80",
+    "halfMile": "48.00",
+    "threeFurlongs": "36.40",
+    "stretch": "12.60",
+    "final": "1:37.80",
+    "strideLength": "23.4 ft",
+    "strideFreq": "2.20/sec"
+  }
+]
