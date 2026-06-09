@@ -1,0 +1,120 @@
+{
+  "horse_id": "disarm",
+  "name": "Disarm",
+  "year_of_birth": 2020,
+  "sex": null,
+  "colour": null,
+  "country": null,
+  "breeder": null,
+  "current_trainer": null,
+  "ownership_note": "Roster match via seed.",
+  "status": null,
+  "pedigree": {
+    "sire": {
+      "name": "GUN RUNNER",
+      "year_of_birth": 2013,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "EASY TAP",
+      "year_of_birth": 2010,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "TAPIT",
+      "year_of_birth": 2001,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "GUN RUNNER",
+        "year_of_birth": 2013,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "CANDY RIDE",
+        "year_of_birth": 1999,
+        "country": "ARG"
+      },
+      "sire_sire_sire": {
+        "name": "RIDE THE RAILS",
+        "year_of_birth": 1991,
+        "country": "USA"
+      },
+      "sire_sire_dam": {
+        "name": "CANDY GIRL",
+        "year_of_birth": 1990,
+        "country": "ARG"
+      },
+      "sire_dam": {
+        "name": "QUIET GIANT",
+        "year_of_birth": 2007,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "GIANTS CAUSEWAY",
+        "year_of_birth": 1997,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "QUIET DANCE",
+        "year_of_birth": 1993,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "EASY TAP",
+        "year_of_birth": 2010,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "TAPIT",
+        "year_of_birth": 2001,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "PULPIT",
+        "year_of_birth": 1994,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "TAP YOUR HEELS",
+        "year_of_birth": 1996,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "EASILY",
+        "year_of_birth": 2002,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "VICAR",
+        "year_of_birth": 1996,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "WHITE JASMINE",
+        "year_of_birth": 1977,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Fappiano 5x5x5"
+    ]
+  },
+  "sales": [],
+  "form": null,
+  "results": [],
+  "scores": {
+    "earnings_per_start": null,
+    "win_strike_rate": null,
+    "place_strike_rate": null,
+    "best_speed_figure": null,
+    "class_trajectory": null,
+    "black_type": false,
+    "value_flag": null
+  },
+  "sources": [
+    "https://www.pedigreequery.com/disarm7"
+  ],
+  "last_updated": "2026-06-09T11:48:37.039165+00:00"
+}

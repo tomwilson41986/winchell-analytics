@@ -72,11 +72,15 @@ class HttpClient:
         self,
         *,
         rate_limit_seconds: float = DEFAULT_RATE_LIMIT,
+        host_rate_limits: Optional[dict[str, float]] = None,
         cache_dir: Path = CACHE_DIR,
         respect_robots: bool = True,
         offline: bool = False,
     ) -> None:
         self.rate_limit_seconds = rate_limit_seconds
+        # Per-host overrides (netloc -> seconds) so each source honours its own
+        # published crawl-delay regardless of the shared default.
+        self.host_rate_limits = host_rate_limits or {}
         self.cache_dir = cache_dir
         self.respect_robots = respect_robots
         # offline mode: only ever read from cache, never touch the network.
@@ -153,10 +157,11 @@ class HttpClient:
 
     def _throttle(self, url: str) -> None:
         host = urlparse(url).netloc
+        limit = self.host_rate_limits.get(host, self.rate_limit_seconds)
         last = self._last_fetch.get(host)
         if last is not None:
             elapsed = time.monotonic() - last
-            wait = self.rate_limit_seconds - elapsed
+            wait = limit - elapsed
             if wait > 0:
                 time.sleep(wait)
         self._last_fetch[host] = time.monotonic()

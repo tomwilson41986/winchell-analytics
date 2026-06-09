@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Disarm",
+    "year_of_birth": 2020,
+    "sire": "Gun Runner",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Epicenter",
+    "year_of_birth": 2019,
+    "sire": "Not This Time",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Gun Runner",
+    "year_of_birth": 2013,
+    "sire": "Candy Ride",
+    "equibase_refno": null,
+    "pedigree_url": "https://www.pedigreequery.com/gun+runner7",
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Magna Graduate",
+    "year_of_birth": 2002,
+    "sire": "Honor Grades",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Quiet Giant",
+    "year_of_birth": 2007,
+    "sire": "Giant's Causeway",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Tapit",
+    "year_of_birth": 2001,
+    "sire": "Pulpit",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Tapiture",
+    "year_of_birth": 2011,
+    "sire": "Tapit",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Untapable",
+    "year_of_birth": 2011,
+    "sire": "Tapit",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  }
+]

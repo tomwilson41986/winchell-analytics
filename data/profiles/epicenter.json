@@ -1,0 +1,121 @@
+{
+  "horse_id": "epicenter",
+  "name": "Epicenter",
+  "year_of_birth": 2019,
+  "sex": null,
+  "colour": null,
+  "country": null,
+  "breeder": null,
+  "current_trainer": null,
+  "ownership_note": "Roster match via seed.",
+  "status": null,
+  "pedigree": {
+    "sire": {
+      "name": "NOT THIS TIME",
+      "year_of_birth": 2014,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "SILENT CANDY",
+      "year_of_birth": 2007,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "CANDY RIDE",
+      "year_of_birth": 1999,
+      "country": "ARG"
+    },
+    "extended": {
+      "sire": {
+        "name": "NOT THIS TIME",
+        "year_of_birth": 2014,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "GIANTS CAUSEWAY",
+        "year_of_birth": 1997,
+        "country": "USA"
+      },
+      "sire_sire_sire": {
+        "name": "STORM CAT",
+        "year_of_birth": 1983,
+        "country": "USA"
+      },
+      "sire_sire_dam": {
+        "name": "MARIAH'S STORM",
+        "year_of_birth": 1991,
+        "country": "USA"
+      },
+      "sire_dam": {
+        "name": "MISS MACY SUE",
+        "year_of_birth": 2003,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "TRIPPI",
+        "year_of_birth": 1997,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "YADA YADA",
+        "year_of_birth": 1996,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "SILENT CANDY",
+        "year_of_birth": 2007,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "CANDY RIDE",
+        "year_of_birth": 1999,
+        "country": "ARG"
+      },
+      "dam_sire_sire": {
+        "name": "RIDE THE RAILS",
+        "year_of_birth": 1991,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "CANDY GIRL",
+        "year_of_birth": 1990,
+        "country": "ARG"
+      },
+      "dam_dam": {
+        "name": "SILENT QUEEN",
+        "year_of_birth": 2000,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "KING OF KINGS",
+        "year_of_birth": 1995,
+        "country": "IRE"
+      },
+      "dam_dam_dam": {
+        "name": "SOUNDPROOF",
+        "year_of_birth": 1990,
+        "country": "IRE"
+      }
+    },
+    "inbreeding": [
+      "Blushing Groom 5x5",
+      "Northern Dancer 5x5"
+    ]
+  },
+  "sales": [],
+  "form": null,
+  "results": [],
+  "scores": {
+    "earnings_per_start": null,
+    "win_strike_rate": null,
+    "place_strike_rate": null,
+    "best_speed_figure": null,
+    "class_trajectory": null,
+    "black_type": false,
+    "value_flag": null
+  },
+  "sources": [
+    "https://www.pedigreequery.com/epicenter4"
+  ],
+  "last_updated": "2026-06-09T11:48:37.050672+00:00"
+}
