@@ -246,6 +246,30 @@ python -m pipeline.run --build-profiles --publish
 Imported charts unlock the full results table, speed figures, graded-win counts
 and the class-trajectory score automatically.
 
+### Discovering the active roster from the Equibase owner page
+
+The canonical list of a stable's current runners is the Equibase **owner
+profile**, which is bot-gated like the rest of Equibase. The owner route uses
+the same save-and-import idea, then discovers the whole roster from it:
+
+```bash
+# 1. In your browser, open the Winchell owner profile and save the page:
+#    https://www.equibase.com/profiles/Results.cfm?type=People&searchType=O&eID=1372865&rbt=TB
+#    (partnership pages also exist, e.g. with Three Chimneys eID=2046423.)
+# 2. Import the saved file, keyed by that URL:
+OWNER="https://www.equibase.com/profiles/Results.cfm?type=People&searchType=O&eID=1372865&rbt=TB"
+python -m pipeline.run --import-html winchell-owner.html --url "$OWNER"
+# 3. Rediscover the roster from it, then build:
+python -m pipeline.run --refresh-roster --owner-url "$OWNER" --build-profiles --publish
+```
+
+Discovery reads each horse-profile link off the owner page (it ignores the
+trainer/jockey links), merges the new horses with the seed list, and every
+discovered horse then gets the full HRN + pedigree + Wikipedia treatment —
+including its `status`, so currently-active runners surface in the portfolio's
+"Active" count. Horse names that resolve to a namesake are guarded by the sire
+cross-check (HRN's sire feeds the pedigree/Wikipedia lookups).
+
 Because Equibase and the auction houses gate their data, those scrapers are
 **block-aware and header-driven**: they identify the project honestly, obey
 crawl-delays, detect challenge pages and degrade to `None`/empty (the UI then

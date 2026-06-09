@@ -138,18 +138,25 @@ def from_owner_page(client: HttpClient, owner_url: str) -> list[RosterEntry]:
 
 
 def _entries_from_horse_links(tree: HTMLParser, *, via: str) -> list[RosterEntry]:
-    base = SOURCES["equibase"]["base_url"]
+    """Pull each horse off an Equibase owner page via its profile link.
+
+    Owner pages list a stable's runners, each linking to its own horse profile
+    (``Results.cfm?type=Horse&refno=...``). We key on those horse links so we
+    never pick up the owner/trainer/jockey links that share the same script.
+    """
     out: list[RosterEntry] = []
     seen: set[str] = set()
-    for a in tree.css("a[href*='Results.cfm'], a[href*='refno=']"):
-        name = a.text().strip()
+    for a in tree.css("a[href*='refno=']"):
         href = a.attributes.get("href", "")
-        if not name or name.lower() in seen:
+        # Only horse-profile links (not type=People/Trainer/Jockey).
+        if "type=Horse" not in href:
             continue
-        refno = None
+        name = a.text().strip()
+        # Skip empties and non-name link text (dates, numbers, glyphs).
+        if not name or name.lower() in seen or not any(ch.isalpha() for ch in name):
+            continue
         m = href.split("refno=")
-        if len(m) > 1:
-            refno = m[1].split("&")[0] or None
+        refno = m[1].split("&")[0] if len(m) > 1 and m[1].split("&")[0] else None
         seen.add(name.lower())
         out.append(RosterEntry(name=name, equibase_refno=refno, discovered_via=via))
     return out

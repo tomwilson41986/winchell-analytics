@@ -89,12 +89,26 @@ def build_profiles(client: HttpClient, roster: list[RosterEntry]) -> list[HorseP
     for entry in roster:
         sources: list[str] = []
 
+        # Industry results + connections (primary): full race-by-race rows with
+        # grades and speed figures, plus status / owner / trainer. Run first so
+        # its sire can resolve pedigree/Wikipedia for owner-discovered horses
+        # that arrive without a seed hint.
+        hrn_results, conn, hrn_url = ([], None, None)
+        if SOURCES["horseracingnation"]["enabled"]:
+            hrn_results, conn, hrn_url = hrn_scraper.fetch(
+                entry.name, expected_sire=entry.sire
+            )
+            if hrn_url:
+                sources.append(hrn_url)
+
+        sire_hint = entry.sire or (conn.sire if conn else None)
+
         pedigree, ped_url = (None, None)
         if SOURCES["pedigreequery"]["enabled"]:
             pedigree, ped_url = ped_scraper.fetch(
                 entry.name,
                 url=entry.pedigree_url,
-                expected_sire=entry.sire,
+                expected_sire=sire_hint,
                 year_of_birth=entry.year_of_birth,
             )
             if ped_url:
@@ -104,21 +118,11 @@ def build_profiles(client: HttpClient, roster: list[RosterEntry]) -> list[HorseP
         # and the Equibase refno (used to target imported result charts).
         enr, enr_url = (None, None)
         if SOURCES["wikipedia"]["enabled"]:
-            enr, enr_url = wiki_scraper.fetch(entry.name, expected_sire=entry.sire)
+            enr, enr_url = wiki_scraper.fetch(entry.name, expected_sire=sire_hint)
             if enr_url and enr:
                 sources.append(enr_url)
                 if enr.equibase_refno and not entry.equibase_refno:
                     entry.equibase_refno = enr.equibase_refno
-
-        # Industry results + connections (primary): full race-by-race rows with
-        # grades and speed figures, plus status / owner / trainer.
-        hrn_results, conn, hrn_url = ([], None, None)
-        if SOURCES["horseracingnation"]["enabled"]:
-            hrn_results, conn, hrn_url = hrn_scraper.fetch(
-                entry.name, expected_sire=entry.sire
-            )
-            if hrn_url:
-                sources.append(hrn_url)
 
         # An imported/reachable Equibase chart, when present, takes precedence
         # over HRN for the race-by-race rows.
@@ -276,6 +280,14 @@ def import_html(
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Winchell Analytics pipeline")
     parser.add_argument("--refresh-roster", action="store_true", help="rediscover the roster")
+    parser.add_argument(
+        "--owner-url",
+        action="append",
+        default=[],
+        metavar="URL",
+        help="Equibase owner page to discover runners from (repeatable; "
+        "import the saved page first with --import-html --url URL)",
+    )
     parser.add_argument("--build-profiles", action="store_true", help="scrape + score profiles")
     parser.add_argument("--publish", action="store_true", help="copy JSON into the frontend")
     parser.add_argument(
@@ -312,7 +324,11 @@ def main(argv: list[str] | None = None) -> int:
     try:
         if args.import_html:
             import_html(client, args.import_html, url=args.url, refno=args.refno)
-        roster = refresh_roster(client) if args.refresh_roster else load_roster()
+        roster = (
+            refresh_roster(client, owner_urls=args.owner_url)
+            if args.refresh_roster
+            else load_roster()
+        )
         if args.build_profiles:
             build_profiles(client, roster)
         if args.publish:
