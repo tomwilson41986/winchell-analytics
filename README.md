@@ -165,3 +165,72 @@ samples they fall back to the `ChartCard` placeholder. Nothing is fabricated.
 
 Connect the repository in Netlify (or `netlify deploy`) and it builds and
 publishes automatically.
+
+---
+
+# Winchell Portfolio Analytics (data pipeline)
+
+A Python 3.11 pipeline discovers the Winchell Thoroughbreds roster, scrapes
+pedigree / sales / results, scores each horse, and writes canonical JSON that
+the site reads at runtime. Two routes surface it: **`/portfolio`** (overview
+with KPI cards, search and a sortable roster table) and **`/horse/:horseId`**
+(per-horse profile: pedigree, sales, cumulative-earnings chart and full
+results). They reuse the site's existing components and palette.
+
+## Layout
+
+```
+scrapers/   base.py (HTTP: rate limit, robots, retries, cache, block-detection)
+            config.py (owner aliases + Winchell match guard + source registry)
+            owner_discovery.py (owner page / results scan / seed bootstrap)
+            horse_scrapers.py (PedigreeScraper, ResultsScraper, SalesScraper)
+pipeline/   schema.py (pydantic canonical models)
+            score.py (pure scoring from form + results)
+            build_profiles.py (slugify, write_profile, rollup + index)
+            run.py (CLI)
+data/       roster.json, horses.json, portfolio.json, profiles/<id>.json,
+            seed_horses.txt, cache/ (raw responses, git-ignored)
+```
+
+## Running
+
+```bash
+pip install -r requirements.txt
+python -m pipeline.run --refresh-roster --build-profiles --publish
+```
+
+- `--refresh-roster` rediscovers the roster → `data/roster.json`.
+- `--build-profiles` scrapes + scores → `data/profiles/<id>.json`, plus
+  `horses.json` (cards sorted by earnings) and `portfolio.json` (rollup).
+- `--publish` copies the JSON into `public/data/portfolio/` (a commented
+  boto3 S3-sync alternative is in `run.py`).
+- `--offline` uses only the response cache; never touches the network.
+
+`.github/workflows/refresh-data.yml` runs this weekly (roster, Mondays) and
+daily (profiles), then commits the JSON back so Netlify rebuilds.
+
+## Data sources and access reality
+
+| Source | Use | Status |
+| --- | --- | --- |
+| **pedigreequery.com** | pedigree (sire/dam/damsire, 3-gen, inbreeding) | **Working, verified live** against Gun Runner, Tapit, Epicenter, etc. |
+| **Equibase** | results, earnings, owner field, roster | **Bot-gated (Imperva).** Profile pages return a challenge, not data. |
+| **Keeneland / Fasig-Tipton** | auction results | Results live behind JavaScript "digital" portals with no static name-search. |
+
+Because Equibase and the auction houses gate their data, those scrapers are
+**block-aware and header-driven**: they identify the project honestly, obey
+crawl-delays, detect challenge pages and degrade to `None`/empty (the UI then
+shows "no data found"). They can also parse a results/sales page **saved from a
+browser** and dropped into `data/cache/` — a terms-clean way to feed them
+without circumventing any protection. **No data is ever fabricated to fill a
+gap.** The roster therefore comes from the hand-verified `data/seed_horses.txt`
+(each entry carries a sire hint so the pedigree resolver picks the correct page
+when a horse name collides with an older namesake), and profiles are populated
+with real pedigree data plus whatever else resolves.
+
+## Hard rules honoured
+
+- No synthetic data: absent fields are `None`/empty and render "no data found".
+- robots.txt respected; per-source rate limits applied; raw responses cached
+  for provenance and to avoid re-hitting sources.
+- British English in prose; USD currency formatting for US sales/earnings.
