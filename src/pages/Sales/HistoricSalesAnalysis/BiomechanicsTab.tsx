@@ -55,7 +55,12 @@ export default function BiomechanicsTab({ tables }: { tables: AnalysisTables }) 
           <h2 className="section__title">R2 Bio rating</h2>
           <span className="section__note">All rated horses</span>
         </div>
-        <DataTable columns={BAND_COLUMNS} rows={tables.r2Bio} sortable={false} />
+        <DataTable
+          columns={BAND_COLUMNS}
+          rows={tables.r2Bio}
+          sortable={false}
+          exportFilename="winchell-r2-bio.csv"
+        />
       </section>
 
       <section className="section">
@@ -63,7 +68,12 @@ export default function BiomechanicsTab({ tables }: { tables: AnalysisTables }) 
           <h2 className="section__title">R2 Breeze rating</h2>
           <span className="section__note">Breeze-rated horses</span>
         </div>
-        <DataTable columns={BAND_COLUMNS} rows={tables.r2Breeze} sortable={false} />
+        <DataTable
+          columns={BAND_COLUMNS}
+          rows={tables.r2Breeze}
+          sortable={false}
+          exportFilename="winchell-r2-breeze.csv"
+        />
       </section>
 
       <section className="section">

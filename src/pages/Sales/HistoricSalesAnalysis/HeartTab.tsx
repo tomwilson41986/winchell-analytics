@@ -50,7 +50,12 @@ export default function HeartTab({ tables }: { tables: AnalysisTables }) {
           <h2 className="section__title">Heart factors</h2>
           <span className="section__note">Source sheet: Heart Data</span>
         </div>
-        <DataTable columns={FACTOR_COLUMNS} rows={rows} pageSize={15} />
+        <DataTable
+          columns={FACTOR_COLUMNS}
+          rows={rows}
+          pageSize={15}
+          exportFilename="winchell-heart-factors.csv"
+        />
       </section>
     </>
   )

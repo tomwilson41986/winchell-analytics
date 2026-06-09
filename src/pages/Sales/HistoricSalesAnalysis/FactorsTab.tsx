@@ -52,7 +52,11 @@ export default function FactorsTab({ tables }: { tables: AnalysisTables }) {
           <h2 className="section__title">Selection factors</h2>
           <span className="section__note">Source sheet: Summary</span>
         </div>
-        <DataTable columns={FACTOR_COLUMNS} rows={rows} />
+        <DataTable
+          columns={FACTOR_COLUMNS}
+          rows={rows}
+          exportFilename="winchell-selection-factors.csv"
+        />
       </section>
     </>
   )

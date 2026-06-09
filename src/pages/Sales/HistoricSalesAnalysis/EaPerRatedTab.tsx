@@ -88,7 +88,13 @@ export default function EaPerRatedTab({ tables }: { tables: AnalysisTables }) {
           <h2 className="section__title">All factors</h2>
           <span className="section__note">Source sheet: EA Per Rated</span>
         </div>
-        <DataTable columns={FACTOR_COLUMNS} rows={rows} searchable pageSize={20} />
+        <DataTable
+          columns={FACTOR_COLUMNS}
+          rows={rows}
+          searchable
+          pageSize={20}
+          exportFilename="winchell-ea-per-rated.csv"
+        />
       </section>
     </>
   )

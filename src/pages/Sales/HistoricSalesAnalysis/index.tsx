@@ -9,7 +9,7 @@ import {
   type SaleRecord,
 } from '../../../lib/salesAnalysis'
 import ConversionTab from './ConversionTab'
-import SiresTab from './SiresTab'
+import LeaderboardTab from './LeaderboardTab'
 import FactorsTab from './FactorsTab'
 import EaPerRatedTab from './EaPerRatedTab'
 import BiomechanicsTab from './BiomechanicsTab'
@@ -19,11 +19,14 @@ import '../../page.css'
 const TABS: TabDef[] = [
   { id: 'conversion', label: 'Conversion' },
   { id: 'sires', label: 'Sires' },
+  { id: 'consignors', label: 'Consignors' },
   { id: 'factors', label: 'Selection Factors' },
   { id: 'eaPerRated', label: 'EA Per Rated' },
   { id: 'biomechanics', label: 'Biomechanics' },
   { id: 'heart', label: 'Heart' },
 ]
+
+const NEEDS_RECORDS = new Set(['conversion', 'sires', 'consignors'])
 
 function Loading({ label }: { label: string }) {
   return (
@@ -79,19 +82,32 @@ export default function HistoricSalesAnalysis() {
 
       <Tabs tabs={TABS} active={tab} onChange={setTab} />
 
-      {(tab === 'conversion' || tab === 'sires') &&
+      {NEEDS_RECORDS.has(tab) &&
         (recErr ? (
           <ErrorBox message={recErr} />
         ) : !records ? (
           <Loading label="Loading sales records…" />
         ) : tab === 'conversion' ? (
           <ConversionTab records={records} />
+        ) : tab === 'sires' ? (
+          <LeaderboardTab
+            records={records}
+            field="sire"
+            noun="Sire"
+            nounPlural="sires"
+            filename="winchell-sire-leaderboard.csv"
+          />
         ) : (
-          <SiresTab records={records} />
+          <LeaderboardTab
+            records={records}
+            field="consignor"
+            noun="Consignor"
+            nounPlural="consignors"
+            filename="winchell-consignor-leaderboard.csv"
+          />
         ))}
 
-      {tab !== 'conversion' &&
-        tab !== 'sires' &&
+      {!NEEDS_RECORDS.has(tab) &&
         (tablesErr ? (
           <ErrorBox message={tablesErr} />
         ) : !tables ? (

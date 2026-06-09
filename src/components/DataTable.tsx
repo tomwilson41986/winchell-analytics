@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { parseNumber } from '../lib/aggregate'
+import { downloadCsv } from '../lib/csvExport'
 import Icon from './Icon'
 import './DataTable.css'
 
@@ -26,6 +27,8 @@ interface DataTableProps<Row> {
   searchable?: boolean
   /** Paginate to this many rows per page (omit for no pagination). */
   pageSize?: number
+  /** Show an "Export CSV" button that downloads the (filtered + sorted) rows. */
+  exportFilename?: string
 }
 
 type SortState = { key: string; dir: 'asc' | 'desc' }
@@ -43,6 +46,7 @@ export default function DataTable<Row extends object>({
   sortable = true,
   searchable = false,
   pageSize,
+  exportFilename,
 }: DataTableProps<Row>) {
   const [sort, setSort] = useState<SortState | null>(null)
   const [query, setQuery] = useState('')
@@ -117,29 +121,54 @@ export default function DataTable<Row extends object>({
     )
   }
 
+  function onExport() {
+    if (!exportFilename) return
+    const headers = columns.map((c) => c.header)
+    const data = sorted.map((row) =>
+      columns.map((c) => row[c.key as keyof Row]),
+    )
+    downloadCsv(exportFilename, headers, data)
+  }
+
   const start = pageSize ? safePage * pageSize : 0
   const end = pageSize ? start + visible.length : sorted.length
 
   return (
     <div>
-      {searchable ? (
+      {searchable || exportFilename ? (
         <div className="datatable__toolbar">
-          <div className="datatable__search">
-            <Icon name="search" size={16} className="datatable__search-icon" />
-            <input
-              type="search"
-              className="datatable__search-input"
-              placeholder="Search…"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              aria-label="Search table"
-            />
+          {searchable ? (
+            <div className="datatable__search">
+              <Icon name="search" size={16} className="datatable__search-icon" />
+              <input
+                type="search"
+                className="datatable__search-input"
+                placeholder="Search…"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                aria-label="Search table"
+              />
+            </div>
+          ) : (
+            <span />
+          )}
+          <div className="datatable__toolbar-right">
+            {searchable ? (
+              <span className="datatable__count tnum">
+                {sorted.length.toLocaleString()}
+                {sorted.length !== rows.length
+                  ? ` of ${rows.length.toLocaleString()}`
+                  : ''}{' '}
+                rows
+              </span>
+            ) : null}
+            {exportFilename ? (
+              <button type="button" className="btn-export" onClick={onExport}>
+                <Icon name="download" size={16} />
+                Export CSV
+              </button>
+            ) : null}
           </div>
-          <span className="datatable__count tnum">
-            {sorted.length.toLocaleString()}
-            {sorted.length !== rows.length ? ` of ${rows.length.toLocaleString()}` : ''}{' '}
-            rows
-          </span>
         </div>
       ) : null}
 

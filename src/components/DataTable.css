@@ -118,6 +118,12 @@
   margin-bottom: 0.75rem;
 }
 
+.datatable__toolbar-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
 .datatable__search {
   position: relative;
   display: inline-flex;

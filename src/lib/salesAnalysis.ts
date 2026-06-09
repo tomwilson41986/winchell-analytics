@@ -185,8 +185,8 @@ export function rateByField(
   return entries.map(({ label, value }) => ({ label, value }))
 }
 
-export interface SireRow {
-  sire: string
+export interface LeaderRow {
+  name: string
   count: number
   runners: number
   winners: number
@@ -199,21 +199,24 @@ export interface SireRow {
 }
 
 /**
- * Per-sire conversion leaderboard. Only sires with at least `minCount` offered
- * are included (small samples are noise). Sorted by offered count desc.
+ * Conversion leaderboard grouped by a string field (sire or consignor). Only
+ * groups with at least `minCount` offered are included (small samples are
+ * noise). Sorted by offered count desc.
  */
-export function sireLeaderboard(
+export function fieldLeaderboard(
   records: SaleRecord[],
+  field: 'sire' | 'consignor',
   minCount = 20,
-): SireRow[] {
+): LeaderRow[] {
   const groups = new Map<string, SaleRecord[]>()
   for (const r of records) {
-    if (!r.sire) continue
-    if (!groups.has(r.sire)) groups.set(r.sire, [])
-    groups.get(r.sire)!.push(r)
+    const key = r[field]
+    if (!key) continue
+    if (!groups.has(key)) groups.set(key, [])
+    groups.get(key)!.push(r)
   }
-  const out: SireRow[] = []
-  for (const [sire, recs] of groups) {
+  const out: LeaderRow[] = []
+  for (const [name, recs] of groups) {
     if (recs.length < minCount) continue
     const n = recs.length
     const sumOf = (k: OutcomeKey) => recs.reduce((a, r) => a + r[k], 0)
@@ -223,7 +226,7 @@ export function sireLeaderboard(
     const gsw = sumOf('gsw')
     const g1w = sumOf('g1w')
     out.push({
-      sire,
+      name,
       count: n,
       runners,
       winners,
