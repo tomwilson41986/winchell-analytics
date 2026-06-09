@@ -2,6 +2,8 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import Horses from './pages/Horses'
+import Portfolio from './pages/Portfolio'
+import HorseProfile from './pages/Portfolio/HorseProfile'
 import Sales from './pages/Sales'
 import HistoricSalesAnalysis from './pages/Sales/HistoricSalesAnalysis'
 import Sires from './pages/Sires'
@@ -13,6 +15,8 @@ export default function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Home />} />
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="horse/:horseId" element={<HorseProfile />} />
         <Route path="horses" element={<Horses />} />
         <Route path="sales">
           <Route index element={<Sales />} />
