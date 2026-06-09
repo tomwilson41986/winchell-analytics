@@ -111,7 +111,11 @@ no runtime fetch and no need to copy files into `public/`.
 - `listSectionFiles(section)` → file names available in a section
 
 Pages derive table columns from the CSV headers, so adding columns flows through
-automatically.
+automatically. Tables are **sortable** — click a column header to sort
+(numeric columns sort numerically; blanks sort last) — and each section's KPI
+tiles are **computed from the loaded rows** (e.g. top/median sale price, total
+progeny earnings, foals recorded) via the helpers in `src/lib/stats.ts`. With
+the shipped header-only samples the tiles show a muted `—` until data is added.
 
 ### Adding data to a section
 

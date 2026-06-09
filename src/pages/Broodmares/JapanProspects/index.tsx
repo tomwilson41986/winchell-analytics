@@ -4,6 +4,7 @@ import PageHeader from '../../../components/PageHeader'
 import StatTile from '../../../components/StatTile'
 import { BarChart } from '../../../components/charts/LazyCharts'
 import { countBy } from '../../../lib/aggregate'
+import { countNonEmpty, distinctCount } from '../../../lib/stats'
 import { loadCsv } from '../../../lib/data'
 import '../../page.css'
 
@@ -21,6 +22,8 @@ export default function JapanProspects() {
   }))
   const has = rows.length > 0
   const byCountry = countBy(rows, 'country')
+  const blackType = countNonEmpty(rows, 'black_type')
+  const targetSales = distinctCount(rows, 'target_sale')
 
   return (
     <div className="page">
@@ -38,8 +41,8 @@ export default function JapanProspects() {
       <section className="section" aria-label="Summary">
         <div className="stat-grid">
           <StatTile label="Prospects" value={String(rows.length)} pending={!has} />
-          <StatTile label="Black-type" value="—" pending hint="Derived once data loads" />
-          <StatTile label="Target sales" value="—" pending hint="Derived once data loads" />
+          <StatTile label="Black-type" value={String(blackType)} pending={!has} />
+          <StatTile label="Target sales" value={String(targetSales)} pending={!has} />
         </div>
       </section>
 

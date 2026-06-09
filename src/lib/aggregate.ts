@@ -78,3 +78,22 @@ export function formatCompact(value: number): string {
     maximumFractionDigits: 1,
   }).format(value)
 }
+
+/** Full USD currency, no decimals (e.g. $725,000). */
+export function formatUsd(value: number): string {
+  return new Intl.NumberFormat('en', {
+    style: 'currency',
+    currency: 'USD',
+    maximumFractionDigits: 0,
+  }).format(value)
+}
+
+/** Compact USD for KPI tiles / axes (e.g. $1.2M). */
+export function formatUsdCompact(value: number): string {
+  return new Intl.NumberFormat('en', {
+    style: 'currency',
+    currency: 'USD',
+    notation: 'compact',
+    maximumFractionDigits: 1,
+  }).format(value)
+}

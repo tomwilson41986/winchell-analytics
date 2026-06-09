@@ -3,18 +3,12 @@ import DataTable, { type Column } from '../../components/DataTable'
 import PageHeader from '../../components/PageHeader'
 import StatTile from '../../components/StatTile'
 import { LineChart } from '../../components/charts/LazyCharts'
-import { averageBy, sortByLabel } from '../../lib/aggregate'
+import { averageBy, formatUsd, formatUsdCompact, sortByLabel } from '../../lib/aggregate'
+import { max, median } from '../../lib/stats'
 import { loadCsv } from '../../lib/data'
 import '../page.css'
 
 type Row = Record<string, string>
-
-const usd = (v: number) =>
-  new Intl.NumberFormat('en', {
-    style: 'currency',
-    currency: 'USD',
-    maximumFractionDigits: 0,
-  }).format(v)
 
 export default function Sales() {
   const { headers, rows } = loadCsv('sales', 'sales.csv')
@@ -25,6 +19,8 @@ export default function Sales() {
   }))
   const has = rows.length > 0
   const priceByYear = sortByLabel(averageBy(rows, 'year', 'price'))
+  const topPrice = max(rows, 'price')
+  const medianPrice = median(rows, 'price')
 
   return (
     <div className="page">
@@ -38,8 +34,16 @@ export default function Sales() {
       <section className="section" aria-label="Summary">
         <div className="stat-grid">
           <StatTile label="Sales records" value={String(rows.length)} pending={!has} />
-          <StatTile label="Top price" value="—" pending hint="Derived once data loads" />
-          <StatTile label="Median price" value="—" pending hint="Derived once data loads" />
+          <StatTile
+            label="Top price"
+            value={topPrice != null ? formatUsdCompact(topPrice) : '—'}
+            pending={topPrice == null}
+          />
+          <StatTile
+            label="Median price"
+            value={medianPrice != null ? formatUsdCompact(medianPrice) : '—'}
+            pending={medianPrice == null}
+          />
         </div>
       </section>
 
@@ -64,7 +68,7 @@ export default function Sales() {
             subtitle={has ? 'Average sale price per year' : 'Connect sales data to render.'}
           >
             {has ? (
-              <LineChart data={priceByYear} valueLabel="Avg price" valueFormatter={usd} />
+              <LineChart data={priceByYear} valueLabel="Avg price" valueFormatter={formatUsd} />
             ) : undefined}
           </ChartCard>
         </div>

@@ -59,6 +59,7 @@ export default function LineChart({
           <Area
             type="monotone"
             dataKey="value"
+            isAnimationActive={false}
             stroke={CHART.maroon}
             strokeWidth={2.5}
             fill="url(#areaFill)"

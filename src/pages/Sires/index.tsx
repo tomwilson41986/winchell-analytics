@@ -3,18 +3,12 @@ import DataTable, { type Column } from '../../components/DataTable'
 import PageHeader from '../../components/PageHeader'
 import StatTile from '../../components/StatTile'
 import { BarChart } from '../../components/charts/LazyCharts'
-import { sumBy, topN } from '../../lib/aggregate'
+import { formatUsd, formatUsdCompact, sumBy, topN } from '../../lib/aggregate'
+import { sum } from '../../lib/stats'
 import { loadCsv } from '../../lib/data'
 import '../page.css'
 
 type Row = Record<string, string>
-
-const usd = (v: number) =>
-  new Intl.NumberFormat('en', {
-    style: 'currency',
-    currency: 'USD',
-    maximumFractionDigits: 0,
-  }).format(v)
 
 export default function Sires() {
   const { headers, rows } = loadCsv('sires', 'sires.csv')
@@ -25,6 +19,8 @@ export default function Sires() {
   }))
   const has = rows.length > 0
   const earningsBySire = topN(sumBy(rows, 'name', 'progeny_earnings'), 8)
+  const stakesWinners = sum(rows, 'stakes_winners')
+  const totalEarnings = sum(rows, 'progeny_earnings')
 
   return (
     <div className="page">
@@ -38,8 +34,12 @@ export default function Sires() {
       <section className="section" aria-label="Summary">
         <div className="stat-grid">
           <StatTile label="Sires" value={String(rows.length)} pending={!has} />
-          <StatTile label="Stakes winners" value="—" pending hint="Derived once data loads" />
-          <StatTile label="Progeny earnings" value="—" pending hint="Derived once data loads" />
+          <StatTile label="Stakes winners" value={String(stakesWinners)} pending={!has} />
+          <StatTile
+            label="Progeny earnings"
+            value={has ? formatUsdCompact(totalEarnings) : '—'}
+            pending={!has}
+          />
         </div>
       </section>
 
@@ -64,7 +64,7 @@ export default function Sires() {
             subtitle={has ? 'Top sires by total progeny earnings' : 'Connect sire data to render.'}
           >
             {has ? (
-              <BarChart data={earningsBySire} valueLabel="Earnings" valueFormatter={usd} />
+              <BarChart data={earningsBySire} valueLabel="Earnings" valueFormatter={formatUsd} />
             ) : undefined}
           </ChartCard>
         </div>

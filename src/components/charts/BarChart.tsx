@@ -58,6 +58,7 @@ export default function BarChart({
           />
           <Bar
             dataKey="value"
+            isAnimationActive={false}
             fill="url(#barFill)"
             radius={[6, 6, 0, 0]}
             maxBarSize={56}

@@ -5,7 +5,8 @@ import Icon from '../../components/Icon'
 import PageHeader from '../../components/PageHeader'
 import StatTile from '../../components/StatTile'
 import { BarChart } from '../../components/charts/LazyCharts'
-import { sumBy, topN } from '../../lib/aggregate'
+import { parseNumber, sumBy, topN } from '../../lib/aggregate'
+import { countWhere, sum } from '../../lib/stats'
 import { loadCsv } from '../../lib/data'
 import '../page.css'
 
@@ -20,6 +21,8 @@ export default function Broodmares() {
   }))
   const has = rows.length > 0
   const foalsByMare = topN(sumBy(rows, 'name', 'foals'), 8)
+  const totalFoals = sum(rows, 'foals')
+  const stakesProducers = countWhere(rows, (r) => (parseNumber(r.stakes_winners) ?? 0) > 0)
 
   return (
     <div className="page">
@@ -40,8 +43,8 @@ export default function Broodmares() {
       <section className="section" aria-label="Summary">
         <div className="stat-grid">
           <StatTile label="Broodmares" value={String(rows.length)} pending={!has} />
-          <StatTile label="Foals recorded" value="—" pending hint="Derived once data loads" />
-          <StatTile label="Stakes producers" value="—" pending hint="Derived once data loads" />
+          <StatTile label="Foals recorded" value={String(totalFoals)} pending={!has} />
+          <StatTile label="Stakes producers" value={String(stakesProducers)} pending={!has} />
         </div>
       </section>
 

@@ -4,6 +4,7 @@ import PageHeader from '../../components/PageHeader'
 import StatTile from '../../components/StatTile'
 import { BarChart } from '../../components/charts/LazyCharts'
 import { countBy } from '../../lib/aggregate'
+import { countWhere } from '../../lib/stats'
 import { loadCsv } from '../../lib/data'
 import '../page.css'
 
@@ -14,6 +15,7 @@ export default function Horses() {
   const columns: Column<Row>[] = headers.map((h) => ({ key: h, header: h }))
   const has = rows.length > 0
   const byStatus = countBy(rows, 'status')
+  const inTraining = countWhere(rows, (r) => /train/i.test(r.status ?? ''))
 
   return (
     <div className="page">
@@ -28,7 +30,7 @@ export default function Horses() {
         <div className="stat-grid">
           <StatTile label="Horses" value={String(rows.length)} pending={!has} />
           <StatTile label="Fields tracked" value={String(headers.length)} />
-          <StatTile label="In training" value="—" pending hint="Derived once data loads" />
+          <StatTile label="In training" value={String(inTraining)} pending={!has} />
         </div>
       </section>
 
