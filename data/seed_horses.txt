@@ -22,3 +22,5 @@ Tapiture      | 2011 | Tapit            | |
 Magna Graduate| 2002 | Honor Grades     | |
 Quiet Giant   | 2007 | Giant's Causeway | |
 Disarm        | 2020 | Gun Runner       | |
+Gunite        | 2019 | Gun Runner       | |
+Red Route One | 2020 | Gun Runner       | |

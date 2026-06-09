@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-09T13:01:44.497802+00:00",
-  "horse_count": 8,
+  "generated_at": "2026-06-09T13:18:48.845513+00:00",
+  "horse_count": 10,
   "active_count": 0,
-  "total_earnings": 23373164,
+  "total_earnings": 25866173,
   "currency": "USD",
-  "graded_winners": 8,
-  "black_type_winners": 8,
+  "graded_winners": 10,
+  "black_type_winners": 10,
   "horses": [
     {
       "horse_id": "gun-runner",
@@ -45,6 +45,20 @@
       "starts": 11,
       "wins": 6,
       "total_earnings": 2940639,
+      "currency": "USD",
+      "black_type": true,
+      "value_flag": "elite graded earner"
+    },
+    {
+      "horse_id": "gunite",
+      "name": "Gunite",
+      "sire": "GUN RUNNER",
+      "dam": "SIMPLE SURPRISE",
+      "trainer": "Steven M. Asmussen",
+      "status": "Retired",
+      "starts": 21,
+      "wins": 9,
+      "total_earnings": 2493009,
       "currency": "USD",
       "black_type": true,
       "value_flag": "elite graded earner"
@@ -104,6 +118,20 @@
       "currency": null,
       "black_type": true,
       "value_flag": "high strike rate"
+    },
+    {
+      "horse_id": "red-route-one",
+      "name": "Red Route One",
+      "sire": "GUN RUNNER",
+      "dam": "RED HOUSE",
+      "trainer": "Steven M. Asmussen",
+      "status": "Retired",
+      "starts": 29,
+      "wins": 6,
+      "total_earnings": null,
+      "currency": null,
+      "black_type": true,
+      "value_flag": "black-type winner"
     },
     {
       "horse_id": "tapiture",

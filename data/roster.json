@@ -24,6 +24,14 @@
     "discovered_via": "seed"
   },
   {
+    "name": "Gunite",
+    "year_of_birth": 2019,
+    "sire": "Gun Runner",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
     "name": "Magna Graduate",
     "year_of_birth": 2002,
     "sire": "Honor Grades",
@@ -35,6 +43,14 @@
     "name": "Quiet Giant",
     "year_of_birth": 2007,
     "sire": "Giant's Causeway",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Red Route One",
+    "year_of_birth": 2020,
+    "sire": "Gun Runner",
     "equibase_refno": null,
     "pedigree_url": null,
     "discovered_via": "seed"

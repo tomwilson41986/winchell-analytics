@@ -42,6 +42,20 @@
     "value_flag": "elite graded earner"
   },
   {
+    "horse_id": "gunite",
+    "name": "Gunite",
+    "sire": "GUN RUNNER",
+    "dam": "SIMPLE SURPRISE",
+    "trainer": "Steven M. Asmussen",
+    "status": "Retired",
+    "starts": 21,
+    "wins": 9,
+    "total_earnings": 2493009,
+    "currency": "USD",
+    "black_type": true,
+    "value_flag": "elite graded earner"
+  },
+  {
     "horse_id": "tapit",
     "name": "Tapit",
     "sire": "PULPIT",
@@ -96,6 +110,20 @@
     "currency": null,
     "black_type": true,
     "value_flag": "high strike rate"
+  },
+  {
+    "horse_id": "red-route-one",
+    "name": "Red Route One",
+    "sire": "GUN RUNNER",
+    "dam": "RED HOUSE",
+    "trainer": "Steven M. Asmussen",
+    "status": "Retired",
+    "starts": 29,
+    "wins": 6,
+    "total_earnings": null,
+    "currency": null,
+    "black_type": true,
+    "value_flag": "black-type winner"
   },
   {
     "horse_id": "tapiture",
