@@ -15,7 +15,9 @@
 # once you have confirmed the connection.
 
 Gun Runner    | 2013 | Candy Ride       | | https://www.pedigreequery.com/gun+runner7
+Cuvee         | 2001 | Carson City      | |
 Tapit         | 2001 | Pulpit           | |
+Tapizar       | 2008 | Tapit            | |
 Epicenter     | 2019 | Not This Time    | |
 Untapable     | 2011 | Tapit            | |
 Tapiture      | 2011 | Tapit            | |

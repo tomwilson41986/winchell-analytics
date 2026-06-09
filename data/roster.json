@@ -1,5 +1,13 @@
 [
   {
+    "name": "Cuvee",
+    "year_of_birth": 2001,
+    "sire": "Carson City",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
     "name": "Disarm",
     "year_of_birth": 2020,
     "sire": "Gun Runner",
@@ -66,6 +74,14 @@
   {
     "name": "Tapiture",
     "year_of_birth": 2011,
+    "sire": "Tapit",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Tapizar",
+    "year_of_birth": 2008,
     "sire": "Tapit",
     "equibase_refno": null,
     "pedigree_url": null,

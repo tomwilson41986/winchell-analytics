@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-09T20:11:21.253566+00:00",
-  "horse_count": 10,
+  "generated_at": "2026-06-09T20:35:17.760903+00:00",
+  "horse_count": 12,
   "active_count": 0,
-  "total_earnings": 25866173,
+  "total_earnings": 26838805,
   "currency": "USD",
-  "graded_winners": 10,
-  "black_type_winners": 10,
+  "graded_winners": 11,
+  "black_type_winners": 11,
   "horses": [
     {
       "horse_id": "gun-runner",
@@ -64,6 +64,20 @@
       "value_flag": "elite graded earner"
     },
     {
+      "horse_id": "tapizar",
+      "name": "Tapizar",
+      "sire": "TAPIT",
+      "dam": "WINNING CALL",
+      "trainer": "Steven M. Asmussen",
+      "status": "Deceased",
+      "starts": 14,
+      "wins": 6,
+      "total_earnings": 972632,
+      "currency": "USD",
+      "black_type": true,
+      "value_flag": "improving black-type performer"
+    },
+    {
       "horse_id": "tapit",
       "name": "Tapit",
       "sire": "PULPIT",
@@ -76,6 +90,20 @@
       "currency": "USD",
       "black_type": true,
       "value_flag": "improving black-type performer"
+    },
+    {
+      "horse_id": "cuvee",
+      "name": "Cuvee",
+      "sire": "CARSON CITY",
+      "dam": "CHRISTMAS STAR",
+      "trainer": "Steven M. Asmussen",
+      "status": "Retired",
+      "starts": 2,
+      "wins": 0,
+      "total_earnings": null,
+      "currency": null,
+      "black_type": false,
+      "value_flag": null
     },
     {
       "horse_id": "disarm",
