@@ -2,22 +2,25 @@
 
 * :class:`PedigreeScraper`  — pedigreequery.com: sire/dam/damsire, a flattened
   three-generation table, and inbreeding derived from duplicated ancestors.
-* :class:`ResultsScraper`   — Equibase: full race results, an aggregated
-  :class:`FormSummary`, and career earnings.
+* :class:`HRNScraper`       — Horse Racing Nation: full race-by-race results
+  (grades + speed figures), status, owner, trainer and pedigree summary.
+* :class:`ResultsScraper`   — Equibase: official charts (per-race earnings),
+  fed via browser-saved HTML; takes precedence over HRN when present.
 * :class:`SalesScraper`     — Keeneland / Fasig-Tipton auction results.
 
-The pedigree parser was written and verified against live pedigreequery markup
-(see ``--verify``). Equibase and the auction houses gate their data behind bot
-protection / JavaScript portals, so those parsers are header-driven and
-block-aware: they run against pages saved from a browser into ``data/cache/``
-and degrade to ``None``/empty on a live block. Anything a source does not
-provide is left ``None``; nothing is invented.
+The pedigree and HRN parsers were written and verified against live markup.
+Equibase and the auction houses gate their data behind bot protection /
+JavaScript portals, so those parsers are header-driven and block-aware: they run
+against pages saved from a browser into ``data/cache/`` and degrade to
+``None``/empty on a live block. Anything a source does not provide is left
+``None``; nothing is invented.
 """
 
 from __future__ import annotations
 
 import re
 from collections import defaultdict
+from dataclasses import dataclass
 from datetime import date, datetime
 from typing import Optional
 
@@ -495,6 +498,169 @@ class SalesScraper:
                     buyer=_pick(r, "buyer", "purchaser"),
                     consignor=_pick(r, "consignor", "seller"),
                     rfna=rna,
+                )
+            )
+        return out
+
+
+# --------------------------------------------------------------------------- #
+# Horse Racing Nation (industry results + connections)
+# --------------------------------------------------------------------------- #
+
+
+@dataclass
+class HRNConnections:
+    """Connection / status facts from an HRN horse page."""
+
+    status: Optional[str] = None       # "Active" / "Retired" / ...
+    sex: Optional[str] = None          # "Horse" / "Mare" / "Filly" / ...
+    owner: Optional[str] = None
+    trainer: Optional[str] = None
+    breeder: Optional[str] = None
+    country: Optional[str] = None
+    sire: Optional[str] = None
+    dam: Optional[str] = None
+    damsire: Optional[str] = None
+
+
+class HRNScraper:
+    """Race results and connections from horseracingnation.com.
+
+    HRN serves horse pages as static HTML (the generic robots agent is allowed
+    on ``/horse/`` paths). The results table carries the grade in the race name
+    and an HRN speed figure per run, so graded wins, best speed figure and the
+    class-trajectory score all populate from real data. Career earnings are not
+    on the page, so that field is left to other sources.
+    """
+
+    def __init__(self, client: HttpClient) -> None:
+        self.client = client
+        self.base = SOURCES["horseracingnation"]["base_url"]
+
+    @staticmethod
+    def _slug(name: str) -> str:
+        s = re.sub(r"[^\w\s'-]", "", name.strip())
+        return re.sub(r"\s+", "_", s)
+
+    def resolve(
+        self, name: str, expected_sire: Optional[str] = None, max_candidates: int = 6
+    ) -> Optional[tuple[str, HTMLParser]]:
+        base_slug = self._slug(name)
+        candidates = [base_slug] + [f"{base_slug}_{i}" for i in range(2, max_candidates + 1)]
+        exp = _norm_name(expected_sire) if expected_sire else None
+        for slug in candidates:
+            url = f"{self.base}/horse/{slug}"
+            body = self.client.get(url)
+            if not body:
+                continue
+            tree = HTMLParser(body)
+            if tree.css_first("table.horse-table") is None and tree.css_first("dl") is None:
+                continue
+            if exp:
+                conn = self._connections(tree)
+                if conn.sire and _norm_name(conn.sire) != exp:
+                    continue
+            return url, tree
+        return None
+
+    def fetch(
+        self, name: str, *, expected_sire: Optional[str] = None
+    ) -> tuple[list[RaceResult], Optional[HRNConnections], Optional[str]]:
+        found = self.resolve(name, expected_sire=expected_sire)
+        if found is None:
+            return [], None, None
+        url, tree = found
+        return self.parse_results(tree), self._connections(tree), url
+
+    @staticmethod
+    def _connections(tree: HTMLParser) -> HRNConnections:
+        conn = HRNConnections()
+        dl = tree.css_first("dl")
+        if dl is None:
+            return conn
+        pairs: dict[str, str] = {}
+        dts, dds = dl.css("dt"), dl.css("dd")
+        for dt, dd in zip(dts, dds):
+            key = dt.text(strip=True).rstrip(":").lower()
+            pairs[key] = dd.text(separator=" ", strip=True)
+        # "Age: 13 years old - Horse" -> sex is the trailing token.
+        age = pairs.get("age", "")
+        if "-" in age:
+            conn.sex = age.split("-")[-1].strip() or None
+        conn.status = pairs.get("status") or None
+        conn.owner = pairs.get("owner(s)") or pairs.get("owner") or None
+        conn.trainer = pairs.get("trainer") or None
+        # "Pedigree: Candy Ride - Quiet Giant by Giant's Causeway"
+        ped = pairs.get("pedigree", "")
+        m = re.match(r"\s*(.+?)\s*-\s*(.+?)\s+by\s+(.+?)\s*$", ped)
+        if m:
+            conn.sire, conn.dam, conn.damsire = (g.strip() for g in m.groups())
+        bred = pairs.get("bred", "")
+        if bred:
+            conn.country = bred.split(" by")[0].strip() or None
+        return conn
+
+    @classmethod
+    def parse_results(cls, tree: HTMLParser) -> list[RaceResult]:
+        table = tree.css_first("table.horse-table") or (
+            tree.css("table")[0] if tree.css("table") else None
+        )
+        if table is None:
+            return []
+        rows = table.css("tr")
+        # Locate the header row carrying "Date" + "Finish".
+        header_idx = None
+        headers: list[str] = []
+        for i, row in enumerate(rows):
+            cells = [_norm(c.text()) for c in row.css("th, td")]
+            if any("date" in c for c in cells) and any("finish" in c for c in cells):
+                header_idx, headers = i, cells
+                break
+        if header_idx is None:
+            return []
+
+        def col(*needles: str) -> Optional[int]:
+            for idx, h in enumerate(headers):
+                if any(n in h for n in needles):
+                    return idx
+                    
+            return None
+
+        ci = {
+            "date": col("date"),
+            "finish": col("finish"),
+            "track": col("trk", "track"),
+            "distance": col("distance", "dist"),
+            "surface": col("surface"),
+            "race": col("race"),
+            "time": col("time"),
+        }
+        out: list[RaceResult] = []
+        for row in rows[header_idx + 1 :]:
+            tds = row.css("td")
+            if len(tds) < len(headers):
+                continue
+
+            def cell(key: str) -> Optional[str]:
+                idx = ci[key]
+                return tds[idx].text(strip=True) if idx is not None and idx < len(tds) else None
+
+            fin_text = cell("finish") or ""
+            fm = re.search(r"(\d+)\w{2}\s*\((\d+)\)", fin_text) or re.search(r"(\d+)\w{2}", fin_text)
+            finish = int(fm.group(1)) if fm else None
+            speed = int(fm.group(2)) if fm and fm.lastindex and fm.lastindex >= 2 else None
+            race_name = cell("race")
+            out.append(
+                RaceResult(
+                    race_date=_parse_date(cell("date")),
+                    track=cell("track"),
+                    race_name=race_name,
+                    surface=cell("surface"),
+                    distance_furlongs=_parse_furlongs(cell("distance")),
+                    grade=_grade_from_text(race_name),
+                    finish_position=finish,
+                    speed_figure=speed,
+                    comment=cell("time"),
                 )
             )
         return out

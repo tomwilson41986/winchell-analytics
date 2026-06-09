@@ -57,10 +57,14 @@ function PedigreeCell({ role, node }: { role: string; node: PedigreeNode | null 
   )
 }
 
-/** Cumulative earnings over time, oldest run first. */
+/** Cumulative earnings over time, oldest run first.
+ *
+ * Only builds a series when results actually carry per-race earnings; sources
+ * without them (e.g. HRN) yield an empty series so the chart shows "no data
+ * found" rather than a misleading flat-zero line. */
 function cumulativeEarnings(results: RaceResult[]): ChartDatum[] {
   const dated = results
-    .filter((r) => r.race_date)
+    .filter((r) => r.race_date && r.earnings != null)
     .sort((a, b) => (a.race_date! < b.race_date! ? -1 : 1))
   let running = 0
   const out: ChartDatum[] = []

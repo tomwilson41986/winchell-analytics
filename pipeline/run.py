@@ -17,13 +17,19 @@ import shutil
 from pathlib import Path
 
 from scrapers.base import HttpClient
-from scrapers.config import SOURCES, enabled_sources
-from scrapers.horse_scrapers import PedigreeScraper, ResultsScraper, SalesScraper
+from scrapers.config import SOURCES, enabled_sources, is_winchell_owner
+from scrapers.horse_scrapers import (
+    HRNScraper,
+    PedigreeScraper,
+    ResultsScraper,
+    SalesScraper,
+)
 from scrapers.owner_discovery import RosterEntry, discover_roster, from_seed
 from scrapers.wiki import WikiScraper
 
 from .build_profiles import build_profile, write_index_and_rollup, write_profile
 from .schema import HorseProfile
+from .score import summarise_form
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 ROSTER_PATH = DATA_DIR / "roster.json"
@@ -77,6 +83,7 @@ def build_profiles(client: HttpClient, roster: list[RosterEntry]) -> list[HorseP
     results_scraper = ResultsScraper(client)
     sales_scraper = SalesScraper(client)
     wiki_scraper = WikiScraper(client)
+    hrn_scraper = HRNScraper(client)
 
     profiles: list[HorseProfile] = []
     for entry in roster:
@@ -103,32 +110,62 @@ def build_profiles(client: HttpClient, roster: list[RosterEntry]) -> list[HorseP
                 if enr.equibase_refno and not entry.equibase_refno:
                     entry.equibase_refno = enr.equibase_refno
 
-        # Full race-by-race results: only when an Equibase chart is reachable
-        # or has been imported (browser-saved) into the cache.
-        results, res_url = ([], None)
+        # Industry results + connections (primary): full race-by-race rows with
+        # grades and speed figures, plus status / owner / trainer.
+        hrn_results, conn, hrn_url = ([], None, None)
+        if SOURCES["horseracingnation"]["enabled"]:
+            hrn_results, conn, hrn_url = hrn_scraper.fetch(
+                entry.name, expected_sire=entry.sire
+            )
+            if hrn_url:
+                sources.append(hrn_url)
+
+        # An imported/reachable Equibase chart, when present, takes precedence
+        # over HRN for the race-by-race rows.
+        eq_results, res_url = ([], None)
         if SOURCES["equibase"]["enabled"] and entry.equibase_refno:
-            results, res_url = results_scraper.fetch(refno=entry.equibase_refno)
-            if res_url and results:
+            eq_results, res_url = results_scraper.fetch(refno=entry.equibase_refno)
+            if res_url and eq_results:
                 sources.append(res_url)
+
+        results = eq_results or hrn_results
 
         sales = sales_scraper.fetch(entry.name) if enabled_sources() else []
 
-        # Prefer a results-derived form (richer); fall back to the Wikipedia
-        # record when we have no per-race rows.
-        form = None if results else (enr.form if enr else None)
+        # Form from results (rich: grades, speed, trajectory); fall back to the
+        # Wikipedia record when no per-race rows resolved.
+        form = summarise_form(results) if results else (enr.form if enr else None)
+        # HRN/Equibase carry no career earnings total; fill it from Wikipedia.
+        if (
+            form is not None
+            and form.total_earnings is None
+            and enr is not None
+            and enr.form is not None
+            and enr.form.total_earnings is not None
+        ):
+            form.total_earnings = enr.form.total_earnings
+            form.currency = "USD"
 
+        # Connections: prefer HRN's racing-programme values, fall back to Wikipedia.
+        owner_raw = (conn.owner if conn else None) or (enr.owner_raw if enr else None)
         ownership_note = f"Roster match via {entry.discovered_via}."
-        if enr and enr.owner_is_winchell:
-            ownership_note = f"Ownership confirmed (Wikipedia): {enr.owner_raw}."
+        if is_winchell_owner(owner_raw):
+            src = "HRN" if conn and is_winchell_owner(conn.owner) else "Wikipedia"
+            ownership_note = f"Ownership confirmed ({src}): {owner_raw}."
+        elif owner_raw:
+            ownership_note = (
+                f"Winchell roster (seed); racing owner of record: {owner_raw}."
+            )
 
         profile = build_profile(
             entry.name,
             year_of_birth=entry.year_of_birth or (enr.year_of_birth if enr else None),
-            sex=enr.sex if enr else None,
+            sex=(conn.sex if conn else None) or (enr.sex if enr else None),
             colour=enr.colour if enr else None,
-            country=enr.country if enr else None,
+            country=(conn.country if conn else None) or (enr.country if enr else None),
             breeder=enr.breeder if enr else None,
-            current_trainer=enr.trainer if enr else None,
+            current_trainer=(conn.trainer if conn else None) or (enr.trainer if enr else None),
+            status=conn.status if conn else None,
             ownership_note=ownership_note,
             pedigree=pedigree,
             sales=sales,
@@ -145,10 +182,13 @@ def build_profiles(client: HttpClient, roster: list[RosterEntry]) -> list[HorseP
         flags = []
         if pedigree:
             flags.append("pedigree")
-        if enr and enr.form:
-            flags.append("record+earnings")
         if results:
-            flags.append(f"{len(results)} results")
+            src = "Equibase" if eq_results else "HRN"
+            flags.append(f"{len(results)} results ({src})")
+        elif enr and enr.form:
+            flags.append("record+earnings")
+        if form and form.total_earnings:
+            flags.append("earnings")
         if sales:
             flags.append(f"{len(sales)} sales")
         print(f"[profile] {entry.name:18} -> {', '.join(flags) or 'no data found'}")

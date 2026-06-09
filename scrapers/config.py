@@ -114,6 +114,16 @@ SOURCES: dict[str, dict] = {
             "(ownership confirmation), trainer, breeder, bio, Equibase refno."
         ),
     },
+    "horseracingnation": {
+        "enabled": True,
+        "base_url": "https://www.horseracingnation.com",
+        "rate_limit_seconds": 3.0,
+        "purpose": (
+            "Industry source: full race-by-race results with grades and HRN "
+            "speed figures, plus status, owner, trainer and pedigree summary. "
+            "robots.txt allows /horse/ pages for the generic agent."
+        ),
+    },
 }
 
 

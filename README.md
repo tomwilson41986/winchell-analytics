@@ -183,8 +183,8 @@ results). They reuse the site's existing components and palette.
 scrapers/   base.py (HTTP: rate limit, robots, retries, cache, block-detection)
             config.py (owner aliases + Winchell match guard + source registry)
             owner_discovery.py (owner page / results scan / seed bootstrap)
-            horse_scrapers.py (PedigreeScraper, ResultsScraper, SalesScraper)
-            wiki.py (WikiScraper: open Wikipedia record/earnings/owner/bio)
+            horse_scrapers.py (Pedigree/Results/Sales/HRN scrapers)
+            wiki.py (WikiScraper: open Wikipedia earnings/owner/bio)
 pipeline/   schema.py (pydantic canonical models)
             score.py (pure scoring from form + results)
             build_profiles.py (slugify, write_profile, rollup + index)
@@ -216,10 +216,17 @@ daily (profiles), then commits the JSON back so Netlify rebuilds.
 
 | Source | Use | Status |
 | --- | --- | --- |
-| **pedigreequery.com** | pedigree (sire/dam/damsire, 3-gen, inbreeding) | **Working, verified live** against Gun Runner, Tapit, Epicenter, etc. |
-| **Wikipedia** (`/wiki/`) | career record, earnings, owner confirmation, trainer, breeder, bio, Equibase refno | **Working, verified live.** Openly licensed (CC BY-SA); robots-clean article pages only. |
-| **Equibase** | full race-by-race results, speed figures | **Bot-gated (Imperva).** Live pages return a challenge — fed instead via `--import-html`. |
+| **Horse Racing Nation** | full race-by-race results (grades + HRN speed figures), status, owner, trainer, pedigree summary | **Working, verified live** — the primary industry results source. robots.txt allows `/horse/` pages for the generic agent (it blocks named AI-training crawlers, which we are not). |
+| **pedigreequery.com** | detailed pedigree (sire/dam/damsire, 3-gen, inbreeding) | **Working, verified live** against Gun Runner, Tapit, Epicenter, etc. |
+| **Wikipedia** (`/wiki/`) | career earnings total, owner confirmation, breeder, bio, Equibase refno | **Working, verified live.** Openly licensed (CC BY-SA); robots-clean article pages only. |
+| **Equibase** | per-race earnings, official charts | **Bot-gated (Imperva).** Live pages return a challenge — fed instead via `--import-html`, where it takes precedence over HRN for the race table. |
 | **Keeneland / Fasig-Tipton** | auction results | Behind JavaScript "digital" portals with no static name-search; fed via `--import-html`. |
+
+Each source fills what it reliably provides: HRN drives the results table,
+graded-win counts, best speed figure, class trajectory and status; pedigreequery
+the detailed 3-generation pedigree and inbreeding; Wikipedia the career earnings
+total (HRN does not publish per-race purses). Where they overlap (e.g. owner,
+sire) they cross-check each other.
 
 ### Feeding gated sources without circumventing anything
 
