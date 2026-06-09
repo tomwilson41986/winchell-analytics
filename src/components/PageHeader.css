@@ -1,0 +1,70 @@
+.pagehead {
+  margin-bottom: 2rem;
+}
+
+.pagehead__crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+.pagehead__crumb a {
+  color: var(--grey);
+  font-weight: 500;
+}
+
+.pagehead__crumb a:hover {
+  color: var(--maroon);
+  text-decoration: none;
+}
+
+.pagehead__crumb:last-child a {
+  color: var(--maroon);
+  font-weight: 600;
+}
+
+.pagehead__sep {
+  margin-left: 0.4rem;
+  color: var(--line-strong);
+}
+
+.pagehead__row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pagehead__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--r-md);
+  color: var(--white);
+  background: linear-gradient(145deg, var(--maroon), var(--maroon-dark));
+  box-shadow: var(--shadow-md);
+}
+
+.pagehead__eyebrow {
+  margin: 0 0 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--maroon);
+}
+
+.pagehead__title {
+  margin: 0;
+}
+
+.pagehead__intro {
+  margin: 1rem 0 0;
+  color: var(--grey);
+  font-size: 1.02rem;
+  max-width: 68ch;
+}

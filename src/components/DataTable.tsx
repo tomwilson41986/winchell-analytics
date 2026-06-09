@@ -1,3 +1,4 @@
+import Icon from './Icon'
 import './DataTable.css'
 
 export interface Column<Row> {
@@ -7,6 +8,8 @@ export interface Column<Row> {
   header: string
   /** Optional custom cell renderer. */
   render?: (row: Row) => React.ReactNode
+  /** Right-align (use for numeric columns). */
+  numeric?: boolean
 }
 
 interface DataTableProps<Row> {
@@ -19,7 +22,7 @@ interface DataTableProps<Row> {
 
 /**
  * Generic, data-driven table. Pass column definitions and an array of rows;
- * renders an empty state when no rows are supplied (the default for the
+ * renders a designed empty state when no rows are supplied (the default for the
  * placeholder data shipped with this scaffold).
  */
 export default function DataTable<Row extends Record<string, unknown>>({
@@ -29,17 +32,29 @@ export default function DataTable<Row extends Record<string, unknown>>({
   caption,
 }: DataTableProps<Row>) {
   if (rows.length === 0) {
-    return <div className="datatable__empty">{emptyMessage}</div>
+    return (
+      <div className="datatable__empty">
+        <span className="datatable__empty-icon">
+          <Icon name="database" size={26} />
+        </span>
+        <p className="datatable__empty-title">Awaiting data</p>
+        <p className="datatable__empty-msg">{emptyMessage}</p>
+      </div>
+    )
   }
 
   return (
     <div className="datatable__wrap">
-      <table className="datatable">
+      <table className="datatable tnum">
         {caption ? <caption className="datatable__caption">{caption}</caption> : null}
         <thead>
           <tr>
             {columns.map((col) => (
-              <th key={String(col.key)} scope="col">
+              <th
+                key={String(col.key)}
+                scope="col"
+                className={col.numeric ? 'is-numeric' : undefined}
+              >
                 {col.header}
               </th>
             ))}
@@ -49,7 +64,10 @@ export default function DataTable<Row extends Record<string, unknown>>({
           {rows.map((row, i) => (
             <tr key={i}>
               {columns.map((col) => (
-                <td key={String(col.key)}>
+                <td
+                  key={String(col.key)}
+                  className={col.numeric ? 'is-numeric' : undefined}
+                >
                   {col.render
                     ? col.render(row)
                     : String(row[col.key as keyof Row] ?? '')}

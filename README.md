@@ -33,7 +33,8 @@ npm run preview  # preview the production build locally
 │   ├── winchell-silks.png      # brand logo (provided — see note below)
 │   └── README.md               # asset notes
 ├── src/
-│   ├── components/             # Logo, NavBar, Layout, DataTable, ChartCard
+│   ├── components/             # Logo, NavBar, Layout, PageHeader, DataTable,
+│   │                           #   ChartCard, StatTile, Icon
 │   ├── pages/
 │   │   ├── Home.tsx
 │   │   ├── Horses/
@@ -70,7 +71,9 @@ white). Tokens live in [`src/styles/theme.css`](src/styles/theme.css):
 | `--grey`        | `#6B7280` | muted text           |
 | `--bg`          | `#F8F6F6` | page background      |
 
-Font: **Inter** with a system sans-serif fallback.
+Font: **Inter** (body) and **Inter Tight** (display headings), self-hosted via
+`@fontsource-variable/*` so they load offline with no external request, with a
+system sans-serif fallback. Numeric data uses tabular figures.
 
 ### Logo
 

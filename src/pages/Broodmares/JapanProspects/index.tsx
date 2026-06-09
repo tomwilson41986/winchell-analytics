@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom'
 import ChartCard from '../../../components/ChartCard'
 import DataTable, { type Column } from '../../../components/DataTable'
+import PageHeader from '../../../components/PageHeader'
+import StatTile from '../../../components/StatTile'
 import { loadCsv } from '../../../lib/data'
 import '../../page.css'
 
@@ -11,43 +12,57 @@ export default function JapanProspects() {
     'broodmares/japan-prospects',
     'japan-prospects.csv',
   )
-  const columns: Column<Row>[] = headers.map((h) => ({ key: h, header: h }))
+  const columns: Column<Row>[] = headers.map((h) => ({
+    key: h,
+    header: h,
+    numeric: h === 'yob',
+  }))
+  const has = rows.length > 0
 
   return (
     <div className="page">
-      <header className="page__header">
-        <p className="page__eyebrow">Broodmares</p>
-        <h1>Japan Broodmare Prospects</h1>
-        <p className="page__intro">
-          Prospective broodmares with Japanese pedigree or market relevance. Add
-          records to{' '}
-          <code>/data/broodmares/japan-prospects/japan-prospects.csv</code> to
-          populate the table below.
-        </p>
-      </header>
+      <PageHeader
+        eyebrow="Broodmares"
+        title="Japan Broodmare Prospects"
+        icon="globe"
+        crumbs={[
+          { to: '/broodmares', label: 'Broodmares' },
+          { to: '/broodmares/japan-prospects', label: 'Japan Prospects' },
+        ]}
+        intro="Prospective broodmares with Japanese pedigree or market relevance. Populate by adding rows to /data/broodmares/japan-prospects/japan-prospects.csv."
+      />
 
-      <nav className="subnav" aria-label="Broodmares breadcrumb">
-        <Link to="/broodmares">← Back to Broodmares</Link>
-      </nav>
-
-      <section className="page__section">
-        <h2 className="page__section-title">Prospects</h2>
-        <DataTable
-          columns={columns}
-          rows={rows}
-          emptyMessage="No prospect records yet — add rows to /data/broodmares/japan-prospects/japan-prospects.csv."
-        />
-        <span className="placeholder-note">
-          Sample CSV is header-only — no records have been fabricated.
-        </span>
+      <section className="section" aria-label="Summary">
+        <div className="stat-grid">
+          <StatTile label="Prospects" value={String(rows.length)} pending={!has} />
+          <StatTile label="Black-type" value="—" pending hint="Derived once data loads" />
+          <StatTile label="Target sales" value="—" pending hint="Derived once data loads" />
+        </div>
       </section>
 
-      <section className="page__section">
-        <h2 className="page__section-title">Charts</h2>
-        <ChartCard
-          title="Prospect comparison"
-          subtitle="Wire a chart here once prospect data is loaded."
-        />
+      <section className="section">
+        <div className="section__head">
+          <h2 className="section__title">Prospects</h2>
+          <span className="section__note">
+            Source: /data/broodmares/japan-prospects/japan-prospects.csv
+          </span>
+        </div>
+        <div className="split split--data">
+          <div>
+            <DataTable
+              columns={columns}
+              rows={rows}
+              emptyMessage="No prospect records yet — add rows to /data/broodmares/japan-prospects/japan-prospects.csv."
+            />
+            <span className="placeholder-note">
+              Sample CSV is header-only — no records have been fabricated.
+            </span>
+          </div>
+          <ChartCard
+            title="Prospect comparison"
+            subtitle="Connect prospect data to render."
+          />
+        </div>
       </section>
     </div>
   )

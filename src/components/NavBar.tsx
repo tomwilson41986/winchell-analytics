@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import Logo from './Logo'
+import Icon from './Icon'
 import './NavBar.css'
 
 interface NavItem {
@@ -25,18 +26,17 @@ export default function NavBar() {
 
         <button
           className="navbar__toggle"
-          aria-label="Toggle navigation"
+          aria-label={open ? 'Close navigation' : 'Open navigation'}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
         >
-          <span />
-          <span />
-          <span />
+          <Icon name={open ? 'close' : 'menu'} size={22} />
         </button>
 
         <nav
           className={`navbar__links${open ? ' navbar__links--open' : ''}`}
           onClick={() => setOpen(false)}
+          aria-label="Primary"
         >
           {NAV_ITEMS.map((item) => (
             <NavLink

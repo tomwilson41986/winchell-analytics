@@ -10,14 +10,19 @@ import './Logo.css'
 export default function Logo() {
   return (
     <Link to="/" className="logo" aria-label="Winchell Analytics — home">
-      <img
-        className="logo__mark"
-        src="/winchell-silks.png"
-        alt="Winchell Thoroughbreds silks"
-        height={40}
-        width="auto"
-      />
-      <span className="logo__word">Winchell Analytics</span>
+      <span className="logo__badge">
+        <img
+          className="logo__mark"
+          src="/winchell-silks.png"
+          alt="Winchell Thoroughbreds silks"
+          height={40}
+          width="auto"
+        />
+      </span>
+      <span className="logo__word">
+        <span className="logo__word-strong">Winchell</span>
+        <span className="logo__word-light">Analytics</span>
+      </span>
     </Link>
   )
 }
