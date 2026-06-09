@@ -178,6 +178,11 @@ export default function HorseProfile() {
             intro={bio(p)}
           />
           {p.scores?.black_type ? <span className="bt-banner">Black-type winner</span> : null}
+          {p.last_updated ? (
+            <p className="freshness">
+              Last updated {new Date(p.last_updated).toLocaleDateString('en-GB')}
+            </p>
+          ) : null}
 
           <section className="section" aria-label="Summary">
             <div className="stat-grid">
@@ -198,6 +203,35 @@ export default function HorseProfile() {
               {p.scores.class_trajectory ? ` · class trajectory ${p.scores.class_trajectory}` : ''}
             </p>
           ) : null}
+
+          <section className="section">
+            <div className="section__head">
+              <h2 className="section__title">Connections &amp; status</h2>
+            </div>
+            <div className="conn-grid">
+              <div className="conn-cell">
+                <span className="conn-cell__label">Status</span>
+                <span className="conn-cell__value">{orDash(p.status)}</span>
+              </div>
+              <div className="conn-cell">
+                <span className="conn-cell__label">Trainer</span>
+                <span className="conn-cell__value">{orDash(p.current_trainer)}</span>
+              </div>
+              <div className="conn-cell">
+                <span className="conn-cell__label">Breeder</span>
+                <span className="conn-cell__value">{orDash(p.breeder)}</span>
+              </div>
+              <div className="conn-cell">
+                <span className="conn-cell__label">Graded wins</span>
+                <span className="conn-cell__value">{orDash(p.form?.graded_wins)}</span>
+              </div>
+              <div className="conn-cell">
+                <span className="conn-cell__label">Recent form</span>
+                <span className="conn-cell__value tnum">{orDash(p.form?.form_string)}</span>
+              </div>
+            </div>
+            {p.ownership_note ? <p className="page__note-block">{p.ownership_note}</p> : null}
+          </section>
 
           <section className="section">
             <div className="section__head">

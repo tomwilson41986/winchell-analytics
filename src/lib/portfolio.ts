@@ -169,3 +169,46 @@ export function titleCase(value: string | null | undefined): string {
     .toLowerCase()
     .replace(/\b([a-z])/g, (m) => m.toUpperCase())
 }
+
+// --- CSV export ----------------------------------------------------------- //
+
+const CSV_COLUMNS: { key: keyof PortfolioCard; header: string }[] = [
+  { key: 'name', header: 'Horse' },
+  { key: 'sire', header: 'Sire' },
+  { key: 'dam', header: 'Dam' },
+  { key: 'trainer', header: 'Trainer' },
+  { key: 'status', header: 'Status' },
+  { key: 'starts', header: 'Starts' },
+  { key: 'wins', header: 'Wins' },
+  { key: 'total_earnings', header: 'Earnings' },
+  { key: 'black_type', header: 'BlackType' },
+  { key: 'value_flag', header: 'ValueFlag' },
+]
+
+function csvCell(value: unknown): string {
+  if (value == null) return ''
+  const s = String(value)
+  return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s
+}
+
+/** Build a CSV string from portfolio cards (empty cells for missing data). */
+export function cardsToCsv(cards: PortfolioCard[]): string {
+  const header = CSV_COLUMNS.map((c) => c.header).join(',')
+  const lines = cards.map((c) =>
+    CSV_COLUMNS.map((col) => csvCell(c[col.key])).join(','),
+  )
+  return [header, ...lines].join('\n')
+}
+
+/** Trigger a client-side download of `content` as `filename`. */
+export function downloadText(filename: string, content: string, type = 'text/csv'): void {
+  const blob = new Blob([content], { type })
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  a.download = filename
+  document.body.appendChild(a)
+  a.click()
+  a.remove()
+  URL.revokeObjectURL(url)
+}

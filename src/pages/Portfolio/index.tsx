@@ -7,6 +7,8 @@ import DataTable, { type Column } from '../../components/DataTable'
 import { BarChart } from '../../components/charts/LazyCharts'
 import type { ChartDatum } from '../../lib/aggregate'
 import {
+  cardsToCsv,
+  downloadText,
   loadPortfolio,
   money,
   orDash,
@@ -207,9 +209,19 @@ export default function Portfolio() {
           <section className="section">
             <div className="section__head">
               <h2 className="section__title">Roster</h2>
-              <span className="section__note">
-                Generated {new Date(data.generated_at).toLocaleDateString('en-GB')}
-              </span>
+              <div className="section__actions">
+                <span className="section__note">
+                  Generated {new Date(data.generated_at).toLocaleDateString('en-GB')}
+                </span>
+                <button
+                  type="button"
+                  className="filters__reset"
+                  onClick={() => downloadText('winchell-portfolio.csv', cardsToCsv(rows))}
+                  disabled={rows.length === 0}
+                >
+                  Download CSV
+                </button>
+              </div>
             </div>
 
             <div className="filters">

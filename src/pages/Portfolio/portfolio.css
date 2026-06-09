@@ -165,3 +165,45 @@
   font-size: 0.8rem;
   color: var(--grey);
 }
+
+.section__actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+/* Connections panel on the profile */
+.conn-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.conn-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+}
+
+.conn-cell__label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
+.conn-cell__value {
+  font-size: 0.98rem;
+  color: var(--ink);
+}
+
+.freshness {
+  margin-top: 0.4rem;
+  font-size: 0.78rem;
+  color: var(--grey);
+}
