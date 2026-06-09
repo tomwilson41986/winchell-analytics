@@ -19,6 +19,65 @@ export interface SaleRecord {
 }
 
 export const DATA_PATH = '/data/sales/historic-sales-analysis/sales-records.json'
+export const ANALYSIS_PATH =
+  '/data/sales/historic-sales-analysis/analysis-tables.json'
+
+/** A "factor → conversion" row (Summary, Heart Data sheets). Rates are 0–1. */
+export interface FactorRow {
+  factor: string
+  value: string
+  count: number
+  runnersPct: number | null
+  winnersPct: number | null
+  swPct: number | null
+  gswPct: number | null
+  g1wPct: number | null
+}
+
+/** A threshold/band row (R2 Rated, Winchell Shortlist sheets). Rates are 0–1. */
+export interface BandRow {
+  band: string
+  count: number
+  runnersPct: number | null
+  winnersPct: number | null
+  swPct: number | null
+  gswPct: number | null
+  g1wPct: number | null
+}
+
+export interface AnalysisTables {
+  baseline: {
+    offered: number
+    runnersPct: number
+    winnersPct: number
+    swPct: number
+    gswPct: number
+    g1wPct: number
+  }
+  factors: FactorRow[]
+  heart: FactorRow[]
+  r2Bio: BandRow[]
+  r2Breeze: BandRow[]
+  shortlistBio: BandRow[]
+  shortlistBreeze: BandRow[]
+}
+
+/** Format a 0–1 rate as a percentage string (or em dash when missing). */
+export function pctText(v: number | null | undefined): string {
+  return v == null ? '—' : `${(v * 100).toFixed(1)}%`
+}
+
+/** Build chart data from rows, mapping a label field and a 0–1 rate field. */
+export function pctSeries<T extends object>(
+  rows: T[],
+  labelKey: keyof T,
+  pctKey: keyof T,
+): ChartDatum[] {
+  return rows.map((r) => ({
+    label: String(r[labelKey]),
+    value: +(((r[pctKey] as number) ?? 0) * 100).toFixed(2),
+  }))
+}
 
 /** Outcome flag fields, in funnel order (each is a subset of the previous). */
 export const OUTCOMES = [

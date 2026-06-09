@@ -14,14 +14,16 @@ Source dataset for the **Sales → Historic Sales Analysis** report
 
 ## Regenerating
 
-After updating the workbook, regenerate the JSON:
+After updating the workbook, regenerate both JSON files:
 
 ```bash
 pip install openpyxl
-python3 scripts/convert-sales-data.py
+python3 scripts/convert-sales-data.py        # raw records -> sales-records.json
+python3 scripts/convert-analysis-tables.py   # summary sheets -> analysis-tables.json
 ```
 
-This reads the `Sales Data` sheet and writes the cleaned JSON. Each record:
+`convert-sales-data.py` reads the `Sales Data` sheet and writes the cleaned
+per-horse records. Each record:
 
 | field | notes |
 | ----- | ----- |
@@ -31,5 +33,8 @@ This reads the `Sales Data` sheet and writes the cleaned JSON. Each record:
 | `breeze` | R2 Breeze Rating (number, may be null) |
 | `runner`, `winner`, `sw`, `gsw`, `g1w` | outcome flags (0/1): Runner → Winner → Stakes Winner → Graded SW → Grade 1 Winner |
 
-The workbook also contains pre-computed analysis sheets (Summary, R2 Rated,
-Heart Data, etc.) that are not yet surfaced — candidates for future reports.
+`convert-analysis-tables.py` extracts the workbook's pre-computed analysis
+sheets (Baseline, Summary, R2 Rated, Heart Data, Winchell Shortlist + R2) into
+`public/data/sales/historic-sales-analysis/analysis-tables.json`, which powers
+the report's **Selection Factors**, **Biomechanics** and **Heart** tabs. All
+rate fields there are fractions (0–1); the UI renders them as percentages.
