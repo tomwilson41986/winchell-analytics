@@ -10,6 +10,7 @@ export type IconName =
   | 'spark'
   | 'search'
   | 'funnel'
+  | 'download'
   | 'menu'
   | 'close'
 
@@ -77,6 +78,7 @@ const PATHS: Record<IconName, React.ReactNode> = {
     </>
   ),
   funnel: <path d="M3 5h18l-7 8v6l-4 2v-8z" />,
+  download: <path d="M12 3v12M7 10l5 5 5-5M4 21h16" />,
   menu: <path d="M3 6h18M3 12h18M3 18h18" />,
   close: <path d="M6 6l12 12M18 6L6 18" />,
 }

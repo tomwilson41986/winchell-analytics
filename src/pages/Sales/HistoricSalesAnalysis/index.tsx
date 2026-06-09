@@ -9,14 +9,18 @@ import {
   type SaleRecord,
 } from '../../../lib/salesAnalysis'
 import ConversionTab from './ConversionTab'
+import SiresTab from './SiresTab'
 import FactorsTab from './FactorsTab'
+import EaPerRatedTab from './EaPerRatedTab'
 import BiomechanicsTab from './BiomechanicsTab'
 import HeartTab from './HeartTab'
 import '../../page.css'
 
 const TABS: TabDef[] = [
   { id: 'conversion', label: 'Conversion' },
+  { id: 'sires', label: 'Sires' },
   { id: 'factors', label: 'Selection Factors' },
+  { id: 'eaPerRated', label: 'EA Per Rated' },
   { id: 'biomechanics', label: 'Biomechanics' },
   { id: 'heart', label: 'Heart' },
 ]
@@ -75,22 +79,27 @@ export default function HistoricSalesAnalysis() {
 
       <Tabs tabs={TABS} active={tab} onChange={setTab} />
 
-      {tab === 'conversion' &&
+      {(tab === 'conversion' || tab === 'sires') &&
         (recErr ? (
           <ErrorBox message={recErr} />
         ) : !records ? (
           <Loading label="Loading sales records…" />
-        ) : (
+        ) : tab === 'conversion' ? (
           <ConversionTab records={records} />
+        ) : (
+          <SiresTab records={records} />
         ))}
 
       {tab !== 'conversion' &&
+        tab !== 'sires' &&
         (tablesErr ? (
           <ErrorBox message={tablesErr} />
         ) : !tables ? (
           <Loading label="Loading analysis…" />
         ) : tab === 'factors' ? (
           <FactorsTab tables={tables} />
+        ) : tab === 'eaPerRated' ? (
+          <EaPerRatedTab tables={tables} />
         ) : tab === 'biomechanics' ? (
           <BiomechanicsTab tables={tables} />
         ) : (

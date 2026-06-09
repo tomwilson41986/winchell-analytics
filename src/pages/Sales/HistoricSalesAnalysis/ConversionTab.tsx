@@ -1,8 +1,10 @@
 import { useMemo, useState } from 'react'
 import ChartCard from '../../../components/ChartCard'
 import DataTable, { type Column } from '../../../components/DataTable'
+import Icon from '../../../components/Icon'
 import StatTile from '../../../components/StatTile'
 import { BarChart } from '../../../components/charts/LazyCharts'
+import { downloadCsv } from '../../../lib/csvExport'
 import {
   type SaleRecord,
   distinctValues,
@@ -73,6 +75,20 @@ export default function ConversionTab({ records }: { records: SaleRecord[] }) {
     setYear('all')
     setSale('all')
     setGradeAOnly(false)
+  }
+
+  function exportCsv() {
+    const headers = [
+      'Year', 'Sale', 'Hip', 'Name', 'Sire', 'Dam', 'Consignor',
+      'R2 Bio Rating', 'R2 Bio Grade', 'R2 Breeze Rating',
+      'Runner', 'Winner', 'StakesWinner', 'GradedStakesWinner', 'Grade1Winner',
+    ]
+    const data = filtered.map((r) => [
+      r.year, r.sale, r.hip, r.name, r.sire, r.dam, r.consignor,
+      r.rating ?? '', r.grade, r.breeze ?? '',
+      r.runner, r.winner, r.sw, r.gsw, r.g1w,
+    ])
+    downloadCsv('winchell-historic-sales.csv', headers, data)
   }
 
   return (
@@ -224,9 +240,15 @@ export default function ConversionTab({ records }: { records: SaleRecord[] }) {
       <section className="section">
         <div className="section__head">
           <h2 className="section__title">Records</h2>
-          <span className="section__note">
-            Source: data/sales/historic-sales-analysis
-          </span>
+          <button
+            type="button"
+            className="btn-export"
+            onClick={exportCsv}
+            disabled={!has}
+          >
+            <Icon name="download" size={16} />
+            Export CSV ({intFmt(filtered.length)})
+          </button>
         </div>
         <DataTable
           columns={COLUMNS}

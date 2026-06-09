@@ -130,6 +130,7 @@ def main():
     data = {
         "baseline": baseline(wb),
         "factors": factor_table(wb, "Summary"),
+        "eaPerRated": factor_table(wb, "EA Per Rated"),
         "heart": factor_table(wb, "Heart Data"),
         "r2Bio": r2bio,
         "r2Breeze": r2breeze,

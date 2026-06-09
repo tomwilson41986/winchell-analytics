@@ -55,6 +55,7 @@ export interface AnalysisTables {
     g1wPct: number
   }
   factors: FactorRow[]
+  eaPerRated: FactorRow[]
   heart: FactorRow[]
   r2Bio: BandRow[]
   r2Breeze: BandRow[]
@@ -182,6 +183,59 @@ export function rateByField(
     entries = entries.sort((a, b) => b.n - a.n).slice(0, topByCount)
   }
   return entries.map(({ label, value }) => ({ label, value }))
+}
+
+export interface SireRow {
+  sire: string
+  count: number
+  runners: number
+  winners: number
+  sw: number
+  runnersPct: number
+  winnersPct: number
+  swPct: number
+  gswPct: number
+  g1wPct: number
+}
+
+/**
+ * Per-sire conversion leaderboard. Only sires with at least `minCount` offered
+ * are included (small samples are noise). Sorted by offered count desc.
+ */
+export function sireLeaderboard(
+  records: SaleRecord[],
+  minCount = 20,
+): SireRow[] {
+  const groups = new Map<string, SaleRecord[]>()
+  for (const r of records) {
+    if (!r.sire) continue
+    if (!groups.has(r.sire)) groups.set(r.sire, [])
+    groups.get(r.sire)!.push(r)
+  }
+  const out: SireRow[] = []
+  for (const [sire, recs] of groups) {
+    if (recs.length < minCount) continue
+    const n = recs.length
+    const sumOf = (k: OutcomeKey) => recs.reduce((a, r) => a + r[k], 0)
+    const runners = sumOf('runner')
+    const winners = sumOf('winner')
+    const sw = sumOf('sw')
+    const gsw = sumOf('gsw')
+    const g1w = sumOf('g1w')
+    out.push({
+      sire,
+      count: n,
+      runners,
+      winners,
+      sw,
+      runnersPct: runners / n,
+      winnersPct: winners / n,
+      swPct: sw / n,
+      gswPct: gsw / n,
+      g1wPct: g1w / n,
+    })
+  }
+  return out.sort((a, b) => b.count - a.count)
 }
 
 /** Distinct non-empty values of a field, sorted. */

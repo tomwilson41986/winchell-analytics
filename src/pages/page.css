@@ -22,6 +22,34 @@
   color: var(--grey);
 }
 
+.btn-export {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--maroon);
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  color: var(--maroon);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.btn-export:hover:not(:disabled) {
+  background: var(--maroon);
+  color: var(--white);
+}
+
+.btn-export:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  border-color: var(--line-strong);
+  color: var(--grey);
+}
+
 .section__subtitle {
   font-size: 0.95rem;
   font-weight: 600;
