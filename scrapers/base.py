@@ -39,6 +39,27 @@ class RobotsDisallowed(RuntimeError):
     """Raised when robots.txt forbids fetching a URL."""
 
 
+# Markers of a bot-protection challenge / interstitial rather than real content.
+# When a 200 body matches one of these we treat it as a failed fetch: we do not
+# parse it and do not cache it, so the pipeline degrades to "no data found"
+# rather than ingesting a challenge page.
+_BLOCK_MARKERS = (
+    "incapsula",
+    "imperva",
+    "_incapsula_resource",
+    "px-captcha",
+    "request unsuccessful",
+    "/cdn-cgi/challenge-platform/",
+    "attention required! | cloudflare",
+)
+
+
+def looks_blocked(body: str) -> bool:
+    """Heuristic: does this 200 response look like a bot-block / challenge?"""
+    head = body[:4000].lower()
+    return any(marker in head for marker in _BLOCK_MARKERS)
+
+
 class HttpClient:
     """A rate-limited, robots-aware, caching HTTP client.
 
@@ -171,9 +192,14 @@ class HttpClient:
                 last_err = exc
             else:
                 if resp.status_code == 200:
-                    self._write_cache(url, resp.text, resp.status_code)
-                    return resp.text
-                if resp.status_code in (429, 500, 502, 503, 504):
+                    if looks_blocked(resp.text):
+                        # Treat a challenge/interstitial as a soft failure: do
+                        # not cache it, retry in case it clears, then give up.
+                        last_err = RuntimeError(f"bot-protection challenge: {url}")
+                    else:
+                        self._write_cache(url, resp.text, resp.status_code)
+                        return resp.text
+                elif resp.status_code in (429, 500, 502, 503, 504):
                     last_err = httpx.HTTPStatusError(
                         f"status {resp.status_code}",
                         request=resp.request,
