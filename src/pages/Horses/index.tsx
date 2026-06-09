@@ -2,6 +2,8 @@ import ChartCard from '../../components/ChartCard'
 import DataTable, { type Column } from '../../components/DataTable'
 import PageHeader from '../../components/PageHeader'
 import StatTile from '../../components/StatTile'
+import { BarChart } from '../../components/charts/LazyCharts'
+import { countBy } from '../../lib/aggregate'
 import { loadCsv } from '../../lib/data'
 import '../page.css'
 
@@ -11,6 +13,7 @@ export default function Horses() {
   const { headers, rows } = loadCsv('horses', 'horses.csv')
   const columns: Column<Row>[] = headers.map((h) => ({ key: h, header: h }))
   const has = rows.length > 0
+  const byStatus = countBy(rows, 'status')
 
   return (
     <div className="page">
@@ -46,9 +49,13 @@ export default function Horses() {
             </span>
           </div>
           <ChartCard
-            title="Performance over time"
-            subtitle="Connect race results to render."
-          />
+            title="Horses by status"
+            subtitle={has ? 'Count of horses by training status' : 'Connect data to render.'}
+          >
+            {has ? (
+              <BarChart data={byStatus} valueLabel="Horses" valueFormatter={String} />
+            ) : undefined}
+          </ChartCard>
         </div>
       </section>
     </div>

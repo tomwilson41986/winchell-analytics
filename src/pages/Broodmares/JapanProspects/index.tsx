@@ -2,6 +2,8 @@ import ChartCard from '../../../components/ChartCard'
 import DataTable, { type Column } from '../../../components/DataTable'
 import PageHeader from '../../../components/PageHeader'
 import StatTile from '../../../components/StatTile'
+import { BarChart } from '../../../components/charts/LazyCharts'
+import { countBy } from '../../../lib/aggregate'
 import { loadCsv } from '../../../lib/data'
 import '../../page.css'
 
@@ -18,6 +20,7 @@ export default function JapanProspects() {
     numeric: h === 'yob',
   }))
   const has = rows.length > 0
+  const byCountry = countBy(rows, 'country')
 
   return (
     <div className="page">
@@ -60,8 +63,12 @@ export default function JapanProspects() {
           </div>
           <ChartCard
             title="Prospect comparison"
-            subtitle="Connect prospect data to render."
-          />
+            subtitle={has ? 'Prospects by country of origin' : 'Connect prospect data to render.'}
+          >
+            {has ? (
+              <BarChart data={byCountry} valueLabel="Prospects" valueFormatter={String} />
+            ) : undefined}
+          </ChartCard>
         </div>
       </section>
     </div>

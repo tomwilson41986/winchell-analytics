@@ -2,10 +2,19 @@ import ChartCard from '../../components/ChartCard'
 import DataTable, { type Column } from '../../components/DataTable'
 import PageHeader from '../../components/PageHeader'
 import StatTile from '../../components/StatTile'
+import { BarChart } from '../../components/charts/LazyCharts'
+import { sumBy, topN } from '../../lib/aggregate'
 import { loadCsv } from '../../lib/data'
 import '../page.css'
 
 type Row = Record<string, string>
+
+const usd = (v: number) =>
+  new Intl.NumberFormat('en', {
+    style: 'currency',
+    currency: 'USD',
+    maximumFractionDigits: 0,
+  }).format(v)
 
 export default function Sires() {
   const { headers, rows } = loadCsv('sires', 'sires.csv')
@@ -15,6 +24,7 @@ export default function Sires() {
     numeric: ['yob', 'stud_fee', 'runners', 'winners', 'stakes_winners', 'progeny_earnings'].includes(h),
   }))
   const has = rows.length > 0
+  const earningsBySire = topN(sumBy(rows, 'name', 'progeny_earnings'), 8)
 
   return (
     <div className="page">
@@ -51,8 +61,12 @@ export default function Sires() {
           </div>
           <ChartCard
             title="Progeny earnings"
-            subtitle="Connect sire data to render."
-          />
+            subtitle={has ? 'Top sires by total progeny earnings' : 'Connect sire data to render.'}
+          >
+            {has ? (
+              <BarChart data={earningsBySire} valueLabel="Earnings" valueFormatter={usd} />
+            ) : undefined}
+          </ChartCard>
         </div>
       </section>
     </div>

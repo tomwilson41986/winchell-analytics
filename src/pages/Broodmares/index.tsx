@@ -4,6 +4,8 @@ import DataTable, { type Column } from '../../components/DataTable'
 import Icon from '../../components/Icon'
 import PageHeader from '../../components/PageHeader'
 import StatTile from '../../components/StatTile'
+import { BarChart } from '../../components/charts/LazyCharts'
+import { sumBy, topN } from '../../lib/aggregate'
 import { loadCsv } from '../../lib/data'
 import '../page.css'
 
@@ -17,6 +19,7 @@ export default function Broodmares() {
     numeric: ['yob', 'foals', 'winners', 'stakes_winners'].includes(h),
   }))
   const has = rows.length > 0
+  const foalsByMare = topN(sumBy(rows, 'name', 'foals'), 8)
 
   return (
     <div className="page">
@@ -60,8 +63,12 @@ export default function Broodmares() {
           </div>
           <ChartCard
             title="Produce record"
-            subtitle="Connect broodmare data to render."
-          />
+            subtitle={has ? 'Foals recorded by mare (top 8)' : 'Connect broodmare data to render.'}
+          >
+            {has ? (
+              <BarChart data={foalsByMare} valueLabel="Foals" valueFormatter={String} />
+            ) : undefined}
+          </ChartCard>
         </div>
       </section>
     </div>

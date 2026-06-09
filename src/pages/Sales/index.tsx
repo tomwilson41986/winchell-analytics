@@ -2,10 +2,19 @@ import ChartCard from '../../components/ChartCard'
 import DataTable, { type Column } from '../../components/DataTable'
 import PageHeader from '../../components/PageHeader'
 import StatTile from '../../components/StatTile'
+import { LineChart } from '../../components/charts/LazyCharts'
+import { averageBy, sortByLabel } from '../../lib/aggregate'
 import { loadCsv } from '../../lib/data'
 import '../page.css'
 
 type Row = Record<string, string>
+
+const usd = (v: number) =>
+  new Intl.NumberFormat('en', {
+    style: 'currency',
+    currency: 'USD',
+    maximumFractionDigits: 0,
+  }).format(v)
 
 export default function Sales() {
   const { headers, rows } = loadCsv('sales', 'sales.csv')
@@ -15,6 +24,7 @@ export default function Sales() {
     numeric: h === 'price' || h === 'year' || h === 'hip',
   }))
   const has = rows.length > 0
+  const priceByYear = sortByLabel(averageBy(rows, 'year', 'price'))
 
   return (
     <div className="page">
@@ -51,8 +61,12 @@ export default function Sales() {
           </div>
           <ChartCard
             title="Price trends by year"
-            subtitle="Connect sales data to render."
-          />
+            subtitle={has ? 'Average sale price per year' : 'Connect sales data to render.'}
+          >
+            {has ? (
+              <LineChart data={priceByYear} valueLabel="Avg price" valueFormatter={usd} />
+            ) : undefined}
+          </ChartCard>
         </div>
       </section>
     </div>

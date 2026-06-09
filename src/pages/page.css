@@ -36,9 +36,15 @@
   gap: 1.25rem;
 }
 
+/* Allow grid children to shrink so wide tables scroll instead of stealing the
+   chart's track (grid items default to min-width:auto). */
+.split > * {
+  min-width: 0;
+}
+
 @media (min-width: 940px) {
   .split--data {
-    grid-template-columns: 1.6fr 1fr;
+    grid-template-columns: minmax(0, 1.6fr) minmax(300px, 1fr);
     align-items: start;
   }
 }

@@ -124,6 +124,32 @@ To add a **new** data file, drop a `.csv`/`.json` into the section folder and
 call `loadCsv` / `loadJson` from the relevant page. New files under `data/` are
 picked up by the glob automatically.
 
+## Charts
+
+Charts use [Recharts](https://recharts.org/) wrapped in small, theme-matched
+components under `src/components/charts/`:
+
+- `BarChart` and `LineChart` — branded bar / area charts (maroon gradients,
+  tabular figures, custom tooltip). Both take `data: { label, value }[]`.
+- `LazyCharts` — `React.lazy` wrappers used by the pages, so Recharts is
+  **code-split** into its own chunk and only downloaded when a chart actually
+  renders. The home page and any data-less section stay light.
+
+Each page turns its rows into chart data with the helpers in
+`src/lib/aggregate.ts` (`countBy`, `sumBy`, `averageBy`, `topN`, `sortByLabel`,
+`formatCompact`). For example, Sales charts the average price per year:
+
+```ts
+const priceByYear = sortByLabel(averageBy(rows, 'year', 'price'))
+// …
+<ChartCard title="Price trends by year">
+  {has ? <LineChart data={priceByYear} valueLabel="Avg price" /> : undefined}
+</ChartCard>
+```
+
+Charts render **only when the section has data**; with the shipped header-only
+samples they fall back to the `ChartCard` placeholder. Nothing is fabricated.
+
 ## Deployment (Netlify)
 
 [`netlify.toml`](netlify.toml) configures:
