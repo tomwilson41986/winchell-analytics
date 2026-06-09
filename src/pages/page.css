@@ -1,0 +1,319 @@
+/* Shared page layout primitives */
+
+.section {
+  margin-top: 2.5rem;
+}
+
+.section__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section__title {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.section__note {
+  font-size: 0.82rem;
+  color: var(--grey);
+}
+
+/* Grid of KPI tiles */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+/* Two-column data + chart on wide screens */
+.split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+/* Allow grid children to shrink so wide tables scroll instead of stealing the
+   chart's track (grid items default to min-width:auto). */
+.split > * {
+  min-width: 0;
+}
+
+@media (min-width: 940px) {
+  .split--data {
+    grid-template-columns: minmax(0, 1.6fr) minmax(300px, 1fr);
+    align-items: start;
+  }
+}
+
+.placeholder-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.85rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: var(--r-pill);
+  background: var(--maroon-tint);
+  color: var(--maroon-dark);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.placeholder-note::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+/* =========================================================================
+   Home
+   ========================================================================= */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+  border-radius: var(--r-lg);
+  background:
+    radial-gradient(
+      130% 130% at 85% -10%,
+      var(--maroon-600),
+      var(--maroon-800) 55%,
+      var(--maroon-900)
+    );
+  color: var(--white);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Subtle silks diagonal motif */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.05) 0,
+    rgba(255, 255, 255, 0.05) 2px,
+    transparent 2px,
+    transparent 26px
+  );
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+  padding: clamp(2rem, 1.2rem + 3vw, 3.75rem);
+  max-width: 760px;
+}
+
+.hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+  padding: 0.3rem 0.7rem 0.3rem 0.5rem;
+  border-radius: var(--r-pill);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.hero__eyebrow svg {
+  color: var(--gold-soft);
+}
+
+.hero h1 {
+  color: var(--white);
+  margin: 0;
+  font-size: clamp(2.2rem, 1.5rem + 3vw, 3.4rem);
+  line-height: 1.05;
+}
+
+.hero__lede {
+  margin: 1rem 0 1.75rem;
+  font-size: clamp(1.02rem, 0.95rem + 0.4vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 54ch;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: var(--r-pill);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.12s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.btn svg {
+  transition: transform 0.15s ease;
+}
+
+.btn:hover svg {
+  transform: translateX(3px);
+}
+
+.btn--primary {
+  background: var(--white);
+  color: var(--maroon);
+  box-shadow: 0 10px 24px -10px rgba(0, 0, 0, 0.5);
+}
+
+.btn--primary:hover {
+  color: var(--maroon-dark);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn--ghost {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* Section cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.1rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: 1.4rem;
+  box-shadow: var(--shadow-xs);
+  transition: box-shadow 0.18s ease, transform 0.18s ease, border-color 0.18s ease;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--maroon), var(--maroon-500));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.card:hover {
+  text-decoration: none;
+  transform: translateY(-3px);
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-md);
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+.card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: var(--r-md);
+  background: var(--maroon-tint);
+  color: var(--maroon);
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+.card:hover .card__icon {
+  background: var(--maroon);
+  color: var(--white);
+}
+
+.card__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 1.12rem;
+  color: var(--ink);
+}
+
+.card__title .card__arrow {
+  color: var(--maroon);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.card:hover .card__arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.card__blurb {
+  margin: 0;
+  color: var(--grey);
+  font-size: 0.92rem;
+}
+
+/* Sub-section link chips */
+.subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.5rem 0 0;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.95rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-pill);
+  font-size: 0.9rem;
+  font-weight: 550;
+  background: var(--surface);
+  color: var(--ink-soft);
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+
+.chip:hover {
+  text-decoration: none;
+  border-color: var(--maroon);
+  color: var(--maroon);
+  background: var(--maroon-tint);
+}
+
+.chip svg {
+  color: var(--maroon);
+}

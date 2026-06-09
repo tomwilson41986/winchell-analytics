@@ -1,0 +1,51 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+/* Subtle frame so the silks read as a crest, and a missing image still looks
+   intentional rather than broken. */
+.logo__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  min-width: 40px;
+  padding: 0 4px;
+  border-radius: 10px;
+  background: var(--maroon-tint);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+
+.logo__mark {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.logo__word {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.02;
+  font-family: var(--font-display);
+}
+
+.logo__word-strong {
+  font-weight: 800;
+  font-size: 1.16rem;
+  color: var(--maroon);
+  letter-spacing: -0.02em;
+}
+
+.logo__word-light {
+  font-weight: 600;
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--grey);
+}
