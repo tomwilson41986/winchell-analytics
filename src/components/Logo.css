@@ -1,0 +1,24 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.logo__mark {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.logo__word {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--maroon);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}

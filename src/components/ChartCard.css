@@ -1,0 +1,41 @@
+.chartcard {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.chartcard__head {
+  padding: 1rem 1.25rem 0.5rem;
+}
+
+.chartcard__title {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+
+.chartcard__subtitle {
+  margin: 0.2rem 0 0;
+  color: var(--grey);
+  font-size: 0.88rem;
+}
+
+.chartcard__body {
+  padding: 0.75rem 1.25rem 1.25rem;
+}
+
+.chartcard__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--grey);
+  font-size: 0.92rem;
+  text-align: center;
+  padding: 1rem;
+}
