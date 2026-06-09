@@ -1,8 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import PageHeader from '../../components/PageHeader'
 import StatTile from '../../components/StatTile'
+import ChartCard from '../../components/ChartCard'
 import DataTable, { type Column } from '../../components/DataTable'
+import { BarChart } from '../../components/charts/LazyCharts'
+import type { ChartDatum } from '../../lib/aggregate'
 import {
   loadPortfolio,
   money,
@@ -32,9 +35,41 @@ function ErrorBox({ message }: { message: string }) {
   )
 }
 
+const ALL = '__all__'
+
+/** Sum a numeric field grouped by a (title-cased) key, biggest first. */
+function groupSum(
+  cards: PortfolioCard[],
+  key: (c: PortfolioCard) => string | null,
+  value: (c: PortfolioCard) => number | null,
+): ChartDatum[] {
+  const acc = new Map<string, number>()
+  for (const c of cards) {
+    const k = key(c)
+    const v = value(c)
+    if (!k || v == null) continue
+    acc.set(k, (acc.get(k) ?? 0) + v)
+  }
+  return [...acc.entries()]
+    .map(([label, val]) => ({ label, value: val }))
+    .sort((a, b) => b.value - a.value)
+}
+
+function countBy(cards: PortfolioCard[], key: (c: PortfolioCard) => string | null): ChartDatum[] {
+  const acc = new Map<string, number>()
+  for (const c of cards) {
+    const k = key(c) || 'Unknown'
+    acc.set(k, (acc.get(k) ?? 0) + 1)
+  }
+  return [...acc.entries()].map(([label, value]) => ({ label, value }))
+}
+
 export default function Portfolio() {
   const [data, setData] = useState<PortfolioRollup | null>(null)
   const [err, setErr] = useState<string | null>(null)
+  const [status, setStatus] = useState<string>(ALL)
+  const [sire, setSire] = useState<string>(ALL)
+  const [blackTypeOnly, setBlackTypeOnly] = useState(false)
 
   useEffect(() => {
     let active = true
@@ -45,6 +80,38 @@ export default function Portfolio() {
       active = false
     }
   }, [])
+
+  const cards = data?.horses ?? []
+
+  const statuses = useMemo(
+    () => [...new Set(cards.map((c) => c.status).filter(Boolean) as string[])].sort(),
+    [cards],
+  )
+  const sires = useMemo(
+    () => [...new Set(cards.map((c) => c.sire).filter(Boolean) as string[])].sort(),
+    [cards],
+  )
+
+  const rows = useMemo(
+    () =>
+      cards.filter(
+        (c) =>
+          (status === ALL || c.status === status) &&
+          (sire === ALL || c.sire === sire) &&
+          (!blackTypeOnly || c.black_type),
+      ),
+    [cards, status, sire, blackTypeOnly],
+  )
+
+  const earningsByHorse = useMemo(
+    () => groupSum(rows, (c) => c.name, (c) => c.total_earnings).slice(0, 10),
+    [rows],
+  )
+  const winsBySire = useMemo(
+    () => groupSum(rows, (c) => titleCase(c.sire), (c) => c.wins).filter((d) => d.value > 0),
+    [rows],
+  )
+  const statusBreakdown = useMemo(() => countBy(rows, (c) => c.status), [rows])
 
   const columns: Column<PortfolioCard>[] = [
     {
@@ -62,6 +129,7 @@ export default function Portfolio() {
     { key: 'sire', header: 'Sire', render: (r) => titleCase(r.sire) },
     { key: 'dam', header: 'Dam', render: (r) => titleCase(r.dam) },
     { key: 'trainer', header: 'Trainer', render: (r) => orDash(r.trainer) },
+    { key: 'status', header: 'Status', render: (r) => orDash(r.status) },
     { key: 'starts', header: 'Starts', numeric: true },
     { key: 'wins', header: 'Wins', numeric: true },
     {
@@ -108,16 +176,89 @@ export default function Portfolio() {
 
           <section className="section">
             <div className="section__head">
+              <h2 className="section__title">Portfolio analytics</h2>
+              <span className="section__note">
+                {rows.length === cards.length
+                  ? `${cards.length} horses`
+                  : `${rows.length} of ${cards.length} horses (filtered)`}
+              </span>
+            </div>
+            <div className="chart-grid chart-grid--2">
+              <ChartCard title="Career earnings by horse" subtitle="Top earners">
+                {earningsByHorse.length ? (
+                  <BarChart data={earningsByHorse} valueLabel="Earnings" valueFormatter={(v) => money(v)} />
+                ) : undefined}
+              </ChartCard>
+              <ChartCard title="Wins by sire" subtitle="Race wins grouped by sire">
+                {winsBySire.length ? (
+                  <BarChart data={winsBySire} valueLabel="Wins" valueFormatter={String} allowDecimals={false} />
+                ) : undefined}
+              </ChartCard>
+            </div>
+            <div className="chart-grid">
+              <ChartCard title="Status breakdown" subtitle="Horses by current status">
+                {statusBreakdown.length ? (
+                  <BarChart data={statusBreakdown} valueLabel="Horses" valueFormatter={String} allowDecimals={false} />
+                ) : undefined}
+              </ChartCard>
+            </div>
+          </section>
+
+          <section className="section">
+            <div className="section__head">
               <h2 className="section__title">Roster</h2>
               <span className="section__note">
                 Generated {new Date(data.generated_at).toLocaleDateString('en-GB')}
               </span>
             </div>
+
+            <div className="filters">
+              <label className="filter">
+                <span className="filter__label">Status</span>
+                <select className="filter__select" value={status} onChange={(e) => setStatus(e.target.value)}>
+                  <option value={ALL}>All</option>
+                  {statuses.map((s) => (
+                    <option key={s} value={s}>{s}</option>
+                  ))}
+                </select>
+              </label>
+              <label className="filter">
+                <span className="filter__label">Sire</span>
+                <select className="filter__select" value={sire} onChange={(e) => setSire(e.target.value)}>
+                  <option value={ALL}>All</option>
+                  {sires.map((s) => (
+                    <option key={s} value={s}>{titleCase(s)}</option>
+                  ))}
+                </select>
+              </label>
+              <label className="filter__check">
+                <input
+                  type="checkbox"
+                  checked={blackTypeOnly}
+                  onChange={(e) => setBlackTypeOnly(e.target.checked)}
+                />
+                Black-type only
+              </label>
+              {(status !== ALL || sire !== ALL || blackTypeOnly) ? (
+                <button
+                  type="button"
+                  className="filters__reset"
+                  onClick={() => {
+                    setStatus(ALL)
+                    setSire(ALL)
+                    setBlackTypeOnly(false)
+                  }}
+                >
+                  Reset
+                </button>
+              ) : null}
+            </div>
+
             <DataTable
               columns={columns}
-              rows={data.horses}
+              rows={rows}
               searchable
-              emptyMessage="No horses in the portfolio yet — run the pipeline to populate it."
+              emptyMessage="No horses match the current filters."
             />
           </section>
         </>
