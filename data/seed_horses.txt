@@ -1,0 +1,24 @@
+# Winchell Thoroughbreds — seed roster (bootstrap discovery path)
+#
+# One horse per line. Lines that are blank or start with '#' are ignored.
+# Fields are '|'-separated; everything after the name is optional:
+#
+#   name | year_of_birth | sire | equibase_refno | pedigree_url
+#
+# The sire hint lets the pedigree resolver pick the correct pedigreequery page
+# when a horse name collides with an older namesake. The pedigree_url, where
+# given, pins an already-verified page. Refno is the Equibase horse id (left
+# blank until confirmed from a source you can reach; Equibase is bot-gated).
+#
+# Only horses confirmed to have raced or been owned/bred under the Winchell
+# operation belong here. Nothing on this list is fabricated; add a horse only
+# once you have confirmed the connection.
+
+Gun Runner    | 2013 | Candy Ride       | | https://www.pedigreequery.com/gun+runner7
+Tapit         | 2001 | Pulpit           | |
+Epicenter     | 2019 | Not This Time    | |
+Untapable     | 2011 | Tapit            | |
+Tapiture      | 2011 | Tapit            | |
+Magna Graduate| 2002 | Honor Grades     | |
+Quiet Giant   | 2007 | Giant's Causeway | |
+Disarm        | 2020 | Gun Runner       | |

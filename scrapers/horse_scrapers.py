@@ -47,6 +47,17 @@ def slugify_pq(name: str) -> str:
     return cleaned
 
 
+def _norm_name(name: str | None) -> str:
+    """Compact a horse name for equality: lower-case, strip all non-alphanumerics.
+
+    Collapsing to a spaceless, punctuation-free form means "Giant's Causeway"
+    and "GIANTS CAUSEWAY" compare equal.
+    """
+    if not name:
+        return ""
+    return re.sub(r"[^a-z0-9]+", "", name.lower())
+
+
 def _money_to_int(text: str | None) -> Optional[int]:
     """Parse a currency string like ``"$1,234,567"`` to an int, else None."""
     if not text:
@@ -91,7 +102,7 @@ class PedigreeScraper:
             url = f"{self.base}/{base_slug}"
             return url if self.client.get(url) is not None else None
 
-        exp_sire = (expected_sire or "").strip().lower() or None
+        exp_sire = _norm_name(expected_sire) or None
         for slug in candidates:
             url = f"{self.base}/{slug}"
             html = self.client.get(url)
@@ -101,12 +112,13 @@ class PedigreeScraper:
             ped = self._parse_tree(tree)
             if ped is None:
                 continue
+            # The subject's own YOB is not printed on the pedigree table, so it
+            # cannot disambiguate here; selection rests on the sire match.
             sire_ok = (
                 exp_sire is None
-                or (ped.sire and ped.sire.name and ped.sire.name.lower() == exp_sire)
+                or (ped.sire is not None and _norm_name(ped.sire.name) == exp_sire)
             )
-            year_ok = year_of_birth is None  # YOB of the subject isn't on this table
-            if sire_ok and year_ok:
+            if sire_ok:
                 return url
         return None
 
