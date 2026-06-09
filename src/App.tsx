@@ -7,6 +7,9 @@ import HistoricSalesAnalysis from './pages/Sales/HistoricSalesAnalysis'
 import Sires from './pages/Sires'
 import Broodmares from './pages/Broodmares'
 import JapanProspects from './pages/Broodmares/JapanProspects'
+import DigestArchive from './pages/Broodmares/JapanProspects/DigestArchive'
+import DigestDay from './pages/Broodmares/JapanProspects/DigestDay'
+import ProspectDetail from './pages/Broodmares/JapanProspects/ProspectDetail'
 
 export default function App() {
   return (
@@ -21,7 +24,12 @@ export default function App() {
         <Route path="sires" element={<Sires />} />
         <Route path="broodmares">
           <Route index element={<Broodmares />} />
-          <Route path="japan-prospects" element={<JapanProspects />} />
+          <Route path="japan-prospects">
+            <Route index element={<JapanProspects />} />
+            <Route path="digests" element={<DigestArchive />} />
+            <Route path="digests/:date" element={<DigestDay />} />
+            <Route path="prospect/:key" element={<ProspectDetail />} />
+          </Route>
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>

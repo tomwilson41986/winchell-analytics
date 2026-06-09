@@ -12,6 +12,9 @@ export type IconName =
   | 'funnel'
   | 'menu'
   | 'close'
+  | 'external'
+  | 'calendar'
+  | 'trophy'
 
 interface IconProps {
   name: IconName
@@ -79,6 +82,26 @@ const PATHS: Record<IconName, React.ReactNode> = {
   funnel: <path d="M3 5h18l-7 8v6l-4 2v-8z" />,
   menu: <path d="M3 6h18M3 12h18M3 18h18" />,
   close: <path d="M6 6l12 12M18 6L6 18" />,
+  external: (
+    <>
+      <path d="M14 4h6v6" />
+      <path d="M20 4l-9 9" />
+      <path d="M19 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6" />
+    </>
+  ),
+  calendar: (
+    <>
+      <rect x="3" y="5" width="18" height="16" rx="2" />
+      <path d="M3 9h18M8 3v4M16 3v4" />
+    </>
+  ),
+  trophy: (
+    <>
+      <path d="M7 4h10v4a5 5 0 0 1-10 0V4z" />
+      <path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3" />
+      <path d="M10 14.5V17M14 14.5V17M8 20h8M9 20a3 3 0 0 1 6 0" />
+    </>
+  ),
 }
 
 export default function Icon({

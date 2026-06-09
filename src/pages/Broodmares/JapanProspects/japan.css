@@ -1,0 +1,294 @@
+/* =========================================================================
+   Japan Broodmare Prospects — digest cards, rating badges, pedigree grid.
+   Mirrors the daily HTML email digest: clean, white, mobile-friendly.
+   ========================================================================= */
+
+/* --- Rating badge ------------------------------------------------------- */
+.rating-badge {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--r-pill);
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1;
+  border: 1px solid transparent;
+}
+
+.rating-badge__value {
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.rating-badge__band {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.rating-badge--green {
+  background: #e7f4ec;
+  border-color: #bfe3cd;
+  color: #1f7a46;
+}
+
+.rating-badge--amber {
+  background: #fdf3e0;
+  border-color: #f2dcae;
+  color: #9a6a13;
+}
+
+.rating-badge--grey {
+  background: #f1f1f3;
+  border-color: var(--line-strong);
+  color: var(--grey);
+}
+
+/* --- Class / meta chips ------------------------------------------------- */
+.meta-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.22rem 0.6rem;
+  border-radius: var(--r-pill);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  font-size: 0.78rem;
+  font-weight: 550;
+  color: var(--ink-soft);
+}
+
+.meta-chip--surface-turf {
+  background: #eef6ee;
+  border-color: #d4e8d4;
+  color: #2f6b34;
+}
+
+.meta-chip--surface-dirt {
+  background: #f4efe7;
+  border-color: #e4d8c4;
+  color: #7a5a2b;
+}
+
+/* --- Prospect card (digest item) ---------------------------------------- */
+.prospect-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-xs);
+  transition: box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.prospect-card:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-sm);
+}
+
+.prospect-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.prospect-card__name {
+  margin: 0;
+  font-size: 1.2rem;
+  font-family: var(--font-display);
+  line-height: 1.15;
+}
+
+.prospect-card__name a {
+  color: var(--ink);
+}
+
+.prospect-card__name a:hover {
+  color: var(--maroon);
+}
+
+.prospect-card__romaji {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--grey);
+  letter-spacing: 0;
+}
+
+.prospect-card__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+/* Pedigree / connections grid */
+.pedigree {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem 1.25rem;
+  margin: 0;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.pedigree__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.pedigree__label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
+.pedigree__value {
+  font-size: 0.95rem;
+  color: var(--ink);
+  font-weight: 550;
+}
+
+.pedigree__value-sub {
+  font-size: 0.8rem;
+  color: var(--grey);
+  font-weight: 400;
+}
+
+.prospect-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding-top: 0.25rem;
+}
+
+.link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  font-weight: 550;
+}
+
+.link-btn:hover {
+  border-color: var(--maroon);
+  color: var(--maroon);
+  background: var(--maroon-tint);
+  text-decoration: none;
+}
+
+.link-btn svg {
+  color: var(--maroon);
+}
+
+/* --- Digest list -------------------------------------------------------- */
+.digest-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem;
+}
+
+@media (min-width: 760px) {
+  .digest-list--2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.digest-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--r-md);
+  background: var(--surface-2);
+  color: var(--grey);
+}
+
+.digest-empty strong {
+  color: var(--ink-soft);
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+}
+
+/* --- Day archive list --------------------------------------------------- */
+.day-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.9rem;
+}
+
+.day-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.1rem 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-xs);
+  transition: box-shadow 0.18s ease, transform 0.18s ease, border-color 0.18s ease;
+}
+
+.day-card:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-md);
+}
+
+.day-card__date {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+
+.day-card__count {
+  font-size: 0.9rem;
+  color: var(--maroon);
+  font-weight: 600;
+}
+
+.day-card__count--zero {
+  color: var(--grey);
+}
+
+/* --- Prospect detail ---------------------------------------------------- */
+.detail-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.detail-hero__rating {
+  font-size: 1.1rem;
+}
+
+/* Master-table mare link */
+.jp-name-link {
+  color: var(--ink);
+}
+
+.jp-name-link:hover {
+  color: var(--maroon);
+}
+
+/* Slim sub-tabs reuse the shared .tabs styles. */
