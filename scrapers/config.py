@@ -105,6 +105,15 @@ SOURCES: dict[str, dict] = {
         "rate_limit_seconds": 3.0,
         "purpose": "Sales: Fasig-Tipton auction results by horse name / hip.",
     },
+    "wikipedia": {
+        "enabled": True,
+        "base_url": "https://en.wikipedia.org",
+        "rate_limit_seconds": 1.0,
+        "purpose": (
+            "Open, citable enrichment: career record, earnings, owner "
+            "(ownership confirmation), trainer, breeder, bio, Equibase refno."
+        ),
+    },
 }
 
 

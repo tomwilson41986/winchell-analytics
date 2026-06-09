@@ -20,6 +20,7 @@ from scrapers.base import HttpClient
 from scrapers.config import SOURCES, enabled_sources
 from scrapers.horse_scrapers import PedigreeScraper, ResultsScraper, SalesScraper
 from scrapers.owner_discovery import RosterEntry, discover_roster, from_seed
+from scrapers.wiki import WikiScraper
 
 from .build_profiles import build_profile, write_index_and_rollup, write_profile
 from .schema import HorseProfile
@@ -75,6 +76,7 @@ def build_profiles(client: HttpClient, roster: list[RosterEntry]) -> list[HorseP
     ped_scraper = PedigreeScraper(client)
     results_scraper = ResultsScraper(client)
     sales_scraper = SalesScraper(client)
+    wiki_scraper = WikiScraper(client)
 
     profiles: list[HorseProfile] = []
     for entry in roster:
@@ -91,6 +93,18 @@ def build_profiles(client: HttpClient, roster: list[RosterEntry]) -> list[HorseP
             if ped_url:
                 sources.append(ped_url)
 
+        # Open, citable enrichment: record, earnings, owner confirmation, bio,
+        # and the Equibase refno (used to target imported result charts).
+        enr, enr_url = (None, None)
+        if SOURCES["wikipedia"]["enabled"]:
+            enr, enr_url = wiki_scraper.fetch(entry.name, expected_sire=entry.sire)
+            if enr_url and enr:
+                sources.append(enr_url)
+                if enr.equibase_refno and not entry.equibase_refno:
+                    entry.equibase_refno = enr.equibase_refno
+
+        # Full race-by-race results: only when an Equibase chart is reachable
+        # or has been imported (browser-saved) into the cache.
         results, res_url = ([], None)
         if SOURCES["equibase"]["enabled"] and entry.equibase_refno:
             results, res_url = results_scraper.fetch(refno=entry.equibase_refno)
@@ -99,26 +113,40 @@ def build_profiles(client: HttpClient, roster: list[RosterEntry]) -> list[HorseP
 
         sales = sales_scraper.fetch(entry.name) if enabled_sources() else []
 
-        sire_from_seed = entry.sire
+        # Prefer a results-derived form (richer); fall back to the Wikipedia
+        # record when we have no per-race rows.
+        form = None if results else (enr.form if enr else None)
+
+        ownership_note = f"Roster match via {entry.discovered_via}."
+        if enr and enr.owner_is_winchell:
+            ownership_note = f"Ownership confirmed (Wikipedia): {enr.owner_raw}."
+
         profile = build_profile(
             entry.name,
-            year_of_birth=entry.year_of_birth,
-            ownership_note=f"Roster match via {entry.discovered_via}.",
+            year_of_birth=entry.year_of_birth or (enr.year_of_birth if enr else None),
+            sex=enr.sex if enr else None,
+            colour=enr.colour if enr else None,
+            country=enr.country if enr else None,
+            breeder=enr.breeder if enr else None,
+            current_trainer=enr.trainer if enr else None,
+            ownership_note=ownership_note,
             pedigree=pedigree,
             sales=sales,
             results=results,
+            form=form,
             sources=sources,
         )
-        # Keep the verified sire hint visible even when no pedigree resolved.
-        if profile.pedigree is None and sire_from_seed:
+        if profile.pedigree is None and entry.sire:
             profile.ownership_note = (
-                f"{profile.ownership_note} Sire (seed): {sire_from_seed}."
+                f"{profile.ownership_note} Sire (seed): {entry.sire}."
             )
         write_profile(profile)
         profiles.append(profile)
         flags = []
         if pedigree:
             flags.append("pedigree")
+        if enr and enr.form:
+            flags.append("record+earnings")
         if results:
             flags.append(f"{len(results)} results")
         if sales:
@@ -167,6 +195,40 @@ def publish() -> None:
 
 
 # --------------------------------------------------------------------------- #
+# Import browser-saved HTML
+# --------------------------------------------------------------------------- #
+
+
+def import_html(
+    client: HttpClient,
+    file: str,
+    *,
+    url: str | None = None,
+    refno: str | None = None,
+) -> None:
+    """Seed the cache with a page you saved from your browser.
+
+    Equibase result charts and auction-house pages are gated against automated
+    fetching, but you can open them in your own browser and save the HTML. Drop
+    that file in here, keyed by its source URL (or, for an Equibase horse, just
+    its ``--refno``), and the next ``--build-profiles`` parses it through the
+    normal path — no access control is circumvented.
+    """
+    if refno and not url:
+        url = ResultsScraper(client).results_url(refno)
+    if not url:
+        raise SystemExit("--import-html requires --url or --refno")
+    body = Path(file).read_text(encoding="utf-8", errors="replace")
+    path = client.cache_put(url, body)
+    try:
+        shown = path.relative_to(DATA_DIR.parent)
+    except ValueError:
+        shown = path
+    print(f"[import] {file} -> cached for {url}")
+    print(f"[import] stored at {shown}")
+
+
+# --------------------------------------------------------------------------- #
 # CLI
 # --------------------------------------------------------------------------- #
 
@@ -177,13 +239,22 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--build-profiles", action="store_true", help="scrape + score profiles")
     parser.add_argument("--publish", action="store_true", help="copy JSON into the frontend")
     parser.add_argument(
+        "--import-html",
+        metavar="FILE",
+        help="seed the cache with a browser-saved page (use with --url or --refno)",
+    )
+    parser.add_argument("--url", help="source URL the imported FILE was saved from")
+    parser.add_argument("--refno", help="Equibase refno for the imported results chart")
+    parser.add_argument(
         "--offline",
         action="store_true",
         help="never hit the network; use cached responses only",
     )
     args = parser.parse_args(argv)
 
-    if not any([args.refresh_roster, args.build_profiles, args.publish]):
+    if not any(
+        [args.refresh_roster, args.build_profiles, args.publish, args.import_html]
+    ):
         parser.print_help()
         return 1
 
@@ -199,6 +270,8 @@ def main(argv: list[str] | None = None) -> int:
         rate_limit_seconds=2.0, host_rate_limits=host_limits, offline=args.offline
     )
     try:
+        if args.import_html:
+            import_html(client, args.import_html, url=args.url, refno=args.refno)
         roster = refresh_roster(client) if args.refresh_roster else load_roster()
         if args.build_profiles:
             build_profiles(client, roster)

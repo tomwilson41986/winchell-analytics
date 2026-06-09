@@ -220,6 +220,15 @@ class HttpClient:
             return None
         return None
 
+    def cache_put(self, url: str, body: str) -> Path:
+        """Seed the cache with a body for ``url`` (e.g. a browser-saved page).
+
+        Lets terms-clean, manually-fetched HTML flow through the normal parsing
+        path: the next ``get(url)`` is a cache hit. Returns the body cache path.
+        """
+        self._write_cache(url, body, 200)
+        return self._cache_paths(url)[0]
+
     def close(self) -> None:
         self._client.close()
 

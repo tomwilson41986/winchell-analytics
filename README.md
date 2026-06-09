@@ -184,6 +184,7 @@ scrapers/   base.py (HTTP: rate limit, robots, retries, cache, block-detection)
             config.py (owner aliases + Winchell match guard + source registry)
             owner_discovery.py (owner page / results scan / seed bootstrap)
             horse_scrapers.py (PedigreeScraper, ResultsScraper, SalesScraper)
+            wiki.py (WikiScraper: open Wikipedia record/earnings/owner/bio)
 pipeline/   schema.py (pydantic canonical models)
             score.py (pure scoring from form + results)
             build_profiles.py (slugify, write_profile, rollup + index)
@@ -205,6 +206,8 @@ python -m pipeline.run --refresh-roster --build-profiles --publish
 - `--publish` copies the JSON into `public/data/portfolio/` (a commented
   boto3 S3-sync alternative is in `run.py`).
 - `--offline` uses only the response cache; never touches the network.
+- `--import-html FILE --refno N` / `--url U` seeds the cache with a page you
+  saved from your own browser (see below).
 
 `.github/workflows/refresh-data.yml` runs this weekly (roster, Mondays) and
 daily (profiles), then commits the JSON back so Netlify rebuilds.
@@ -214,8 +217,27 @@ daily (profiles), then commits the JSON back so Netlify rebuilds.
 | Source | Use | Status |
 | --- | --- | --- |
 | **pedigreequery.com** | pedigree (sire/dam/damsire, 3-gen, inbreeding) | **Working, verified live** against Gun Runner, Tapit, Epicenter, etc. |
-| **Equibase** | results, earnings, owner field, roster | **Bot-gated (Imperva).** Profile pages return a challenge, not data. |
-| **Keeneland / Fasig-Tipton** | auction results | Results live behind JavaScript "digital" portals with no static name-search. |
+| **Wikipedia** (`/wiki/`) | career record, earnings, owner confirmation, trainer, breeder, bio, Equibase refno | **Working, verified live.** Openly licensed (CC BY-SA); robots-clean article pages only. |
+| **Equibase** | full race-by-race results, speed figures | **Bot-gated (Imperva).** Live pages return a challenge — fed instead via `--import-html`. |
+| **Keeneland / Fasig-Tipton** | auction results | Behind JavaScript "digital" portals with no static name-search; fed via `--import-html`. |
+
+### Feeding gated sources without circumventing anything
+
+Equibase result charts and auction pages can't be fetched programmatically, but
+you can open them in your own browser, **save the page**, and hand the file to
+the pipeline. It is cached under the source URL and parsed on the next build
+through the normal path — no bot protection is defeated:
+
+```bash
+# Equibase results for a horse (refno is auto-discovered from Wikipedia):
+python -m pipeline.run --import-html gun-runner.html --refno 9496167
+# Any other saved page, keyed by the URL you saved it from:
+python -m pipeline.run --import-html keeneland-sept.html --url "https://www.keeneland.com/..."
+python -m pipeline.run --build-profiles --publish
+```
+
+Imported charts unlock the full results table, speed figures, graded-win counts
+and the class-trajectory score automatically.
 
 Because Equibase and the auction houses gate their data, those scrapers are
 **block-aware and header-driven**: they identify the project honestly, obey

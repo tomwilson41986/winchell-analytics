@@ -2,12 +2,12 @@
   "horse_id": "epicenter",
   "name": "Epicenter",
   "year_of_birth": 2019,
-  "sex": null,
-  "colour": null,
-  "country": null,
-  "breeder": null,
-  "current_trainer": null,
-  "ownership_note": "Roster match via seed.",
+  "sex": "Stallion",
+  "colour": "Bay",
+  "country": "United States",
+  "breeder": "Westwind Farms",
+  "current_trainer": "Steve Asmussen",
+  "ownership_note": "Ownership confirmed (Wikipedia): Winchell Thoroughbreds.",
   "status": null,
   "pedigree": {
     "sire": {
@@ -103,19 +103,31 @@
     ]
   },
   "sales": [],
-  "form": null,
+  "form": {
+    "starts": 11,
+    "wins": 6,
+    "seconds": 3,
+    "thirds": 0,
+    "total_earnings": 2940639,
+    "currency": "USD",
+    "black_type_wins": 4,
+    "graded_wins": 0,
+    "last_run": null,
+    "form_string": null
+  },
   "results": [],
   "scores": {
-    "earnings_per_start": null,
-    "win_strike_rate": null,
-    "place_strike_rate": null,
+    "earnings_per_start": 267330.82,
+    "win_strike_rate": 0.5455,
+    "place_strike_rate": 0.8182,
     "best_speed_figure": null,
     "class_trajectory": null,
-    "black_type": false,
-    "value_flag": null
+    "black_type": true,
+    "value_flag": "high strike rate"
   },
   "sources": [
-    "https://www.pedigreequery.com/epicenter4"
+    "https://www.pedigreequery.com/epicenter4",
+    "https://en.wikipedia.org/wiki/Epicenter_%28horse%29"
   ],
-  "last_updated": "2026-06-09T11:53:55.045781+00:00"
+  "last_updated": "2026-06-09T12:10:01.575963+00:00"
 }
