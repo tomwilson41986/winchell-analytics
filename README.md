@@ -281,6 +281,37 @@ gap.** The roster therefore comes from the hand-verified `data/seed_horses.txt`
 when a horse name collides with an older namesake), and profiles are populated
 with real pedigree data plus whatever else resolves.
 
+## Frontend (the portfolio site)
+
+Two routes embedded in the existing Winchell Analytics app, reusing its design
+system:
+
+- **`/portfolio`** — five KPI tiles (horses, active, total earnings, graded and
+  black-type winners); an **analytics** block (career earnings by horse, wins by
+  sire, status breakdown — Recharts); **filters** (status, sire, black-type
+  only) and full-text search over a sortable roster table; and a **Download
+  CSV** export of the current (filtered) view.
+- **`/horse/:horseId`** — bio header with black-type banner and freshness date;
+  KPI row (starts, wins, earnings, win strike, top speed figure); a value-flag
+  insight block; **connections & status** panel (status, trainer, breeder,
+  graded wins, recent form, ownership note); **pedigree** (sire/dam/damsire
+  cells + inbreeding); **sales** table (RNA-aware); a **cumulative earnings**
+  Recharts line (renders only when per-race purses exist); the full **results**
+  table with grade tags and speed figures; and a sources list.
+
+Data is fetched at runtime from `/data/portfolio/`. Missing values always render
+"no data found" via the formatters in `src/lib/portfolio.ts`.
+
+## Tests & CI
+
+```bash
+pip install -r requirements.txt -r requirements-dev.txt
+python -m pytest -q          # scoring, parsers, owner guard, rollup (24 tests)
+```
+
+`.github/workflows/ci.yml` runs the Python suite and the frontend
+type-check/build on every push and pull request.
+
 ## Hard rules honoured
 
 - No synthetic data: absent fields are `None`/empty and render "no data found".
