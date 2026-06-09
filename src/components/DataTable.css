@@ -103,6 +103,19 @@
   background: var(--maroon-tint);
 }
 
+.datatable tbody tr.is-clickable {
+  cursor: pointer;
+}
+
+.datatable tbody tr.is-clickable:hover {
+  background: var(--maroon-tint-strong);
+}
+
+.datatable tbody tr.is-clickable:focus-visible {
+  outline: 2px solid var(--maroon-500);
+  outline-offset: -2px;
+}
+
 .datatable .is-numeric {
   text-align: right;
   font-variant-numeric: tabular-nums;

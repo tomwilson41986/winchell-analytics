@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import ChartCard from '../../../components/ChartCard'
 import DataTable, { type Column } from '../../../components/DataTable'
+import Modal from '../../../components/Modal'
 import { BarChart } from '../../../components/charts/LazyCharts'
 import {
   type LeaderRow,
@@ -9,6 +10,7 @@ import {
   pctSeries,
   pctText,
 } from '../../../lib/salesAnalysis'
+import EntityDetail from './EntityDetail'
 
 const pct = (v: number) => `${v.toFixed(1)}%`
 const pctAxis = (v: number) => `${v}%`
@@ -34,6 +36,12 @@ export default function LeaderboardTab({
   filename,
 }: Props) {
   const [minCount, setMinCount] = useState(30)
+  const [selected, setSelected] = useState<LeaderRow | null>(null)
+
+  const selectedRecords = useMemo(
+    () => (selected ? records.filter((r) => r[field] === selected.name) : []),
+    [records, field, selected],
+  )
 
   const board = useMemo(
     () => fieldLeaderboard(records, field, minCount),
@@ -108,7 +116,7 @@ export default function LeaderboardTab({
       <section className="section">
         <div className="section__head">
           <h2 className="section__title">{noun} leaderboard</h2>
-          <span className="section__note">Sortable · searchable</span>
+          <span className="section__note">Sortable · searchable · click a row for detail</span>
         </div>
         <DataTable
           columns={columns}
@@ -116,9 +124,29 @@ export default function LeaderboardTab({
           searchable
           pageSize={20}
           exportFilename={filename}
+          onRowClick={(r) => setSelected(r)}
           emptyMessage={`No ${nounPlural} meet the minimum sample.`}
         />
       </section>
+
+      {selected ? (
+        <Modal
+          title={selected.name}
+          subtitle={`${noun} · ${intFmt(selected.count)} offered · ${pctText(
+            selected.winnersPct,
+          )} winners`}
+          onClose={() => setSelected(null)}
+        >
+          <EntityDetail
+            records={selectedRecords}
+            field={field}
+            filename={`winchell-${field}-${selected.name
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, '-')
+              .replace(/^-|-$/g, '')}.csv`}
+          />
+        </Modal>
+      ) : null}
     </>
   )
 }

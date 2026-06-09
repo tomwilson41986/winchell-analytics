@@ -29,6 +29,8 @@ interface DataTableProps<Row> {
   pageSize?: number
   /** Show an "Export CSV" button that downloads the (filtered + sorted) rows. */
   exportFilename?: string
+  /** Make rows clickable (e.g. for drill-down). */
+  onRowClick?: (row: Row) => void
 }
 
 type SortState = { key: string; dir: 'asc' | 'desc' }
@@ -47,6 +49,7 @@ export default function DataTable<Row extends object>({
   searchable = false,
   pageSize,
   exportFilename,
+  onRowClick,
 }: DataTableProps<Row>) {
   const [sort, setSort] = useState<SortState | null>(null)
   const [query, setQuery] = useState('')
@@ -223,7 +226,22 @@ export default function DataTable<Row extends object>({
               </tr>
             ) : (
               visible.map((row, i) => (
-                <tr key={i}>
+                <tr
+                  key={i}
+                  className={onRowClick ? 'is-clickable' : undefined}
+                  onClick={onRowClick ? () => onRowClick(row) : undefined}
+                  tabIndex={onRowClick ? 0 : undefined}
+                  onKeyDown={
+                    onRowClick
+                      ? (e) => {
+                          if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault()
+                            onRowClick(row)
+                          }
+                        }
+                      : undefined
+                  }
+                >
                   {columns.map((col) => (
                     <td
                       key={String(col.key)}
