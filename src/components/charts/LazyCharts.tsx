@@ -12,6 +12,8 @@ export interface ChartProps {
   data: ChartDatum[]
   valueLabel?: string
   valueFormatter?: (v: number) => string
+  yTickFormatter?: (v: number) => string
+  allowDecimals?: boolean
 }
 
 const fallback = (

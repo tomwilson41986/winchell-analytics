@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom'
 import ChartCard from '../../components/ChartCard'
 import DataTable, { type Column } from '../../components/DataTable'
+import Icon from '../../components/Icon'
 import PageHeader from '../../components/PageHeader'
 import StatTile from '../../components/StatTile'
 import { LineChart } from '../../components/charts/LazyCharts'
@@ -30,6 +32,13 @@ export default function Sales() {
         icon="tag"
         intro="Historic sales data and analysis — auction results, prices and buyers. Populate by adding rows to /data/sales/sales.csv."
       />
+
+      <nav className="subnav" aria-label="Sales sub-sections">
+        <Link to="/sales/historic-sales-analysis" className="chip">
+          <Icon name="chart" size={16} />
+          Historic Sales Analysis
+        </Link>
+      </nav>
 
       <section className="section" aria-label="Summary">
         <div className="stat-grid">

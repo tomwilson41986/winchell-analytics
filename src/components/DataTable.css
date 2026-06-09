@@ -108,6 +108,112 @@
   font-variant-numeric: tabular-nums;
 }
 
+/* --- Toolbar (search) --- */
+.datatable__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.datatable__search {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex: 1 1 240px;
+  max-width: 360px;
+}
+
+.datatable__search-icon {
+  position: absolute;
+  left: 0.7rem;
+  color: var(--grey);
+  pointer-events: none;
+}
+
+.datatable__search-input {
+  width: 100%;
+  padding: 0.55rem 0.8rem 0.55rem 2.2rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  font: inherit;
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+
+.datatable__search-input:focus {
+  outline: none;
+  border-color: var(--maroon);
+  box-shadow: 0 0 0 3px var(--maroon-tint);
+}
+
+.datatable__count {
+  color: var(--grey);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.datatable__nomatch {
+  padding: 1.75rem 1.1rem !important;
+  text-align: center;
+  color: var(--grey);
+}
+
+/* --- Pager --- */
+.datatable__pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.datatable__pager-info {
+  color: var(--grey);
+  font-size: 0.85rem;
+}
+
+.datatable__pager-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.datatable__pager-page {
+  color: var(--grey);
+  font-size: 0.85rem;
+  min-width: 3.5rem;
+  text-align: center;
+}
+
+.datatable__pager-btn {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-sm);
+  background: var(--surface);
+  color: var(--ink-soft);
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 550;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+
+.datatable__pager-btn:hover:not(:disabled) {
+  border-color: var(--maroon);
+  color: var(--maroon);
+  background: var(--maroon-tint);
+}
+
+.datatable__pager-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
 /* --- Empty state --- */
 .datatable__empty {
   display: flex;

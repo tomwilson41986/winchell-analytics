@@ -17,6 +17,8 @@ interface LineChartProps {
   data: ChartDatum[]
   valueLabel?: string
   valueFormatter?: (v: number) => string
+  yTickFormatter?: (v: number) => string
+  allowDecimals?: boolean
 }
 
 /** Themed area/line chart for trends over an ordered axis (e.g. by year). */
@@ -24,6 +26,8 @@ export default function LineChart({
   data,
   valueLabel,
   valueFormatter = formatCompact,
+  yTickFormatter = formatCompact,
+  allowDecimals = false,
 }: LineChartProps) {
   return (
     <div className="chart" style={{ height: CHART.height }}>
@@ -47,8 +51,8 @@ export default function LineChart({
             tickLine={false}
             axisLine={false}
             width={44}
-            allowDecimals={false}
-            tickFormatter={formatCompact}
+            allowDecimals={allowDecimals}
+            tickFormatter={yTickFormatter}
           />
           <Tooltip
             cursor={{ stroke: CHART.maroonLight, strokeDasharray: '4 4' }}

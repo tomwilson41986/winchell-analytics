@@ -8,6 +8,8 @@ export type IconName =
   | 'arrow'
   | 'database'
   | 'spark'
+  | 'search'
+  | 'funnel'
   | 'menu'
   | 'close'
 
@@ -68,6 +70,13 @@ const PATHS: Record<IconName, React.ReactNode> = {
     </>
   ),
   spark: <path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M18 6l-2.5 2.5M8.5 15.5L6 18" />,
+  search: (
+    <>
+      <circle cx="11" cy="11" r="7" />
+      <path d="M21 21l-4.3-4.3" />
+    </>
+  ),
+  funnel: <path d="M3 5h18l-7 8v6l-4 2v-8z" />,
   menu: <path d="M3 6h18M3 12h18M3 18h18" />,
   close: <path d="M6 6l12 12M18 6L6 18" />,
 }

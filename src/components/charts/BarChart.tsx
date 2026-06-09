@@ -17,6 +17,10 @@ interface BarChartProps {
   data: ChartDatum[]
   valueLabel?: string
   valueFormatter?: (v: number) => string
+  /** Formats Y-axis ticks (defaults to compact numbers). */
+  yTickFormatter?: (v: number) => string
+  /** Allow fractional Y-axis ticks (default false). */
+  allowDecimals?: boolean
 }
 
 /** Themed vertical bar chart for categorical comparisons. */
@@ -24,6 +28,8 @@ export default function BarChart({
   data,
   valueLabel,
   valueFormatter = formatCompact,
+  yTickFormatter = formatCompact,
+  allowDecimals = false,
 }: BarChartProps) {
   return (
     <div className="chart" style={{ height: CHART.height }}>
@@ -47,8 +53,8 @@ export default function BarChart({
             tickLine={false}
             axisLine={false}
             width={44}
-            allowDecimals={false}
-            tickFormatter={formatCompact}
+            allowDecimals={allowDecimals}
+            tickFormatter={yTickFormatter}
           />
           <Tooltip
             cursor={{ fill: 'rgba(122,32,48,0.06)' }}
