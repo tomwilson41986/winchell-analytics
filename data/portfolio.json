@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-09T20:35:17.760903+00:00",
-  "horse_count": 12,
+  "generated_at": "2026-06-10T05:32:23.219877+00:00",
+  "horse_count": 20,
   "active_count": 0,
-  "total_earnings": 26838805,
+  "total_earnings": 27746487,
   "currency": "USD",
-  "graded_winners": 11,
-  "black_type_winners": 11,
+  "graded_winners": 17,
+  "black_type_winners": 17,
   "horses": [
     {
       "horse_id": "gun-runner",
@@ -78,6 +78,20 @@
       "value_flag": "improving black-type performer"
     },
     {
+      "horse_id": "summerly",
+      "name": "Summerly",
+      "sire": "SUMMER SQUALL",
+      "dam": "HERE I GO",
+      "trainer": "Steven M. Asmussen",
+      "status": "Deceased",
+      "starts": 7,
+      "wins": 2,
+      "total_earnings": 907682,
+      "currency": "USD",
+      "black_type": true,
+      "value_flag": "elite graded earner"
+    },
+    {
       "horse_id": "tapit",
       "name": "Tapit",
       "sire": "PULPIT",
@@ -120,6 +134,20 @@
       "value_flag": "improving black-type performer"
     },
     {
+      "horse_id": "fleet-renee",
+      "name": "Fleet Renee",
+      "sire": "SEATTLE SLEW",
+      "dam": "DARIEN MISS",
+      "trainer": "Michael W. Dickinson",
+      "status": "Unknown",
+      "starts": 2,
+      "wins": 1,
+      "total_earnings": null,
+      "currency": null,
+      "black_type": true,
+      "value_flag": "black-type winner"
+    },
+    {
       "horse_id": "magna-graduate",
       "name": "Magna Graduate",
       "sire": "HONOR GRADES",
@@ -132,6 +160,20 @@
       "currency": null,
       "black_type": true,
       "value_flag": "black-type winner"
+    },
+    {
+      "horse_id": "olympio",
+      "name": "Olympio",
+      "sire": "NASKRA",
+      "dam": "CAROLS CHRISTMAS",
+      "trainer": "Ronald L. McAnally",
+      "status": "Retired",
+      "starts": 3,
+      "wins": 0,
+      "total_earnings": null,
+      "currency": null,
+      "black_type": false,
+      "value_flag": null
     },
     {
       "horse_id": "quiet-giant",
@@ -162,6 +204,34 @@
       "value_flag": "black-type winner"
     },
     {
+      "horse_id": "sabercat",
+      "name": "Sabercat",
+      "sire": "BLUEGRASS CAT",
+      "dam": "MINER'S BLESSING",
+      "trainer": "Steven M. Asmussen",
+      "status": "Retired",
+      "starts": 23,
+      "wins": 3,
+      "total_earnings": null,
+      "currency": null,
+      "black_type": true,
+      "value_flag": "improving black-type performer"
+    },
+    {
+      "horse_id": "sea-cadet",
+      "name": "Sea Cadet",
+      "sire": "BOLGER",
+      "dam": "HATTAB GAL",
+      "trainer": "Ronald L. McAnally",
+      "status": "Retired",
+      "starts": 4,
+      "wins": 2,
+      "total_earnings": null,
+      "currency": null,
+      "black_type": true,
+      "value_flag": "high strike rate"
+    },
+    {
       "horse_id": "tapiture",
       "name": "Tapiture",
       "sire": "TAPIT",
@@ -170,6 +240,48 @@
       "status": "Retired",
       "starts": 18,
       "wins": 5,
+      "total_earnings": null,
+      "currency": null,
+      "black_type": true,
+      "value_flag": "improving black-type performer"
+    },
+    {
+      "horse_id": "tight-spot",
+      "name": "Tight Spot",
+      "sire": "HIS MAJESTY",
+      "dam": "PREMIUM WIN",
+      "trainer": "Ronald L. McAnally",
+      "status": "Retired",
+      "starts": 2,
+      "wins": 1,
+      "total_earnings": null,
+      "currency": null,
+      "black_type": true,
+      "value_flag": "black-type winner"
+    },
+    {
+      "horse_id": "valiant-nature",
+      "name": "Valiant Nature",
+      "sire": "HIS MAJESTY",
+      "dam": "PREMIUM WIN",
+      "trainer": "Ronald L. McAnally",
+      "status": "Retired",
+      "starts": 2,
+      "wins": 0,
+      "total_earnings": null,
+      "currency": null,
+      "black_type": false,
+      "value_flag": null
+    },
+    {
+      "horse_id": "zanjero",
+      "name": "Zanjero",
+      "sire": "CHEROKEE RUN",
+      "dam": "CHECKERED FLAG",
+      "trainer": "Steven M. Asmussen",
+      "status": "Retired",
+      "starts": 5,
+      "wins": 1,
       "total_earnings": null,
       "currency": null,
       "black_type": true,

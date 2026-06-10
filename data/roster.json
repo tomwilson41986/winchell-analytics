@@ -24,6 +24,14 @@
     "discovered_via": "seed"
   },
   {
+    "name": "Fleet Renee",
+    "year_of_birth": null,
+    "sire": "Seattle Slew",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
     "name": "Gun Runner",
     "year_of_birth": 2013,
     "sire": "Candy Ride",
@@ -48,6 +56,14 @@
     "discovered_via": "seed"
   },
   {
+    "name": "Olympio",
+    "year_of_birth": null,
+    "sire": "Naskra",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
     "name": "Quiet Giant",
     "year_of_birth": 2007,
     "sire": "Giant's Causeway",
@@ -59,6 +75,30 @@
     "name": "Red Route One",
     "year_of_birth": 2020,
     "sire": "Gun Runner",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Sabercat",
+    "year_of_birth": null,
+    "sire": "Bluegrass Cat",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Sea Cadet",
+    "year_of_birth": null,
+    "sire": "Bolger",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Summerly",
+    "year_of_birth": null,
+    "sire": "Summer Squall",
     "equibase_refno": null,
     "pedigree_url": null,
     "discovered_via": "seed"
@@ -88,9 +128,33 @@
     "discovered_via": "seed"
   },
   {
+    "name": "Tight Spot",
+    "year_of_birth": null,
+    "sire": "His Majesty",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
     "name": "Untapable",
     "year_of_birth": 2011,
     "sire": "Tapit",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Valiant Nature",
+    "year_of_birth": null,
+    "sire": "His Majesty",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Zanjero",
+    "year_of_birth": null,
+    "sire": "Cherokee Run",
     "equibase_refno": null,
     "pedigree_url": null,
     "discovered_via": "seed"

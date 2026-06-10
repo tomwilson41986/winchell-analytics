@@ -32,6 +32,14 @@ OWNER_ALIASES: list[str] = [
     "Ronald K. Winchell",
     "Verne H. Winchell",  # founder; older runners carried the silks
     "Verne Winchell",
+    "VHW Stables",  # Verne H. Winchell's stable name on older charts
+]
+
+# Stable names that are the Winchell operation but do not contain the surname
+# (so the token guard alone would miss them). Confirmed from Equibase charts.
+OWNER_NAME_EQUIVALENTS: list[str] = [
+    "vhw stables",
+    "vhw stable",
 ]
 
 # Loose-match guard. A row's owner string is considered a Winchell horse when
@@ -70,6 +78,8 @@ def is_winchell_owner(owner: str | None) -> bool:
         return False
     if any(excl in text for excl in OWNER_EXCLUSIONS):
         return False
+    if any(eq in text for eq in OWNER_NAME_EQUIVALENTS):
+        return True
     return all(_has_token(text, tok) for tok in OWNER_MATCH_TOKENS)
 
 

@@ -9,6 +9,8 @@ def test_owner_guard_accepts_variants():
     assert is_winchell_owner("Winchell Thoroughbreds LLC")
     assert is_winchell_owner("Ron Winchell")
     assert is_winchell_owner("Winchell Thoroughbreds & Three Chimneys")
+    assert is_winchell_owner("Verne H. Winchell")
+    assert is_winchell_owner("Vhw Stables")  # Verne H. Winchell's stable name
 
 
 def test_owner_guard_rejects_unrelated():

@@ -1,0 +1,187 @@
+{
+  "horse_id": "olympio",
+  "name": "Olympio",
+  "year_of_birth": null,
+  "sex": "Horse",
+  "colour": null,
+  "country": "Kentucky, US",
+  "breeder": null,
+  "current_trainer": "Ronald L. McAnally",
+  "ownership_note": "Ownership confirmed (HRN): Vhw Stables.",
+  "status": "Retired",
+  "pedigree": {
+    "sire": {
+      "name": "NASKRA",
+      "year_of_birth": 1967,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "CAROLS CHRISTMAS",
+      "year_of_birth": 1977,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "WHITESBURG",
+      "year_of_birth": 1969,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "NASKRA",
+        "year_of_birth": 1967,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "NASRAM",
+        "year_of_birth": 1960,
+        "country": "USA"
+      },
+      "sire_sire_sire": {
+        "name": "NASRULLAH",
+        "year_of_birth": 1940,
+        "country": "GB"
+      },
+      "sire_sire_dam": {
+        "name": "LA MIRAMBULE",
+        "year_of_birth": 1949,
+        "country": "FR"
+      },
+      "sire_dam": {
+        "name": "ISKRA",
+        "year_of_birth": 1961,
+        "country": "FR"
+      },
+      "sire_dam_sire": {
+        "name": "LE HAAR",
+        "year_of_birth": 1954,
+        "country": "FR"
+      },
+      "sire_dam_dam": {
+        "name": "FASCIOLA",
+        "year_of_birth": 1946,
+        "country": "FR"
+      },
+      "dam": {
+        "name": "CAROLS CHRISTMAS",
+        "year_of_birth": 1977,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "WHITESBURG",
+        "year_of_birth": 1969,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "CRIMSON SATAN",
+        "year_of_birth": 1959,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "MIRABIO",
+        "year_of_birth": 1960,
+        "country": "FR"
+      },
+      "dam_dam": {
+        "name": "LIGHT VERSE",
+        "year_of_birth": 1970,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "REVERSE",
+        "year_of_birth": 1962,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "BRIGHTON VIEW",
+        "year_of_birth": 1962,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Pharos 5x5"
+    ]
+  },
+  "sales": [],
+  "form": {
+    "starts": 3,
+    "wins": 0,
+    "seconds": 2,
+    "thirds": 0,
+    "total_earnings": null,
+    "currency": null,
+    "black_type_wins": 0,
+    "graded_wins": 0,
+    "last_run": "1991-09-22",
+    "form_string": "4-2-2"
+  },
+  "results": [
+    {
+      "race_date": "1991-09-22",
+      "track": "LAD",
+      "race_name": "1991 Super Derby (G1)",
+      "surface": "Dirt",
+      "distance_furlongs": 10.0,
+      "going": null,
+      "grade": "G1",
+      "finish_position": 2,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": null,
+      "comment": "2:00.80"
+    },
+    {
+      "race_date": "1991-09-02",
+      "track": "AP",
+      "race_name": "1991 Secretariat Stakes (G1)",
+      "surface": "Turf",
+      "distance_furlongs": 10.0,
+      "going": null,
+      "grade": "G1",
+      "finish_position": 2,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": null,
+      "comment": "2:01.27"
+    },
+    {
+      "race_date": "1991-05-18",
+      "track": "PIM",
+      "race_name": "1991 Preakness Stakes (G1)",
+      "surface": "Dirt",
+      "distance_furlongs": 9.5,
+      "going": null,
+      "grade": "G1",
+      "finish_position": 4,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": null,
+      "comment": "1:54.00"
+    }
+  ],
+  "scores": {
+    "earnings_per_start": null,
+    "win_strike_rate": 0.0,
+    "place_strike_rate": 0.6667,
+    "best_speed_figure": null,
+    "class_trajectory": "flat",
+    "black_type": false,
+    "value_flag": null
+  },
+  "sources": [
+    "https://www.horseracingnation.com/horse/Olympio",
+    "https://www.pedigreequery.com/olympio"
+  ],
+  "last_updated": "2026-06-10T05:30:11.681521+00:00"
+}
