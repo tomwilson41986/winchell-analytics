@@ -1,0 +1,12 @@
+# Winchell Analytics — Python 3.11 data pipeline
+#
+# Scraping + parsing
+httpx==0.27.2          # HTTP client with HTTP/2, timeouts, retries
+selectolax==0.3.21     # fast HTML parser (Modest/Lexbor) for selector work
+protego==0.3.1         # robots.txt parsing / fetch permission checks
+
+# Data modelling
+pydantic==2.9.2        # canonical models + validation
+
+# Optional storage sync (S3) — imported lazily in pipeline.run --publish
+# boto3==1.35.36

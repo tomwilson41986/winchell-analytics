@@ -1,0 +1,267 @@
+{
+  "horse_id": "spice-runner",
+  "name": "Spice Runner",
+  "year_of_birth": null,
+  "sex": "Colt",
+  "colour": null,
+  "country": "Kentucky, US",
+  "breeder": null,
+  "current_trainer": "Steven M. Asmussen",
+  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC.",
+  "status": "Active",
+  "pedigree": {
+    "sire": {
+      "name": "GUN RUNNER",
+      "year_of_birth": 2013,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "SIMPLE SURPRISE",
+      "year_of_birth": 2013,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "COWBOY CAL",
+      "year_of_birth": 2005,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "GUN RUNNER",
+        "year_of_birth": 2013,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "CANDY RIDE",
+        "year_of_birth": 1999,
+        "country": "ARG"
+      },
+      "sire_sire_sire": {
+        "name": "RIDE THE RAILS",
+        "year_of_birth": 1991,
+        "country": "USA"
+      },
+      "sire_sire_dam": {
+        "name": "CANDY GIRL",
+        "year_of_birth": 1990,
+        "country": "ARG"
+      },
+      "sire_dam": {
+        "name": "QUIET GIANT",
+        "year_of_birth": 2007,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "GIANTS CAUSEWAY",
+        "year_of_birth": 1997,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "QUIET DANCE",
+        "year_of_birth": 1993,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "SIMPLE SURPRISE",
+        "year_of_birth": 2013,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "COWBOY CAL",
+        "year_of_birth": 2005,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "GIANTS CAUSEWAY",
+        "year_of_birth": 1997,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "TEXAS TAMMY",
+        "year_of_birth": 1998,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "SIMPLIFY",
+        "year_of_birth": 2006,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "PULPIT",
+        "year_of_birth": 1994,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "CLASSIC OLYMPIO",
+        "year_of_birth": 1997,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Fappiano 5x5",
+      "Giants Causeway 3x3",
+      "Immense 5x5",
+      "Mariah'S Storm 4x4",
+      "Mr. Prospector 5x5",
+      "Rahy 5x5",
+      "Storm Bird 5x5",
+      "Storm Cat 4x4",
+      "Terlingua 5x5"
+    ]
+  },
+  "sales": [],
+  "form": {
+    "starts": 7,
+    "wins": 2,
+    "seconds": 1,
+    "thirds": 0,
+    "total_earnings": null,
+    "currency": null,
+    "black_type_wins": 1,
+    "graded_wins": 1,
+    "last_run": "2025-12-20",
+    "form_string": "5-2-1-5-7-11"
+  },
+  "results": [
+    {
+      "race_date": "2025-12-20",
+      "track": "RP",
+      "race_name": "2025 Remington Springboard Mile (LS)",
+      "surface": "Dirt-Fast",
+      "distance_furlongs": 8.0,
+      "going": null,
+      "grade": null,
+      "finish_position": 11,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": 65,
+      "comment": "1:38.99"
+    },
+    {
+      "race_date": "2025-11-29",
+      "track": "CD",
+      "race_name": "2025 Kentucky Jockey Club (G2)",
+      "surface": "Dirt-Fast",
+      "distance_furlongs": 8.5,
+      "going": null,
+      "grade": "G2",
+      "finish_position": 7,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": 83,
+      "comment": "1:43.33"
+    },
+    {
+      "race_date": "2025-10-04",
+      "track": "KEE",
+      "race_name": "2025 Breeders' Futurity (G1)",
+      "surface": "Dirt-Fast",
+      "distance_furlongs": 8.5,
+      "going": null,
+      "grade": "G1",
+      "finish_position": 5,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": 98,
+      "comment": "1:43.98"
+    },
+    {
+      "race_date": "2025-09-13",
+      "track": "CD",
+      "race_name": "2025 Iroquois (G3)",
+      "surface": "Dirt-Fast",
+      "distance_furlongs": 8.0,
+      "going": null,
+      "grade": "G3",
+      "finish_position": 1,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": 109,
+      "comment": "1:36.59"
+    },
+    {
+      "race_date": "2025-08-10",
+      "track": "ELP",
+      "race_name": "2025 Ellis Park Juvenile (LS)",
+      "surface": "Dirt-Fast",
+      "distance_furlongs": 7.0,
+      "going": null,
+      "grade": null,
+      "finish_position": 2,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": 102,
+      "comment": "1:22.73"
+    },
+    {
+      "race_date": "2025-06-29",
+      "track": "CD",
+      "race_name": "2025 Bashford Manor (LS)",
+      "surface": "Dirt-Fast",
+      "distance_furlongs": 6.0,
+      "going": null,
+      "grade": null,
+      "finish_position": 5,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": 79,
+      "comment": "1:08.61"
+    },
+    {
+      "race_date": "2025-05-23",
+      "track": "CD",
+      "race_name": "Msw",
+      "surface": "Dirt-Fast",
+      "distance_furlongs": 5.0,
+      "going": null,
+      "grade": null,
+      "finish_position": 1,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": 63,
+      "comment": ":58.36"
+    }
+  ],
+  "scores": {
+    "earnings_per_start": null,
+    "win_strike_rate": 0.2857,
+    "place_strike_rate": 0.4286,
+    "best_speed_figure": 109,
+    "class_trajectory": null,
+    "black_type": true,
+    "value_flag": "black-type winner"
+  },
+  "sources": [
+    "https://www.horseracingnation.com/horse/Spice_Runner",
+    "https://www.pedigreequery.com/spice+runner"
+  ],
+  "last_updated": "2026-06-10T08:35:35.210817+00:00"
+}

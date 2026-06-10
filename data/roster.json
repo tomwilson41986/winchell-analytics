@@ -1,0 +1,298 @@
+[
+  {
+    "name": "Bedeviled",
+    "year_of_birth": null,
+    "sire": "Gun Runner",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Black Star",
+    "year_of_birth": null,
+    "sire": "Independence Hall",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Cuvee",
+    "year_of_birth": 2001,
+    "sire": "Carson City",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Dimatic",
+    "year_of_birth": null,
+    "sire": "Gun Runner",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Disarm",
+    "year_of_birth": 2020,
+    "sire": "Gun Runner",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Epic Reign",
+    "year_of_birth": null,
+    "sire": "Epicenter",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Epic Spender",
+    "year_of_birth": null,
+    "sire": "Epicenter",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Epicenter",
+    "year_of_birth": 2019,
+    "sire": "Not This Time",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Express Success",
+    "year_of_birth": null,
+    "sire": "Gun Runner",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Fleet Renee",
+    "year_of_birth": null,
+    "sire": "Seattle Slew",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Gun For Glory",
+    "year_of_birth": null,
+    "sire": "Gun Runner",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Gun Runner",
+    "year_of_birth": 2013,
+    "sire": "Candy Ride",
+    "equibase_refno": null,
+    "pedigree_url": "https://www.pedigreequery.com/gun+runner7",
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Gunite",
+    "year_of_birth": 2019,
+    "sire": "Gun Runner",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Just Epic",
+    "year_of_birth": null,
+    "sire": "Epicenter",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Magna Graduate",
+    "year_of_birth": 2002,
+    "sire": "Honor Grades",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Magnitude",
+    "year_of_birth": null,
+    "sire": "Not This Time",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Marauder",
+    "year_of_birth": null,
+    "sire": "Gun Runner",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Maximum Effort",
+    "year_of_birth": null,
+    "sire": "Maxfield",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Not A Lady",
+    "year_of_birth": null,
+    "sire": "Into Mischief",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Olympio",
+    "year_of_birth": null,
+    "sire": "Naskra",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Quiet Giant",
+    "year_of_birth": 2007,
+    "sire": "Giant's Causeway",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Red Route One",
+    "year_of_birth": 2020,
+    "sire": "Gun Runner",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Sabercat",
+    "year_of_birth": null,
+    "sire": "Bluegrass Cat",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Sea Cadet",
+    "year_of_birth": null,
+    "sire": "Bolger",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Snow Face Princess",
+    "year_of_birth": null,
+    "sire": "Midshipman",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Spice Runner",
+    "year_of_birth": null,
+    "sire": "Gun Runner",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Summerly",
+    "year_of_birth": null,
+    "sire": "Summer Squall",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Tapit",
+    "year_of_birth": 2001,
+    "sire": "Pulpit",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Tapiture",
+    "year_of_birth": 2011,
+    "sire": "Tapit",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Tapizar",
+    "year_of_birth": 2008,
+    "sire": "Tapit",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Taptastic",
+    "year_of_birth": null,
+    "sire": "Tapit",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Tight Spot",
+    "year_of_birth": null,
+    "sire": "His Majesty",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Untapable",
+    "year_of_birth": 2011,
+    "sire": "Tapit",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Valiant Nature",
+    "year_of_birth": null,
+    "sire": "His Majesty",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Wakuda",
+    "year_of_birth": null,
+    "sire": "Gun Runner",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Wartime",
+    "year_of_birth": null,
+    "sire": "War Front",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Zanjero",
+    "year_of_birth": null,
+    "sire": "Cherokee Run",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  }
+]

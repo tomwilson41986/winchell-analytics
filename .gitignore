@@ -23,3 +23,11 @@ Thumbs.db
 
 # Vite
 *.local
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Scraper raw-response cache (provenance, not source-controlled)
+data/cache/

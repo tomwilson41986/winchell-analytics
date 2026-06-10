@@ -1,0 +1,170 @@
+{
+  "horse_id": "wartime",
+  "name": "Wartime",
+  "year_of_birth": null,
+  "sex": "Colt",
+  "colour": null,
+  "country": "Kentucky, US",
+  "breeder": null,
+  "current_trainer": "Steven M. Asmussen",
+  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC.",
+  "status": "Active",
+  "pedigree": {
+    "sire": {
+      "name": "WAR FRONT",
+      "year_of_birth": 2002,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "HOODOOLAND",
+      "year_of_birth": 2019,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "MEDAGLIA D'ORO",
+      "year_of_birth": 1999,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "WAR FRONT",
+        "year_of_birth": 2002,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "DANZIG",
+        "year_of_birth": 1977,
+        "country": "USA"
+      },
+      "sire_sire_sire": {
+        "name": "NORTHERN DANCER",
+        "year_of_birth": 1961,
+        "country": "CAN"
+      },
+      "sire_sire_dam": {
+        "name": "PAS DE NOM",
+        "year_of_birth": 1968,
+        "country": "USA"
+      },
+      "sire_dam": {
+        "name": "STARRY DREAMER",
+        "year_of_birth": 1994,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "RUBIANO",
+        "year_of_birth": 1987,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "LARA'S STAR",
+        "year_of_birth": 1981,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "HOODOOLAND",
+        "year_of_birth": 2019,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "MEDAGLIA D'ORO",
+        "year_of_birth": 1999,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "EL PRADO",
+        "year_of_birth": 1989,
+        "country": "IRE"
+      },
+      "dam_sire_dam": {
+        "name": "CAPPUCINO BAY",
+        "year_of_birth": 1989,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "THEYCALLMELADYLUCK",
+        "year_of_birth": 2005,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "DIXIE UNION",
+        "year_of_birth": 1997,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "VEGAS PROSPECTOR",
+        "year_of_birth": 1994,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Northern Dancer 3x5x5",
+      "Mr. Prospector 5x5"
+    ]
+  },
+  "sales": [],
+  "form": {
+    "starts": 2,
+    "wins": 0,
+    "seconds": 0,
+    "thirds": 0,
+    "total_earnings": null,
+    "currency": null,
+    "black_type_wins": 0,
+    "graded_wins": 0,
+    "last_run": "2026-05-21",
+    "form_string": "4-4"
+  },
+  "results": [
+    {
+      "race_date": "2026-05-21",
+      "track": "CD",
+      "race_name": "Msw",
+      "surface": "Turf-Firm",
+      "distance_furlongs": 5.0,
+      "going": null,
+      "grade": null,
+      "finish_position": 4,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": 42,
+      "comment": ":56.75"
+    },
+    {
+      "race_date": "2026-04-23",
+      "track": "KEE",
+      "race_name": "Msw",
+      "surface": "Turf-Firm",
+      "distance_furlongs": 2.0,
+      "going": null,
+      "grade": null,
+      "finish_position": 4,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": 31,
+      "comment": "1:06"
+    }
+  ],
+  "scores": {
+    "earnings_per_start": null,
+    "win_strike_rate": 0.0,
+    "place_strike_rate": 0.0,
+    "best_speed_figure": 42,
+    "class_trajectory": null,
+    "black_type": false,
+    "value_flag": null
+  },
+  "sources": [
+    "https://www.horseracingnation.com/horse/Wartime",
+    "https://www.pedigreequery.com/wartime8"
+  ],
+  "last_updated": "2026-06-10T08:37:31.126368+00:00"
+}

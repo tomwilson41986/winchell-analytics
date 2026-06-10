@@ -1,0 +1,246 @@
+{
+  "horse_id": "tapit",
+  "name": "Tapit",
+  "year_of_birth": 2001,
+  "sex": "Horse",
+  "colour": "Gray",
+  "country": "Kentucky, US",
+  "breeder": "Oldenburg Farms, LLC",
+  "current_trainer": "Michael W. Dickinson",
+  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC.",
+  "status": "Retired",
+  "pedigree": {
+    "sire": {
+      "name": "PULPIT",
+      "year_of_birth": 1994,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "TAP YOUR HEELS",
+      "year_of_birth": 1996,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "UNBRIDLED",
+      "year_of_birth": 1987,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "PULPIT",
+        "year_of_birth": 1994,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "A.P. INDY",
+        "year_of_birth": 1989,
+        "country": "USA"
+      },
+      "sire_sire_sire": {
+        "name": "SEATTLE SLEW",
+        "year_of_birth": 1974,
+        "country": "USA"
+      },
+      "sire_sire_dam": {
+        "name": "WEEKEND SURPRISE",
+        "year_of_birth": 1980,
+        "country": "USA"
+      },
+      "sire_dam": {
+        "name": "PREACH",
+        "year_of_birth": 1989,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "MR. PROSPECTOR",
+        "year_of_birth": 1970,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "NARRATE",
+        "year_of_birth": 1980,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "TAP YOUR HEELS",
+        "year_of_birth": 1996,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "UNBRIDLED",
+        "year_of_birth": 1987,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "FAPPIANO",
+        "year_of_birth": 1977,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "GANA FACIL",
+        "year_of_birth": 1981,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "RUBY SLIPPERS",
+        "year_of_birth": 1982,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "NIJINSKY",
+        "year_of_birth": 1967,
+        "country": "CAN"
+      },
+      "dam_dam_dam": {
+        "name": "MOON GLITTER",
+        "year_of_birth": 1972,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Gold Digger 4x5",
+      "In Reality 4x5",
+      "Mr. Prospector 3x4",
+      "Nijinsky 3x5",
+      "Raise A Native 4x5"
+    ]
+  },
+  "sales": [],
+  "form": {
+    "starts": 6,
+    "wins": 3,
+    "seconds": 0,
+    "thirds": 0,
+    "total_earnings": 557300,
+    "currency": "USD",
+    "black_type_wins": 2,
+    "graded_wins": 2,
+    "last_run": "2004-09-06",
+    "form_string": "1-1-6-1-9-9"
+  },
+  "results": [
+    {
+      "race_date": "2004-09-06",
+      "track": "PRX",
+      "race_name": "2004 Pennsylvania Derby (G2)",
+      "surface": "Dirt",
+      "distance_furlongs": 9.0,
+      "going": null,
+      "grade": "G2",
+      "finish_position": 9,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": null,
+      "comment": "1:48.42"
+    },
+    {
+      "race_date": "2004-05-01",
+      "track": "CD",
+      "race_name": "2004 Kentucky Derby (G1)",
+      "surface": "Dirt",
+      "distance_furlongs": 10.0,
+      "going": null,
+      "grade": "G1",
+      "finish_position": 9,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": null,
+      "comment": "2:04.60"
+    },
+    {
+      "race_date": "2004-04-10",
+      "track": "AQU",
+      "race_name": "2004 Wood Memorial (G1)",
+      "surface": "Dirt",
+      "distance_furlongs": 9.0,
+      "going": null,
+      "grade": "G1",
+      "finish_position": 1,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": null,
+      "comment": "1:49.70"
+    },
+    {
+      "race_date": "2004-03-13",
+      "track": "GP",
+      "race_name": "2004 Florida Derby (G1)",
+      "surface": "Dirt",
+      "distance_furlongs": 9.0,
+      "going": null,
+      "grade": "G1",
+      "finish_position": 6,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": null,
+      "comment": "1:51.38"
+    },
+    {
+      "race_date": "2003-11-15",
+      "track": "LRL",
+      "race_name": "2003 Laurel Futurity (G3)",
+      "surface": "Dirt",
+      "distance_furlongs": 8.5,
+      "going": null,
+      "grade": "G3",
+      "finish_position": 1,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": null,
+      "comment": "1:43.81"
+    },
+    {
+      "race_date": "2003-10-19",
+      "track": "DEL",
+      "race_name": "Msw",
+      "surface": "Dirt",
+      "distance_furlongs": 8.0,
+      "going": null,
+      "grade": null,
+      "finish_position": 1,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": null,
+      "comment": "1:38.20"
+    }
+  ],
+  "scores": {
+    "earnings_per_start": 92883.33,
+    "win_strike_rate": 0.5,
+    "place_strike_rate": 0.5,
+    "best_speed_figure": null,
+    "class_trajectory": "rising",
+    "black_type": true,
+    "value_flag": "improving black-type performer"
+  },
+  "sources": [
+    "https://www.horseracingnation.com/horse/Tapit",
+    "https://www.pedigreequery.com/tapit",
+    "https://en.wikipedia.org/wiki/Tapit"
+  ],
+  "last_updated": "2026-06-10T08:35:48.732216+00:00"
+}

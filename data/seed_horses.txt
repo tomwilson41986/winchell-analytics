@@ -1,0 +1,57 @@
+# Winchell Thoroughbreds — seed roster (bootstrap discovery path)
+#
+# One horse per line. Lines that are blank or start with '#' are ignored.
+# Fields are '|'-separated; everything after the name is optional:
+#
+#   name | year_of_birth | sire | equibase_refno | pedigree_url
+#
+# The sire hint lets the pedigree resolver pick the correct pedigreequery page
+# when a horse name collides with an older namesake. The pedigree_url, where
+# given, pins an already-verified page. Refno is the Equibase horse id (left
+# blank until confirmed from a source you can reach; Equibase is bot-gated).
+#
+# Only horses confirmed to have raced or been owned/bred under the Winchell
+# operation belong here. Nothing on this list is fabricated; add a horse only
+# once you have confirmed the connection.
+
+Gun Runner    | 2013 | Candy Ride       | | https://www.pedigreequery.com/gun+runner7
+Cuvee         | 2001 | Carson City      | |
+Tapit         | 2001 | Pulpit           | |
+Tapizar       | 2008 | Tapit            | |
+Epicenter     | 2019 | Not This Time    | |
+Untapable     | 2011 | Tapit            | |
+Tapiture      | 2011 | Tapit            | |
+Magna Graduate| 2002 | Honor Grades     | |
+Quiet Giant   | 2007 | Giant's Causeway | |
+Disarm        | 2020 | Gun Runner       | |
+Gunite        | 2019 | Gun Runner       | |
+Red Route One | 2020 | Gun Runner       | |
+# Added from the Equibase Breeders' Cup owner profile (eID=1372865), HRN-verified.
+Sabercat      |      | Bluegrass Cat    | |
+Zanjero       |      | Cherokee Run     | |
+Summerly      |      | Summer Squall    | |
+Tight Spot    |      | His Majesty      | |
+Sea Cadet     |      | Bolger           | |
+Fleet Renee   |      | Seattle Slew     | |
+Valiant Nature|      | His Majesty      | |
+Olympio       |      | Naskra           | |
+# Active string (2025-26), discovered from the HRN Winchell stable feed and
+# confirmed via each horse's HRN owner field; sire pins the right page past
+# any namesake.
+Taptastic         |  | Tapit            | |
+Epic Reign        |  | Epicenter        | |
+Maximum Effort    |  | Maxfield         | |
+Gun For Glory     |  | Gun Runner       | |
+Express Success   |  | Gun Runner       | |
+Wartime           |  | War Front        | |
+Epic Spender      |  | Epicenter        | |
+Snow Face Princess|  | Midshipman       | |
+Just Epic         |  | Epicenter        | |
+Marauder          |  | Gun Runner       | |
+Wakuda            |  | Gun Runner       | |
+Spice Runner      |  | Gun Runner       | |
+Dimatic           |  | Gun Runner       | |
+Magnitude         |  | Not This Time    | |
+Bedeviled         |  | Gun Runner       | |
+Black Star        |  | Independence Hall| |
+Not A Lady        |  | Into Mischief    | |

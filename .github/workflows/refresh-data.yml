@@ -1,0 +1,86 @@
+name: Refresh Winchell data
+
+# Weekly roster rediscovery (Mondays 06:00 UTC) plus a daily results/earnings
+# refresh (07:00 UTC). Can also be run by hand, optionally forcing a roster
+# refresh. The job regenerates the JSON, publishes it into the site's static
+# data directory and commits it back so Netlify rebuilds.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # Mondays 06:00 UTC — roster + profiles
+    - cron: "0 7 * * *"   # daily 07:00 UTC — profiles (results/earnings)
+  workflow_dispatch:
+    inputs:
+      refresh_roster:
+        description: "Rediscover the roster before building profiles"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Decide whether to refresh the roster: the Monday cron, or a manual run
+      # that ticked the box.
+      - name: Determine roster refresh
+        id: decide
+        run: |
+          if [ "${{ github.event.schedule }}" = "0 6 * * 1" ] || \
+             [ "${{ github.event.inputs.refresh_roster }}" = "true" ]; then
+            echo "roster=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "roster=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Refresh roster
+        if: steps.decide.outputs.roster == 'true'
+        run: python -m pipeline.run --refresh-roster
+
+      - name: Build profiles and publish
+        run: python -m pipeline.run --build-profiles --publish
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "winchell-bot"
+          git config user.email "racingsquared@gmail.com"
+          git add data/roster.json data/horses.json data/portfolio.json \
+                  data/profiles public/data/portfolio
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "chore: refresh Winchell data [skip ci]"
+            git push
+          fi
+
+      # --- Alternative: sync JSON to S3 instead of committing -----------------
+      # Provide repo secrets AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and
+      # WINCHELL_S3_BUCKET, then replace the commit step above with:
+      #
+      # - name: Sync to S3
+      #   env:
+      #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      #     AWS_DEFAULT_REGION: us-east-1
+      #   run: |
+      #     aws s3 sync public/data/portfolio \
+      #       "s3://${{ secrets.WINCHELL_S3_BUCKET }}/portfolio" \
+      #       --content-type application/json --delete

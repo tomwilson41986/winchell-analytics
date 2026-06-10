@@ -1,0 +1,151 @@
+{
+  "horse_id": "epic-spender",
+  "name": "Epic Spender",
+  "year_of_birth": null,
+  "sex": "Filly",
+  "colour": null,
+  "country": "Kentucky, US",
+  "breeder": null,
+  "current_trainer": "Steven M. Asmussen",
+  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC.",
+  "status": "Active",
+  "pedigree": {
+    "sire": {
+      "name": "EPICENTER",
+      "year_of_birth": 2019,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "HA' PENNY",
+      "year_of_birth": 2019,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "MEDAGLIA D'ORO",
+      "year_of_birth": 1999,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "EPICENTER",
+        "year_of_birth": 2019,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "NOT THIS TIME",
+        "year_of_birth": 2014,
+        "country": "USA"
+      },
+      "sire_sire_sire": {
+        "name": "GIANTS CAUSEWAY",
+        "year_of_birth": 1997,
+        "country": "USA"
+      },
+      "sire_sire_dam": {
+        "name": "MISS MACY SUE",
+        "year_of_birth": 2003,
+        "country": "USA"
+      },
+      "sire_dam": {
+        "name": "SILENT CANDY",
+        "year_of_birth": 2007,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "CANDY RIDE",
+        "year_of_birth": 1999,
+        "country": "ARG"
+      },
+      "sire_dam_dam": {
+        "name": "SILENT QUEEN",
+        "year_of_birth": 2000,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "HA' PENNY",
+        "year_of_birth": 2019,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "MEDAGLIA D'ORO",
+        "year_of_birth": 1999,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "EL PRADO",
+        "year_of_birth": 1989,
+        "country": "IRE"
+      },
+      "dam_sire_dam": {
+        "name": "CAPPUCINO BAY",
+        "year_of_birth": 1989,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "MO' GREEN",
+        "year_of_birth": 2013,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "UNCLE MO",
+        "year_of_birth": 2008,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "SHE'S A REBEL TOO",
+        "year_of_birth": 2001,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Sadlers Wells 4x5"
+    ]
+  },
+  "sales": [],
+  "form": {
+    "starts": 1,
+    "wins": 0,
+    "seconds": 0,
+    "thirds": 0,
+    "total_earnings": null,
+    "currency": null,
+    "black_type_wins": 0,
+    "graded_wins": 0,
+    "last_run": "2026-05-15",
+    "form_string": "6"
+  },
+  "results": [
+    {
+      "race_date": "2026-05-15",
+      "track": "CD",
+      "race_name": "Msw",
+      "surface": "Dirt-Fast",
+      "distance_furlongs": 5.0,
+      "going": null,
+      "grade": null,
+      "finish_position": 6,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": 49,
+      "comment": ":58.84"
+    }
+  ],
+  "scores": {
+    "earnings_per_start": null,
+    "win_strike_rate": 0.0,
+    "place_strike_rate": 0.0,
+    "best_speed_figure": 49,
+    "class_trajectory": null,
+    "black_type": false,
+    "value_flag": null
+  },
+  "sources": [
+    "https://www.horseracingnation.com/horse/Epic_Spender",
+    "https://www.pedigreequery.com/epic+spender"
+  ],
+  "last_updated": "2026-06-10T08:32:21.421483+00:00"
+}

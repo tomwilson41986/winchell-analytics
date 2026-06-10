@@ -1,6 +1,8 @@
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Icon, { type IconName } from '../components/Icon'
 import StatTile from '../components/StatTile'
+import { loadPortfolio, money, type PortfolioRollup } from '../lib/portfolio'
 import './page.css'
 
 interface SectionCard {
@@ -11,6 +13,12 @@ interface SectionCard {
 }
 
 const SECTIONS: SectionCard[] = [
+  {
+    to: '/portfolio',
+    title: 'Portfolio',
+    blurb: 'The Winchell string scored end to end — pedigree, form, earnings and results.',
+    icon: 'spark',
+  },
   {
     to: '/horses',
     title: 'Horses',
@@ -38,6 +46,20 @@ const SECTIONS: SectionCard[] = [
 ]
 
 export default function Home() {
+  const [portfolio, setPortfolio] = useState<PortfolioRollup | null>(null)
+
+  useEffect(() => {
+    let active = true
+    loadPortfolio()
+      .then((d) => active && setPortfolio(d))
+      .catch(() => undefined) // home KPIs fall back to a muted placeholder
+    return () => {
+      active = false
+    }
+  }, [])
+
+  const has = portfolio != null
+
   return (
     <>
       <section className="hero">
@@ -48,28 +70,44 @@ export default function Home() {
           </p>
           <h1>Racing intelligence, end to end.</h1>
           <p className="hero__lede">
-            A single home for the data behind the Winchell programme — horses,
-            sales, sires and broodmares — built for clear, fast, defensible
-            analysis.
+            A single home for the data behind the Winchell programme — a scored
+            portfolio of every horse, with pedigree, sales, form, earnings and
+            full race results, built for clear, fast, defensible analysis.
           </p>
           <div className="hero__actions">
-            <Link to="/horses" className="btn btn--primary">
-              Explore horses
+            <Link to="/portfolio" className="btn btn--primary">
+              Open the portfolio
               <Icon name="arrow" size={18} />
             </Link>
-            <Link to="/sales" className="btn btn--ghost">
-              View sales data
+            <Link to="/horses" className="btn btn--ghost">
+              Browse horses
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="section" aria-label="Programme at a glance">
+      <section className="section" aria-label="Portfolio at a glance">
         <div className="stat-grid">
-          <StatTile label="Sections" value="4" hint="Horses · Sales · Sires · Broodmares" />
-          <StatTile label="Horses tracked" value="—" hint="Add to /data/horses" pending />
-          <StatTile label="Sales records" value="—" hint="Add to /data/sales" pending />
-          <StatTile label="Broodmares" value="—" hint="Add to /data/broodmares" pending />
+          <StatTile
+            label="Horses tracked"
+            value={String(portfolio?.horse_count ?? '')}
+            pending={!has}
+          />
+          <StatTile
+            label="Total earnings"
+            value={has ? money(portfolio!.total_earnings, portfolio!.currency ?? 'USD') : ''}
+            pending={!has}
+          />
+          <StatTile
+            label="Graded winners"
+            value={String(portfolio?.graded_winners ?? '')}
+            pending={!has}
+          />
+          <StatTile
+            label="Black-type winners"
+            value={String(portfolio?.black_type_winners ?? '')}
+            pending={!has}
+          />
         </div>
       </section>
 
