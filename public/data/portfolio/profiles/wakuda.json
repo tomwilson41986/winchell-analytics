@@ -1,0 +1,278 @@
+{
+  "horse_id": "wakuda",
+  "name": "Wakuda",
+  "year_of_birth": null,
+  "sex": "Filly",
+  "colour": null,
+  "country": "Kentucky, US",
+  "breeder": null,
+  "current_trainer": "Steven M. Asmussen",
+  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC.",
+  "status": "Active",
+  "pedigree": {
+    "sire": {
+      "name": "GUN RUNNER",
+      "year_of_birth": 2013,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "SIMPLY SOVEREIGN",
+      "year_of_birth": 2018,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "AMERICAN PHAROAH",
+      "year_of_birth": 2012,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "GUN RUNNER",
+        "year_of_birth": 2013,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "CANDY RIDE",
+        "year_of_birth": 1999,
+        "country": "ARG"
+      },
+      "sire_sire_sire": {
+        "name": "RIDE THE RAILS",
+        "year_of_birth": 1991,
+        "country": "USA"
+      },
+      "sire_sire_dam": {
+        "name": "CANDY GIRL",
+        "year_of_birth": 1990,
+        "country": "ARG"
+      },
+      "sire_dam": {
+        "name": "QUIET GIANT",
+        "year_of_birth": 2007,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "GIANTS CAUSEWAY",
+        "year_of_birth": 1997,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "QUIET DANCE",
+        "year_of_birth": 1993,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "SIMPLY SOVEREIGN",
+        "year_of_birth": 2018,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "AMERICAN PHAROAH",
+        "year_of_birth": 2012,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "PIONEEROF THE NILE",
+        "year_of_birth": 2006,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "LITTLEPRINCESSEMMA",
+        "year_of_birth": 2006,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "SIMPLIFY",
+        "year_of_birth": 2006,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "PULPIT",
+        "year_of_birth": 1994,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "CLASSIC OLYMPIO",
+        "year_of_birth": 1997,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Fappiano 5x5",
+      "Storm Cat 4x5"
+    ]
+  },
+  "sales": [],
+  "form": {
+    "starts": 8,
+    "wins": 2,
+    "seconds": 2,
+    "thirds": 0,
+    "total_earnings": null,
+    "currency": null,
+    "black_type_wins": 0,
+    "graded_wins": 0,
+    "last_run": "2026-02-14",
+    "form_string": "2-8-1-1-5-5"
+  },
+  "results": [
+    {
+      "race_date": "2026-02-14",
+      "track": "OP",
+      "race_name": "2026 Dixie Belle (LS)",
+      "surface": "Dirt-",
+      "distance_furlongs": 6.0,
+      "going": null,
+      "grade": null,
+      "finish_position": 5,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": 98,
+      "comment": "1:10.18"
+    },
+    {
+      "race_date": "2026-01-04",
+      "track": "OP",
+      "race_name": "2026 Mockingbird (LS)",
+      "surface": "Dirt-Fast",
+      "distance_furlongs": 6.0,
+      "going": null,
+      "grade": null,
+      "finish_position": 5,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": 104,
+      "comment": "1:10.79"
+    },
+    {
+      "race_date": "2025-11-25",
+      "track": "ZIA",
+      "race_name": "Zia Park Princess S.",
+      "surface": "Dirt-Fast",
+      "distance_furlongs": 6.0,
+      "going": null,
+      "grade": null,
+      "finish_position": 1,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": 95,
+      "comment": "1:11.45"
+    },
+    {
+      "race_date": "2025-09-28",
+      "track": "RP",
+      "race_name": "Msw",
+      "surface": "Dirt-Fast",
+      "distance_furlongs": 2.0,
+      "going": null,
+      "grade": null,
+      "finish_position": 1,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": 109,
+      "comment": "1:04.53"
+    },
+    {
+      "race_date": "2025-07-26",
+      "track": "ELP",
+      "race_name": "Msw",
+      "surface": "Turf-Firm",
+      "distance_furlongs": 2.0,
+      "going": null,
+      "grade": null,
+      "finish_position": 8,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": 58,
+      "comment": "1:01.87"
+    },
+    {
+      "race_date": "2025-06-25",
+      "track": "CD",
+      "race_name": "Msw",
+      "surface": "Dirt-Fast",
+      "distance_furlongs": 5.0,
+      "going": null,
+      "grade": null,
+      "finish_position": 2,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": 71,
+      "comment": ":57.8"
+    },
+    {
+      "race_date": "2025-05-22",
+      "track": "CD",
+      "race_name": "Msw",
+      "surface": "Turf-Firm",
+      "distance_furlongs": 5.0,
+      "going": null,
+      "grade": null,
+      "finish_position": 5,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": 49,
+      "comment": ":56.58"
+    },
+    {
+      "race_date": "2025-04-30",
+      "track": "CD",
+      "race_name": "Msw",
+      "surface": "Dirt-Fast",
+      "distance_furlongs": 2.0,
+      "going": null,
+      "grade": null,
+      "finish_position": 2,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": 51,
+      "comment": ":51.34"
+    }
+  ],
+  "scores": {
+    "earnings_per_start": null,
+    "win_strike_rate": 0.25,
+    "place_strike_rate": 0.5,
+    "best_speed_figure": 109,
+    "class_trajectory": null,
+    "black_type": false,
+    "value_flag": null
+  },
+  "sources": [
+    "https://www.horseracingnation.com/horse/Wakuda",
+    "https://www.pedigreequery.com/wakuda2"
+  ],
+  "last_updated": "2026-06-10T08:37:15.382387+00:00"
+}

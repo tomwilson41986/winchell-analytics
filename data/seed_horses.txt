@@ -35,3 +35,23 @@ Sea Cadet     |      | Bolger           | |
 Fleet Renee   |      | Seattle Slew     | |
 Valiant Nature|      | His Majesty      | |
 Olympio       |      | Naskra           | |
+# Active string (2025-26), discovered from the HRN Winchell stable feed and
+# confirmed via each horse's HRN owner field; sire pins the right page past
+# any namesake.
+Taptastic         |  | Tapit            | |
+Epic Reign        |  | Epicenter        | |
+Maximum Effort    |  | Maxfield         | |
+Gun For Glory     |  | Gun Runner       | |
+Express Success   |  | Gun Runner       | |
+Wartime           |  | War Front        | |
+Epic Spender      |  | Epicenter        | |
+Snow Face Princess|  | Midshipman       | |
+Just Epic         |  | Epicenter        | |
+Marauder          |  | Gun Runner       | |
+Wakuda            |  | Gun Runner       | |
+Spice Runner      |  | Gun Runner       | |
+Dimatic           |  | Gun Runner       | |
+Magnitude         |  | Not This Time    | |
+Bedeviled         |  | Gun Runner       | |
+Black Star        |  | Independence Hall| |
+Not A Lady        |  | Into Mischief    | |

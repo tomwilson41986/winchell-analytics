@@ -1,8 +1,32 @@
 [
   {
+    "name": "Bedeviled",
+    "year_of_birth": null,
+    "sire": "Gun Runner",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Black Star",
+    "year_of_birth": null,
+    "sire": "Independence Hall",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
     "name": "Cuvee",
     "year_of_birth": 2001,
     "sire": "Carson City",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Dimatic",
+    "year_of_birth": null,
+    "sire": "Gun Runner",
     "equibase_refno": null,
     "pedigree_url": null,
     "discovered_via": "seed"
@@ -16,6 +40,22 @@
     "discovered_via": "seed"
   },
   {
+    "name": "Epic Reign",
+    "year_of_birth": null,
+    "sire": "Epicenter",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Epic Spender",
+    "year_of_birth": null,
+    "sire": "Epicenter",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
     "name": "Epicenter",
     "year_of_birth": 2019,
     "sire": "Not This Time",
@@ -24,9 +64,25 @@
     "discovered_via": "seed"
   },
   {
+    "name": "Express Success",
+    "year_of_birth": null,
+    "sire": "Gun Runner",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
     "name": "Fleet Renee",
     "year_of_birth": null,
     "sire": "Seattle Slew",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Gun For Glory",
+    "year_of_birth": null,
+    "sire": "Gun Runner",
     "equibase_refno": null,
     "pedigree_url": null,
     "discovered_via": "seed"
@@ -48,9 +104,49 @@
     "discovered_via": "seed"
   },
   {
+    "name": "Just Epic",
+    "year_of_birth": null,
+    "sire": "Epicenter",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
     "name": "Magna Graduate",
     "year_of_birth": 2002,
     "sire": "Honor Grades",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Magnitude",
+    "year_of_birth": null,
+    "sire": "Not This Time",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Marauder",
+    "year_of_birth": null,
+    "sire": "Gun Runner",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Maximum Effort",
+    "year_of_birth": null,
+    "sire": "Maxfield",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Not A Lady",
+    "year_of_birth": null,
+    "sire": "Into Mischief",
     "equibase_refno": null,
     "pedigree_url": null,
     "discovered_via": "seed"
@@ -96,6 +192,22 @@
     "discovered_via": "seed"
   },
   {
+    "name": "Snow Face Princess",
+    "year_of_birth": null,
+    "sire": "Midshipman",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Spice Runner",
+    "year_of_birth": null,
+    "sire": "Gun Runner",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
     "name": "Summerly",
     "year_of_birth": null,
     "sire": "Summer Squall",
@@ -128,6 +240,14 @@
     "discovered_via": "seed"
   },
   {
+    "name": "Taptastic",
+    "year_of_birth": null,
+    "sire": "Tapit",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
     "name": "Tight Spot",
     "year_of_birth": null,
     "sire": "His Majesty",
@@ -147,6 +267,22 @@
     "name": "Valiant Nature",
     "year_of_birth": null,
     "sire": "His Majesty",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Wakuda",
+    "year_of_birth": null,
+    "sire": "Gun Runner",
+    "equibase_refno": null,
+    "pedigree_url": null,
+    "discovered_via": "seed"
+  },
+  {
+    "name": "Wartime",
+    "year_of_birth": null,
+    "sire": "War Front",
     "equibase_refno": null,
     "pedigree_url": null,
     "discovered_via": "seed"
