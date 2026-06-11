@@ -7,102 +7,9 @@
   "country": "Kentucky, US",
   "breeder": null,
   "current_trainer": "Steven M. Asmussen",
-  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC.",
+  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC. Sire (seed): Into Mischief.",
   "status": "Active",
-  "pedigree": {
-    "sire": {
-      "name": "INTO MISCHIEF",
-      "year_of_birth": 2005,
-      "country": "USA"
-    },
-    "dam": {
-      "name": "JUSTA LADY",
-      "year_of_birth": 2013,
-      "country": "USA"
-    },
-    "damsire": {
-      "name": "MORE THAN READY",
-      "year_of_birth": 1997,
-      "country": "USA"
-    },
-    "extended": {
-      "sire": {
-        "name": "INTO MISCHIEF",
-        "year_of_birth": 2005,
-        "country": "USA"
-      },
-      "sire_sire": {
-        "name": "HARLAN'S HOLIDAY",
-        "year_of_birth": 1999,
-        "country": "USA"
-      },
-      "sire_sire_sire": {
-        "name": "HARLAN",
-        "year_of_birth": 1989,
-        "country": "USA"
-      },
-      "sire_sire_dam": {
-        "name": "CHRISTMAS IN AIKEN",
-        "year_of_birth": 1992,
-        "country": "USA"
-      },
-      "sire_dam": {
-        "name": "LESLIE'S LADY",
-        "year_of_birth": 1996,
-        "country": "USA"
-      },
-      "sire_dam_sire": {
-        "name": "TRICKY CREEK",
-        "year_of_birth": 1986,
-        "country": "USA"
-      },
-      "sire_dam_dam": {
-        "name": "CRYSTAL LADY",
-        "year_of_birth": 1990,
-        "country": "CAN"
-      },
-      "dam": {
-        "name": "JUSTA LADY",
-        "year_of_birth": 2013,
-        "country": "USA"
-      },
-      "dam_sire": {
-        "name": "MORE THAN READY",
-        "year_of_birth": 1997,
-        "country": "USA"
-      },
-      "dam_sire_sire": {
-        "name": "SOUTHERN HALO",
-        "year_of_birth": 1983,
-        "country": "USA"
-      },
-      "dam_sire_dam": {
-        "name": "WOODMANS GIRL",
-        "year_of_birth": 1990,
-        "country": "USA"
-      },
-      "dam_dam": {
-        "name": "BET TO WIN",
-        "year_of_birth": 2009,
-        "country": "USA"
-      },
-      "dam_dam_sire": {
-        "name": "PULPIT",
-        "year_of_birth": 1994,
-        "country": "USA"
-      },
-      "dam_dam_dam": {
-        "name": "WILD CRAZY LADY",
-        "year_of_birth": 2001,
-        "country": "USA"
-      }
-    },
-    "inbreeding": [
-      "Hail To Reason 5x5",
-      "Halo 4x5",
-      "Mr. Prospector 5x5"
-    ]
-  },
+  "pedigree": null,
   "sales": [],
   "form": {
     "starts": 8,
@@ -272,8 +179,7 @@
     "value_flag": null
   },
   "sources": [
-    "https://www.horseracingnation.com/horse/Not_A_Lady_2",
-    "https://www.pedigreequery.com/not+a+lady6"
+    "https://www.horseracingnation.com/horse/Not_A_Lady_2"
   ],
-  "last_updated": "2026-06-10T08:35:24.225735+00:00"
+  "last_updated": "2026-06-11T11:33:58.394108+00:00"
 }

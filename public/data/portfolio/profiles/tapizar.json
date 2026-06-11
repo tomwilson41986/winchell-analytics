@@ -7,102 +7,9 @@
   "country": "Kentucky, US",
   "breeder": "Winchell Thoroughbreds LLC",
   "current_trainer": "Steven M. Asmussen",
-  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC.",
+  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC. Sire (seed): Tapit.",
   "status": "Deceased",
-  "pedigree": {
-    "sire": {
-      "name": "TAPIT",
-      "year_of_birth": 2001,
-      "country": "USA"
-    },
-    "dam": {
-      "name": "WINNING CALL",
-      "year_of_birth": 1998,
-      "country": "USA"
-    },
-    "damsire": {
-      "name": "DEPUTY MINISTER",
-      "year_of_birth": 1979,
-      "country": "CAN"
-    },
-    "extended": {
-      "sire": {
-        "name": "TAPIT",
-        "year_of_birth": 2001,
-        "country": "USA"
-      },
-      "sire_sire": {
-        "name": "PULPIT",
-        "year_of_birth": 1994,
-        "country": "USA"
-      },
-      "sire_sire_sire": {
-        "name": "A.P. INDY",
-        "year_of_birth": 1989,
-        "country": "USA"
-      },
-      "sire_sire_dam": {
-        "name": "PREACH",
-        "year_of_birth": 1989,
-        "country": "USA"
-      },
-      "sire_dam": {
-        "name": "TAP YOUR HEELS",
-        "year_of_birth": 1996,
-        "country": "USA"
-      },
-      "sire_dam_sire": {
-        "name": "UNBRIDLED",
-        "year_of_birth": 1987,
-        "country": "USA"
-      },
-      "sire_dam_dam": {
-        "name": "RUBY SLIPPERS",
-        "year_of_birth": 1982,
-        "country": "USA"
-      },
-      "dam": {
-        "name": "WINNING CALL",
-        "year_of_birth": 1998,
-        "country": "USA"
-      },
-      "dam_sire": {
-        "name": "DEPUTY MINISTER",
-        "year_of_birth": 1979,
-        "country": "CAN"
-      },
-      "dam_sire_sire": {
-        "name": "VICE REGENT",
-        "year_of_birth": 1967,
-        "country": "CAN"
-      },
-      "dam_sire_dam": {
-        "name": "MINT COPY",
-        "year_of_birth": 1970,
-        "country": "CAN"
-      },
-      "dam_dam": {
-        "name": "CALL NOW",
-        "year_of_birth": 1992,
-        "country": "USA"
-      },
-      "dam_dam_sire": {
-        "name": "WILD AGAIN",
-        "year_of_birth": 1980,
-        "country": "USA"
-      },
-      "dam_dam_dam": {
-        "name": "CAROLS CHRISTMAS",
-        "year_of_birth": 1977,
-        "country": "USA"
-      }
-    },
-    "inbreeding": [
-      "Mr. Prospector 4x5",
-      "Nearctic 5x5",
-      "Northern Dancer 4x5"
-    ]
-  },
+  "pedigree": null,
   "sales": [],
   "form": {
     "starts": 14,
@@ -381,8 +288,7 @@
   },
   "sources": [
     "https://www.horseracingnation.com/horse/Tapizar",
-    "https://www.pedigreequery.com/tapizar",
     "https://en.wikipedia.org/wiki/Tapizar"
   ],
-  "last_updated": "2026-06-10T08:36:30.368071+00:00"
+  "last_updated": "2026-06-11T11:38:07.627604+00:00"
 }

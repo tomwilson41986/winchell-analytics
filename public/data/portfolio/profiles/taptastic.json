@@ -7,103 +7,9 @@
   "country": "Kentucky, US",
   "breeder": null,
   "current_trainer": "Steven M. Asmussen",
-  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC and Stonestreet Stables LLC.",
+  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC and Stonestreet Stables LLC. Sire (seed): Tapit.",
   "status": "Active",
-  "pedigree": {
-    "sire": {
-      "name": "TAPIT",
-      "year_of_birth": 2001,
-      "country": "USA"
-    },
-    "dam": {
-      "name": "VALADORNA",
-      "year_of_birth": 2014,
-      "country": "USA"
-    },
-    "damsire": {
-      "name": "CURLIN",
-      "year_of_birth": 2004,
-      "country": "USA"
-    },
-    "extended": {
-      "sire": {
-        "name": "TAPIT",
-        "year_of_birth": 2001,
-        "country": "USA"
-      },
-      "sire_sire": {
-        "name": "PULPIT",
-        "year_of_birth": 1994,
-        "country": "USA"
-      },
-      "sire_sire_sire": {
-        "name": "A.P. INDY",
-        "year_of_birth": 1989,
-        "country": "USA"
-      },
-      "sire_sire_dam": {
-        "name": "PREACH",
-        "year_of_birth": 1989,
-        "country": "USA"
-      },
-      "sire_dam": {
-        "name": "TAP YOUR HEELS",
-        "year_of_birth": 1996,
-        "country": "USA"
-      },
-      "sire_dam_sire": {
-        "name": "UNBRIDLED",
-        "year_of_birth": 1987,
-        "country": "USA"
-      },
-      "sire_dam_dam": {
-        "name": "RUBY SLIPPERS",
-        "year_of_birth": 1982,
-        "country": "USA"
-      },
-      "dam": {
-        "name": "VALADORNA",
-        "year_of_birth": 2014,
-        "country": "USA"
-      },
-      "dam_sire": {
-        "name": "CURLIN",
-        "year_of_birth": 2004,
-        "country": "USA"
-      },
-      "dam_sire_sire": {
-        "name": "SMART STRIKE",
-        "year_of_birth": 1992,
-        "country": "CAN"
-      },
-      "dam_sire_dam": {
-        "name": "SHERRIFFS DEPUTY",
-        "year_of_birth": 1994,
-        "country": "USA"
-      },
-      "dam_dam": {
-        "name": "GOLDFIELD",
-        "year_of_birth": 2008,
-        "country": "USA"
-      },
-      "dam_dam_sire": {
-        "name": "YES ITS TRUE",
-        "year_of_birth": 1996,
-        "country": "USA"
-      },
-      "dam_dam_dam": {
-        "name": "FOLLY DOLLAR",
-        "year_of_birth": 1997,
-        "country": "USA"
-      }
-    },
-    "inbreeding": [
-      "Mr. Prospector 4x4x5",
-      "Gold Digger 5x5",
-      "Raise A Native 5x5",
-      "Seattle Slew 4x5"
-    ]
-  },
+  "pedigree": null,
   "sales": [],
   "form": {
     "starts": 4,
@@ -201,8 +107,7 @@
     "value_flag": "class tapering"
   },
   "sources": [
-    "https://www.horseracingnation.com/horse/Taptastic",
-    "https://www.pedigreequery.com/taptastic"
+    "https://www.horseracingnation.com/horse/Taptastic"
   ],
-  "last_updated": "2026-06-10T08:36:32.227445+00:00"
+  "last_updated": "2026-06-11T11:38:23.182395+00:00"
 }

@@ -7,101 +7,9 @@
   "country": "Kentucky, US",
   "breeder": null,
   "current_trainer": "Steven M. Asmussen",
-  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC.",
+  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC. Sire (seed): Maxfield.",
   "status": "Active",
-  "pedigree": {
-    "sire": {
-      "name": "MAXFIELD",
-      "year_of_birth": 2017,
-      "country": "USA"
-    },
-    "dam": {
-      "name": "LOVE CAME TO TOWN",
-      "year_of_birth": 2012,
-      "country": "USA"
-    },
-    "damsire": {
-      "name": "MEDALLIST",
-      "year_of_birth": 2001,
-      "country": "USA"
-    },
-    "extended": {
-      "sire": {
-        "name": "MAXFIELD",
-        "year_of_birth": 2017,
-        "country": "USA"
-      },
-      "sire_sire": {
-        "name": "STREET SENSE",
-        "year_of_birth": 2004,
-        "country": "USA"
-      },
-      "sire_sire_sire": {
-        "name": "STREET CRY",
-        "year_of_birth": 1998,
-        "country": "IRE"
-      },
-      "sire_sire_dam": {
-        "name": "BEDAZZLE",
-        "year_of_birth": 1997,
-        "country": "USA"
-      },
-      "sire_dam": {
-        "name": "VELVETY",
-        "year_of_birth": 2010,
-        "country": "USA"
-      },
-      "sire_dam_sire": {
-        "name": "BERNARDINI",
-        "year_of_birth": 2003,
-        "country": "USA"
-      },
-      "sire_dam_dam": {
-        "name": "CARESS",
-        "year_of_birth": 1991,
-        "country": "USA"
-      },
-      "dam": {
-        "name": "LOVE CAME TO TOWN",
-        "year_of_birth": 2012,
-        "country": "USA"
-      },
-      "dam_sire": {
-        "name": "MEDALLIST",
-        "year_of_birth": 2001,
-        "country": "USA"
-      },
-      "dam_sire_sire": {
-        "name": "TOUCH GOLD",
-        "year_of_birth": 1994,
-        "country": "USA"
-      },
-      "dam_sire_dam": {
-        "name": "SANTARIA",
-        "year_of_birth": 1995,
-        "country": "USA"
-      },
-      "dam_dam": {
-        "name": "TALKIN ABOUT LOVE",
-        "year_of_birth": 2004,
-        "country": "USA"
-      },
-      "dam_dam_sire": {
-        "name": "NOT FOR LOVE",
-        "year_of_birth": 1990,
-        "country": "USA"
-      },
-      "dam_dam_dam": {
-        "name": "SHE'S JANE",
-        "year_of_birth": 1997,
-        "country": "USA"
-      }
-    },
-    "inbreeding": [
-      "Mr. Prospector 4x5",
-      "Northern Dancer 5x5"
-    ]
-  },
+  "pedigree": null,
   "sales": [],
   "form": {
     "starts": 7,
@@ -253,8 +161,7 @@
     "value_flag": null
   },
   "sources": [
-    "https://www.horseracingnation.com/horse/Maximum_Effort",
-    "https://www.pedigreequery.com/maximum+effort7"
+    "https://www.horseracingnation.com/horse/Maximum_Effort"
   ],
-  "last_updated": "2026-06-10T08:35:12.162977+00:00"
+  "last_updated": "2026-06-11T11:33:39.646880+00:00"
 }

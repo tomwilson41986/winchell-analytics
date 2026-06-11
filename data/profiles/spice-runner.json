@@ -7,108 +7,9 @@
   "country": "Kentucky, US",
   "breeder": null,
   "current_trainer": "Steven M. Asmussen",
-  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC.",
+  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC. Sire (seed): Gun Runner.",
   "status": "Active",
-  "pedigree": {
-    "sire": {
-      "name": "GUN RUNNER",
-      "year_of_birth": 2013,
-      "country": "USA"
-    },
-    "dam": {
-      "name": "SIMPLE SURPRISE",
-      "year_of_birth": 2013,
-      "country": "USA"
-    },
-    "damsire": {
-      "name": "COWBOY CAL",
-      "year_of_birth": 2005,
-      "country": "USA"
-    },
-    "extended": {
-      "sire": {
-        "name": "GUN RUNNER",
-        "year_of_birth": 2013,
-        "country": "USA"
-      },
-      "sire_sire": {
-        "name": "CANDY RIDE",
-        "year_of_birth": 1999,
-        "country": "ARG"
-      },
-      "sire_sire_sire": {
-        "name": "RIDE THE RAILS",
-        "year_of_birth": 1991,
-        "country": "USA"
-      },
-      "sire_sire_dam": {
-        "name": "CANDY GIRL",
-        "year_of_birth": 1990,
-        "country": "ARG"
-      },
-      "sire_dam": {
-        "name": "QUIET GIANT",
-        "year_of_birth": 2007,
-        "country": "USA"
-      },
-      "sire_dam_sire": {
-        "name": "GIANTS CAUSEWAY",
-        "year_of_birth": 1997,
-        "country": "USA"
-      },
-      "sire_dam_dam": {
-        "name": "QUIET DANCE",
-        "year_of_birth": 1993,
-        "country": "USA"
-      },
-      "dam": {
-        "name": "SIMPLE SURPRISE",
-        "year_of_birth": 2013,
-        "country": "USA"
-      },
-      "dam_sire": {
-        "name": "COWBOY CAL",
-        "year_of_birth": 2005,
-        "country": "USA"
-      },
-      "dam_sire_sire": {
-        "name": "GIANTS CAUSEWAY",
-        "year_of_birth": 1997,
-        "country": "USA"
-      },
-      "dam_sire_dam": {
-        "name": "TEXAS TAMMY",
-        "year_of_birth": 1998,
-        "country": "USA"
-      },
-      "dam_dam": {
-        "name": "SIMPLIFY",
-        "year_of_birth": 2006,
-        "country": "USA"
-      },
-      "dam_dam_sire": {
-        "name": "PULPIT",
-        "year_of_birth": 1994,
-        "country": "USA"
-      },
-      "dam_dam_dam": {
-        "name": "CLASSIC OLYMPIO",
-        "year_of_birth": 1997,
-        "country": "USA"
-      }
-    },
-    "inbreeding": [
-      "Fappiano 5x5",
-      "Giants Causeway 3x3",
-      "Immense 5x5",
-      "Mariah'S Storm 4x4",
-      "Mr. Prospector 5x5",
-      "Rahy 5x5",
-      "Storm Bird 5x5",
-      "Storm Cat 4x4",
-      "Terlingua 5x5"
-    ]
-  },
+  "pedigree": null,
   "sales": [],
   "form": {
     "starts": 7,
@@ -260,8 +161,7 @@
     "value_flag": "black-type winner"
   },
   "sources": [
-    "https://www.horseracingnation.com/horse/Spice_Runner",
-    "https://www.pedigreequery.com/spice+runner"
+    "https://www.horseracingnation.com/horse/Spice_Runner"
   ],
-  "last_updated": "2026-06-10T08:35:35.210817+00:00"
+  "last_updated": "2026-06-11T11:35:51.480266+00:00"
 }

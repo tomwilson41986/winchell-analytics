@@ -7,100 +7,9 @@
   "country": "Kentucky, US",
   "breeder": "Winchell Thoroughbreds",
   "current_trainer": "Steven M. Asmussen",
-  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC.",
+  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC. Sire (seed): Tapit.",
   "status": "Retired",
-  "pedigree": {
-    "sire": {
-      "name": "TAPIT",
-      "year_of_birth": 2001,
-      "country": "USA"
-    },
-    "dam": {
-      "name": "FUN HOUSE",
-      "year_of_birth": 1999,
-      "country": "USA"
-    },
-    "damsire": {
-      "name": "PRIZED",
-      "year_of_birth": 1986,
-      "country": "USA"
-    },
-    "extended": {
-      "sire": {
-        "name": "TAPIT",
-        "year_of_birth": 2001,
-        "country": "USA"
-      },
-      "sire_sire": {
-        "name": "PULPIT",
-        "year_of_birth": 1994,
-        "country": "USA"
-      },
-      "sire_sire_sire": {
-        "name": "A.P. INDY",
-        "year_of_birth": 1989,
-        "country": "USA"
-      },
-      "sire_sire_dam": {
-        "name": "PREACH",
-        "year_of_birth": 1989,
-        "country": "USA"
-      },
-      "sire_dam": {
-        "name": "TAP YOUR HEELS",
-        "year_of_birth": 1996,
-        "country": "USA"
-      },
-      "sire_dam_sire": {
-        "name": "UNBRIDLED",
-        "year_of_birth": 1987,
-        "country": "USA"
-      },
-      "sire_dam_dam": {
-        "name": "RUBY SLIPPERS",
-        "year_of_birth": 1982,
-        "country": "USA"
-      },
-      "dam": {
-        "name": "FUN HOUSE",
-        "year_of_birth": 1999,
-        "country": "USA"
-      },
-      "dam_sire": {
-        "name": "PRIZED",
-        "year_of_birth": 1986,
-        "country": "USA"
-      },
-      "dam_sire_sire": {
-        "name": "KRIS S",
-        "year_of_birth": 1977,
-        "country": "USA"
-      },
-      "dam_sire_dam": {
-        "name": "MY TURBULENT MISS",
-        "year_of_birth": 1976,
-        "country": "USA"
-      },
-      "dam_dam": {
-        "name": "BISTRA",
-        "year_of_birth": 1986,
-        "country": "USA"
-      },
-      "dam_dam_sire": {
-        "name": "CLASSIC GO GO",
-        "year_of_birth": 1978,
-        "country": "USA"
-      },
-      "dam_dam_dam": {
-        "name": "CAROLS CHRISTMAS",
-        "year_of_birth": 1977,
-        "country": "USA"
-      }
-    },
-    "inbreeding": [
-      "Mr. Prospector 4x5"
-    ]
-  },
+  "pedigree": null,
   "sales": [],
   "form": {
     "starts": 20,
@@ -487,8 +396,7 @@
   },
   "sources": [
     "https://www.horseracingnation.com/horse/Untapable",
-    "https://www.pedigreequery.com/untapable",
     "https://en.wikipedia.org/wiki/Untapable"
   ],
-  "last_updated": "2026-06-10T08:37:10.440029+00:00"
+  "last_updated": "2026-06-11T11:39:31.282644+00:00"
 }

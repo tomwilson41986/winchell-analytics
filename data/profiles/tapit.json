@@ -7,104 +7,9 @@
   "country": "Kentucky, US",
   "breeder": "Oldenburg Farms, LLC",
   "current_trainer": "Michael W. Dickinson",
-  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC.",
+  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC. Sire (seed): Pulpit.",
   "status": "Retired",
-  "pedigree": {
-    "sire": {
-      "name": "PULPIT",
-      "year_of_birth": 1994,
-      "country": "USA"
-    },
-    "dam": {
-      "name": "TAP YOUR HEELS",
-      "year_of_birth": 1996,
-      "country": "USA"
-    },
-    "damsire": {
-      "name": "UNBRIDLED",
-      "year_of_birth": 1987,
-      "country": "USA"
-    },
-    "extended": {
-      "sire": {
-        "name": "PULPIT",
-        "year_of_birth": 1994,
-        "country": "USA"
-      },
-      "sire_sire": {
-        "name": "A.P. INDY",
-        "year_of_birth": 1989,
-        "country": "USA"
-      },
-      "sire_sire_sire": {
-        "name": "SEATTLE SLEW",
-        "year_of_birth": 1974,
-        "country": "USA"
-      },
-      "sire_sire_dam": {
-        "name": "WEEKEND SURPRISE",
-        "year_of_birth": 1980,
-        "country": "USA"
-      },
-      "sire_dam": {
-        "name": "PREACH",
-        "year_of_birth": 1989,
-        "country": "USA"
-      },
-      "sire_dam_sire": {
-        "name": "MR. PROSPECTOR",
-        "year_of_birth": 1970,
-        "country": "USA"
-      },
-      "sire_dam_dam": {
-        "name": "NARRATE",
-        "year_of_birth": 1980,
-        "country": "USA"
-      },
-      "dam": {
-        "name": "TAP YOUR HEELS",
-        "year_of_birth": 1996,
-        "country": "USA"
-      },
-      "dam_sire": {
-        "name": "UNBRIDLED",
-        "year_of_birth": 1987,
-        "country": "USA"
-      },
-      "dam_sire_sire": {
-        "name": "FAPPIANO",
-        "year_of_birth": 1977,
-        "country": "USA"
-      },
-      "dam_sire_dam": {
-        "name": "GANA FACIL",
-        "year_of_birth": 1981,
-        "country": "USA"
-      },
-      "dam_dam": {
-        "name": "RUBY SLIPPERS",
-        "year_of_birth": 1982,
-        "country": "USA"
-      },
-      "dam_dam_sire": {
-        "name": "NIJINSKY",
-        "year_of_birth": 1967,
-        "country": "CAN"
-      },
-      "dam_dam_dam": {
-        "name": "MOON GLITTER",
-        "year_of_birth": 1972,
-        "country": "USA"
-      }
-    },
-    "inbreeding": [
-      "Gold Digger 4x5",
-      "In Reality 4x5",
-      "Mr. Prospector 3x4",
-      "Nijinsky 3x5",
-      "Raise A Native 4x5"
-    ]
-  },
+  "pedigree": null,
   "sales": [],
   "form": {
     "starts": 6,
@@ -239,8 +144,7 @@
   },
   "sources": [
     "https://www.horseracingnation.com/horse/Tapit",
-    "https://www.pedigreequery.com/tapit",
     "https://en.wikipedia.org/wiki/Tapit"
   ],
-  "last_updated": "2026-06-10T08:35:48.732216+00:00"
+  "last_updated": "2026-06-11T11:36:59.376192+00:00"
 }
