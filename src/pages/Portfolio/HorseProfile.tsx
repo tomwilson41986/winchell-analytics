@@ -9,6 +9,7 @@ import type { ChartDatum } from '../../lib/aggregate'
 import {
   loadProfile,
   money,
+  moneyCompact,
   orDash,
   pct,
   titleCase,
@@ -190,7 +191,12 @@ export default function HorseProfile() {
               <StatTile label="Wins" value={orDash(p.form?.wins)} />
               <StatTile
                 label="Earnings"
-                value={money(p.form?.total_earnings, p.form?.currency ?? 'USD')}
+                value={moneyCompact(p.form?.total_earnings, p.form?.currency ?? 'USD')}
+                hint={
+                  p.form?.total_earnings != null
+                    ? money(p.form.total_earnings, p.form.currency ?? 'USD')
+                    : undefined
+                }
               />
               <StatTile label="Win strike" value={pct(p.scores?.win_strike_rate)} />
               <StatTile label="Top speed fig" value={orDash(p.scores?.best_speed_figure)} />
