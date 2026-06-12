@@ -4,12 +4,15 @@ import { BrowserRouter } from 'react-router-dom'
 import '@fontsource-variable/inter'
 import '@fontsource-variable/inter-tight'
 import App from './App.tsx'
+import { AuthProvider } from './lib/auth'
 import './styles/theme.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </AuthProvider>
   </StrictMode>,
 )

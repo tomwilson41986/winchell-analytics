@@ -16,6 +16,7 @@ export type IconName =
   | 'bell'
   | 'star'
   | 'external'
+  | 'user'
 
 interface IconProps {
   name: IconName
@@ -94,6 +95,12 @@ const PATHS: Record<IconName, React.ReactNode> = {
     <path d="M12 3l2.7 5.6 6.1.8-4.5 4.3 1.1 6-5.4-3-5.4 3 1.1-6L3.2 9.4l6.1-.8L12 3z" />
   ),
   external: <path d="M14 4h6v6M20 4l-9 9M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5" />,
+  user: (
+    <>
+      <circle cx="12" cy="8" r="3.6" />
+      <path d="M5 20c.8-3.5 3.6-5.4 7-5.4s6.2 1.9 7 5.4" />
+    </>
+  ),
 }
 
 export default function Icon({

@@ -16,6 +16,7 @@ Deploys to **Netlify**.
 | `/sales/historic`              | Historic Sales (results data and analysis)   |
 | `/sires`                       | Sires                                        |
 | `/broodmares`                  | Broodmares                                   |
+| `/account`                     | Account (sign-in, push notification settings)|
 | `/broodmares/japan-prospects`  | Japan Broodmare Prospects (nested route)     |
 
 ## Local development
@@ -257,10 +258,53 @@ python -m pipeline.livesales.run --date 2026-10-01
   commits the refreshed feed back so Netlify rebuilds.
 
 **Subscriptions** on `/sales/live` (subscribe to a sale; watch a sire /
-damsire for new entries) are stored in the visitor's browser
-(`localStorage`) and diffed against the feed on each visit — the site is
-static, so notifications are in-app only. Email push would require a backend
-or a notification service plugged into the daily workflow.
+damsire for new entries) work at two levels:
+
+- **Signed out / unconfigured**: stored in the visitor's browser
+  (`localStorage`) and diffed against the feed on each visit — in-app
+  notifications only.
+- **Signed in** (user accounts, below): saved to the user's profile in
+  Supabase, synced across devices, and eligible for **Web Push**
+  notifications sent by the daily pipeline.
+
+## User accounts & push notifications
+
+Accounts are passwordless (email magic link) via Supabase; push is standard
+Web Push (VAPID), delivered by `pipeline/livesales/notify.py` right after the
+daily aggregation. Everything degrades gracefully: with no configuration the
+site behaves exactly as the anonymous version.
+
+Setup:
+
+1. **Create a Supabase project** (free tier is fine) and run
+   `supabase/schema.sql` in its SQL editor. It creates four tables —
+   `sale_subscriptions`, `sire_subscriptions`, `push_subscriptions`,
+   `push_sent` — with row-level security so users only touch their own rows
+   (`push_sent` is pipeline-only).
+2. **Generate a VAPID key pair**: `npx web-push generate-vapid-keys`.
+3. **Frontend env** (Netlify build environment, and `.env` locally — see
+   `.env.example`): `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`,
+   `VITE_VAPID_PUBLIC_KEY`.
+4. **GitHub Actions secrets** (for `refresh-live-sales.yml`):
+   `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` (Settings → API — *server
+   only*, never expose to the site), `VAPID_PRIVATE_KEY`,
+   `VAPID_SUBJECT` (e.g. `mailto:you@example.com`).
+5. In Supabase **Auth → URL configuration**, set the site URL so magic-link
+   emails redirect back to the deployed domain.
+
+How it behaves:
+
+- Users sign in at `/account`; subscriptions made in the browser before
+  signing in are migrated to the profile on first sign-in.
+- Push is opt-in **per device** from `/account` (service worker at
+  `public/sw.js`). iOS Safari requires the site to be added to the Home
+  Screen before push is available.
+- The notifier baselines each subscription silently the first time it sees
+  it, then pushes only *changes*: new entries by watched sires/damsires,
+  a subscribed sale's catalogue publishing or growing, a subscribed sale
+  going active. One summary push per user per run; expired endpoints are
+  pruned automatically. Dedup state lives in `push_sent`.
+- `python -m pipeline.livesales.notify --dry-run` prints what would be sent.
 
 ## Data sources and access reality
 

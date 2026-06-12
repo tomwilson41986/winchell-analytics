@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import DataTable, { type Column } from '../../../components/DataTable'
 import Icon from '../../../components/Icon'
 import Modal from '../../../components/Modal'
 import PageHeader from '../../../components/PageHeader'
 import StatTile from '../../../components/StatTile'
+import { useAuth } from '../../../lib/auth'
 import {
   formatDateSpan,
   groupByCountry,
@@ -14,35 +16,26 @@ import {
   type LiveSalesFeed,
 } from '../../../lib/liveSales'
 import {
-  acknowledgeAll,
-  addSire,
   computeNotifications,
   findSireEntries,
-  loadSubscriptions,
   normalizeHorseName,
-  removeSire,
-  saveSubscriptions,
-  toggleSale,
-  type SubscriptionState,
 } from '../../../lib/saleSubscriptions'
+import { accountsEnabled } from '../../../lib/supabaseClient'
+import { useSubscriptions } from '../../../lib/useSubscriptions'
 import '../../page.css'
 import './LiveSales.css'
 
 export default function LiveSales() {
   const [feed, setFeed] = useState<LiveSalesFeed | null>(null)
   const [loadError, setLoadError] = useState(false)
-  const [subs, setSubs] = useState<SubscriptionState>(loadSubscriptions)
   const [sireInput, setSireInput] = useState('')
   const [lotsFor, setLotsFor] = useState<LiveCatalogue | null>(null)
+  const { user } = useAuth()
+  const { subs, toggleSaleSub, addSireSub, removeSireSub, acknowledge } = useSubscriptions()
 
   useEffect(() => {
     loadLiveSales().then(setFeed, () => setLoadError(true))
   }, [])
-
-  const update = (next: SubscriptionState) => {
-    setSubs(next)
-    saveSubscriptions(next)
-  }
 
   const notifications = useMemo(
     () => (feed ? computeNotifications(feed, subs) : []),
@@ -58,8 +51,8 @@ export default function LiveSales() {
   const lotCount = feed?.catalogues.reduce((n, c) => n + c.lots.length, 0) ?? 0
 
   const submitSire = () => {
-    if (!feed && !sireInput.trim()) return
-    update(addSire(subs, sireInput, feed))
+    if (!sireInput.trim()) return
+    addSireSub(sireInput, feed)
     setSireInput('')
   }
 
@@ -103,7 +96,7 @@ export default function LiveSales() {
               )}
             </h2>
             {feed && notifications.length > 0 && (
-              <button className="btn-export" onClick={() => update(acknowledgeAll(feed, subs))}>
+              <button className="btn-export" onClick={() => acknowledge(feed)}>
                 Mark all read
               </button>
             )}
@@ -127,8 +120,22 @@ export default function LiveSales() {
             </ul>
           )}
           <p className="livesales__storage-note">
-            Subscriptions are stored in this browser and checked against the feed on each
-            visit — the site has no accounts, so there is no email push.
+            {user ? (
+              <>
+                Subscriptions are saved to your profile. Manage push notifications on your{' '}
+                <Link to="/account">account page</Link>.
+              </>
+            ) : accountsEnabled ? (
+              <>
+                Subscriptions are stored in this browser. <Link to="/account">Sign in</Link>{' '}
+                to keep them on your profile and get push notifications.
+              </>
+            ) : (
+              <>
+                Subscriptions are stored in this browser and checked against the feed on
+                each visit.
+              </>
+            )}
           </p>
         </section>
       )}
@@ -174,7 +181,7 @@ export default function LiveSales() {
                   <button
                     className="sire-chip__remove"
                     aria-label={`Stop watching ${sire}`}
-                    onClick={() => update(removeSire(subs, sire))}
+                    onClick={() => removeSireSub(sire)}
                   >
                     <Icon name="close" size={13} />
                   </button>
@@ -267,7 +274,7 @@ export default function LiveSales() {
                         subscribed ? `Unsubscribe from ${cat.name}` : `Subscribe to ${cat.name}`
                       }
                       title={subscribed ? 'Subscribed — click to unsubscribe' : 'Subscribe to this sale'}
-                      onClick={() => update(toggleSale(subs, cat))}
+                      onClick={() => toggleSaleSub(cat)}
                     >
                       <Icon name="bell" size={17} />
                     </button>

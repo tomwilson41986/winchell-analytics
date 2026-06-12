@@ -50,6 +50,16 @@ export default function NavBar() {
               {item.label}
             </NavLink>
           ))}
+          <NavLink
+            to="/account"
+            aria-label="Account"
+            title="Account"
+            className={({ isActive }) =>
+              `navbar__link navbar__link--icon${isActive ? ' navbar__link--active' : ''}`
+            }
+          >
+            <Icon name="user" size={19} />
+          </NavLink>
         </nav>
       </div>
     </header>

@@ -1,0 +1,71 @@
+/* Account: sign-in card and push settings */
+
+.account-card {
+  max-width: 560px;
+  padding: 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: flex-start;
+}
+
+.account-card .section__title {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.account__quiet {
+  margin: 0;
+  color: var(--grey);
+  font-size: 0.92rem;
+}
+
+.account__identity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.account__error {
+  margin: 0;
+  color: var(--maroon-dark);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.account__fineprint {
+  margin: 0;
+  color: var(--grey);
+  font-size: 0.8rem;
+}
+
+.account-form {
+  display: flex;
+  gap: 0.6rem;
+  width: 100%;
+  max-width: 420px;
+}
+
+.account-form__input {
+  flex: 1;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-pill);
+  font: inherit;
+  font-size: 0.9rem;
+  color: var(--ink);
+  background: var(--surface);
+}
+
+.account-form__input:focus {
+  outline: 2px solid var(--maroon);
+  outline-offset: 1px;
+  border-color: var(--maroon);
+}

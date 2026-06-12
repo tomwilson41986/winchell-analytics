@@ -48,6 +48,17 @@ jobs:
             python -m pipeline.livesales.run
           fi
 
+      # Per-user Web Push for account subscriptions (sires with new entries,
+      # subscribed sales publishing catalogues / going active). The step is a
+      # no-op until the Supabase + VAPID secrets are configured — see README.
+      - name: Send push notifications
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          VAPID_SUBJECT: ${{ secrets.VAPID_SUBJECT }}
+        run: python -m pipeline.livesales.notify
+
       - name: Commit refreshed feed
         run: |
           git config user.name "winchell-bot"
