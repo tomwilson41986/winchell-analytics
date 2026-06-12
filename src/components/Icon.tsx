@@ -13,6 +13,9 @@ export type IconName =
   | 'download'
   | 'menu'
   | 'close'
+  | 'bell'
+  | 'star'
+  | 'external'
 
 interface IconProps {
   name: IconName
@@ -81,6 +84,16 @@ const PATHS: Record<IconName, React.ReactNode> = {
   download: <path d="M12 3v12M7 10l5 5 5-5M4 21h16" />,
   menu: <path d="M3 6h18M3 12h18M3 18h18" />,
   close: <path d="M6 6l12 12M18 6L6 18" />,
+  bell: (
+    <>
+      <path d="M6 9a6 6 0 0 1 12 0c0 5 2 6 2 7H4c0-1 2-2 2-7z" />
+      <path d="M10 19a2 2 0 0 0 4 0" />
+    </>
+  ),
+  star: (
+    <path d="M12 3l2.7 5.6 6.1.8-4.5 4.3 1.1 6-5.4-3-5.4 3 1.1-6L3.2 9.4l6.1-.8L12 3z" />
+  ),
+  external: <path d="M14 4h6v6M20 4l-9 9M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5" />,
 }
 
 export default function Icon({

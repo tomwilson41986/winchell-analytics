@@ -1,0 +1,61 @@
+name: Refresh live sales
+
+# Daily sweep of the 12 auction-house calendars (and published lot
+# catalogues). Regenerates public/data/sales/live/live_sales.json plus the
+# seen-ledger (data/sales/live/state.sqlite) that powers the "New" flag, and
+# commits both back so Netlify rebuilds the Live Sales page.
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # daily 06:00 UTC ("today" is computed in Europe/London)
+  workflow_dispatch:
+    inputs:
+      skip_lots:
+        description: "Calendar only — skip lot catalogue fetches"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-live-sales
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Europe/London
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Aggregate live sales
+        run: |
+          if [ "${{ github.event.inputs.skip_lots }}" = "true" ]; then
+            python -m pipeline.livesales.run --skip-lots
+          else
+            python -m pipeline.livesales.run
+          fi
+
+      - name: Commit refreshed feed
+        run: |
+          git config user.name "winchell-bot"
+          git config user.email "racingsquared@gmail.com"
+          git add public/data/sales/live data/sales/live
+          if git diff --cached --quiet; then
+            echo "No live sales changes to commit."
+          else
+            git commit -m "chore: refresh live sales feed [skip ci]"
+            git push
+          fi

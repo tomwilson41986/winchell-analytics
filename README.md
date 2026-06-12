@@ -11,7 +11,9 @@ Deploys to **Netlify**.
 | ------------------------------ | -------------------------------------------- |
 | `/`                            | Home                                         |
 | `/horses`                      | Horses                                       |
-| `/sales`                       | Sales (historic sales data and analysis)     |
+| `/sales`                       | Sales (landing: Live + Historic)             |
+| `/sales/live`                  | Live Sales (upcoming global auctions, subscriptions) |
+| `/sales/historic`              | Historic Sales (results data and analysis)   |
 | `/sires`                       | Sires                                        |
 | `/broodmares`                  | Broodmares                                   |
 | `/broodmares/japan-prospects`  | Japan Broodmare Prospects (nested route)     |
@@ -211,6 +213,54 @@ python -m pipeline.run --refresh-roster --build-profiles --publish
 
 `.github/workflows/refresh-data.yml` runs this weekly (roster, Mondays) and
 daily (profiles), then commits the JSON back so Netlify rebuilds.
+
+---
+
+# Live Sales aggregator (`pipeline/livesales/`)
+
+Aggregates upcoming and currently-active thoroughbred auction sales — and
+their published lot-level catalogues — from 12 auction houses worldwide
+(Tattersalls, Tattersalls Ireland, Tattersalls Online, Goffs / Goffs UK,
+Arqana, BBAG, Keeneland, Fasig-Tipton, OBS, Inglis, Magic Millions, NZB,
+Gavelhouse), and publishes a JSON feed the **`/sales/live`** page renders.
+
+```
+pipeline/livesales/
+├── models.py      # RawSale / Lot / Catalogue + stable catalogue ids
+├── base.py        # curl_cffi session (Chrome TLS impersonation, requests
+│                  #   fallback), retried GETs, tolerant date-range parser
+├── classify.py    # pure: NH/store exclusion, sale-type buckets, active flag
+├── store.py       # SQLite seen-ledger → the "New" flag, plus a run log
+├── registry.py    # ordered adapter list; failures isolated per source
+├── sources/       # one adapter per house: fetch_* (network) split from
+│                  #   parse_* (pure, fixture-tested offline)
+└── run.py         # orchestrator CLI
+```
+
+```bash
+python -m pipeline.livesales.run               # full run, writes the feed
+python -m pipeline.livesales.run --skip-lots   # calendars only
+python -m pipeline.livesales.run --dry-run     # preview file, ledger untouched
+python -m pipeline.livesales.run --date 2026-10-01
+```
+
+- The feed is written to `public/data/sales/live/live_sales.json` and fetched
+  at runtime (it is lot-heavy and deliberately kept out of the build-time
+  `/data` glob). The seen-ledger lives at `data/sales/live/state.sqlite` and
+  is committed so "New" detection persists across CI runs.
+- A sale is **Active** from `ACTIVE_LEAD_DAYS` (default 2) before its first
+  day through its last day; **Upcoming** keeps sales starting within
+  `HORIZON_DAYS` (default 30). Undated rolling online auctions are kept and
+  count as active while the source says bidding is open.
+- Jumps / National Hunt / store / non-thoroughbred sales are excluded.
+- `.github/workflows/refresh-live-sales.yml` runs daily at 06:00 UTC and
+  commits the refreshed feed back so Netlify rebuilds.
+
+**Subscriptions** on `/sales/live` (subscribe to a sale; watch a sire /
+damsire for new entries) are stored in the visitor's browser
+(`localStorage`) and diffed against the feed on each visit — the site is
+static, so notifications are in-app only. Email push would require a backend
+or a notification service plugged into the daily workflow.
 
 ## Data sources and access reality
 
