@@ -156,6 +156,7 @@ class PortfolioCard(BaseModel):
     name: str
     sire: Optional[str] = None
     dam: Optional[str] = None
+    damsire: Optional[str] = None
     trainer: Optional[str] = None
     status: Optional[str] = None
     starts: int = 0

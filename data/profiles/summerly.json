@@ -9,7 +9,99 @@
   "current_trainer": "Steven M. Asmussen",
   "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC. Sire (seed): Summer Squall.",
   "status": "Deceased",
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "SUMMER SQUALL",
+      "year_of_birth": 1987,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "HERE I GO",
+      "year_of_birth": 1996,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "MR. PROSPECTOR",
+      "year_of_birth": 1970,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "SUMMER SQUALL",
+        "year_of_birth": 1987,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "STORM BIRD",
+        "year_of_birth": 1978,
+        "country": "CAN"
+      },
+      "sire_sire_sire": {
+        "name": "NORTHERN DANCER",
+        "year_of_birth": 1961,
+        "country": "CAN"
+      },
+      "sire_sire_dam": {
+        "name": "SOUTH OCEAN",
+        "year_of_birth": 1967,
+        "country": "CAN"
+      },
+      "sire_dam": {
+        "name": "WEEKEND SURPRISE",
+        "year_of_birth": 1980,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "SECRETARIAT",
+        "year_of_birth": 1970,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "LASSIE DEAR",
+        "year_of_birth": 1974,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "HERE I GO",
+        "year_of_birth": 1996,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "MR. PROSPECTOR",
+        "year_of_birth": 1970,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "RAISE A NATIVE",
+        "year_of_birth": 1961,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "GOLD DIGGER",
+        "year_of_birth": 1962,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "SHUFFLIN N SEATLE",
+        "year_of_birth": 1992,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "SEATTLE SLEW",
+        "year_of_birth": 1974,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "DARBY SHUFFLE",
+        "year_of_birth": 1986,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Nasrullah 5x5",
+      "Native Dancer 4x5"
+    ]
+  },
   "sales": [],
   "form": {
     "starts": 7,
@@ -162,7 +254,8 @@
   },
   "sources": [
     "https://www.horseracingnation.com/horse/Summerly",
-    "https://en.wikipedia.org/wiki/Summerly_%28horse%29"
+    "https://en.wikipedia.org/wiki/Summerly_%28horse%29",
+    "https://www.pedigreequery.com/summerly2"
   ],
-  "last_updated": "2026-06-11T11:36:06.319040+00:00"
+  "last_updated": "2026-06-12T12:07:20.149124+00:00"
 }

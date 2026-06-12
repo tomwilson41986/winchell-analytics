@@ -9,7 +9,98 @@
   "current_trainer": "Ronald L. McAnally",
   "ownership_note": "Ownership confirmed (HRN): Vhw Stables. Sire (seed): Naskra.",
   "status": "Retired",
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "NASKRA",
+      "year_of_birth": 1967,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "CAROLS CHRISTMAS",
+      "year_of_birth": 1977,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "WHITESBURG",
+      "year_of_birth": 1969,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "NASKRA",
+        "year_of_birth": 1967,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "NASRAM",
+        "year_of_birth": 1960,
+        "country": "USA"
+      },
+      "sire_sire_sire": {
+        "name": "NASRULLAH",
+        "year_of_birth": 1940,
+        "country": "GB"
+      },
+      "sire_sire_dam": {
+        "name": "LA MIRAMBULE",
+        "year_of_birth": 1949,
+        "country": "FR"
+      },
+      "sire_dam": {
+        "name": "ISKRA",
+        "year_of_birth": 1961,
+        "country": "FR"
+      },
+      "sire_dam_sire": {
+        "name": "LE HAAR",
+        "year_of_birth": 1954,
+        "country": "FR"
+      },
+      "sire_dam_dam": {
+        "name": "FASCIOLA",
+        "year_of_birth": 1946,
+        "country": "FR"
+      },
+      "dam": {
+        "name": "CAROLS CHRISTMAS",
+        "year_of_birth": 1977,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "WHITESBURG",
+        "year_of_birth": 1969,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "CRIMSON SATAN",
+        "year_of_birth": 1959,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "MIRABIO",
+        "year_of_birth": 1960,
+        "country": "FR"
+      },
+      "dam_dam": {
+        "name": "LIGHT VERSE",
+        "year_of_birth": 1970,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "REVERSE",
+        "year_of_birth": 1962,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "BRIGHTON VIEW",
+        "year_of_birth": 1962,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Pharos 5x5"
+    ]
+  },
   "sales": [],
   "form": {
     "starts": 3,
@@ -89,7 +180,8 @@
     "value_flag": null
   },
   "sources": [
-    "https://www.horseracingnation.com/horse/Olympio"
+    "https://www.horseracingnation.com/horse/Olympio",
+    "https://www.pedigreequery.com/olympio"
   ],
-  "last_updated": "2026-06-11T11:34:14.373820+00:00"
+  "last_updated": "2026-06-12T12:06:40.133442+00:00"
 }

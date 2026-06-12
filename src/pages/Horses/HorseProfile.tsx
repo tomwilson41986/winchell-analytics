@@ -18,7 +18,7 @@ import {
   type SaleRecord,
 } from '../../lib/portfolio'
 import '../page.css'
-import './portfolio.css'
+import './horses.css'
 
 function Loading({ label }: { label: string }) {
   return (

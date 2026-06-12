@@ -14,15 +14,9 @@ interface SectionCard {
 
 const SECTIONS: SectionCard[] = [
   {
-    to: '/portfolio',
-    title: 'Portfolio',
-    blurb: 'The Winchell string scored end to end — pedigree, form, earnings and results.',
-    icon: 'spark',
-  },
-  {
     to: '/horses',
     title: 'Horses',
-    blurb: 'Profiles, connections and performance across the string.',
+    blurb: 'The Winchell string scored end to end — pedigree, form, earnings and full results.',
     icon: 'horseshoe',
   },
   {
@@ -75,12 +69,12 @@ export default function Home() {
             full race results, built for clear, fast, defensible analysis.
           </p>
           <div className="hero__actions">
-            <Link to="/portfolio" className="btn btn--primary">
-              Open the portfolio
+            <Link to="/horses" className="btn btn--primary">
+              Browse the horses
               <Icon name="arrow" size={18} />
             </Link>
-            <Link to="/horses" className="btn btn--ghost">
-              Browse horses
+            <Link to="/sales/live" className="btn btn--ghost">
+              Live sales
             </Link>
           </div>
         </div>

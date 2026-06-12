@@ -47,28 +47,19 @@ export function loadLiveSales(): Promise<LiveSalesFeed> {
 /** Fixed country display order; unknown codes group last under "Other". */
 export const COUNTRY_ORDER = ['UK', 'IRE', 'FR', 'DE', 'US', 'AUS', 'NZ']
 
-export const COUNTRY_FLAGS: Record<string, string> = {
-  UK: '🇬🇧',
-  IRE: '🇮🇪',
-  FR: '🇫🇷',
-  DE: '🇩🇪',
-  US: '🇺🇸',
-  AUS: '🇦🇺',
-  NZ: '🇳🇿',
-}
-
-export const SALE_TYPE_ICONS: Record<string, string> = {
-  'Breeze Up': '⏱️',
-  HIT: '🏇',
-  'Foal / Weanling': '🍼',
-  Broodmare: '♀️',
-  Yearling: '🐎',
-  Mixed: '🔀',
+export const COUNTRY_NAMES: Record<string, string> = {
+  UK: 'United Kingdom',
+  IRE: 'Ireland',
+  FR: 'France',
+  DE: 'Germany',
+  US: 'United States',
+  AUS: 'Australia',
+  NZ: 'New Zealand',
+  Other: 'Other',
 }
 
 export interface CountryGroup {
   country: string
-  flag: string
   catalogues: LiveCatalogue[]
 }
 
@@ -83,7 +74,7 @@ export function groupByCountry(catalogues: LiveCatalogue[]): CountryGroup[] {
   }
   return [...COUNTRY_ORDER, 'Other']
     .filter((c) => groups.has(c))
-    .map((c) => ({ country: c, flag: COUNTRY_FLAGS[c] ?? '🌍', catalogues: groups.get(c)! }))
+    .map((c) => ({ country: c, catalogues: groups.get(c)! }))
 }
 
 const MONTHS_SHORT = [

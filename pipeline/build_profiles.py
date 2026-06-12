@@ -108,6 +108,7 @@ def _card(profile: HorseProfile) -> PortfolioCard:
         name=profile.name,
         sire=ped.sire.name if ped and ped.sire else None,
         dam=ped.dam.name if ped and ped.dam else None,
+        damsire=ped.damsire.name if ped and ped.damsire else None,
         trainer=profile.current_trainer,
         status=profile.status,
         starts=form.starts,

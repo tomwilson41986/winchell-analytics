@@ -102,6 +102,7 @@ export interface PortfolioCard {
   name: string
   sire: string | null
   dam: string | null
+  damsire: string | null
   trainer: string | null
   status: string | null
   starts: number
@@ -176,6 +177,7 @@ const CSV_COLUMNS: { key: keyof PortfolioCard; header: string }[] = [
   { key: 'name', header: 'Horse' },
   { key: 'sire', header: 'Sire' },
   { key: 'dam', header: 'Dam' },
+  { key: 'damsire', header: 'Damsire' },
   { key: 'trainer', header: 'Trainer' },
   { key: 'status', header: 'Status' },
   { key: 'starts', header: 'Starts' },

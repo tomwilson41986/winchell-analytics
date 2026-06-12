@@ -10,7 +10,7 @@ Deploys to **Netlify**.
 | Route                          | Section                                      |
 | ------------------------------ | -------------------------------------------- |
 | `/`                            | Home                                         |
-| `/horses`                      | Horses                                       |
+| `/horses`                      | Horses (merged portfolio: roster, KPIs, charts) |
 | `/sales`                       | Sales (landing: Live + Historic)             |
 | `/sales/live`                  | Live Sales (upcoming global auctions, subscriptions) |
 | `/sales/historic`              | Historic Sales (results data and analysis)   |
@@ -175,10 +175,11 @@ publishes automatically.
 
 A Python 3.11 pipeline discovers the Winchell Thoroughbreds roster, scrapes
 pedigree / sales / results, scores each horse, and writes canonical JSON that
-the site reads at runtime. Two routes surface it: **`/portfolio`** (overview
-with KPI cards, search and a sortable roster table) and **`/horse/:horseId`**
-(per-horse profile: pedigree, sales, cumulative-earnings chart and full
-results). They reuse the site's existing components and palette.
+the site reads at runtime. Two routes surface it: **`/horses`** (overview
+with KPI cards, search and a sortable roster table; `/portfolio` redirects
+here) and **`/horse/:horseId`** (per-horse profile: pedigree, sales,
+cumulative-earnings chart and full results). They reuse the site's existing
+components and palette.
 
 ## Layout
 
@@ -380,7 +381,7 @@ with real pedigree data plus whatever else resolves.
 Two routes embedded in the existing Winchell Analytics app, reusing its design
 system:
 
-- **`/portfolio`** — five KPI tiles (horses, active, total earnings, graded and
+- **`/horses`** — five KPI tiles (horses, active, total earnings, graded and
   black-type winners); an **analytics** block (career earnings by horse, wins by
   sire, status breakdown — Recharts); **filters** (status, sire, black-type
   only) and full-text search over a sortable roster table; and a **Download

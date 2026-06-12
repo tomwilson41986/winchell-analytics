@@ -2,8 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import Horses from './pages/Horses'
-import Portfolio from './pages/Portfolio'
-import HorseProfile from './pages/Portfolio/HorseProfile'
+import HorseProfile from './pages/Horses/HorseProfile'
 import Sales from './pages/Sales'
 import LiveSales from './pages/Sales/LiveSales'
 import HistoricSales from './pages/Sales/HistoricSales'
@@ -18,7 +17,8 @@ export default function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="portfolio" element={<Portfolio />} />
+        {/* Portfolio and Horses were merged; keep the old URL working. */}
+        <Route path="portfolio" element={<Navigate to="/horses" replace />} />
         <Route path="horse/:horseId" element={<HorseProfile />} />
         <Route path="horses" element={<Horses />} />
         <Route path="sales">

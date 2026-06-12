@@ -9,7 +9,98 @@
   "current_trainer": "Ronald L. McAnally",
   "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC. Sire (seed): His Majesty.",
   "status": "Retired",
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "HIS MAJESTY",
+      "year_of_birth": 1968,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "PREMIUM WIN",
+      "year_of_birth": 1981,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "LYPHARD",
+      "year_of_birth": 1969,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "HIS MAJESTY",
+        "year_of_birth": 1968,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "RIBOT",
+        "year_of_birth": 1952,
+        "country": "GB"
+      },
+      "sire_sire_sire": {
+        "name": "TENERANI",
+        "year_of_birth": 1944,
+        "country": "ITY"
+      },
+      "sire_sire_dam": {
+        "name": "ROMANELLA",
+        "year_of_birth": 1943,
+        "country": "ITY"
+      },
+      "sire_dam": {
+        "name": "FLOWER BOWL",
+        "year_of_birth": 1952,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "ALIBHAI",
+        "year_of_birth": 1938,
+        "country": "GB"
+      },
+      "sire_dam_dam": {
+        "name": "FLOWER BED",
+        "year_of_birth": 1946,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "PREMIUM WIN",
+        "year_of_birth": 1981,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "LYPHARD",
+        "year_of_birth": 1969,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "NORTHERN DANCER",
+        "year_of_birth": 1961,
+        "country": "CAN"
+      },
+      "dam_sire_dam": {
+        "name": "GOOFED",
+        "year_of_birth": 1960,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "CLASSIC PERFECTION",
+        "year_of_birth": 1972,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "NEVER BEND",
+        "year_of_birth": 1960,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "MIRA FEMME",
+        "year_of_birth": 1964,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Nearco 5x5"
+    ]
+  },
   "sales": [],
   "form": {
     "starts": 2,
@@ -71,7 +162,8 @@
     "value_flag": null
   },
   "sources": [
-    "https://www.horseracingnation.com/horse/Valiant_Nature"
+    "https://www.horseracingnation.com/horse/Valiant_Nature",
+    "https://www.pedigreequery.com/valiant+nature"
   ],
-  "last_updated": "2026-06-11T11:39:47.647540+00:00"
+  "last_updated": "2026-06-12T12:07:55.210138+00:00"
 }

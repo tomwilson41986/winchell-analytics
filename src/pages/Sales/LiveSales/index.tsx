@@ -1,16 +1,18 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
+import CountryFlag from '../../../components/CountryFlag'
 import DataTable, { type Column } from '../../../components/DataTable'
 import Icon from '../../../components/Icon'
 import Modal from '../../../components/Modal'
 import PageHeader from '../../../components/PageHeader'
+import SaleTypeIcon from '../../../components/SaleTypeIcon'
 import StatTile from '../../../components/StatTile'
 import { useAuth } from '../../../lib/auth'
 import {
+  COUNTRY_NAMES,
   formatDateSpan,
   groupByCountry,
   loadLiveSales,
-  SALE_TYPE_ICONS,
   type LiveCatalogue,
   type LiveLot,
   type LiveSalesFeed,
@@ -219,7 +221,11 @@ export default function LiveSales() {
         {groups.map((group) => (
           <div key={group.country} className="country-group">
             <h3 className="country-group__title">
-              <span aria-hidden="true">{group.flag}</span> {group.country}
+              <CountryFlag country={group.country} />
+              {COUNTRY_NAMES[group.country] ?? group.country}
+              <span className="country-group__count">
+                {group.catalogues.length} {group.catalogues.length === 1 ? 'sale' : 'sales'}
+              </span>
             </h3>
             <ul className="sale-list">
               {group.catalogues.map((cat) => {
@@ -229,9 +235,7 @@ export default function LiveSales() {
                     key={cat.id}
                     className={`sale-row${cat.is_active ? ' sale-row--active' : ''}`}
                   >
-                    <span className="sale-row__type" title={cat.sale_type}>
-                      {SALE_TYPE_ICONS[cat.sale_type] ?? '🔀'}
-                    </span>
+                    <SaleTypeIcon type={cat.sale_type} />
                     <div className="sale-row__main">
                       <div className="sale-row__name">
                         <a href={cat.url} target="_blank" rel="noreferrer">

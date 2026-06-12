@@ -9,7 +9,98 @@
   "current_trainer": "Steven M. Asmussen",
   "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC. Sire (seed): Epicenter.",
   "status": "Active",
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "EPICENTER",
+      "year_of_birth": 2019,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "JUST WICKED",
+      "year_of_birth": 2013,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "TAPIT",
+      "year_of_birth": 2001,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "EPICENTER",
+        "year_of_birth": 2019,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "NOT THIS TIME",
+        "year_of_birth": 2014,
+        "country": "USA"
+      },
+      "sire_sire_sire": {
+        "name": "GIANTS CAUSEWAY",
+        "year_of_birth": 1997,
+        "country": "USA"
+      },
+      "sire_sire_dam": {
+        "name": "MISS MACY SUE",
+        "year_of_birth": 2003,
+        "country": "USA"
+      },
+      "sire_dam": {
+        "name": "SILENT CANDY",
+        "year_of_birth": 2007,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "CANDY RIDE",
+        "year_of_birth": 1999,
+        "country": "ARG"
+      },
+      "sire_dam_dam": {
+        "name": "SILENT QUEEN",
+        "year_of_birth": 2000,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "JUST WICKED",
+        "year_of_birth": 2013,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "TAPIT",
+        "year_of_birth": 2001,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "PULPIT",
+        "year_of_birth": 1994,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "TAP YOUR HEELS",
+        "year_of_birth": 1996,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "WICKED DEED",
+        "year_of_birth": 2008,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "HARLAN'S HOLIDAY",
+        "year_of_birth": 1999,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "MARFA'S SQUALL",
+        "year_of_birth": 1998,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Storm Cat 4x5"
+    ]
+  },
   "sales": [],
   "form": {
     "starts": 1,
@@ -53,7 +144,8 @@
     "value_flag": null
   },
   "sources": [
-    "https://www.horseracingnation.com/horse/Just_Epic"
+    "https://www.horseracingnation.com/horse/Just_Epic",
+    "https://www.pedigreequery.com/just+epic"
   ],
-  "last_updated": "2026-06-11T11:32:27.249097+00:00"
+  "last_updated": "2026-06-12T12:04:05.135322+00:00"
 }

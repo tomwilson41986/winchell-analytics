@@ -9,7 +9,104 @@
   "current_trainer": "Steven M. Asmussen",
   "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC. Sire (seed): Bluegrass Cat.",
   "status": "Retired",
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "BLUEGRASS CAT",
+      "year_of_birth": 2003,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "MINER'S BLESSING",
+      "year_of_birth": 1994,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "FORTY NINER",
+      "year_of_birth": 1985,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "BLUEGRASS CAT",
+        "year_of_birth": 2003,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "STORM CAT",
+        "year_of_birth": 1983,
+        "country": "USA"
+      },
+      "sire_sire_sire": {
+        "name": "STORM BIRD",
+        "year_of_birth": 1978,
+        "country": "CAN"
+      },
+      "sire_sire_dam": {
+        "name": "TERLINGUA",
+        "year_of_birth": 1976,
+        "country": "USA"
+      },
+      "sire_dam": {
+        "name": "SHE'S A WINNER",
+        "year_of_birth": 1996,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "A.P. INDY",
+        "year_of_birth": 1989,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "GET LUCKY",
+        "year_of_birth": 1988,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "MINER'S BLESSING",
+        "year_of_birth": 1994,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "FORTY NINER",
+        "year_of_birth": 1985,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "MR. PROSPECTOR",
+        "year_of_birth": 1970,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "FILE",
+        "year_of_birth": 1976,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "BLESS YOU",
+        "year_of_birth": 1985,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "HALO",
+        "year_of_birth": 1969,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "WEDDING PARTY",
+        "year_of_birth": 1979,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Bold Ruler 5x5",
+      "Gold Digger 4x5",
+      "Mr. Prospector 3x4",
+      "Northern Dancer 4x5",
+      "Raise A Native 4x5",
+      "Secretariat 4x5",
+      "Tom Rolfe 4x5"
+    ]
+  },
   "sales": [],
   "form": {
     "starts": 23,
@@ -449,7 +546,8 @@
     "value_flag": "improving black-type performer"
   },
   "sources": [
-    "https://www.horseracingnation.com/horse/Sabercat"
+    "https://www.horseracingnation.com/horse/Sabercat",
+    "https://www.pedigreequery.com/sabercat"
   ],
-  "last_updated": "2026-06-11T11:35:03.446700+00:00"
+  "last_updated": "2026-06-12T12:06:55.208546+00:00"
 }

@@ -9,7 +9,100 @@
   "current_trainer": "Steven M. Asmussen",
   "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC. Sire (seed): Not This Time.",
   "status": "Active",
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "NOT THIS TIME",
+      "year_of_birth": 2014,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "ROCKADELIC",
+      "year_of_birth": 2014,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "BERNARDINI",
+      "year_of_birth": 2003,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "NOT THIS TIME",
+        "year_of_birth": 2014,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "GIANTS CAUSEWAY",
+        "year_of_birth": 1997,
+        "country": "USA"
+      },
+      "sire_sire_sire": {
+        "name": "STORM CAT",
+        "year_of_birth": 1983,
+        "country": "USA"
+      },
+      "sire_sire_dam": {
+        "name": "MARIAH'S STORM",
+        "year_of_birth": 1991,
+        "country": "USA"
+      },
+      "sire_dam": {
+        "name": "MISS MACY SUE",
+        "year_of_birth": 2003,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "TRIPPI",
+        "year_of_birth": 1997,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "YADA YADA",
+        "year_of_birth": 1996,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "ROCKADELIC",
+        "year_of_birth": 2014,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "BERNARDINI",
+        "year_of_birth": 2003,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "A.P. INDY",
+        "year_of_birth": 1989,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "CARA RAFAELA",
+        "year_of_birth": 1993,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "OCTAVE",
+        "year_of_birth": 2004,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "UNBRIDLEDS SONG",
+        "year_of_birth": 1993,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "BELLE NUIT",
+        "year_of_birth": 1990,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Caro 5x5",
+      "Fappiano 5x5",
+      "Secretariat 5x5"
+    ]
+  },
   "sales": [],
   "form": {
     "starts": 13,
@@ -269,7 +362,8 @@
     "value_flag": "high strike rate"
   },
   "sources": [
-    "https://www.horseracingnation.com/horse/Magnitude_3"
+    "https://www.horseracingnation.com/horse/Magnitude_3",
+    "https://www.pedigreequery.com/magnitude15"
   ],
-  "last_updated": "2026-06-11T11:33:05.262043+00:00"
+  "last_updated": "2026-06-12T12:15:06.481482+00:00"
 }

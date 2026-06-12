@@ -9,7 +9,98 @@
   "current_trainer": "Steven M. Asmussen",
   "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC. Sire (seed): Cherokee Run.",
   "status": "Retired",
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "CHEROKEE RUN",
+      "year_of_birth": 1990,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "CHECKERED FLAG",
+      "year_of_birth": 1998,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "A.P. INDY",
+      "year_of_birth": 1989,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "CHEROKEE RUN",
+        "year_of_birth": 1990,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "RUNAWAY GROOM",
+        "year_of_birth": 1979,
+        "country": "CAN"
+      },
+      "sire_sire_sire": {
+        "name": "BLUSHING GROOM",
+        "year_of_birth": 1974,
+        "country": "FR"
+      },
+      "sire_sire_dam": {
+        "name": "YONNIE GIRL",
+        "year_of_birth": 1966,
+        "country": "USA"
+      },
+      "sire_dam": {
+        "name": "CHEROKEE DAME",
+        "year_of_birth": 1980,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "SILVER SABER",
+        "year_of_birth": 1972,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "DAME FRANCESCA",
+        "year_of_birth": 1966,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "CHECKERED FLAG",
+        "year_of_birth": 1998,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "A.P. INDY",
+        "year_of_birth": 1989,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "SEATTLE SLEW",
+        "year_of_birth": 1974,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "WEEKEND SURPRISE",
+        "year_of_birth": 1980,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "SHAWNEE CREEK",
+        "year_of_birth": 1980,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "MR. PROSPECTOR",
+        "year_of_birth": 1970,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "BACK ACK",
+        "year_of_birth": 1976,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Nasrullah 5x5"
+    ]
+  },
   "sales": [],
   "form": {
     "starts": 5,
@@ -125,7 +216,8 @@
     "value_flag": "improving black-type performer"
   },
   "sources": [
-    "https://www.horseracingnation.com/horse/Zanjero"
+    "https://www.horseracingnation.com/horse/Zanjero",
+    "https://www.pedigreequery.com/zanjero"
   ],
-  "last_updated": "2026-06-11T11:40:35.350407+00:00"
+  "last_updated": "2026-06-12T12:08:50.191236+00:00"
 }
