@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Icon, { type IconName } from '../components/Icon'
 import StatTile from '../components/StatTile'
-import { loadPortfolio, money, type PortfolioRollup } from '../lib/portfolio'
+import { loadPortfolio, money, moneyCompact, type PortfolioRollup } from '../lib/portfolio'
 import './page.css'
 
 interface SectionCard {
@@ -95,7 +95,12 @@ export default function Home() {
           />
           <StatTile
             label="Total earnings"
-            value={has ? money(portfolio!.total_earnings, portfolio!.currency ?? 'USD') : ''}
+            value={has ? moneyCompact(portfolio!.total_earnings, portfolio!.currency ?? 'USD') : ''}
+            hint={
+              has && portfolio!.total_earnings != null
+                ? money(portfolio!.total_earnings, portfolio!.currency ?? 'USD')
+                : undefined
+            }
             pending={!has}
           />
           <StatTile

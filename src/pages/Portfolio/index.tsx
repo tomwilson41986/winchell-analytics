@@ -11,6 +11,7 @@ import {
   downloadText,
   loadPortfolio,
   money,
+  moneyCompact,
   orDash,
   titleCase,
   type PortfolioCard,
@@ -110,7 +111,10 @@ export default function Portfolio() {
     [rows],
   )
   const winsBySire = useMemo(
-    () => groupSum(rows, (c) => titleCase(c.sire), (c) => c.wins).filter((d) => d.value > 0),
+    () =>
+      groupSum(rows, (c) => (c.sire ? titleCase(c.sire) : null), (c) => c.wins).filter(
+        (d) => d.value > 0,
+      ),
     [rows],
   )
   const statusBreakdown = useMemo(() => countBy(rows, (c) => c.status), [rows])
@@ -169,7 +173,8 @@ export default function Portfolio() {
               <StatTile label="Active" value={String(data.active_count)} />
               <StatTile
                 label="Total earnings"
-                value={money(data.total_earnings, data.currency ?? 'USD')}
+                value={moneyCompact(data.total_earnings, data.currency ?? 'USD')}
+                hint={data.total_earnings != null ? money(data.total_earnings, data.currency ?? 'USD') : undefined}
               />
               <StatTile label="Graded winners" value={String(data.graded_winners)} />
               <StatTile label="Black-type winners" value={String(data.black_type_winners)} />
@@ -186,12 +191,18 @@ export default function Portfolio() {
               </span>
             </div>
             <div className="chart-grid chart-grid--2">
-              <ChartCard title="Career earnings by horse" subtitle="Top earners">
+              <ChartCard
+                title="Career earnings by horse"
+                subtitle={earningsByHorse.length ? 'Top earners' : 'no data found'}
+              >
                 {earningsByHorse.length ? (
                   <BarChart data={earningsByHorse} valueLabel="Earnings" valueFormatter={(v) => money(v)} />
                 ) : undefined}
               </ChartCard>
-              <ChartCard title="Wins by sire" subtitle="Race wins grouped by sire">
+              <ChartCard
+                title="Wins by sire"
+                subtitle={winsBySire.length ? 'Race wins grouped by sire' : 'no data found'}
+              >
                 {winsBySire.length ? (
                   <BarChart data={winsBySire} valueLabel="Wins" valueFormatter={String} allowDecimals={false} />
                 ) : undefined}

@@ -33,9 +33,11 @@
   font-family: var(--font-display);
   font-size: 1.9rem;
   font-weight: 800;
-  line-height: 1;
+  line-height: 1.05;
   letter-spacing: -0.02em;
   color: var(--ink);
+  /* Wrap rather than clip when a value outgrows the tile. */
+  overflow-wrap: anywhere;
 }
 
 .stat__hint {

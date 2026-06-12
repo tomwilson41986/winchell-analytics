@@ -150,6 +150,20 @@ export function money(value: number | null | undefined, currency = 'USD'): strin
   }).format(value)
 }
 
+/**
+ * Compact currency for tight spaces like stat tiles (e.g. "US$27.7M").
+ * Pair with the exact `money()` value in a hint/tooltip where precision matters.
+ */
+export function moneyCompact(value: number | null | undefined, currency = 'USD'): string {
+  if (value == null) return NO_DATA
+  return new Intl.NumberFormat('en-GB', {
+    style: 'currency',
+    currency,
+    notation: 'compact',
+    maximumFractionDigits: 1,
+  }).format(value)
+}
+
 /** Format a 0–1 ratio as a percentage, or the no-data tag. */
 export function pct(value: number | null | undefined, digits = 0): string {
   if (value == null) return NO_DATA
