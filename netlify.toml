@@ -5,6 +5,21 @@
 [build.environment]
   NODE_VERSION = "22"
 
+# Content-hashed bundles (JS/CSS/fonts) never change for a given URL, so cache
+# them permanently. A new deploy ships new filenames, sidestepping staleness.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Data lives at stable URLs and is refreshed by the daily pipeline, so it must
+# always be revalidated — Netlify answers unchanged files with a cheap 304,
+# while a data refresh reaches every visitor immediately.
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
 # SPA fallback so client-side (React Router) routes resolve on direct hits / refresh
 [[redirects]]
   from = "/*"
