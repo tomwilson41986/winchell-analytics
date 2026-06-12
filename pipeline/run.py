@@ -2,6 +2,7 @@
 
     python -m pipeline.run --refresh-roster      # discover the roster -> roster.json
     python -m pipeline.run --build-profiles      # scrape + score -> profiles + index
+    python -m pipeline.run --refresh-pedigrees   # backfill pedigree only
     python -m pipeline.run --publish             # copy JSON into the frontend
 
 Flags compose, e.g. ``--refresh-roster --build-profiles --publish`` runs the
@@ -13,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shutil
 from pathlib import Path
 
@@ -27,8 +29,8 @@ from scrapers.horse_scrapers import (
 from scrapers.owner_discovery import RosterEntry, discover_roster, from_seed
 from scrapers.wiki import WikiScraper
 
-from .build_profiles import build_profile, write_index_and_rollup, write_profile
-from .schema import HorseProfile
+from .build_profiles import build_profile, slugify, write_index_and_rollup, write_profile
+from .schema import HorseProfile, Pedigree, PedigreeNode, utc_now_iso
 from .score import summarise_form
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
@@ -78,6 +80,24 @@ def load_roster() -> list[RosterEntry]:
 # --------------------------------------------------------------------------- #
 
 
+def fallback_pedigree(seed_sire, conn) -> Pedigree | None:
+    """Best remaining pedigree when pedigreequery resolves nothing.
+
+    HRN's pedigree summary line ("SIRE - DAM by DAMSIRE") is real, sourced
+    data, so prefer it; otherwise the confirmed seed sire alone. Returns
+    ``None`` when neither is available — never an empty shell.
+    """
+    if conn is not None and (conn.sire or conn.dam):
+        return Pedigree(
+            sire=PedigreeNode(name=conn.sire) if conn.sire else None,
+            dam=PedigreeNode(name=conn.dam) if conn.dam else None,
+            damsire=PedigreeNode(name=conn.damsire) if conn.damsire else None,
+        )
+    if seed_sire:
+        return Pedigree(sire=PedigreeNode(name=seed_sire))
+    return None
+
+
 def build_profiles(client: HttpClient, roster: list[RosterEntry]) -> list[HorseProfile]:
     ped_scraper = PedigreeScraper(client)
     results_scraper = ResultsScraper(client)
@@ -113,6 +133,14 @@ def build_profiles(client: HttpClient, roster: list[RosterEntry]) -> list[HorseP
             )
             if ped_url:
                 sources.append(ped_url)
+        # Degrade to the HRN summary line, then the confirmed seed sire,
+        # rather than losing the sire line entirely on a blocked source.
+        ped_from_seed = False
+        if pedigree is None:
+            pedigree = fallback_pedigree(entry.sire, conn)
+            ped_from_seed = pedigree is not None and not (
+                conn and (conn.sire or conn.dam)
+            )
 
         # Open, citable enrichment: record, earnings, owner confirmation, bio,
         # and the Equibase refno (used to target imported result charts).
@@ -177,7 +205,9 @@ def build_profiles(client: HttpClient, roster: list[RosterEntry]) -> list[HorseP
             form=form,
             sources=sources,
         )
-        if profile.pedigree is None and entry.sire:
+        # Flag seed-only provenance: the sire is from our confirmed roster
+        # entry, not a fetched source.
+        if entry.sire and (profile.pedigree is None or ped_from_seed):
             profile.ownership_note = (
                 f"{profile.ownership_note} Sire (seed): {entry.sire}."
             )
@@ -185,7 +215,7 @@ def build_profiles(client: HttpClient, roster: list[RosterEntry]) -> list[HorseP
         profiles.append(profile)
         flags = []
         if pedigree:
-            flags.append("pedigree")
+            flags.append("pedigree" if ped_url else "pedigree (fallback)")
         if results:
             src = "Equibase" if eq_results else "HRN"
             flags.append(f"{len(results)} results ({src})")
@@ -200,6 +230,67 @@ def build_profiles(client: HttpClient, roster: list[RosterEntry]) -> list[HorseP
     horses_path, portfolio_path = write_index_and_rollup(profiles)
     print(f"[index] {horses_path.name}, {portfolio_path.name} written")
     return profiles
+
+
+def refresh_pedigrees(client: HttpClient, roster: list[RosterEntry]) -> None:
+    """Backfill pedigree into already-built profiles, leaving the rest intact.
+
+    A pedigree-only pass for when pedigreequery was unreachable during the
+    original build: fetches just the pedigree per roster horse, patches the
+    stored profile, and rewrites the index/rollup. Results, form, sales and
+    connections are not re-scraped, so a flaky source cannot erase them.
+    """
+    ped_scraper = PedigreeScraper(client)
+    profiles: list[HorseProfile] = []
+    fetched = seeded = kept = missing = 0
+
+    for entry in roster:
+        path = PROFILES_DIR / f"{slugify(entry.name)}.json"
+        if not path.exists():
+            print(f"[pedigree] {entry.name:18} -> no profile on disk, skipped")
+            missing += 1
+            continue
+        profile = HorseProfile.model_validate_json(path.read_text(encoding="utf-8"))
+
+        if profile.pedigree is not None and profile.pedigree.extended:
+            kept += 1  # already has a fully-resolved pedigree
+            profiles.append(profile)
+            continue
+
+        pedigree, ped_url = ped_scraper.fetch(
+            entry.name,
+            url=entry.pedigree_url,
+            expected_sire=entry.sire,
+            year_of_birth=entry.year_of_birth,
+        )
+        if pedigree is not None:
+            profile.pedigree = pedigree
+            if ped_url and ped_url not in profile.sources:
+                profile.sources.append(ped_url)
+            # The seed-sire provenance note is superseded by the real source.
+            if profile.ownership_note:
+                profile.ownership_note = re.sub(
+                    r"\s*Sire \(seed\):[^.]*\.", "", profile.ownership_note
+                )
+            profile.last_updated = utc_now_iso()
+            fetched += 1
+            print(f"[pedigree] {entry.name:18} -> {ped_url}")
+        elif profile.pedigree is None and entry.sire:
+            profile.pedigree = Pedigree(sire=PedigreeNode(name=entry.sire))
+            profile.last_updated = utc_now_iso()
+            seeded += 1
+            print(f"[pedigree] {entry.name:18} -> seed sire only ({entry.sire})")
+        else:
+            kept += 1
+            print(f"[pedigree] {entry.name:18} -> no data found")
+        write_profile(profile)
+        profiles.append(profile)
+
+    write_index_and_rollup(profiles)
+    print(
+        f"[pedigree] done: {fetched} fetched, {seeded} seed-only, "
+        f"{kept} unchanged, {missing} skipped; index rewritten"
+    )
 
 
 # --------------------------------------------------------------------------- #
@@ -289,6 +380,11 @@ def main(argv: list[str] | None = None) -> int:
         "import the saved page first with --import-html --url URL)",
     )
     parser.add_argument("--build-profiles", action="store_true", help="scrape + score profiles")
+    parser.add_argument(
+        "--refresh-pedigrees",
+        action="store_true",
+        help="backfill pedigree into existing profiles (no other re-scraping)",
+    )
     parser.add_argument("--publish", action="store_true", help="copy JSON into the frontend")
     parser.add_argument(
         "--import-html",
@@ -305,7 +401,13 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     if not any(
-        [args.refresh_roster, args.build_profiles, args.publish, args.import_html]
+        [
+            args.refresh_roster,
+            args.build_profiles,
+            args.refresh_pedigrees,
+            args.publish,
+            args.import_html,
+        ]
     ):
         parser.print_help()
         return 1
@@ -331,6 +433,8 @@ def main(argv: list[str] | None = None) -> int:
         )
         if args.build_profiles:
             build_profiles(client, roster)
+        if args.refresh_pedigrees:
+            refresh_pedigrees(client, roster)
         if args.publish:
             publish()
     finally:

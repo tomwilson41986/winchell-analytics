@@ -9,7 +9,17 @@
   "current_trainer": "Steven M. Asmussen",
   "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC. Sire (seed): Not This Time.",
   "status": "Active",
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "Not This Time",
+      "year_of_birth": null,
+      "country": null
+    },
+    "dam": null,
+    "damsire": null,
+    "extended": {},
+    "inbreeding": []
+  },
   "sales": [],
   "form": {
     "starts": 13,
@@ -271,5 +281,5 @@
   "sources": [
     "https://www.horseracingnation.com/horse/Magnitude_3"
   ],
-  "last_updated": "2026-06-11T11:33:05.262043+00:00"
+  "last_updated": "2026-06-12T10:57:38.040523+00:00"
 }

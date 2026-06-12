@@ -7,9 +7,100 @@
   "country": "Kentucky, US",
   "breeder": null,
   "current_trainer": "Steven M. Asmussen",
-  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC. Sire (seed): Epicenter.",
+  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC.",
   "status": "Active",
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "EPICENTER",
+      "year_of_birth": 2019,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "SIMPLY SOVEREIGN",
+      "year_of_birth": 2018,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "AMERICAN PHAROAH",
+      "year_of_birth": 2012,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "EPICENTER",
+        "year_of_birth": 2019,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "NOT THIS TIME",
+        "year_of_birth": 2014,
+        "country": "USA"
+      },
+      "sire_sire_sire": {
+        "name": "GIANTS CAUSEWAY",
+        "year_of_birth": 1997,
+        "country": "USA"
+      },
+      "sire_sire_dam": {
+        "name": "MISS MACY SUE",
+        "year_of_birth": 2003,
+        "country": "USA"
+      },
+      "sire_dam": {
+        "name": "SILENT CANDY",
+        "year_of_birth": 2007,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "CANDY RIDE",
+        "year_of_birth": 1999,
+        "country": "ARG"
+      },
+      "sire_dam_dam": {
+        "name": "SILENT QUEEN",
+        "year_of_birth": 2000,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "SIMPLY SOVEREIGN",
+        "year_of_birth": 2018,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "AMERICAN PHAROAH",
+        "year_of_birth": 2012,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "PIONEEROF THE NILE",
+        "year_of_birth": 2006,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "LITTLEPRINCESSEMMA",
+        "year_of_birth": 2006,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "SIMPLIFY",
+        "year_of_birth": 2006,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "PULPIT",
+        "year_of_birth": 1994,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "CLASSIC OLYMPIO",
+        "year_of_birth": 1997,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Storm Cat 4x5"
+    ]
+  },
   "sales": [],
   "form": {
     "starts": 1,
@@ -53,7 +144,8 @@
     "value_flag": null
   },
   "sources": [
-    "https://www.horseracingnation.com/horse/Epic_Reign"
+    "https://www.horseracingnation.com/horse/Epic_Reign",
+    "https://www.pedigreequery.com/epic+reign2"
   ],
-  "last_updated": "2026-06-11T11:28:48.290911+00:00"
+  "last_updated": "2026-06-12T10:56:51.950007+00:00"
 }

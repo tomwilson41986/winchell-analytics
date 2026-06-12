@@ -7,9 +7,100 @@
   "country": "Kentucky, US",
   "breeder": null,
   "current_trainer": "Steven M. Asmussen",
-  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC. Sire (seed): Gun Runner.",
+  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC.",
   "status": "Active",
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "GUN RUNNER",
+      "year_of_birth": 2013,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "TIME TO TAP",
+      "year_of_birth": 2012,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "TAPIT",
+      "year_of_birth": 2001,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "GUN RUNNER",
+        "year_of_birth": 2013,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "CANDY RIDE",
+        "year_of_birth": 1999,
+        "country": "ARG"
+      },
+      "sire_sire_sire": {
+        "name": "RIDE THE RAILS",
+        "year_of_birth": 1991,
+        "country": "USA"
+      },
+      "sire_sire_dam": {
+        "name": "CANDY GIRL",
+        "year_of_birth": 1990,
+        "country": "ARG"
+      },
+      "sire_dam": {
+        "name": "QUIET GIANT",
+        "year_of_birth": 2007,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "GIANTS CAUSEWAY",
+        "year_of_birth": 1997,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "QUIET DANCE",
+        "year_of_birth": 1993,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "TIME TO TAP",
+        "year_of_birth": 2012,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "TAPIT",
+        "year_of_birth": 2001,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "PULPIT",
+        "year_of_birth": 1994,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "TAP YOUR HEELS",
+        "year_of_birth": 1996,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "FUN HOUSE",
+        "year_of_birth": 1999,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "PRIZED",
+        "year_of_birth": 1986,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "BISTRA",
+        "year_of_birth": 1986,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Fappiano 5x5x5"
+    ]
+  },
   "sales": [],
   "form": {
     "starts": 23,
@@ -449,7 +540,8 @@
     "value_flag": null
   },
   "sources": [
-    "https://www.horseracingnation.com/horse/Dimatic"
+    "https://www.horseracingnation.com/horse/Dimatic",
+    "https://www.pedigreequery.com/dimatic"
   ],
-  "last_updated": "2026-06-11T11:28:13.043479+00:00"
+  "last_updated": "2026-06-12T10:56:33.883279+00:00"
 }

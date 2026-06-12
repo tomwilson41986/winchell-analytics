@@ -7,9 +7,103 @@
   "country": "Virginia, US",
   "breeder": null,
   "current_trainer": "Todd A. Pletcher",
-  "ownership_note": "Winchell roster (seed); racing owner of record: Edward P. Evans, The Estate of Edward P. Evans. Sire (seed): Giant's Causeway.",
+  "ownership_note": "Winchell roster (seed); racing owner of record: Edward P. Evans, The Estate of Edward P. Evans.",
   "status": "Retired",
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "GIANTS CAUSEWAY",
+      "year_of_birth": 1997,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "QUIET DANCE",
+      "year_of_birth": 1993,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "QUIET AMERICAN",
+      "year_of_birth": 1986,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "GIANTS CAUSEWAY",
+        "year_of_birth": 1997,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "STORM CAT",
+        "year_of_birth": 1983,
+        "country": "USA"
+      },
+      "sire_sire_sire": {
+        "name": "STORM BIRD",
+        "year_of_birth": 1978,
+        "country": "CAN"
+      },
+      "sire_sire_dam": {
+        "name": "TERLINGUA",
+        "year_of_birth": 1976,
+        "country": "USA"
+      },
+      "sire_dam": {
+        "name": "MARIAH'S STORM",
+        "year_of_birth": 1991,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "RAHY",
+        "year_of_birth": 1985,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "IMMENSE",
+        "year_of_birth": 1979,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "QUIET DANCE",
+        "year_of_birth": 1993,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "QUIET AMERICAN",
+        "year_of_birth": 1986,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "FAPPIANO",
+        "year_of_birth": 1977,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "DEMURE",
+        "year_of_birth": 1977,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "MISTY DANCER",
+        "year_of_birth": 1988,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "LYPHARD",
+        "year_of_birth": 1969,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "FLIGHT DANCER",
+        "year_of_birth": 1968,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Nearctic 5x5x5",
+      "Dr. Fager 4x5",
+      "Natalma 5x5",
+      "Northern Dancer 4x4"
+    ]
+  },
   "sales": [],
   "form": {
     "starts": 9,
@@ -197,7 +291,8 @@
     "value_flag": "high strike rate"
   },
   "sources": [
-    "https://www.horseracingnation.com/horse/Quiet_Giant"
+    "https://www.horseracingnation.com/horse/Quiet_Giant",
+    "https://www.pedigreequery.com/quiet+giant"
   ],
-  "last_updated": "2026-06-11T11:34:30.639702+00:00"
+  "last_updated": "2026-06-12T10:58:23.997476+00:00"
 }

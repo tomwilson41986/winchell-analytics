@@ -7,9 +7,105 @@
   "country": "Kentucky, US",
   "breeder": "Besilu Stables LLC",
   "current_trainer": "Steven M. Asmussen",
-  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC, Three Chimneys Farm LLC. Sire (seed): Candy Ride.",
+  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC, Three Chimneys Farm LLC.",
   "status": "Retired",
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "CANDY RIDE",
+      "year_of_birth": 1999,
+      "country": "ARG"
+    },
+    "dam": {
+      "name": "QUIET GIANT",
+      "year_of_birth": 2007,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "GIANTS CAUSEWAY",
+      "year_of_birth": 1997,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "CANDY RIDE",
+        "year_of_birth": 1999,
+        "country": "ARG"
+      },
+      "sire_sire": {
+        "name": "RIDE THE RAILS",
+        "year_of_birth": 1991,
+        "country": "USA"
+      },
+      "sire_sire_sire": {
+        "name": "CRYPTOCLEARANCE",
+        "year_of_birth": 1984,
+        "country": "USA"
+      },
+      "sire_sire_dam": {
+        "name": "HERBALESIAN",
+        "year_of_birth": 1969,
+        "country": "USA"
+      },
+      "sire_dam": {
+        "name": "CANDY GIRL",
+        "year_of_birth": 1990,
+        "country": "ARG"
+      },
+      "sire_dam_sire": {
+        "name": "CANDY STRIPES",
+        "year_of_birth": 1982,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "CITY GIRL",
+        "year_of_birth": 1982,
+        "country": "ARG"
+      },
+      "dam": {
+        "name": "QUIET GIANT",
+        "year_of_birth": 2007,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "GIANTS CAUSEWAY",
+        "year_of_birth": 1997,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "STORM CAT",
+        "year_of_birth": 1983,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "MARIAH'S STORM",
+        "year_of_birth": 1991,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "QUIET DANCE",
+        "year_of_birth": 1993,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "QUIET AMERICAN",
+        "year_of_birth": 1986,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "MISTY DANCER",
+        "year_of_birth": 1988,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Blushing Groom 4x5",
+      "Fappiano 4x4",
+      "Killaloe 5x5",
+      "Lyphard 4x5",
+      "Mr. Prospector 5x5",
+      "Northern Dancer 5x5"
+    ]
+  },
   "sales": [],
   "form": {
     "starts": 19,
@@ -378,7 +474,8 @@
   },
   "sources": [
     "https://www.horseracingnation.com/horse/Gun_Runner",
-    "https://en.wikipedia.org/wiki/Gun_Runner_%28horse%29"
+    "https://en.wikipedia.org/wiki/Gun_Runner_%28horse%29",
+    "https://www.pedigreequery.com/gun+runner7"
   ],
-  "last_updated": "2026-06-11T11:31:20.041034+00:00"
+  "last_updated": "2026-06-12T10:57:14.007338+00:00"
 }

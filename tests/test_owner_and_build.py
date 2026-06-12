@@ -1,8 +1,10 @@
-"""Owner matching guard, slugify, and rollup assembly."""
+"""Owner matching guard, slugify, rollup assembly, and pedigree fallback."""
 
 from pipeline.build_profiles import build_profile, build_rollup, slugify
+from pipeline.run import fallback_pedigree
 from pipeline.schema import FormSummary, Pedigree, PedigreeNode
 from scrapers.config import is_winchell_owner
+from scrapers.horse_scrapers import HRNConnections
 
 
 def test_owner_guard_accepts_variants():
@@ -50,3 +52,24 @@ def test_build_rollup_sorts_by_earnings_and_counts():
     assert rollup.total_earnings == 2_900_000
     assert rollup.graded_winners == 1
     assert rollup.horses[0].sire == "CANDY RIDE"
+
+
+def test_fallback_pedigree_prefers_hrn_summary():
+    conn = HRNConnections(sire="Candy Ride", dam="Quiet Giant", damsire="Giant's Causeway")
+    ped = fallback_pedigree("Candy Ride", conn)
+    assert ped is not None
+    assert ped.sire.name == "Candy Ride"
+    assert ped.dam.name == "Quiet Giant"
+    assert ped.damsire.name == "Giant's Causeway"
+
+
+def test_fallback_pedigree_uses_seed_sire_alone():
+    ped = fallback_pedigree("Not This Time", None)
+    assert ped is not None
+    assert ped.sire.name == "Not This Time"
+    assert ped.dam is None
+
+
+def test_fallback_pedigree_never_fabricates():
+    assert fallback_pedigree(None, None) is None
+    assert fallback_pedigree(None, HRNConnections()) is None

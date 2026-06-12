@@ -9,7 +9,17 @@
   "current_trainer": "Steven M. Asmussen",
   "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC and Stonestreet Stables LLC. Sire (seed): Gun Runner.",
   "status": "Active",
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "Gun Runner",
+      "year_of_birth": null,
+      "country": null
+    },
+    "dam": null,
+    "damsire": null,
+    "extended": {},
+    "inbreeding": []
+  },
   "sales": [],
   "form": {
     "starts": 4,
@@ -109,5 +119,5 @@
   "sources": [
     "https://www.horseracingnation.com/horse/Marauder"
   ],
-  "last_updated": "2026-06-11T11:33:21.630013+00:00"
+  "last_updated": "2026-06-12T10:57:54.005109+00:00"
 }

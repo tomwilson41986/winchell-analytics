@@ -9,7 +9,17 @@
   "current_trainer": "Steven M. Asmussen",
   "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds, LLC and St. Elias Stable. Sire (seed): Independence Hall.",
   "status": "Active",
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "Independence Hall",
+      "year_of_birth": null,
+      "country": null
+    },
+    "dam": null,
+    "damsire": null,
+    "extended": {},
+    "inbreeding": []
+  },
   "sales": [],
   "form": {
     "starts": 2,
@@ -73,5 +83,5 @@
   "sources": [
     "https://www.horseracingnation.com/horse/Black_Star_4"
   ],
-  "last_updated": "2026-06-11T11:27:40.497714+00:00"
+  "last_updated": "2026-06-12T10:56:25.887198+00:00"
 }

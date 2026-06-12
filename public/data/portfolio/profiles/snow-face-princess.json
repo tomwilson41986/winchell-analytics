@@ -7,9 +7,103 @@
   "country": "Kentucky, US",
   "breeder": null,
   "current_trainer": "Steven M. Asmussen",
-  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC. Sire (seed): Midshipman.",
+  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC.",
   "status": "Active",
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "MIDSHIPMAN",
+      "year_of_birth": 2006,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "CRUSIN ALONE",
+      "year_of_birth": 2017,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "HONOR CODE",
+      "year_of_birth": 2011,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "MIDSHIPMAN",
+        "year_of_birth": 2006,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "UNBRIDLEDS SONG",
+        "year_of_birth": 1993,
+        "country": "USA"
+      },
+      "sire_sire_sire": {
+        "name": "UNBRIDLED",
+        "year_of_birth": 1987,
+        "country": "USA"
+      },
+      "sire_sire_dam": {
+        "name": "TROLLEY SONG",
+        "year_of_birth": 1983,
+        "country": "USA"
+      },
+      "sire_dam": {
+        "name": "FLEET LADY",
+        "year_of_birth": 1994,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "AVENUE OF FLAGS",
+        "year_of_birth": 1988,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "DEAR MIMI",
+        "year_of_birth": 1987,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "CRUSIN ALONE",
+        "year_of_birth": 2017,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "HONOR CODE",
+        "year_of_birth": 2011,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "A.P. INDY",
+        "year_of_birth": 1989,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "SERENA'S CAT",
+        "year_of_birth": 2003,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "MOONLIGHT SONATA",
+        "year_of_birth": 2000,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "CARSON CITY",
+        "year_of_birth": 1987,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "WHEATLY WAY",
+        "year_of_birth": 1989,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Mr. Prospector 4x5x5",
+      "Bold Reasoning 5x5",
+      "My Charmer 5x5",
+      "Seattle Slew 4x4"
+    ]
+  },
   "sales": [],
   "form": {
     "starts": 7,
@@ -161,7 +255,8 @@
     "value_flag": null
   },
   "sources": [
-    "https://www.horseracingnation.com/horse/Snow_Face_Princess"
+    "https://www.horseracingnation.com/horse/Snow_Face_Princess",
+    "https://www.pedigreequery.com/snow+face+princess"
   ],
-  "last_updated": "2026-06-11T11:35:35.600541+00:00"
+  "last_updated": "2026-06-12T10:58:31.979574+00:00"
 }

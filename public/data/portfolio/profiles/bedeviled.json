@@ -7,9 +7,102 @@
   "country": "Kentucky, US",
   "breeder": null,
   "current_trainer": "Steven M. Asmussen",
-  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC. Sire (seed): Gun Runner.",
+  "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC.",
   "status": "Active",
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "GUN RUNNER",
+      "year_of_birth": 2013,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "DEVILITE",
+      "year_of_birth": 2015,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "TAPIT",
+      "year_of_birth": 2001,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "GUN RUNNER",
+        "year_of_birth": 2013,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "CANDY RIDE",
+        "year_of_birth": 1999,
+        "country": "ARG"
+      },
+      "sire_sire_sire": {
+        "name": "RIDE THE RAILS",
+        "year_of_birth": 1991,
+        "country": "USA"
+      },
+      "sire_sire_dam": {
+        "name": "CANDY GIRL",
+        "year_of_birth": 1990,
+        "country": "ARG"
+      },
+      "sire_dam": {
+        "name": "QUIET GIANT",
+        "year_of_birth": 2007,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "GIANTS CAUSEWAY",
+        "year_of_birth": 1997,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "QUIET DANCE",
+        "year_of_birth": 1993,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "DEVILITE",
+        "year_of_birth": 2015,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "TAPIT",
+        "year_of_birth": 2001,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "PULPIT",
+        "year_of_birth": 1994,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "TAP YOUR HEELS",
+        "year_of_birth": 1996,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "DEVILS HUMOR",
+        "year_of_birth": 2007,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "DISTORTED HUMOR",
+        "year_of_birth": 1993,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "FLEET RENEE",
+        "year_of_birth": 1998,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Fappiano 5x5x5",
+      "Mr. Prospector 5x5",
+      "Seattle Slew 4x5"
+    ]
+  },
   "sales": [],
   "form": {
     "starts": 8,
@@ -179,7 +272,8 @@
     "value_flag": null
   },
   "sources": [
-    "https://www.horseracingnation.com/horse/Bedeviled_2"
+    "https://www.horseracingnation.com/horse/Bedeviled_2",
+    "https://www.pedigreequery.com/bedeviled4"
   ],
-  "last_updated": "2026-06-11T11:27:16.057336+00:00"
+  "last_updated": "2026-06-12T10:56:09.919461+00:00"
 }
