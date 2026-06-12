@@ -28,7 +28,7 @@ const SECTIONS: SectionCard[] = [
   {
     to: '/sales',
     title: 'Sales',
-    blurb: 'Historic auction results, prices and market analysis.',
+    blurb: 'Live global auction calendar with subscriptions, plus historic results and analysis.',
     icon: 'tag',
   },
   {

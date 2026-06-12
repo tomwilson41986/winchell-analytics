@@ -67,6 +67,10 @@
   color: var(--white);
 }
 
+.navbar__link--icon {
+  padding: 0.5rem 0.65rem;
+}
+
 /* Mobile toggle */
 .navbar__toggle {
   display: none;

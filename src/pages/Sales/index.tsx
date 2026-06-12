@@ -1,85 +1,49 @@
 import { Link } from 'react-router-dom'
-import ChartCard from '../../components/ChartCard'
-import DataTable, { type Column } from '../../components/DataTable'
-import Icon from '../../components/Icon'
+import Icon, { type IconName } from '../../components/Icon'
 import PageHeader from '../../components/PageHeader'
-import StatTile from '../../components/StatTile'
-import { LineChart } from '../../components/charts/LazyCharts'
-import { averageBy, formatUsd, formatUsdCompact, sortByLabel } from '../../lib/aggregate'
-import { max, median } from '../../lib/stats'
-import { loadCsv } from '../../lib/data'
 import '../page.css'
 
-type Row = Record<string, string>
+const SUB_SECTIONS: { to: string; title: string; blurb: string; icon: IconName }[] = [
+  {
+    to: '/sales/live',
+    title: 'Live Sales',
+    blurb:
+      'Upcoming and active thoroughbred auctions worldwide, refreshed daily from 12 sale houses. Subscribe to sales and watch sires for new catalogue entries.',
+    icon: 'spark',
+  },
+  {
+    to: '/sales/historic',
+    title: 'Historic Sales',
+    blurb:
+      'Past auction results — prices, buyers and consignors — with year-on-year price trends and the historic sales analysis dashboard.',
+    icon: 'database',
+  },
+]
 
 export default function Sales() {
-  const { headers, rows } = loadCsv('sales', 'sales.csv')
-  const columns: Column<Row>[] = headers.map((h) => ({
-    key: h,
-    header: h,
-    numeric: h === 'price' || h === 'year' || h === 'hip',
-  }))
-  const has = rows.length > 0
-  const priceByYear = sortByLabel(averageBy(rows, 'year', 'price'))
-  const topPrice = max(rows, 'price')
-  const medianPrice = median(rows, 'price')
-
   return (
     <div className="page">
       <PageHeader
         eyebrow="Section"
         title="Sales"
         icon="tag"
-        intro="Historic sales data and analysis — auction results, prices and buyers. Populate by adding rows to /data/sales/sales.csv."
+        intro="The global thoroughbred auction picture: live and upcoming sales on one side, historic results and analysis on the other."
       />
 
-      <nav className="subnav" aria-label="Sales sub-sections">
-        <Link to="/sales/historic-sales-analysis" className="chip">
-          <Icon name="chart" size={16} />
-          Historic Sales Analysis
-        </Link>
-      </nav>
-
-      <section className="section" aria-label="Summary">
-        <div className="stat-grid">
-          <StatTile label="Sales records" value={String(rows.length)} pending={!has} />
-          <StatTile
-            label="Top price"
-            value={topPrice != null ? formatUsdCompact(topPrice) : '—'}
-            pending={topPrice == null}
-          />
-          <StatTile
-            label="Median price"
-            value={medianPrice != null ? formatUsdCompact(medianPrice) : '—'}
-            pending={medianPrice == null}
-          />
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="section__head">
-          <h2 className="section__title">Sales results</h2>
-          <span className="section__note">Source: /data/sales/sales.csv</span>
-        </div>
-        <div className="split split--data">
-          <div>
-            <DataTable
-              columns={columns}
-              rows={rows}
-              emptyMessage="No sales records yet — add rows to /data/sales/sales.csv."
-            />
-            <span className="placeholder-note">
-              Sample CSV is header-only — no records have been fabricated.
-            </span>
-          </div>
-          <ChartCard
-            title="Price trends by year"
-            subtitle={has ? 'Average sale price per year' : 'Connect sales data to render.'}
-          >
-            {has ? (
-              <LineChart data={priceByYear} valueLabel="Avg price" valueFormatter={formatUsd} />
-            ) : undefined}
-          </ChartCard>
+      <section className="section" aria-label="Sales sub-sections">
+        <div className="cards">
+          {SUB_SECTIONS.map((s) => (
+            <Link key={s.to} to={s.to} className="card">
+              <span className="card__icon">
+                <Icon name={s.icon} size={24} />
+              </span>
+              <h3 className="card__title">
+                {s.title}
+                <Icon name="arrow" size={18} className="card__arrow" />
+              </h3>
+              <p className="card__blurb">{s.blurb}</p>
+            </Link>
+          ))}
         </div>
       </section>
     </div>

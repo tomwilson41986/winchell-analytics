@@ -5,8 +5,11 @@ import Horses from './pages/Horses'
 import Portfolio from './pages/Portfolio'
 import HorseProfile from './pages/Portfolio/HorseProfile'
 import Sales from './pages/Sales'
+import LiveSales from './pages/Sales/LiveSales'
+import HistoricSales from './pages/Sales/HistoricSales'
 import HistoricSalesAnalysis from './pages/Sales/HistoricSalesAnalysis'
 import Sires from './pages/Sires'
+import Account from './pages/Account'
 import Broodmares from './pages/Broodmares'
 import JapanProspects from './pages/Broodmares/JapanProspects'
 
@@ -20,9 +23,12 @@ export default function App() {
         <Route path="horses" element={<Horses />} />
         <Route path="sales">
           <Route index element={<Sales />} />
+          <Route path="live" element={<LiveSales />} />
+          <Route path="historic" element={<HistoricSales />} />
           <Route path="historic-sales-analysis" element={<HistoricSalesAnalysis />} />
         </Route>
         <Route path="sires" element={<Sires />} />
+        <Route path="account" element={<Account />} />
         <Route path="broodmares">
           <Route index element={<Broodmares />} />
           <Route path="japan-prospects" element={<JapanProspects />} />

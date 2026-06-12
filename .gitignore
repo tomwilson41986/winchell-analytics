@@ -20,6 +20,7 @@ Thumbs.db
 # Environment
 .env
 .env.*
+!.env.example
 
 # Vite
 *.local
@@ -31,3 +32,6 @@ __pycache__/
 
 # Scraper raw-response cache (provenance, not source-controlled)
 data/cache/
+
+# Live sales dry-run preview output
+data/sales/live/live_sales.preview.json

@@ -4,7 +4,8 @@ import './Layout.css'
 
 const FOOTER_LINKS = [
   { to: '/horses', label: 'Horses' },
-  { to: '/sales', label: 'Sales' },
+  { to: '/sales/live', label: 'Live Sales' },
+  { to: '/sales/historic', label: 'Historic Sales' },
   { to: '/sires', label: 'Sires' },
   { to: '/broodmares', label: 'Broodmares' },
   { to: '/broodmares/japan-prospects', label: 'Japan Prospects' },
