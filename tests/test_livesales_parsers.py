@@ -2,13 +2,16 @@
 live pages/APIs (structure asserted, no source facts fabricated), plus the
 orchestrator's per-source failure isolation."""
 
+import html
+import json
 from datetime import date
 
+from pipeline.livesales.base import expand_colour, expand_sex
 from pipeline.livesales.models import RawSale
 from pipeline.livesales.registry import Source
 from pipeline.livesales.run import collect_raw_sales
 from pipeline.livesales.sources import bbag, fasigtipton, gavelhouse, goffs, keeneland
-from pipeline.livesales.sources import tattersalls
+from pipeline.livesales.sources import magicmillions, nzb, tattersalls
 from pipeline.livesales.sources.common import harvest_sales, pick
 
 REF = date(2026, 6, 12)
@@ -257,6 +260,139 @@ def test_pick_is_case_and_style_tolerant():
     assert pick(record, "lotNumber") == "9"
     assert pick(record, "damSire") == "X"
     assert pick(record, "missing", default="") == ""
+
+
+# --- Colour / sex code expansion ----------------------------------------------- //
+
+
+def test_expand_sex_and_colour_codes():
+    assert expand_sex("F") == "Filly"
+    assert expand_sex("G") == "Gelding"
+    assert expand_sex("Filly") == "Filly"  # already spelled out -> unchanged
+    assert expand_sex("") == ""
+    assert expand_colour("B") == "Bay"
+    assert expand_colour("DkB") == "Dark Bay"
+    assert expand_colour("Ch") == "Chestnut"
+    assert expand_colour("Blk. or G.") == "Blk. or G."  # descriptive -> unchanged
+    assert expand_colour("") == ""
+
+
+# --- NZB: catalogue embedded as HTML-escaped JSON in the sale page -------------- //
+
+
+def test_nzb_embedded_lots_parse():
+    catalogue = {
+        "lots": [
+            {
+                "lot": 1,
+                "horsename": "",  # weanlings/yearlings catalogued unnamed
+                "sire": "Redwood",
+                "sire_suffix": "GB",
+                "dam": "Nakyama",
+                "dam_suffix": "NZ",
+                "dam_sire": "Pins",
+                "sex": "Filly",
+                "colour": "Bay",
+                "vendor": "Westbury Stud",
+                "withdrawn": False,
+            },
+            {  # withdrawn lots are not in the sale and must be dropped
+                "lot": 2,
+                "sire": "Ardrossan",
+                "sex": "Colt",
+                "withdrawn": True,
+            },
+        ]
+    }
+    page = f'<div data-page="{html.escape(json.dumps(catalogue))}"></div>'
+    # The run-on date is trimmed off the heading; a year in the name survives.
+    assert nzb._clean_name("National Weanling Sale25 June 2026 at Karaka") == (
+        "National Weanling Sale"
+    )
+    assert nzb._clean_name("Karaka 2027 - Book 124 & 25 January 2027") == (
+        "Karaka 2027 - Book 1"
+    )
+    lots = nzb.parse_lots(page)
+    assert len(lots) == 1
+    lot = lots[0]
+    assert lot.lot_no == "1"
+    assert lot.horse_name == ""
+    # Suffix is reattached the way the other houses publish it.
+    assert lot.sire == "Redwood (GB)"
+    assert lot.dam == "Nakyama (NZ)"
+    assert lot.dam_sire == "Pins"
+    assert (lot.colour, lot.sex) == ("Bay", "Filly")
+    assert lot.vendor == "Westbury Stud"
+    # Missing/unparseable JSON is "no catalogue", never an error.
+    assert nzb.parse_lots("<html>no json here</html>") == []
+
+
+# --- Goffs: catalogue as data-* attributes (repeated per layout) ---------------- //
+
+
+def test_goffs_data_attribute_lots_dedup():
+    page = """
+    <a class="lot-table__lot" data-lotnumber="1" data-lotname="Dee's Funny Girl (IRE)"
+       data-sirename="Cotai Glory (GB)" data-damname="Comical (IRE)"
+       data-damsire="Dark Angel (IRE)" data-colour="B" data-sex="F"
+       data-consignor="Consign Ltd">view</a>
+    <a class="lot-table__lot lot--mobile" data-lotnumber="1"
+       data-sirename="Cotai Glory (GB)">duplicate layout of lot 1</a>
+    <a class="lot-table__lot" data-lotnumber="2" data-lotname="Example Colt"
+       data-sirename="No Nay Never (USA)" data-damname="Example (GB)"
+       data-damsire="Galileo (IRE)" data-colour="DkB" data-sex="C"
+       data-consignor="Another Farm">view</a>
+    <a class="filter-widget" data-lotnumber="">noise, no pedigree</a>
+    """
+    lots = goffs.parse_lots(page)
+    assert len(lots) == 2  # the repeated layout of lot 1 is collapsed
+    first = lots[0]
+    assert first.lot_no == "1"
+    assert first.horse_name == "Dee's Funny Girl (IRE)"
+    assert first.sire == "Cotai Glory (GB)"
+    assert first.dam_sire == "Dark Angel (IRE)"
+    assert (first.colour, first.sex) == ("Bay", "Filly")
+    assert first.vendor == "Consign Ltd"
+    assert (lots[1].colour, lots[1].sex) == ("Dark Bay", "Colt")
+
+
+# --- Magic Millions: catalogue table with id-anchored cells --------------------- //
+
+
+def test_magicmillions_catalogue_table_parse():
+    page = """
+    <table><tbody>
+    <tr id="1" data-href="/lot/26PMY/1">
+      <td id="lotnumber-1" class="lotnumber"><a href="/lot/26PMY/1">1</a></td>
+      <td class="extras"></td>
+      <td class="cataloguenameinfo" title="full vendor info">Yarradale Stud</td>
+      <td id="colour-1">Blk. or G.</td>
+      <td>G</td>
+      <td id="sire-1">Gingerbread Man (AUS)</td>
+      <td id="dam-1">Ofcourse She Does (AUS)</td>
+      <td id="damsire-1">Murtajill (AUS)</td>
+      <td class="bonusscheme">Westspeed Platinum</td>
+    </tr>
+    <tr><td>header or spacer row, no lot id</td></tr>
+    </tbody></table>
+    """
+    lots = magicmillions.parse_lots(page)
+    assert len(lots) == 1
+    lot = lots[0]
+    assert lot.lot_no == "1"
+    assert lot.horse_name == ""  # yearlings unnamed
+    assert lot.vendor == "Yarradale Stud"
+    assert lot.colour == "Blk. or G."
+    assert lot.sex == "Gelding"
+    assert lot.sire == "Gingerbread Man (AUS)"
+    assert lot.dam == "Ofcourse She Does (AUS)"
+    assert lot.dam_sire == "Murtajill (AUS)"
+
+
+def test_new_lot_sources_are_registered():
+    # Regression guard: these three used to ship fetch_lots = None.
+    for module in (nzb, goffs, magicmillions):
+        assert callable(getattr(module, "fetch_lots", None))
 
 
 # --- Orchestrator: per-source isolation + dedup --------------------------------- //

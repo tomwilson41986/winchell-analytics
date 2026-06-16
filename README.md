@@ -249,6 +249,13 @@ python -m pipeline.livesales.run --date 2026-10-01
   at runtime (it is lot-heavy and deliberately kept out of the build-time
   `/data` glob). The seen-ledger lives at `data/sales/live/state.sqlite` and
   is committed so "New" detection persists across CI runs.
+- **Lot catalogues** are pulled per source as the houses publish them, each
+  via a pure `parse_lots` (fixture-tested offline) fed by a `fetch_lots`:
+  Tattersalls (4D lot table), Keeneland / Fasig-Tipton / OBS / BBAG (JSON
+  APIs), Gavelhouse (JSON API), **NZB** (catalogue embedded as JSON in the
+  sale page), **Goffs** (`data-*` attributes on each lot), and **Magic
+  Millions** (catalogue table keyed by the sale's short code). An empty count
+  means the catalogue is not published yet — never an error.
 - A sale is **Active** from `ACTIVE_LEAD_DAYS` (default 2) before its first
   day through its last day; **Upcoming** keeps sales starting within
   `HORIZON_DAYS` (default 30). Undated rolling online auctions are kept and
@@ -256,6 +263,14 @@ python -m pipeline.livesales.run --date 2026-10-01
 - Jumps / National Hunt / store / non-thoroughbred sales are excluded.
 - `.github/workflows/refresh-live-sales.yml` runs daily at 06:00 UTC and
   commits the refreshed feed back so Netlify rebuilds.
+
+**Search sires & dam sires** on `/sales/live`: a forgiving substring search
+(`searchSireLots` in `src/lib/saleSubscriptions.ts`) lists *every* lot across
+*all* catalogues whose sire or dam sire matches, with the matched cell flagged
+and the whole list exportable to CSV. The distinct matched names surface as
+one-click **watch** toggles, so a partial search resolves to an exact,
+alert-ready name. Watching a name (even one with no current entries) flags it
+for alerts — see Subscriptions.
 
 **Subscriptions** on `/sales/live` (subscribe to a sale; watch a sire /
 damsire for new entries) work at two levels:

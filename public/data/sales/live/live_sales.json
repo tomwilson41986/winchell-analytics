@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T11:25:26+00:00",
+  "generated_at": "2026-06-16T18:18:54+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-july-sale|2026-06",
@@ -8059,7 +8059,7 @@
       "is_active": true,
       "is_new": false,
       "status": "Active",
-      "url": "https://obssales.com/catalog/#/151",
+      "url": "https://obssales.com/catalog/#/151/results",
       "house_url": "https://obssales.com",
       "online": false,
       "first_seen": "2026-06-12",
@@ -8136,7 +8136,588 @@
       "online": false,
       "first_seen": "2026-06-12",
       "lots_error": "",
-      "lots": []
+      "lots": [
+        {
+          "lot_no": "1",
+          "horse_name": "",
+          "sex": "Gelding",
+          "colour": "Blk. or G.",
+          "sire": "Gingerbread Man (AUS)",
+          "dam": "Ofcourse She Does (AUS)",
+          "dam_sire": "Murtajill (AUS)",
+          "vendor": "Yarradale Stud"
+        },
+        {
+          "lot_no": "2",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "B. or Br.",
+          "sire": "Playing God (AUS)",
+          "dam": "Oriel (AUS)",
+          "dam_sire": "Oratorio (AUS)",
+          "vendor": "Yarradale Stud"
+        },
+        {
+          "lot_no": "3",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Universal Ruler (AUS)",
+          "dam": "Our Pie 'o' My (AUS)",
+          "dam_sire": "So Secret (AUS)",
+          "vendor": "J Farms"
+        },
+        {
+          "lot_no": "4",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Aysar (AUS)",
+          "dam": "Queen of Casuarina (AUS)",
+          "dam_sire": "Artie Schiller (USA)",
+          "vendor": "J Farms"
+        },
+        {
+          "lot_no": "5",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "Splintex (AUS)",
+          "dam": "Quickdeel (AUS)",
+          "dam_sire": "Dundeel (NZ)",
+          "vendor": "Darling View Thoroughbreds"
+        },
+        {
+          "lot_no": "6",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Aysar (AUS)",
+          "dam": "Rain Lily (AUS)",
+          "dam_sire": "Akeed Mofeed (GB)",
+          "vendor": "R D Gardiner"
+        },
+        {
+          "lot_no": "7",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Brown",
+          "sire": "All American (AUS)",
+          "dam": "Readabeel (NZ)",
+          "dam_sire": "Savabeel (AUS)",
+          "vendor": "R D Gardiner"
+        },
+        {
+          "lot_no": "8",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Splintex (AUS)",
+          "dam": "Sanabreanna (AUS)",
+          "dam_sire": "Red Hot Choice (AUS)",
+          "vendor": "Darling View Thoroughbreds"
+        },
+        {
+          "lot_no": "9",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Playing God (AUS)",
+          "dam": "Saturia (AUS)",
+          "dam_sire": "War Chant (USA)",
+          "vendor": "Yarradale Stud"
+        },
+        {
+          "lot_no": "10",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Ch. or Gr.",
+          "sire": "Aysar (AUS)",
+          "dam": "Sembello (NZ)",
+          "dam_sire": "Reliable Man (GB)",
+          "vendor": "J Farms"
+        },
+        {
+          "lot_no": "11",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Long Leaf (AUS)",
+          "dam": "Shape Shifter (AUS)",
+          "dam_sire": "War Chant (USA)",
+          "vendor": "Greenfields Lodge"
+        },
+        {
+          "lot_no": "12",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Splintex (AUS)",
+          "dam": "Shawty (AUS)",
+          "dam_sire": "Astern (AUS)",
+          "vendor": "Dawson Stud"
+        },
+        {
+          "lot_no": "13",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Maschino (AUS)",
+          "dam": "Sheza Chalmer (AUS)",
+          "dam_sire": "Vital Equine (IRE)",
+          "vendor": "Gervase Park Stud"
+        },
+        {
+          "lot_no": "14",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "A Lot (USA)",
+          "dam": "Shihabi (AUS)",
+          "dam_sire": "Pins (AUS)",
+          "vendor": "Westbury Park"
+        },
+        {
+          "lot_no": "15",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Gingerbread Man (AUS)",
+          "dam": "Snip Missile (AUS)",
+          "dam_sire": "Smart Missile (AUS)",
+          "vendor": "J Farms"
+        },
+        {
+          "lot_no": "16",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Chestnut",
+          "sire": "Gingerbread Man (AUS)",
+          "dam": "Solid Azza (AUS)",
+          "dam_sire": "Patronize (AUS)",
+          "vendor": "Darling View Thoroughbreds"
+        },
+        {
+          "lot_no": "17",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "Lightsaber (AUS)",
+          "dam": "Tarp (AUS)",
+          "dam_sire": "Bletchley Park (IRE)",
+          "vendor": "Dawson Stud"
+        },
+        {
+          "lot_no": "18",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Playing God (AUS)",
+          "dam": "The Last Waltz (AUS)",
+          "dam_sire": "Patronize (AUS)",
+          "vendor": "Darling View Thoroughbreds"
+        },
+        {
+          "lot_no": "19",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Playing God (AUS)",
+          "dam": "The Stylist (NZ)",
+          "dam_sire": "Swiss Ace (AUS)",
+          "vendor": "Greenfields Lodge"
+        },
+        {
+          "lot_no": "20",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Brown",
+          "sire": "Awesome Rock (AUS)",
+          "dam": "There's a Thought (NZ)",
+          "dam_sire": "So You Think (NZ)",
+          "vendor": "J Farms"
+        },
+        {
+          "lot_no": "21",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Manhattan Rain (AUS)",
+          "dam": "Universal Pleasure (AUS)",
+          "dam_sire": "Universal Ruler (AUS)",
+          "vendor": "J Farms"
+        },
+        {
+          "lot_no": "22",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Ole Kirk (AUS)",
+          "dam": "Viva la Romance (AUS)",
+          "dam_sire": "Fastnet Rock (AUS)",
+          "vendor": "Forest View Farm"
+        },
+        {
+          "lot_no": "23",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "Marine One (AUS)",
+          "dam": "Vranyo (AUS)",
+          "dam_sire": "Star Turn (AUS)",
+          "vendor": "R D Gardiner"
+        },
+        {
+          "lot_no": "24",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "B. or Br.",
+          "sire": "Playing God (AUS)",
+          "dam": "Western Fever (AUS)",
+          "dam_sire": "Flying Pegasus (AUS)",
+          "vendor": "Darling View Thoroughbreds"
+        },
+        {
+          "lot_no": "25",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "B. or Br.",
+          "sire": "Lightsaber (AUS)",
+          "dam": "Windsor (AUS)",
+          "dam_sire": "I Am Invincible (AUS)",
+          "vendor": "J Farms"
+        },
+        {
+          "lot_no": "26",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "Splintex (AUS)",
+          "dam": "Windsweep (AUS)",
+          "dam_sire": "Deep Field (AUS)",
+          "vendor": "Gervase Park Stud"
+        },
+        {
+          "lot_no": "27",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "Ducimus (AUS)",
+          "dam": "Zedriffic (AUS)",
+          "dam_sire": "Zedrich (AUS)",
+          "vendor": "Yarradale Stud"
+        },
+        {
+          "lot_no": "28",
+          "horse_name": "",
+          "sex": "Gelding",
+          "colour": "B. or Br.",
+          "sire": "Long Leaf (AUS)",
+          "dam": "Anamour (AUS)",
+          "dam_sire": "Anabaa (USA)",
+          "vendor": "Dawson Stud"
+        },
+        {
+          "lot_no": "29",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Lightsaber (AUS)",
+          "dam": "Aphrodite Rock (AUS)",
+          "dam_sire": "Commands (AUS)",
+          "vendor": "Gervase Park Stud"
+        },
+        {
+          "lot_no": "30",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "B. or Br.",
+          "sire": "Splintex (AUS)",
+          "dam": "Atiza Storm (AUS)",
+          "dam_sire": "I'm All the Talk (AUS)",
+          "vendor": "Darling View Thoroughbreds"
+        },
+        {
+          "lot_no": "32",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Ducimus (AUS)",
+          "dam": "Belle of Liberty (AUS)",
+          "dam_sire": "Patronize (AUS)",
+          "vendor": "Westbury Park"
+        },
+        {
+          "lot_no": "33",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Splintex (AUS)",
+          "dam": "Cabochon Lil (AUS)",
+          "dam_sire": "Sebring (AUS)",
+          "vendor": "Darling View Thoroughbreds"
+        },
+        {
+          "lot_no": "34",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Shooting to Win (AUS)",
+          "dam": "Cafe Nera (AUS)",
+          "dam_sire": "Blackfriars (AUS)",
+          "vendor": "Dawson Stud"
+        },
+        {
+          "lot_no": "35",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Choistar (AUS)",
+          "dam": "Catchya Catchya (AUS)",
+          "dam_sire": "War Chant (USA)",
+          "vendor": "R D Gardiner"
+        },
+        {
+          "lot_no": "36",
+          "horse_name": "",
+          "sex": "Gelding",
+          "colour": "B. or Br.",
+          "sire": "Splintex (AUS)",
+          "dam": "Charity Belle (AUS)",
+          "dam_sire": "Not a Single Doubt (AUS)",
+          "vendor": "Dawson Stud"
+        },
+        {
+          "lot_no": "37",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Aysar (AUS)",
+          "dam": "Comingle (AUS)",
+          "dam_sire": "Commands (AUS)",
+          "vendor": "Westbury Park"
+        },
+        {
+          "lot_no": "38",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "Lightsaber (AUS)",
+          "dam": "Copita Mak (AUS)",
+          "dam_sire": "Commands (AUS)",
+          "vendor": "Dawson Stud"
+        },
+        {
+          "lot_no": "39",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Brown",
+          "sire": "Splintex (AUS)",
+          "dam": "Cywer (AUS)",
+          "dam_sire": "Trade Fair (GB)",
+          "vendor": "J Farms"
+        },
+        {
+          "lot_no": "40",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Brown",
+          "sire": "Playing God (AUS)",
+          "dam": "Dance Till Dark (AUS)",
+          "dam_sire": "Prized Icon (AUS)",
+          "vendor": "J Farms"
+        },
+        {
+          "lot_no": "41",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Rommel (AUS)",
+          "dam": "Dondeska (AUS)",
+          "dam_sire": "Snitzel (AUS)",
+          "vendor": "Greenfields Lodge"
+        },
+        {
+          "lot_no": "42",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Brown",
+          "sire": "Splintex (AUS)",
+          "dam": "Electrifying Lady (AUS)",
+          "dam_sire": "Zoustar (AUS)",
+          "vendor": "Yarradale Stud"
+        },
+        {
+          "lot_no": "43",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Choistar (AUS)",
+          "dam": "Fairy Nymph (AUS)",
+          "dam_sire": "Equiano (FR)",
+          "vendor": "R D Gardiner"
+        },
+        {
+          "lot_no": "44",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "Splintex (AUS)",
+          "dam": "Feliciana (AUS)",
+          "dam_sire": "Shooting to Win (AUS)",
+          "vendor": "Ruby Racing & Breeding"
+        },
+        {
+          "lot_no": "45",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Chestnut",
+          "sire": "Universal Ruler (AUS)",
+          "dam": "Fromwhere (AUS)",
+          "dam_sire": "Dissident (AUS)",
+          "vendor": "Westbury Park"
+        },
+        {
+          "lot_no": "46",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Br. or Gr.",
+          "sire": "Splintex (AUS)",
+          "dam": "Grey Dancer (AUS)",
+          "dam_sire": "Choisir (AUS)",
+          "vendor": "Ridgeport Holdings"
+        },
+        {
+          "lot_no": "47",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Gingerbread Man (AUS)",
+          "dam": "Highland Jig (AUS)",
+          "dam_sire": "Churchill Downs (AUS)",
+          "vendor": "Yarradale Stud"
+        },
+        {
+          "lot_no": "48",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Jonker (AUS)",
+          "dam": "I Am Wildwood (AUS)",
+          "dam_sire": "I Am Invincible (AUS)",
+          "vendor": "Forest View Farm"
+        },
+        {
+          "lot_no": "49",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Lightsaber (AUS)",
+          "dam": "Ice Trade (AUS)",
+          "dam_sire": "Trade Fair (GB)",
+          "vendor": "Darling View Thoroughbreds"
+        },
+        {
+          "lot_no": "50",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Chestnut",
+          "sire": "Lightsaber (AUS)",
+          "dam": "Imaginary (AUS)",
+          "dam_sire": "More Than Ready (USA)",
+          "vendor": "Darling View Thoroughbreds"
+        },
+        {
+          "lot_no": "51",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "A Lot (USA)",
+          "dam": "Is a Bombshell (AUS)",
+          "dam_sire": "Smart Missile (AUS)",
+          "vendor": "Westbury Park"
+        },
+        {
+          "lot_no": "52",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "B. or Br.",
+          "sire": "Playing God (AUS)",
+          "dam": "Jemerica (AUS)",
+          "dam_sire": "Captain Rio (GB)",
+          "vendor": "Darling View Thoroughbreds"
+        },
+        {
+          "lot_no": "53",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Brown",
+          "sire": "Lightsaber (AUS)",
+          "dam": "Lado Ciego (AUS)",
+          "dam_sire": "Written Tycoon (AUS)",
+          "vendor": "Yarradale Stud"
+        },
+        {
+          "lot_no": "54",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "Star Turn (AUS)",
+          "dam": "Lady Ell (AUS)",
+          "dam_sire": "Manhattan Rain (AUS)",
+          "vendor": "Ridgeport Holdings"
+        },
+        {
+          "lot_no": "55",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Brown",
+          "sire": "I Am Immortal (AUS)",
+          "dam": "Lemon Soju (AUS)",
+          "dam_sire": "Sebring (AUS)",
+          "vendor": "Quanah Park Thoroughbreds"
+        },
+        {
+          "lot_no": "56",
+          "horse_name": "",
+          "sex": "Gelding",
+          "colour": "B. or Br.",
+          "sire": "Tiger Of Malay (AUS)",
+          "dam": "Lessing (AUS)",
+          "dam_sire": "Written Tycoon (AUS)",
+          "vendor": "Ruby Racing & Breeding"
+        },
+        {
+          "lot_no": "57",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Chestnut",
+          "sire": "Marine One (AUS)",
+          "dam": "Lirismo (NZ)",
+          "dam_sire": "Lope de Vega (IRE)",
+          "vendor": "R D Gardiner"
+        },
+        {
+          "lot_no": "58",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Lightsaber (AUS)",
+          "dam": "Paparazzi Queen (AUS)",
+          "dam_sire": "Press Statement (AUS)",
+          "vendor": "Gervase Park Stud"
+        },
+        {
+          "lot_no": "59",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Gingerbread Man (AUS)",
+          "dam": "Ice Frost (AUS)",
+          "dam_sire": "Bel Esprit (AUS)",
+          "vendor": "Darling View Thoroughbreds"
+        }
+      ]
     },
     {
       "id": "inglis|inglis-digital-aus|2026-07",
@@ -8153,6 +8734,1253 @@
       "house_url": "https://inglis.com.au",
       "online": false,
       "first_seen": "2026-06-12",
+      "lots_error": "",
+      "lots": []
+    },
+    {
+      "id": "nzb|national-weanling-sale|2026-06",
+      "house": "NZB",
+      "country": "NZ",
+      "name": "National Weanling Sale",
+      "sale_type": "Foal / Weanling",
+      "start_date": "2026-06-25",
+      "end_date": null,
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://www.nzb.co.nz/sales/26nwg",
+      "house_url": "https://www.nzb.co.nz",
+      "online": false,
+      "first_seen": "2026-06-16",
+      "lots_error": "",
+      "lots": [
+        {
+          "lot_no": "1",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Redwood (GB)",
+          "dam": "Nakyama (NZ)",
+          "dam_sire": "",
+          "vendor": "Westbury Stud"
+        },
+        {
+          "lot_no": "2",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Ardrossan (AUS)",
+          "dam": "Notimetowaste (NZ)",
+          "dam_sire": "",
+          "vendor": "Waikato Stud Ltd"
+        },
+        {
+          "lot_no": "3",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Chestnut",
+          "sire": "Chaldean (GB)",
+          "dam": "Novashow (NZ)",
+          "dam_sire": "",
+          "vendor": "Haunui Farm"
+        },
+        {
+          "lot_no": "4",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Hello Youmzain (FR)",
+          "dam": "O'Maille (NZ)",
+          "dam_sire": "",
+          "vendor": "Haunui Farm"
+        },
+        {
+          "lot_no": "5",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Mr Mozart (AUS)",
+          "dam": "O'Pristine (AUS)",
+          "dam_sire": "",
+          "vendor": "Haunui Farm"
+        },
+        {
+          "lot_no": "6",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Artorius (AUS)",
+          "dam": "Ocean Anna (NZ)",
+          "dam_sire": "",
+          "vendor": "Haunui Farm"
+        },
+        {
+          "lot_no": "7",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Redwood (GB)",
+          "dam": "Onestar (NZ)",
+          "dam_sire": "",
+          "vendor": "Westbury Stud"
+        },
+        {
+          "lot_no": "8",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Brown",
+          "sire": "Redwood (GB)",
+          "dam": "Orangutan (AUS)",
+          "dam_sire": "",
+          "vendor": "Westbury Stud"
+        },
+        {
+          "lot_no": "10",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "Mr Mozart (AUS)",
+          "dam": "Penthouse Kitten (NZ)",
+          "dam_sire": "",
+          "vendor": "Brighthill Farm"
+        },
+        {
+          "lot_no": "11",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Ardrossan (AUS)",
+          "dam": "Pertinacity (AUS)",
+          "dam_sire": "",
+          "vendor": "Highline Thoroughbreds"
+        },
+        {
+          "lot_no": "12",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Shocking (AUS)",
+          "dam": "Peut Respirer (NZ)",
+          "dam_sire": "",
+          "vendor": "Rich Hill Stud"
+        },
+        {
+          "lot_no": "13",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Hello Youmzain (FR)",
+          "dam": "Pinultimate (NZ)",
+          "dam_sire": "",
+          "vendor": "Cambridge Stud"
+        },
+        {
+          "lot_no": "14",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Per Incanto (USA)",
+          "dam": "Play a Part (NZ)",
+          "dam_sire": "",
+          "vendor": "Brighthill Farm"
+        },
+        {
+          "lot_no": "15",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Super Seth (AUS)",
+          "dam": "Pleased (NZ)",
+          "dam_sire": "",
+          "vendor": "Waikato Stud Ltd"
+        },
+        {
+          "lot_no": "16",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Super Seth (AUS)",
+          "dam": "Popular (NZ)",
+          "dam_sire": "",
+          "vendor": "Waikato Stud Ltd"
+        },
+        {
+          "lot_no": "17",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay or Brown",
+          "sire": "Hello Youmzain (FR)",
+          "dam": "Posh Bec (NZ)",
+          "dam_sire": "",
+          "vendor": "Hallmark Stud"
+        },
+        {
+          "lot_no": "18",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Almanzor (FR)",
+          "dam": "Promise to Reign (AUS)",
+          "dam_sire": "",
+          "vendor": "Cambridge Stud"
+        },
+        {
+          "lot_no": "19",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Almanzor (FR)",
+          "dam": "Pullyoursocksup (NZ)",
+          "dam_sire": "",
+          "vendor": "Cambridge Stud"
+        },
+        {
+          "lot_no": "20",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Savabeel (AUS)",
+          "dam": "Purple Rain (NZ)",
+          "dam_sire": "",
+          "vendor": "Waikato Stud Ltd"
+        },
+        {
+          "lot_no": "21",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Ardrossan (AUS)",
+          "dam": "Queen of Pop (NZ)",
+          "dam_sire": "",
+          "vendor": "Elsdon Park"
+        },
+        {
+          "lot_no": "23",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Shocking (AUS)",
+          "dam": "Red Columbine (NZ)",
+          "dam_sire": "",
+          "vendor": "Rich Hill Stud"
+        },
+        {
+          "lot_no": "24",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Tarzino (NZ)",
+          "dam": "Reine d'Amour (NZ)",
+          "dam_sire": "",
+          "vendor": "Westbury Stud"
+        },
+        {
+          "lot_no": "25",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Mr Mozart (AUS)",
+          "dam": "Respect (NZ)",
+          "dam_sire": "",
+          "vendor": "Haunui Farm"
+        },
+        {
+          "lot_no": "26",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Noverre (NZ)",
+          "dam": "Rich Billie Marsh (NZ)",
+          "dam_sire": "",
+          "vendor": "Seaton Park Ltd"
+        },
+        {
+          "lot_no": "27",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Hello Youmzain (FR)",
+          "dam": "Ritzy Sparkle (NZ)",
+          "dam_sire": "",
+          "vendor": "Little Avondale Stud"
+        },
+        {
+          "lot_no": "28",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Hello Youmzain (FR)",
+          "dam": "Rodeo Belle (NZ)",
+          "dam_sire": "",
+          "vendor": "Cambridge Stud"
+        },
+        {
+          "lot_no": "29",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Wrote (IRE)",
+          "dam": "Samira (AUS)",
+          "dam_sire": "",
+          "vendor": "Brighthill Farm"
+        },
+        {
+          "lot_no": "30",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Sword of State (AUS)",
+          "dam": "Sarsarun (NZ)",
+          "dam_sire": "",
+          "vendor": "Hallmark Stud"
+        },
+        {
+          "lot_no": "31",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Hello Youmzain (FR)",
+          "dam": "Semprini (AUS)",
+          "dam_sire": "",
+          "vendor": "Blandford Lodge"
+        },
+        {
+          "lot_no": "32",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "Profondo (AUS)",
+          "dam": "Sexy Pins (NZ)",
+          "dam_sire": "",
+          "vendor": "Blandford Lodge"
+        },
+        {
+          "lot_no": "34",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Swiss Ace (AUS)",
+          "dam": "Silver Echo (NZ)",
+          "dam_sire": "",
+          "vendor": "Westbury Stud"
+        },
+        {
+          "lot_no": "35",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Grey",
+          "sire": "Reliable Man (GB)",
+          "dam": "Slovakian (AUS)",
+          "dam_sire": "",
+          "vendor": "Westbury Stud"
+        },
+        {
+          "lot_no": "36",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Hilal (AUS)",
+          "dam": "Smile (NZ)",
+          "dam_sire": "",
+          "vendor": "Leanach Lodge Ltd"
+        },
+        {
+          "lot_no": "38",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Brown",
+          "sire": "Almanzor (FR)",
+          "dam": "Soltina (NZ)",
+          "dam_sire": "",
+          "vendor": "Haunui Farm"
+        },
+        {
+          "lot_no": "39",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Sword of State (AUS)",
+          "dam": "Sorellina (NZ)",
+          "dam_sire": "",
+          "vendor": "Hallmark Stud"
+        },
+        {
+          "lot_no": "40",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Almanzor (FR)",
+          "dam": "Spring Success (NZ)",
+          "dam_sire": "",
+          "vendor": "Elsdon Park"
+        },
+        {
+          "lot_no": "41",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Super Seth (AUS)",
+          "dam": "Stylistic (NZ)",
+          "dam_sire": "",
+          "vendor": "Waikato Stud Ltd"
+        },
+        {
+          "lot_no": "42",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Brown",
+          "sire": "The Chosen One (NZ)",
+          "dam": "Sunrise Ruby (NZ)",
+          "dam_sire": "",
+          "vendor": "Leanach Lodge Ltd"
+        },
+        {
+          "lot_no": "43",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Swiss Ace (AUS)",
+          "dam": "Surprizable (NZ)",
+          "dam_sire": "",
+          "vendor": "Westbury Stud"
+        },
+        {
+          "lot_no": "45",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Almanzor (FR)",
+          "dam": "Tears of an Angel (NZ)",
+          "dam_sire": "",
+          "vendor": "Rich Hill Stud"
+        },
+        {
+          "lot_no": "47",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Proisir (AUS)",
+          "dam": "Tennessee Girl (NZ)",
+          "dam_sire": "",
+          "vendor": "Rich Hill Stud"
+        },
+        {
+          "lot_no": "49",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Satono Aladdin (JPN)",
+          "dam": "Tevere (NZ)",
+          "dam_sire": "",
+          "vendor": "Curraghmore"
+        },
+        {
+          "lot_no": "50",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Sword of State (AUS)",
+          "dam": "Thousand Dreams (AUS)",
+          "dam_sire": "",
+          "vendor": "Brighthill Farm"
+        },
+        {
+          "lot_no": "51",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Satono Aladdin (JPN)",
+          "dam": "Ticket to Ride (NZ)",
+          "dam_sire": "",
+          "vendor": "Hallmark Stud"
+        },
+        {
+          "lot_no": "52",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Per Incanto (USA)",
+          "dam": "Tipperary Mary (NZ)",
+          "dam_sire": "",
+          "vendor": "HGT Bloodstock Ltd"
+        },
+        {
+          "lot_no": "53",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Chestnut",
+          "sire": "Ocean Park (NZ)",
+          "dam": "Toffee Nose (AUS)",
+          "dam_sire": "",
+          "vendor": "Curraghmore"
+        },
+        {
+          "lot_no": "54",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Chaldean (GB)",
+          "dam": "Top Note (NZ)",
+          "dam_sire": "",
+          "vendor": "Curraghmore"
+        },
+        {
+          "lot_no": "55",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay or Brown",
+          "sire": "Proisir (AUS)",
+          "dam": "Tree of Life (NZ)",
+          "dam_sire": "",
+          "vendor": "Cambria Park"
+        },
+        {
+          "lot_no": "56",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Grey",
+          "sire": "Reliable Man (GB)",
+          "dam": "Unforgettable (NZ)",
+          "dam_sire": "",
+          "vendor": "Brighthill Farm"
+        },
+        {
+          "lot_no": "58",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Almanzor (FR)",
+          "dam": "Versilia (AUS)",
+          "dam_sire": "",
+          "vendor": "Cambridge Stud"
+        },
+        {
+          "lot_no": "59",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Almanzor (FR)",
+          "dam": "Vin Rouge (NZ)",
+          "dam_sire": "",
+          "vendor": "Cambridge Stud"
+        },
+        {
+          "lot_no": "61",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Redwood (GB)",
+          "dam": "Voice of an Angel (AUS)",
+          "dam_sire": "",
+          "vendor": "Westbury Stud"
+        },
+        {
+          "lot_no": "62",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Sword of State (AUS)",
+          "dam": "Wakata (AUS)",
+          "dam_sire": "",
+          "vendor": "Seaton Park Ltd"
+        },
+        {
+          "lot_no": "63",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Per Incanto (USA)",
+          "dam": "War Piglet (AUS)",
+          "dam_sire": "",
+          "vendor": "Little Avondale Stud"
+        },
+        {
+          "lot_no": "64",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Sword of State (AUS)",
+          "dam": "Well I Never (NZ)",
+          "dam_sire": "",
+          "vendor": "Hallmark Stud"
+        },
+        {
+          "lot_no": "65",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Per Incanto (USA)",
+          "dam": "Winehouse (NZ)",
+          "dam_sire": "",
+          "vendor": "Little Avondale Stud"
+        },
+        {
+          "lot_no": "66",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Tarzino (NZ)",
+          "dam": "Wrapping (NZ)",
+          "dam_sire": "",
+          "vendor": "Westbury Stud"
+        },
+        {
+          "lot_no": "67",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Ardrossan (AUS)",
+          "dam": "Ziggyzou (NZ)",
+          "dam_sire": "",
+          "vendor": "Elsdon Park"
+        },
+        {
+          "lot_no": "69",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Ace High (AUS)",
+          "dam": "Akela's Charm (NZ)",
+          "dam_sire": "",
+          "vendor": "Rich Hill Stud"
+        },
+        {
+          "lot_no": "70",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Sword of State (AUS)",
+          "dam": "Amalfitana (AUS)",
+          "dam_sire": "",
+          "vendor": "Brighthill Farm"
+        },
+        {
+          "lot_no": "71",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Zousain (AUS)",
+          "dam": "Ammirata (AUS)",
+          "dam_sire": "",
+          "vendor": "Hallmark Stud"
+        },
+        {
+          "lot_no": "72",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Ribchester (IRE)",
+          "dam": "Arabian Night (GB)",
+          "dam_sire": "",
+          "vendor": "Haunui Farm"
+        },
+        {
+          "lot_no": "73",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "King's Legacy (AUS)",
+          "dam": "Assuming (AUS)",
+          "dam_sire": "",
+          "vendor": "Hallmark Stud"
+        },
+        {
+          "lot_no": "74",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Staphanos (JPN)",
+          "dam": "Beetobee (JPN)",
+          "dam_sire": "",
+          "vendor": "Seaton Park Ltd"
+        },
+        {
+          "lot_no": "75",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "El Roca (AUS)",
+          "dam": "Besar (NZ)",
+          "dam_sire": "",
+          "vendor": "Westbury Stud"
+        },
+        {
+          "lot_no": "76",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Hello Youmzain (FR)",
+          "dam": "Black Mascara (NZ)",
+          "dam_sire": "",
+          "vendor": "Haunui Farm"
+        },
+        {
+          "lot_no": "77",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Acrobat (AUS)",
+          "dam": "Bolero Belle (AUS)",
+          "dam_sire": "",
+          "vendor": "Hallmark Stud"
+        },
+        {
+          "lot_no": "78",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Chestnut",
+          "sire": "Mr Mozart (AUS)",
+          "dam": "Bravissimo (NZ)",
+          "dam_sire": "",
+          "vendor": "Leanach Lodge Ltd"
+        },
+        {
+          "lot_no": "81",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Wrote (IRE)",
+          "dam": "Camarosa (NZ)",
+          "dam_sire": "",
+          "vendor": "Hallmark Stud"
+        },
+        {
+          "lot_no": "82",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Super Seth (AUS)",
+          "dam": "Caramel Sundae (NZ)",
+          "dam_sire": "",
+          "vendor": "Waikato Stud Ltd"
+        },
+        {
+          "lot_no": "83",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Chestnut",
+          "sire": "Mr Mozart (AUS)",
+          "dam": "Carlisle Bells (NZ)",
+          "dam_sire": "",
+          "vendor": "Haunui Farm"
+        },
+        {
+          "lot_no": "84",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Sword of State (AUS)",
+          "dam": "Carlotta (NZ)",
+          "dam_sire": "",
+          "vendor": "Cambria Park"
+        },
+        {
+          "lot_no": "85",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Banquo (AUS)",
+          "dam": "Cassiopeia (NZ)",
+          "dam_sire": "",
+          "vendor": "Elsdon Park"
+        },
+        {
+          "lot_no": "86",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Super Seth (AUS)",
+          "dam": "Cheex (NZ)",
+          "dam_sire": "",
+          "vendor": "Waikato Stud Ltd"
+        },
+        {
+          "lot_no": "87",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "U S Navy Flag (USA)",
+          "dam": "Chenzel (NZ)",
+          "dam_sire": "",
+          "vendor": "Brighthill Farm"
+        },
+        {
+          "lot_no": "88",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Per Incanto (USA)",
+          "dam": "Christmas Day (AUS)",
+          "dam_sire": "",
+          "vendor": "Seaton Park Ltd"
+        },
+        {
+          "lot_no": "89",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Ardrossan (AUS)",
+          "dam": "Chuffed (NZ)",
+          "dam_sire": "",
+          "vendor": "Waikato Stud Ltd"
+        },
+        {
+          "lot_no": "90",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Circus Maximus (IRE)",
+          "dam": "Circle of Magic (NZ)",
+          "dam_sire": "",
+          "vendor": "Hallmark Stud"
+        },
+        {
+          "lot_no": "91",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Ardrossan (AUS)",
+          "dam": "Corvina (NZ)",
+          "dam_sire": "",
+          "vendor": "Waikato Stud Ltd"
+        },
+        {
+          "lot_no": "92",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "State of Rest (IRE)",
+          "dam": "Costa Rica (NZ)",
+          "dam_sire": "",
+          "vendor": "Elsdon Park"
+        },
+        {
+          "lot_no": "94",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Embellish (NZ)",
+          "dam": "Darscape Princess (NZ)",
+          "dam_sire": "",
+          "vendor": "Seaton Park Ltd"
+        },
+        {
+          "lot_no": "95",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Super Seth (AUS)",
+          "dam": "Date Night (NZ)",
+          "dam_sire": "",
+          "vendor": "Waikato Stud Ltd"
+        },
+        {
+          "lot_no": "96",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Profondo (AUS)",
+          "dam": "Defiant (NZ)",
+          "dam_sire": "",
+          "vendor": "Brighthill Farm"
+        },
+        {
+          "lot_no": "97",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Brown",
+          "sire": "Ardrossan (AUS)",
+          "dam": "Deva Dynasty (NZ)",
+          "dam_sire": "",
+          "vendor": "Little Avondale Stud"
+        },
+        {
+          "lot_no": "99",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Bivouac (AUS)",
+          "dam": "Dottie Dee (NZ)",
+          "dam_sire": "",
+          "vendor": "Cambridge Stud"
+        },
+        {
+          "lot_no": "100",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Hilal (AUS)",
+          "dam": "Drama Series (AUS)",
+          "dam_sire": "",
+          "vendor": "Curraghmore"
+        },
+        {
+          "lot_no": "101",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Sword of State (AUS)",
+          "dam": "Elusive Red (NZ)",
+          "dam_sire": "",
+          "vendor": "HGT Bloodstock Ltd"
+        },
+        {
+          "lot_no": "102",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Shocking (AUS)",
+          "dam": "Evaline (NZ)",
+          "dam_sire": "",
+          "vendor": "Rich Hill Stud"
+        },
+        {
+          "lot_no": "104",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Sword of State (AUS)",
+          "dam": "Falling Light (NZ)",
+          "dam_sire": "",
+          "vendor": "Curraghmore"
+        },
+        {
+          "lot_no": "105",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Embellish (NZ)",
+          "dam": "Fast Sky Princess (AUS)",
+          "dam_sire": "",
+          "vendor": "Seaton Park Ltd"
+        },
+        {
+          "lot_no": "106",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Ardrossan (AUS)",
+          "dam": "Felicity Then (AUS)",
+          "dam_sire": "",
+          "vendor": "Elsdon Park"
+        },
+        {
+          "lot_no": "107",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Brown",
+          "sire": "Redwood (GB)",
+          "dam": "Fille de France (AUS)",
+          "dam_sire": "",
+          "vendor": "Westbury Stud"
+        },
+        {
+          "lot_no": "108",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Almanzor (FR)",
+          "dam": "Final Hour (AUS)",
+          "dam_sire": "",
+          "vendor": "Haunui Farm"
+        },
+        {
+          "lot_no": "109",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Shocking (AUS)",
+          "dam": "Finecasting (NZ)",
+          "dam_sire": "",
+          "vendor": "Brighthill Farm"
+        },
+        {
+          "lot_no": "110",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Chestnut",
+          "sire": "Almanzor (FR)",
+          "dam": "Flamebird (NZ)",
+          "dam_sire": "",
+          "vendor": "Cambridge Stud"
+        },
+        {
+          "lot_no": "111",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "Swiss Ace (AUS)",
+          "dam": "Flying Meg (NZ)",
+          "dam_sire": "",
+          "vendor": "Brighthill Farm"
+        },
+        {
+          "lot_no": "112",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Brown",
+          "sire": "Tarzino (NZ)",
+          "dam": "Forest Affair (NZ)",
+          "dam_sire": "",
+          "vendor": "Westbury Stud"
+        },
+        {
+          "lot_no": "113",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "Super Seth (AUS)",
+          "dam": "Forte (AUS)",
+          "dam_sire": "",
+          "vendor": "Curraghmore"
+        },
+        {
+          "lot_no": "114",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Hello Youmzain (FR)",
+          "dam": "Galaya (IRE)",
+          "dam_sire": "",
+          "vendor": "HGT Bloodstock Ltd"
+        },
+        {
+          "lot_no": "116",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Paddington (GB)",
+          "dam": "Hampton's Gold (NZ)",
+          "dam_sire": "",
+          "vendor": "Hallmark Stud"
+        },
+        {
+          "lot_no": "117",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Brown",
+          "sire": "Ace High (AUS)",
+          "dam": "Hayle Bay (NZ)",
+          "dam_sire": "",
+          "vendor": "Rich Hill Stud"
+        },
+        {
+          "lot_no": "118",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Noverre (NZ)",
+          "dam": "Helena Cristina (NZ)",
+          "dam_sire": "",
+          "vendor": "Elsdon Park"
+        },
+        {
+          "lot_no": "119",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Ace High (AUS)",
+          "dam": "Ice on Fire (AUS)",
+          "dam_sire": "",
+          "vendor": "Jamieson Park"
+        },
+        {
+          "lot_no": "121",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Super Seth (AUS)",
+          "dam": "Incanto Rose (NZ)",
+          "dam_sire": "",
+          "vendor": "Haunui Farm"
+        },
+        {
+          "lot_no": "122",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Ardrossan (AUS)",
+          "dam": "Ipanema Girl (NZ)",
+          "dam_sire": "",
+          "vendor": "Haunui Farm"
+        },
+        {
+          "lot_no": "124",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Chestnut",
+          "sire": "Reliable Man (GB)",
+          "dam": "Joyance (NZ)",
+          "dam_sire": "",
+          "vendor": "Westbury Stud"
+        },
+        {
+          "lot_no": "126",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "Almanzor (FR)",
+          "dam": "L'Amour (NZ)",
+          "dam_sire": "",
+          "vendor": "HGT Bloodstock Ltd"
+        },
+        {
+          "lot_no": "127",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Tarzino (NZ)",
+          "dam": "L'Coste (NZ)",
+          "dam_sire": "",
+          "vendor": "Westbury Stud"
+        },
+        {
+          "lot_no": "129",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Noverre (NZ)",
+          "dam": "La Cofradia (NZ)",
+          "dam_sire": "",
+          "vendor": "Hallmark Stud"
+        },
+        {
+          "lot_no": "130",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Redwood (GB)",
+          "dam": "Lady de Vere (NZ)",
+          "dam_sire": "",
+          "vendor": "Westbury Stud"
+        },
+        {
+          "lot_no": "132",
+          "horse_name": "",
+          "sex": "Filly",
+          "colour": "Brown",
+          "sire": "Mr Mozart (AUS)",
+          "dam": "Lipstick Lover (AUS)",
+          "dam_sire": "",
+          "vendor": "Jamieson Park"
+        },
+        {
+          "lot_no": "133",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Super Seth (AUS)",
+          "dam": "Loquita (NZ)",
+          "dam_sire": "",
+          "vendor": "Highline Thoroughbreds"
+        },
+        {
+          "lot_no": "135",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Super Seth (AUS)",
+          "dam": "Loveable (NZ)",
+          "dam_sire": "",
+          "vendor": "Waikato Stud Ltd"
+        },
+        {
+          "lot_no": "136",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Sword of State (AUS)",
+          "dam": "Madame Giselle (NZ)",
+          "dam_sire": "",
+          "vendor": "Hallmark Stud"
+        },
+        {
+          "lot_no": "137",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Savabeel (AUS)",
+          "dam": "Marvelouz (NZ)",
+          "dam_sire": "",
+          "vendor": "Cambridge Stud"
+        },
+        {
+          "lot_no": "138",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Ribchester (IRE)",
+          "dam": "Midnight Special (NZ)",
+          "dam_sire": "",
+          "vendor": "Haunui Farm"
+        },
+        {
+          "lot_no": "139",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Proisir (AUS)",
+          "dam": "Monolink (AUS)",
+          "dam_sire": "",
+          "vendor": "Little Avondale Stud"
+        },
+        {
+          "lot_no": "140",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Sweynesse (AUS)",
+          "dam": "Montana Mist (NZ)",
+          "dam_sire": "",
+          "vendor": "Jamieson Park"
+        },
+        {
+          "lot_no": "141",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Paddington (GB)",
+          "dam": "Minnaleo (NZ)",
+          "dam_sire": "",
+          "vendor": "Seaton Park Ltd"
+        },
+        {
+          "lot_no": "142",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Sword of State (AUS)",
+          "dam": "Stella's Honour (NZ)",
+          "dam_sire": "",
+          "vendor": "Seaton Park Ltd"
+        },
+        {
+          "lot_no": "143",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Ace High (AUS)",
+          "dam": "Light Express (AUS)",
+          "dam_sire": "",
+          "vendor": "Seaton Park Ltd"
+        }
+      ]
+    },
+    {
+      "id": "nzb|national-online-breeding-stock-sale|2026-07",
+      "house": "NZB",
+      "country": "NZ",
+      "name": "National Online Breeding Stock Sale",
+      "sale_type": "Broodmare",
+      "start_date": "2026-07-08",
+      "end_date": null,
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://www.nzb.co.nz/sales/26gbs",
+      "house_url": "https://www.nzb.co.nz",
+      "online": false,
+      "first_seen": "2026-06-16",
       "lots_error": "",
       "lots": []
     },
@@ -8697,6 +10525,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=17, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=15, obs=1, inglis=21, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=17, tattersalls_online=1, goffs=1, arqana=0, bbag=0, keeneland=5, fasigtipton=15, obs=1, inglis=21, magicmillions=1, nzb=10, gavelhouse=1"
   }
 }

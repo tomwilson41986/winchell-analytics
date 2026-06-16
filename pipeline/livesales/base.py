@@ -229,6 +229,29 @@ def split_sex_colour(token: str) -> tuple[str, str]:
     return ("", "")
 
 
+def expand_sex(code: str) -> str:
+    """Map a one-letter sex code (C/F/G/H/M) to its full word; anything already
+    spelled out (e.g. "Filly") or unrecognised passes through unchanged."""
+    token = (code or "").strip()
+    return _SEXES.get(token.upper(), token) if len(token) == 1 else token
+
+
+def expand_colour(code: str) -> str:
+    """Map a catalogue colour code (B, Ch, Gr, DkB, ...) to its full word.
+
+    Text already descriptive ("Bay", "Blk. or G.") has no exact code match and
+    passes through unchanged, so this is safe to apply to any colour string.
+    """
+    token = (code or "").strip()
+    compact = re.sub(r"[^A-Za-z]", "", token).upper()
+    if not compact:
+        return token
+    for prefix, colour in _COLOURS:
+        if compact == prefix:
+            return colour
+    return token
+
+
 _SEX_COLOUR_TOKEN_RE = re.compile(
     r"\b(?:20\d\d\s+)?((?:dkb|ch|gr|br|bl|ro|b)\.?\s*\.?\s*[cfghm])\.?(?=\s|$|,)",
     re.IGNORECASE,

@@ -58,34 +58,164 @@
   margin-top: 0.1rem;
 }
 
-/* --- Sire watchlist --- */
+/* --- Sire / dam sire search --- */
 
-.sire-form {
+.sire-search {
+  position: relative;
   display: flex;
-  gap: 0.6rem;
-  max-width: 480px;
+  align-items: center;
+  max-width: 540px;
 }
 
-.sire-form__input {
+.sire-search__icon {
+  position: absolute;
+  left: 0.85rem;
+  color: var(--grey);
+  pointer-events: none;
+}
+
+.sire-search__input {
   flex: 1;
-  padding: 0.5rem 0.85rem;
+  padding: 0.6rem 2.4rem;
   border: 1px solid var(--line-strong);
   border-radius: var(--r-pill);
   font: inherit;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--ink);
   background: var(--surface);
 }
 
-.sire-form__input:focus {
+.sire-search__input:focus {
   outline: 2px solid var(--maroon);
   outline-offset: 1px;
   border-color: var(--maroon);
 }
 
+.sire-search__clear {
+  position: absolute;
+  right: 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--grey);
+  cursor: pointer;
+}
+
+.sire-search__clear:hover {
+  background: var(--surface-2);
+  color: var(--ink);
+}
+
+/* --- Search results --- */
+
+.sire-results {
+  margin-top: 1rem;
+}
+
+.sire-results--empty {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.sire-results__summary {
+  margin: 0 0 0.7rem;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.sire-results__summary strong {
+  color: var(--maroon-dark);
+}
+
+.match-sire-list {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Watch toggle for an exact, alert-ready sire / dam sire name */
+.match-sire {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.86rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.match-sire:hover {
+  border-color: var(--maroon);
+  color: var(--maroon);
+}
+
+.match-sire.is-on {
+  background: var(--maroon);
+  border-color: var(--maroon);
+  color: var(--white);
+}
+
+.match-sire.is-on:hover {
+  background: var(--maroon-dark);
+  color: var(--white);
+}
+
+.match-sire__tally {
+  font-size: 0.74rem;
+  opacity: 0.8;
+  white-space: nowrap;
+}
+
+/* Matched sire / dam sire cell in the results table */
+.sire-hit {
+  background: var(--gold-soft);
+  color: var(--ink);
+  font-weight: 700;
+  padding: 0.05rem 0.3rem;
+  border-radius: var(--r-sm);
+}
+
+.livesales__muted {
+  color: var(--grey);
+}
+
+/* --- Watched-for-alerts chips --- */
+
+.watched-sires {
+  margin-top: 1.1rem;
+  padding-top: 0.9rem;
+  border-top: 1px dashed var(--line);
+}
+
+.watched-sires__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--maroon-dark);
+}
+
 .sire-chips {
   list-style: none;
-  margin: 0.9rem 0 0;
+  margin: 0.6rem 0 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -104,8 +234,18 @@
 }
 
 .sire-chip__name {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font: inherit;
   font-weight: 600;
   color: var(--ink);
+  cursor: pointer;
+}
+
+.sire-chip__name:hover {
+  color: var(--maroon);
+  text-decoration: underline;
 }
 
 .sire-chip__count {

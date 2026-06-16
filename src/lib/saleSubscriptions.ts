@@ -8,7 +8,7 @@
  * active, and new entries by a subscribed sire / damsire all surface as
  * in-app notifications. Server-pushed email would need a backend.
  */
-import type { LiveCatalogue, LiveSalesFeed } from './liveSales'
+import type { LiveCatalogue, LiveLot, LiveSalesFeed } from './liveSales'
 
 const STORAGE_KEY = 'winchell.liveSales.subscriptions.v1'
 
@@ -87,7 +87,9 @@ export interface SireMatch {
   lotNos: string[]
 }
 
-/** All current entries by a sire (as sire or damsire) across the feed. */
+/** All current entries by a sire (as sire or damsire) across the feed. Exact
+ * (normalised) name match — this powers the watch counts and notifications,
+ * which must agree with the pipeline's exact-match push logic. */
 export function findSireEntries(feed: LiveSalesFeed, sireName: string): SireMatch[] {
   const key = normalizeHorseName(sireName)
   if (!key) return []
@@ -97,6 +99,79 @@ export function findSireEntries(feed: LiveSalesFeed, sireName: string): SireMatc
     if (lotNos.length > 0) matches.push({ catalogue: cat, lotNos })
   }
   return matches
+}
+
+/** One lot matched by a sire / dam sire search, with the sale it sits in and
+ * which role(s) matched. */
+export interface SireLotMatch {
+  catalogue: LiveCatalogue
+  lot: LiveLot
+  matchedAsSire: boolean
+  matchedAsDamSire: boolean
+}
+
+/**
+ * Every lot across the feed whose sire or dam sire *contains* the query
+ * (case / punctuation / "(GB)"-suffix insensitive). Unlike `findSireEntries`
+ * this is a forgiving substring search for discovery — type "galileo" and find
+ * lots by "Galileo (IRE)" as either sire or dam sire.
+ */
+export function searchSireLots(feed: LiveSalesFeed, query: string): SireLotMatch[] {
+  const key = normalizeHorseName(query)
+  if (!key) return []
+  const matches: SireLotMatch[] = []
+  for (const cat of feed.catalogues) {
+    for (const lot of cat.lots) {
+      const asSire = normalizeHorseName(lot.sire).includes(key)
+      const asDamSire = normalizeHorseName(lot.dam_sire).includes(key)
+      if (asSire || asDamSire) {
+        matches.push({ catalogue: cat, lot, matchedAsSire: asSire, matchedAsDamSire: asDamSire })
+      }
+    }
+  }
+  return matches
+}
+
+/** A distinct sire / dam sire name found by a search, with its tallies — used
+ * to offer exact, alert-ready "watch" toggles from forgiving search results. */
+export interface MatchedSire {
+  /** Display name as catalogued, e.g. "Gun Runner (USA)". */
+  name: string
+  /** Normalised key (matches `normalizeHorseName`). */
+  key: string
+  /** Lots where this name is the sire. */
+  asSire: number
+  /** Lots where this name is the dam sire. */
+  asDamSire: number
+  /** Distinct sales this name appears in. */
+  sales: number
+}
+
+/** Roll a flat match list up into the distinct sire / dam sire names it found. */
+export function distinctMatchedSires(matches: SireLotMatch[]): MatchedSire[] {
+  const map = new Map<string, MatchedSire & { saleIds: Set<string> }>()
+  const bump = (rawName: string, saleId: string, role: 'sire' | 'damSire') => {
+    const name = (rawName ?? '').trim()
+    const key = normalizeHorseName(name)
+    if (!key) return
+    const cur =
+      map.get(key) ??
+      { name, key, asSire: 0, asDamSire: 0, sales: 0, saleIds: new Set<string>() }
+    if (role === 'sire') cur.asSire += 1
+    else cur.asDamSire += 1
+    cur.saleIds.add(saleId)
+    map.set(key, cur)
+  }
+  for (const m of matches) {
+    if (m.matchedAsSire) bump(m.lot.sire, m.catalogue.id, 'sire')
+    if (m.matchedAsDamSire) bump(m.lot.dam_sire, m.catalogue.id, 'damSire')
+  }
+  return [...map.values()]
+    .map(({ saleIds, ...rest }) => ({ ...rest, sales: saleIds.size }))
+    .sort(
+      (a, b) =>
+        b.asSire + b.asDamSire - (a.asSire + a.asDamSire) || a.name.localeCompare(b.name),
+    )
 }
 
 function countSireEntries(feed: LiveSalesFeed, sireName: string): number {

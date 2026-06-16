@@ -17,8 +17,11 @@ import {
 } from '../../../lib/liveSales'
 import {
   computeNotifications,
+  distinctMatchedSires,
   findSireEntries,
   normalizeHorseName,
+  searchSireLots,
+  type SireLotMatch,
 } from '../../../lib/saleSubscriptions'
 import { accountsEnabled } from '../../../lib/supabaseClient'
 import { useSubscriptions } from '../../../lib/useSubscriptions'
@@ -28,7 +31,7 @@ import './LiveSales.css'
 export default function LiveSales() {
   const [feed, setFeed] = useState<LiveSalesFeed | null>(null)
   const [loadError, setLoadError] = useState(false)
-  const [sireInput, setSireInput] = useState('')
+  const [sireQuery, setSireQuery] = useState('')
   const [lotsFor, setLotsFor] = useState<LiveCatalogue | null>(null)
   const { user } = useAuth()
   const { subs, toggleSaleSub, addSireSub, removeSireSub, acknowledge } = useSubscriptions()
@@ -50,11 +53,22 @@ export default function LiveSales() {
   const activeCount = feed?.catalogues.filter((c) => c.is_active).length ?? 0
   const lotCount = feed?.catalogues.reduce((n, c) => n + c.lots.length, 0) ?? 0
 
-  const submitSire = () => {
-    if (!sireInput.trim()) return
-    addSireSub(sireInput, feed)
-    setSireInput('')
-  }
+  const trimmedQuery = sireQuery.trim()
+  const sireMatches = useMemo(
+    () => (feed && trimmedQuery ? searchSireLots(feed, trimmedQuery) : []),
+    [feed, trimmedQuery],
+  )
+  const matchedSires = useMemo(() => distinctMatchedSires(sireMatches), [sireMatches])
+  const matchSaleCount = useMemo(
+    () => new Set(sireMatches.map((m) => m.catalogue.id)).size,
+    [sireMatches],
+  )
+  const sireRows = useMemo(() => sireMatches.map(toSireRow), [sireMatches])
+
+  const toggleWatch = (name: string) =>
+    watchedKeys.has(normalizeHorseName(name))
+      ? removeSireSub(name)
+      : addSireSub(name, feed)
 
   return (
     <div className="page">
@@ -140,55 +154,138 @@ export default function LiveSales() {
         </section>
       )}
 
-      <section className="section" aria-label="Watched sires">
+      <section className="section" aria-label="Search sires and dam sires">
         <div className="section__head">
-          <h2 className="section__title">Watch a sire or damsire</h2>
+          <h2 className="section__title">Search sires &amp; dam sires</h2>
           <span className="section__note">
-            Matches entries where the name appears as sire or as damsire / broodmare sire.
+            Find every horse in a current sale by its sire or dam sire, then watch a
+            name to be alerted when new ones are catalogued.
           </span>
         </div>
-        <form
-          className="sire-form"
-          onSubmit={(e) => {
-            e.preventDefault()
-            submitSire()
-          }}
-        >
+
+        <div className="sire-search">
+          <Icon name="search" size={18} className="sire-search__icon" />
           <input
-            className="sire-form__input"
+            className="sire-search__input"
             type="text"
-            value={sireInput}
-            onChange={(e) => setSireInput(e.target.value)}
-            placeholder="e.g. Gun Runner"
-            aria-label="Sire or damsire name"
+            value={sireQuery}
+            onChange={(e) => setSireQuery(e.target.value)}
+            placeholder="Search any sire or dam sire — e.g. Gun Runner"
+            aria-label="Search sire or dam sire"
           />
-          <button className="btn-export" type="submit" disabled={!sireInput.trim()}>
-            <Icon name="bell" size={15} /> Watch
-          </button>
-        </form>
-        {subs.sires.length > 0 && (
-          <ul className="sire-chips">
-            {subs.sires.map((sire) => {
-              const entryCount = feed
-                ? findSireEntries(feed, sire).reduce((n, m) => n + m.lotNos.length, 0)
-                : 0
-              return (
-                <li key={normalizeHorseName(sire)} className="sire-chip">
-                  <span className="sire-chip__name">{sire}</span>
-                  <span className="sire-chip__count">
-                    {entryCount} {entryCount === 1 ? 'entry' : 'entries'}
-                  </span>
-                  <button
-                    className="sire-chip__remove"
-                    aria-label={`Stop watching ${sire}`}
-                    onClick={() => removeSireSub(sire)}
-                  >
-                    <Icon name="close" size={13} />
-                  </button>
-                </li>
-              )
-            })}
-          </ul>
+          {sireQuery && (
+            <button
+              className="sire-search__clear"
+              aria-label="Clear search"
+              onClick={() => setSireQuery('')}
+            >
+              <Icon name="close" size={15} />
+            </button>
+          )}
+        </div>
+
+        {trimmedQuery && sireMatches.length === 0 && (
+          <div className="sire-results sire-results--empty">
+            <p className="livesales__quiet">
+              No horses by a sire or dam sire matching “{trimmedQuery}” in the current
+              catalogues.
+            </p>
+            <button
+              className={`match-sire${watchedKeys.has(normalizeHorseName(sireQuery)) ? ' is-on' : ''}`}
+              aria-pressed={watchedKeys.has(normalizeHorseName(sireQuery))}
+              onClick={() => toggleWatch(sireQuery)}
+            >
+              <Icon name="bell" size={14} />
+              {watchedKeys.has(normalizeHorseName(sireQuery))
+                ? `Watching “${trimmedQuery}”`
+                : `Watch “${trimmedQuery}” for future entries`}
+            </button>
+          </div>
+        )}
+
+        {trimmedQuery && sireMatches.length > 0 && (
+          <div className="sire-results">
+            <p className="sire-results__summary">
+              <strong>{sireMatches.length}</strong>{' '}
+              {sireMatches.length === 1 ? 'lot' : 'lots'} by{' '}
+              <strong>{matchedSires.length}</strong>{' '}
+              {matchedSires.length === 1 ? 'name' : 'names'} across{' '}
+              <strong>{matchSaleCount}</strong> {matchSaleCount === 1 ? 'sale' : 'sales'}
+            </p>
+            <ul className="match-sire-list">
+              {matchedSires.map((s) => {
+                const watching = watchedKeys.has(s.key)
+                return (
+                  <li key={s.key}>
+                    <button
+                      className={`match-sire${watching ? ' is-on' : ''}`}
+                      aria-pressed={watching}
+                      onClick={() => toggleWatch(s.name)}
+                    >
+                      <Icon name="bell" size={14} />
+                      <span>
+                        {watching ? 'Watching' : 'Watch'} <strong>{s.name}</strong>
+                      </span>
+                      <span className="match-sire__tally">
+                        {s.asSire > 0 && `${s.asSire} as sire`}
+                        {s.asSire > 0 && s.asDamSire > 0 && ' · '}
+                        {s.asDamSire > 0 && `${s.asDamSire} as dam sire`}
+                      </span>
+                    </button>
+                  </li>
+                )
+              })}
+            </ul>
+            <DataTable
+              columns={sireSearchColumns}
+              rows={sireRows}
+              pageSize={25}
+              exportFilename={`sire-search-${normalizeHorseName(sireQuery) || 'results'}.csv`}
+            />
+          </div>
+        )}
+
+        {subs.sires.length > 0 ? (
+          <div className="watched-sires">
+            <span className="watched-sires__label">
+              <Icon name="bell" size={14} /> Watching for alerts
+            </span>
+            <ul className="sire-chips">
+              {subs.sires.map((sire) => {
+                const entryCount = feed
+                  ? findSireEntries(feed, sire).reduce((n, m) => n + m.lotNos.length, 0)
+                  : 0
+                return (
+                  <li key={normalizeHorseName(sire)} className="sire-chip">
+                    <button
+                      className="sire-chip__name"
+                      onClick={() => setSireQuery(sire)}
+                      title={`Show ${sire}'s entries`}
+                    >
+                      {sire}
+                    </button>
+                    <span className="sire-chip__count" title="Current entries">
+                      {entryCount}
+                    </span>
+                    <button
+                      className="sire-chip__remove"
+                      aria-label={`Stop watching ${sire}`}
+                      onClick={() => removeSireSub(sire)}
+                    >
+                      <Icon name="close" size={13} />
+                    </button>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+        ) : (
+          !trimmedQuery && (
+            <p className="livesales__quiet">
+              Tip: search a stallion to see its runners across every sale, then watch it
+              to be alerted when new entries are catalogued.
+            </p>
+          )
         )}
       </section>
 
@@ -299,6 +396,56 @@ export default function LiveSales() {
     </div>
   )
 }
+
+interface SireSearchRow {
+  sale: string
+  lot_no: string
+  horse: string
+  sex: string
+  sire: string
+  dam: string
+  dam_sire: string
+  vendor: string
+  _sire: boolean
+  _damSire: boolean
+}
+
+function toSireRow(m: SireLotMatch): SireSearchRow {
+  return {
+    sale: m.catalogue.name,
+    lot_no: m.lot.lot_no,
+    horse: m.lot.horse_name,
+    sex: m.lot.sex,
+    sire: m.lot.sire,
+    dam: m.lot.dam,
+    dam_sire: m.lot.dam_sire,
+    vendor: m.lot.vendor,
+    _sire: m.matchedAsSire,
+    _damSire: m.matchedAsDamSire,
+  }
+}
+
+const muted = <span className="livesales__muted">—</span>
+
+const sireSearchColumns: Column<SireSearchRow>[] = [
+  { key: 'sale', header: 'Sale' },
+  { key: 'lot_no', header: 'Lot', numeric: true },
+  { key: 'horse', header: 'Horse', render: (r) => r.horse || muted },
+  { key: 'sex', header: 'Sex' },
+  {
+    key: 'sire',
+    header: 'Sire',
+    render: (r) => (r._sire ? <mark className="sire-hit">{r.sire}</mark> : r.sire),
+  },
+  { key: 'dam', header: 'Dam' },
+  {
+    key: 'dam_sire',
+    header: 'Dam Sire',
+    render: (r) =>
+      r._damSire ? <mark className="sire-hit">{r.dam_sire}</mark> : r.dam_sire || muted,
+  },
+  { key: 'vendor', header: 'Vendor', render: (r) => r.vendor || muted },
+]
 
 function LotsModal({
   catalogue,
