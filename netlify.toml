@@ -1,9 +1,11 @@
 [build]
-  command = "npm run build"
+  command = "bash scripts/build.sh"
   publish = "dist"
 
 [build.environment]
   NODE_VERSION = "22"
+  PYTHON_VERSION = "3.11"
+  NETLIFY_SKIP_INSTALL = "true"
 
 # Content-hashed bundles (JS/CSS/fonts) never change for a given URL, so cache
 # them permanently. A new deploy ships new filenames, sidestepping staleness.
