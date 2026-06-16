@@ -35,3 +35,6 @@ data/cache/
 
 # Live sales dry-run preview output
 data/sales/live/live_sales.preview.json
+
+# Local Netlify folder
+.netlify
