@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T11:09:23+00:00",
+  "generated_at": "2026-06-18T10:40:43+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-july-sale|2026-06",
@@ -8121,24 +8121,6 @@
       "lots": []
     },
     {
-      "id": "inglis|inglis-digital-aus|2026-07",
-      "house": "Inglis",
-      "country": "AUS",
-      "name": "Inglis Digital AUS",
-      "sale_type": "Mixed",
-      "start_date": "2026-07-10",
-      "end_date": null,
-      "is_active": false,
-      "is_new": false,
-      "status": "Upcoming",
-      "url": "https://inglisdigital.com/",
-      "house_url": "https://inglis.com.au",
-      "online": false,
-      "first_seen": "2026-06-12",
-      "lots_error": "",
-      "lots": []
-    },
-    {
       "id": "gavelhouse|gavelhouse-com-thoroughbred-22-june-2026-auction|2026-06",
       "house": "Gavelhouse",
       "country": "NZ",
@@ -8679,6 +8661,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=17, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=15, obs=1, inglis=21, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=17, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=15, obs=1, inglis=ERR:HTTPError, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
