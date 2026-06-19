@@ -12,7 +12,7 @@
   "pedigree": null,
   "sales": [],
   "form": {
-    "starts": 2,
+    "starts": 3,
     "wins": 0,
     "seconds": 0,
     "thirds": 0,
@@ -20,10 +20,28 @@
     "currency": null,
     "black_type_wins": 0,
     "graded_wins": 0,
-    "last_run": "2026-05-21",
-    "form_string": "4-4"
+    "last_run": "2026-06-18",
+    "form_string": "4-4-6"
   },
   "results": [
+    {
+      "race_date": "2026-06-18",
+      "track": "CD",
+      "race_name": "CD MSW (06/18/2026-R1)",
+      "surface": "Turf-Firm",
+      "distance_furlongs": 2.0,
+      "going": null,
+      "grade": null,
+      "finish_position": 6,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": null,
+      "comment": "1:03.22"
+    },
     {
       "race_date": "2026-05-21",
       "track": "CD",
@@ -73,5 +91,5 @@
   "sources": [
     "https://www.horseracingnation.com/horse/Wartime"
   ],
-  "last_updated": "2026-06-18T11:27:00.236333+00:00"
+  "last_updated": "2026-06-19T11:53:32.473901+00:00"
 }
