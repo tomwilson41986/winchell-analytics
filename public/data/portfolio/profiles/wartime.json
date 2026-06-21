@@ -27,7 +27,7 @@
     {
       "race_date": "2026-06-18",
       "track": "CD",
-      "race_name": "CD MSW (06/18/2026-R1)",
+      "race_name": "Msw",
       "surface": "Turf-Firm",
       "distance_furlongs": 2.0,
       "going": null,
@@ -91,5 +91,5 @@
   "sources": [
     "https://www.horseracingnation.com/horse/Wartime"
   ],
-  "last_updated": "2026-06-20T10:25:35.762267+00:00"
+  "last_updated": "2026-06-21T10:50:25.237885+00:00"
 }
