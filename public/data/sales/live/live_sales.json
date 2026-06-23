@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T12:17:55+00:00",
+  "generated_at": "2026-06-23T09:55:55+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-july-sale|2026-06",
@@ -1698,7 +1698,7 @@
         },
         {
           "lot_no": "167",
-          "horse_name": "Bear Right (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Kodi Bear (IRE)",
@@ -2608,7 +2608,7 @@
         },
         {
           "lot_no": "259",
-          "horse_name": "Full Moon Tonight (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Oasis Dream (GB)",
@@ -3638,7 +3638,7 @@
         },
         {
           "lot_no": "362",
-          "horse_name": "Shoof Baeed (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Chestnut",
           "sire": "Sea The Stars (IRE)",
@@ -4038,7 +4038,7 @@
         },
         {
           "lot_no": "402",
-          "horse_name": "Cavolo Nero (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Make Believe (GB)",
@@ -4218,7 +4218,7 @@
         },
         {
           "lot_no": "420",
-          "horse_name": "Blue Skies Above (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Chestnut",
           "sire": "Pinatubo (IRE)",
@@ -5318,7 +5318,7 @@
         },
         {
           "lot_no": "531",
-          "horse_name": "Ambiente Friendly (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Gleneagles (IRE)",
@@ -5748,7 +5748,7 @@
         },
         {
           "lot_no": "574",
-          "horse_name": "Rogue Impact (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Study of Man (IRE)",
@@ -5988,7 +5988,7 @@
         },
         {
           "lot_no": "598",
-          "horse_name": "Beautiful Rainbow (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Cotai Glory (GB)",
@@ -8056,13 +8056,31 @@
       "sale_type": "Breeze Up",
       "start_date": "2026-06-25",
       "end_date": "2026-06-30",
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Upcoming",
+      "status": "Active",
       "url": "https://digital.fasigtipton.com/sales/",
       "house_url": "https://www.fasigtipton.com",
       "online": false,
       "first_seen": "2026-06-12",
+      "lots_error": "",
+      "lots": []
+    },
+    {
+      "id": "fasig-tipton|july-digital-sale|2026-07",
+      "house": "Fasig-Tipton",
+      "country": "US",
+      "name": "July Digital Sale",
+      "sale_type": "Mixed",
+      "start_date": "2026-07-23",
+      "end_date": "2026-07-28",
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://digital.fasigtipton.com/sales/",
+      "house_url": "https://www.fasigtipton.com",
+      "online": false,
+      "first_seen": "2026-06-23",
       "lots_error": "",
       "lots": []
     },
@@ -8129,8 +8147,8 @@
       "start_date": "2026-07-06",
       "end_date": null,
       "is_active": false,
-      "is_new": true,
-      "status": "New",
+      "is_new": false,
+      "status": "Live",
       "url": "https://gavelhouse.co.nz",
       "house_url": "https://gavelhouse.co.nz",
       "online": true,
@@ -8140,6 +8158,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=17, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=15, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=17, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=15, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
