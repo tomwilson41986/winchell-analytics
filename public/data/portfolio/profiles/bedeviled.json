@@ -39,7 +39,7 @@
       "trainer": null,
       "earnings": null,
       "currency": null,
-      "speed_figure": null,
+      "speed_figure": 106,
       "comment": "1:36.64"
     },
     {
@@ -191,7 +191,7 @@
     "earnings_per_start": null,
     "win_strike_rate": 0.0,
     "place_strike_rate": 0.1111,
-    "best_speed_figure": 90,
+    "best_speed_figure": 106,
     "class_trajectory": null,
     "black_type": false,
     "value_flag": null
@@ -199,5 +199,5 @@
   "sources": [
     "https://www.horseracingnation.com/horse/Bedeviled_2"
   ],
-  "last_updated": "2026-06-22T12:55:24.001527+00:00"
+  "last_updated": "2026-06-23T10:39:46.574260+00:00"
 }

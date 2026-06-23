@@ -39,7 +39,7 @@
       "trainer": null,
       "earnings": null,
       "currency": null,
-      "speed_figure": null,
+      "speed_figure": 59,
       "comment": "1:03.22"
     },
     {
@@ -83,7 +83,7 @@
     "earnings_per_start": null,
     "win_strike_rate": 0.0,
     "place_strike_rate": 0.0,
-    "best_speed_figure": 42,
+    "best_speed_figure": 59,
     "class_trajectory": null,
     "black_type": false,
     "value_flag": null
@@ -91,5 +91,5 @@
   "sources": [
     "https://www.horseracingnation.com/horse/Wartime"
   ],
-  "last_updated": "2026-06-22T13:08:36.105647+00:00"
+  "last_updated": "2026-06-23T10:52:56.186411+00:00"
 }
