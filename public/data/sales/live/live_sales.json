@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T09:55:55+00:00",
+  "generated_at": "2026-06-24T09:42:33+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-july-sale|2026-06",
@@ -5678,7 +5678,7 @@
         },
         {
           "lot_no": "567",
-          "horse_name": "Solar Invincible (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Invincible Army (IRE)",
@@ -7178,7 +7178,7 @@
         },
         {
           "lot_no": "717",
-          "horse_name": "Angellina (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Harry Angel (IRE)",
@@ -7198,7 +7198,7 @@
         },
         {
           "lot_no": "719",
-          "horse_name": "Rebel Legend (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Australia (GB)",
@@ -7578,7 +7578,7 @@
         },
         {
           "lot_no": "757",
-          "horse_name": "Bulletsnap (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "Minzaal (IRE)",
@@ -8067,24 +8067,6 @@
       "lots": []
     },
     {
-      "id": "fasig-tipton|july-digital-sale|2026-07",
-      "house": "Fasig-Tipton",
-      "country": "US",
-      "name": "July Digital Sale",
-      "sale_type": "Mixed",
-      "start_date": "2026-07-23",
-      "end_date": "2026-07-28",
-      "is_active": false,
-      "is_new": true,
-      "status": "New",
-      "url": "https://digital.fasigtipton.com/sales/",
-      "house_url": "https://www.fasigtipton.com",
-      "online": false,
-      "first_seen": "2026-06-23",
-      "lots_error": "",
-      "lots": []
-    },
-    {
       "id": "fasig-tipton|july-selected-horses-of-racing-age|2026-07",
       "house": "Fasig-Tipton",
       "country": "US",
@@ -8117,6 +8099,24 @@
       "house_url": "https://www.fasigtipton.com",
       "online": false,
       "first_seen": "2026-06-14",
+      "lots_error": "",
+      "lots": []
+    },
+    {
+      "id": "fasig-tipton|july-digital-sale|2026-07",
+      "house": "Fasig-Tipton",
+      "country": "US",
+      "name": "July Digital Sale",
+      "sale_type": "Mixed",
+      "start_date": "2026-07-23",
+      "end_date": "2026-07-28",
+      "is_active": false,
+      "is_new": false,
+      "status": "Upcoming",
+      "url": "https://digital.fasigtipton.com/sales/",
+      "house_url": "https://www.fasigtipton.com",
+      "online": false,
+      "first_seen": "2026-06-23",
       "lots_error": "",
       "lots": []
     },
