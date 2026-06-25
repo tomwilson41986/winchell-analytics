@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T09:42:33+00:00",
+  "generated_at": "2026-06-25T09:35:00+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-july-sale|2026-06",
@@ -12,7 +12,7 @@
       "is_active": false,
       "is_new": false,
       "status": "Upcoming",
-      "url": "https://secure.tattersalls.com/online/OJL26/Main/Overview",
+      "url": "https://secure.tattersalls.com/online/OJL26/Main",
       "house_url": "https://www.tattersallsonline.com",
       "online": true,
       "first_seen": "2026-06-13",
@@ -948,7 +948,7 @@
         },
         {
           "lot_no": "92",
-          "horse_name": "Dahsha (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Mohaather (GB)",
@@ -1378,7 +1378,7 @@
         },
         {
           "lot_no": "135",
-          "horse_name": "O'Driscoll (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Ghaiyyath (IRE)",
@@ -1778,7 +1778,7 @@
         },
         {
           "lot_no": "175",
-          "horse_name": "Morbeh (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Chestnut",
           "sire": "Dubawi (IRE)",
@@ -3868,7 +3868,7 @@
         },
         {
           "lot_no": "385",
-          "horse_name": "Petworth (GER)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "Frankel (GB)",
@@ -4078,7 +4078,7 @@
         },
         {
           "lot_no": "406",
-          "horse_name": "Morven (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Gleneagles (IRE)",
@@ -4848,7 +4848,7 @@
         },
         {
           "lot_no": "483",
-          "horse_name": "Turret (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "Kingman (GB)",
@@ -4928,7 +4928,7 @@
         },
         {
           "lot_no": "491",
-          "horse_name": "Costa Navarino (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Brown",
           "sire": "Kingman (GB)",
@@ -4988,7 +4988,7 @@
         },
         {
           "lot_no": "497",
-          "horse_name": "Life Study (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Kingman (GB)",
@@ -5208,7 +5208,7 @@
         },
         {
           "lot_no": "520",
-          "horse_name": "Jagged Edge (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Blue Point (IRE)",
@@ -5608,7 +5608,7 @@
         },
         {
           "lot_no": "560",
-          "horse_name": "Reliable Ricki (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Elzaam (AUS)",
@@ -7088,7 +7088,7 @@
         },
         {
           "lot_no": "708",
-          "horse_name": "Double Combo (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "Dubawi (IRE)",
