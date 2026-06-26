@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T09:35:00+00:00",
+  "generated_at": "2026-06-26T09:40:24+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-july-sale|2026-06",
@@ -778,7 +778,7 @@
         },
         {
           "lot_no": "75",
-          "horse_name": "Rose Sienna (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Camelot (GB)",
@@ -2568,7 +2568,7 @@
         },
         {
           "lot_no": "255",
-          "horse_name": "Delusional (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Nando Parrado (GB)",
@@ -5898,7 +5898,7 @@
         },
         {
           "lot_no": "589",
-          "horse_name": "Back To Black (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Dark Angel (IRE)",
@@ -8158,6 +8158,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=17, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=15, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=16, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=15, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
