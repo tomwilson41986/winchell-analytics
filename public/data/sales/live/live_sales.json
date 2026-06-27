@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T09:40:24+00:00",
+  "generated_at": "2026-06-27T08:45:08+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-july-sale|2026-06",
@@ -4158,7 +4158,7 @@
         },
         {
           "lot_no": "414",
-          "horse_name": "Ziggy's Angel (FR)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Grey",
           "sire": "Dark Angel (IRE)",
@@ -8158,6 +8158,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=16, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=15, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=15, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=15, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
