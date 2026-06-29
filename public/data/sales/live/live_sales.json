@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T09:21:16+00:00",
+  "generated_at": "2026-06-29T11:13:12+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-july-sale|2026-06",
@@ -248,7 +248,7 @@
         },
         {
           "lot_no": "22",
-          "horse_name": "Momotombo (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Pinatubo (IRE)",
@@ -868,7 +868,7 @@
         },
         {
           "lot_no": "84",
-          "horse_name": "Maria (GER)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Sea The Moon (GER)",
@@ -878,7 +878,7 @@
         },
         {
           "lot_no": "85",
-          "horse_name": "Shaniko (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Hello Youmzain (FR)",
@@ -1068,7 +1068,7 @@
         },
         {
           "lot_no": "104",
-          "horse_name": "Relentless Hero (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Chestnut",
           "sire": "Ulysses (IRE)",
@@ -1588,7 +1588,7 @@
         },
         {
           "lot_no": "156",
-          "horse_name": "Who's Lope (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Chestnut",
           "sire": "Lope de Vega (IRE)",
@@ -3278,7 +3278,7 @@
         },
         {
           "lot_no": "326",
-          "horse_name": "Got The Booty (FR)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Hello Youmzain (FR)",
@@ -4318,7 +4318,7 @@
         },
         {
           "lot_no": "430",
-          "horse_name": "Green Area (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "St Mark's Basilica (FR)",
@@ -4758,7 +4758,7 @@
         },
         {
           "lot_no": "474",
-          "horse_name": "Recency Bias (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Grey",
           "sire": "Havana Grey (GB)",
@@ -4788,7 +4788,7 @@
         },
         {
           "lot_no": "477",
-          "horse_name": "Strength of Spirit (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Ulysses (IRE)",
@@ -5738,7 +5738,7 @@
         },
         {
           "lot_no": "573",
-          "horse_name": "Mist of Time (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Time Test (GB)",
@@ -6458,7 +6458,7 @@
         },
         {
           "lot_no": "645",
-          "horse_name": "Helmsley (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "New Bay (GB)",
@@ -6708,7 +6708,7 @@
         },
         {
           "lot_no": "670",
-          "horse_name": "Tzaritza (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Starman (GB)",
@@ -6718,7 +6718,7 @@
         },
         {
           "lot_no": "671",
-          "horse_name": "Celestial Fire (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Mehmas (IRE)",
@@ -7798,7 +7798,7 @@
         },
         {
           "lot_no": "779",
-          "horse_name": "Allegresse (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Oasis Dream (GB)",
