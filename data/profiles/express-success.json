@@ -27,7 +27,7 @@
     {
       "race_date": "2026-06-27",
       "track": "LS",
-      "race_name": "LS MSW (06/27/2026-R11)",
+      "race_name": "Msw",
       "surface": "Dirt-Fast",
       "distance_furlongs": 5.0,
       "going": null,
@@ -91,5 +91,5 @@
   "sources": [
     "https://www.horseracingnation.com/horse/Express_Success"
   ],
-  "last_updated": "2026-06-28T10:10:34.541896+00:00"
+  "last_updated": "2026-06-29T10:51:18.729309+00:00"
 }
