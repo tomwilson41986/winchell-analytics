@@ -14,6 +14,20 @@
     "value_flag": "elite graded earner"
   },
   {
+    "horse_id": "magnitude",
+    "name": "Magnitude",
+    "sire": null,
+    "dam": null,
+    "trainer": "Steven M. Asmussen",
+    "status": "Active",
+    "starts": 14,
+    "wins": 8,
+    "total_earnings": 9782365,
+    "currency": "USD",
+    "black_type": true,
+    "value_flag": "elite graded earner"
+  },
+  {
     "horse_id": "untapable",
     "name": "Untapable",
     "sire": null,
@@ -264,20 +278,6 @@
     "currency": null,
     "black_type": true,
     "value_flag": "black-type winner"
-  },
-  {
-    "horse_id": "magnitude",
-    "name": "Magnitude",
-    "sire": null,
-    "dam": null,
-    "trainer": "Steven M. Asmussen",
-    "status": "Active",
-    "starts": 14,
-    "wins": 8,
-    "total_earnings": null,
-    "currency": null,
-    "black_type": true,
-    "value_flag": "high strike rate"
   },
   {
     "horse_id": "marauder",

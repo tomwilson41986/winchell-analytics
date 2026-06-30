@@ -39,7 +39,7 @@
       "trainer": null,
       "earnings": null,
       "currency": null,
-      "speed_figure": null,
+      "speed_figure": 78,
       "comment": ":59.43"
     },
     {
@@ -83,7 +83,7 @@
     "earnings_per_start": null,
     "win_strike_rate": 0.0,
     "place_strike_rate": 0.3333,
-    "best_speed_figure": 69,
+    "best_speed_figure": 78,
     "class_trajectory": null,
     "black_type": false,
     "value_flag": null
@@ -91,5 +91,5 @@
   "sources": [
     "https://www.horseracingnation.com/horse/Express_Success"
   ],
-  "last_updated": "2026-06-29T12:07:51.100040+00:00"
+  "last_updated": "2026-06-30T10:38:00.668124+00:00"
 }
