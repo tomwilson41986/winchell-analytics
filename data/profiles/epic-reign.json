@@ -27,7 +27,7 @@
     {
       "race_date": "2026-06-28",
       "track": "CD",
-      "race_name": "Debutante S.",
+      "race_name": "2026 Debutante (LS)",
       "surface": "Dirt-Fast",
       "distance_furlongs": 6.0,
       "going": null,
@@ -73,5 +73,5 @@
   "sources": [
     "https://www.horseracingnation.com/horse/Epic_Reign"
   ],
-  "last_updated": "2026-06-30T10:36:37.892627+00:00"
+  "last_updated": "2026-07-01T10:47:40.752866+00:00"
 }
