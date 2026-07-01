@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T09:53:14+00:00",
+  "generated_at": "2026-07-01T10:02:12+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-july-sale|2026-06",
@@ -48,7 +48,7 @@
         },
         {
           "lot_no": "2",
-          "horse_name": "Rosieisme Darling (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Land Force (IRE)",
@@ -238,7 +238,7 @@
         },
         {
           "lot_no": "21",
-          "horse_name": "Jolanta (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Almanzor (FR)",
@@ -288,7 +288,7 @@
         },
         {
           "lot_no": "26",
-          "horse_name": "Yellow Lemons (FR)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Siyouni (FR)",
@@ -908,7 +908,7 @@
         },
         {
           "lot_no": "88",
-          "horse_name": "Portacloy (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Ten Sovereigns (IRE)",
@@ -938,7 +938,7 @@
         },
         {
           "lot_no": "91",
-          "horse_name": "Shayhana (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Frankel (GB)",
@@ -1758,7 +1758,7 @@
         },
         {
           "lot_no": "173",
-          "horse_name": "Baareq (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Bated Breath (GB)",
@@ -2317,6 +2317,66 @@
           "vendor": "Godolphin"
         },
         {
+          "lot_no": "229A",
+          "horse_name": "El Nay (IRE)",
+          "sex": "Gelding",
+          "colour": "Bay",
+          "sire": "Palace Pier (GB)",
+          "dam": "Anghaam (IRE)",
+          "dam_sire": "",
+          "vendor": "Shadwell Estate Company Ltd."
+        },
+        {
+          "lot_no": "229B",
+          "horse_name": "Duidin (IRE)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Cotai Glory (GB)",
+          "dam": "Firelight City (IRE)",
+          "dam_sire": "",
+          "vendor": "Charnwood Stables (J. Butler)"
+        },
+        {
+          "lot_no": "229C",
+          "horse_name": "Super Soldier (IRE)",
+          "sex": "Colt",
+          "colour": "Grey",
+          "sire": "Dark Angel (IRE)",
+          "dam": "First Party (GB)",
+          "dam_sire": "",
+          "vendor": "Consign Ltd."
+        },
+        {
+          "lot_no": "229D",
+          "horse_name": "Dapper Valley (IRE)",
+          "sex": "Gelding",
+          "colour": "Bay",
+          "sire": "Dandy Man (IRE)",
+          "dam": "Colgin (GB)",
+          "dam_sire": "",
+          "vendor": "Consign Ltd."
+        },
+        {
+          "lot_no": "229E",
+          "horse_name": "Tiberius Thunder (IRE)",
+          "sex": "Colt",
+          "colour": "Chestnut",
+          "sire": "Night of Thunder (IRE)",
+          "dam": "Ellthea (IRE)",
+          "dam_sire": "",
+          "vendor": "Baroda Stud, Ireland"
+        },
+        {
+          "lot_no": "229F",
+          "horse_name": "Pisiffik Ginger (IRE)",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "Cotai Glory (GB)",
+          "dam": "Himalayan Beauty (IRE)",
+          "dam_sire": "",
+          "vendor": "Baroda Stud, Ireland"
+        },
+        {
           "lot_no": "230",
           "horse_name": "Dublin Bay (IRE)",
           "sex": "Gelding",
@@ -2858,7 +2918,7 @@
         },
         {
           "lot_no": "284",
-          "horse_name": "Sioux Nation (USA)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -3808,7 +3868,7 @@
         },
         {
           "lot_no": "379",
-          "horse_name": "Mind Over Matter (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Starspangledbanner (AUS)",
@@ -3948,7 +4008,7 @@
         },
         {
           "lot_no": "393",
-          "horse_name": "Saytarr (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Mehmas (IRE)",
@@ -5057,6 +5117,66 @@
           "vendor": "Juddmonte"
         },
         {
+          "lot_no": "504A",
+          "horse_name": "Battle of Maldon (IRE)",
+          "sex": "Gelding",
+          "colour": "Bay",
+          "sire": "Saxon Warrior (JPN)",
+          "dam": "Novelty (GB)",
+          "dam_sire": "",
+          "vendor": "The Castlebridge Consignment"
+        },
+        {
+          "lot_no": "504B",
+          "horse_name": "Tyrant Gg (IRE)",
+          "sex": "Colt",
+          "colour": "Chestnut",
+          "sire": "Mehmas (IRE)",
+          "dam": "Orange Blossom (GB)",
+          "dam_sire": "",
+          "vendor": "Prestige Place (M. Botti)"
+        },
+        {
+          "lot_no": "504C",
+          "horse_name": "A Taste of Glory (GER)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Soldier Hollow (GB)",
+          "dam": "Aothea (GER)",
+          "dam_sire": "",
+          "vendor": "Kingsclere Training Stables (A. Balding)"
+        },
+        {
+          "lot_no": "504D",
+          "horse_name": "Regal Ulixes (GB)",
+          "sex": "Gelding",
+          "colour": "Chestnut",
+          "sire": "Ulysses (IRE)",
+          "dam": "Regal Realm (GB)",
+          "dam_sire": "",
+          "vendor": "Kingsclere Training Stables (A. Balding)"
+        },
+        {
+          "lot_no": "504E",
+          "horse_name": "Chan Noir (GB)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "Blackbeard (IRE)",
+          "dam": "Dancer Cross (GB)",
+          "dam_sire": "",
+          "vendor": "Jane Chapple-Hyam Racing"
+        },
+        {
+          "lot_no": "504F",
+          "horse_name": "Capall Rasa (IRE)",
+          "sex": "Gelding",
+          "colour": "Bay",
+          "sire": "Footstepsinthesand (GB)",
+          "dam": "Point Reyes (IRE)",
+          "dam_sire": "",
+          "vendor": "Tom Dascombe Racing"
+        },
+        {
           "lot_no": "505",
           "horse_name": "Sun Soldier (IRE)",
           "sex": "Gelding",
@@ -5888,7 +6008,7 @@
         },
         {
           "lot_no": "588",
-          "horse_name": "Takincareofbizness (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Bungle Inthejungle (GB)",
@@ -7008,7 +7128,7 @@
         },
         {
           "lot_no": "700",
-          "horse_name": "House of Medici (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "Bated Breath (GB)",
@@ -7038,7 +7158,7 @@
         },
         {
           "lot_no": "703",
-          "horse_name": "Treble Nine (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "Ghaiyyath (IRE)",
@@ -8049,24 +8169,6 @@
       ]
     },
     {
-      "id": "fasig-tipton|june-digital-sale|2026-06",
-      "house": "Fasig-Tipton",
-      "country": "US",
-      "name": "June Digital Sale",
-      "sale_type": "Breeze Up",
-      "start_date": "2026-06-25",
-      "end_date": "2026-06-30",
-      "is_active": true,
-      "is_new": false,
-      "status": "Active",
-      "url": "https://digital.fasigtipton.com/sales/",
-      "house_url": "https://www.fasigtipton.com",
-      "online": false,
-      "first_seen": "2026-06-12",
-      "lots_error": "",
-      "lots": []
-    },
-    {
       "id": "fasig-tipton|july-selected-horses-of-racing-age|2026-07",
       "house": "Fasig-Tipton",
       "country": "US",
@@ -8439,6 +8541,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=15, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=15, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=15, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=14, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
