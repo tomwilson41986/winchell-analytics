@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T08:46:14+00:00",
+  "generated_at": "2026-07-05T09:15:31+00:00",
   "catalogues": [
     {
       "id": "tattersalls|july-sale|2026-07",
@@ -9,9 +9,9 @@
       "sale_type": "Mixed",
       "start_date": "2026-07-07",
       "end_date": "2026-07-09",
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Catalogue Available",
+      "status": "Active",
       "url": "https://www.tattersalls.com/sales/july-sale/4DCGI/Sale/JUL26/Main",
       "house_url": "https://www.tattersalls.com",
       "online": false,
@@ -300,7 +300,7 @@
         },
         {
           "lot_no": "29",
-          "horse_name": "Singing Sky (GB)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Oasis Dream (GB)",
@@ -590,7 +590,7 @@
         },
         {
           "lot_no": "58",
-          "horse_name": "Heartbreak Lass (GB)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Cotai Glory (GB)",
@@ -1370,7 +1370,7 @@
         },
         {
           "lot_no": "136",
-          "horse_name": "Barak Warrior (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Chestnut",
           "sire": "Teofilo (IRE)",
@@ -1620,7 +1620,7 @@
         },
         {
           "lot_no": "161",
-          "horse_name": "Moscow Power (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Sergei Prokofiev (CAN)",
@@ -1730,7 +1730,7 @@
         },
         {
           "lot_no": "172",
-          "horse_name": "Bluestone Lady (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Phoenix of Spain (IRE)",
@@ -3770,7 +3770,7 @@
         },
         {
           "lot_no": "371",
-          "horse_name": "Tactical Plan (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Grey",
           "sire": "Kodiac (GB)",
@@ -5260,7 +5260,7 @@
         },
         {
           "lot_no": "514",
-          "horse_name": "Hard Endeavor (FR)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Chestnut",
           "sire": "New Bay (GB)",
@@ -5330,7 +5330,7 @@
         },
         {
           "lot_no": "521",
-          "horse_name": "Je Suis Celebre (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Massaat (IRE)",
@@ -8533,6 +8533,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=15, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=14, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=15, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=14, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
