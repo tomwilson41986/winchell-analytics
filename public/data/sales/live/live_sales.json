@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T09:15:31+00:00",
+  "generated_at": "2026-07-06T10:51:30+00:00",
   "catalogues": [
     {
       "id": "tattersalls|july-sale|2026-07",
@@ -50,7 +50,7 @@
         },
         {
           "lot_no": "4",
-          "horse_name": "Mohaather (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -340,7 +340,7 @@
         },
         {
           "lot_no": "33",
-          "horse_name": "Misty Sky (IRE)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Sands of Mali (FR)",
@@ -550,7 +550,7 @@
         },
         {
           "lot_no": "54",
-          "horse_name": "Space Dreamer (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Space Traveller (GB)",
@@ -610,7 +610,7 @@
         },
         {
           "lot_no": "60",
-          "horse_name": "Alice Kazeem (GB)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Chestnut",
           "sire": "Al Kazeem (GB)",
@@ -800,7 +800,7 @@
         },
         {
           "lot_no": "79",
-          "horse_name": "Rodeo Blues (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Brown",
           "sire": "Blue Point (IRE)",
@@ -940,7 +940,7 @@
         },
         {
           "lot_no": "93",
-          "horse_name": "Hello Luna (FR)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Hello Youmzain (FR)",
@@ -1430,7 +1430,7 @@
         },
         {
           "lot_no": "142",
-          "horse_name": "Kakirra (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Australia (GB)",
@@ -1440,7 +1440,7 @@
         },
         {
           "lot_no": "143",
-          "horse_name": "Ridger (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "Harry Angel (IRE)",
@@ -1450,7 +1450,7 @@
         },
         {
           "lot_no": "144",
-          "horse_name": "Musical Soldier (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Soldier's Call (GB)",
@@ -1780,7 +1780,7 @@
         },
         {
           "lot_no": "177",
-          "horse_name": "Liveinthelight (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "Teofilo (IRE)",
@@ -2420,7 +2420,7 @@
         },
         {
           "lot_no": "236",
-          "horse_name": "Red Tsarina (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "Sergei Prokofiev (CAN)",
@@ -2840,7 +2840,7 @@
         },
         {
           "lot_no": "278",
-          "horse_name": "Something Coming (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Kodi Bear (IRE)",
@@ -2850,7 +2850,7 @@
         },
         {
           "lot_no": "279",
-          "horse_name": "Tenison (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Cable Bay (IRE)",
@@ -3220,7 +3220,7 @@
         },
         {
           "lot_no": "316",
-          "horse_name": "Champagne Charlee (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "Profitable (IRE)",
@@ -3660,7 +3660,7 @@
         },
         {
           "lot_no": "360",
-          "horse_name": "Champion Lawman (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "Showcasing (GB)",
@@ -5760,7 +5760,7 @@
         },
         {
           "lot_no": "564",
-          "horse_name": "Lavatera (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Pinatubo (IRE)",
@@ -5770,7 +5770,7 @@
         },
         {
           "lot_no": "565",
-          "horse_name": "Moon Is Up (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "Kameko (USA)",
@@ -7780,7 +7780,7 @@
         },
         {
           "lot_no": "766",
-          "horse_name": "Lady Dora Mae (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Space Blues (IRE)",
@@ -7810,7 +7810,7 @@
         },
         {
           "lot_no": "769",
-          "horse_name": "Lake Como (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "St Mark's Basilica (FR)",
@@ -7920,7 +7920,7 @@
         },
         {
           "lot_no": "780",
-          "horse_name": "Mythical Bay (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Chestnut",
           "sire": "New Bay (GB)",
@@ -8231,308 +8231,9 @@
       "first_seen": "2026-06-12",
       "lots_error": "",
       "lots": []
-    },
-    {
-      "id": "gavelhouse|gavelhouse-com-thoroughbred-6-july-2026-auction|2026-07",
-      "house": "Gavelhouse",
-      "country": "NZ",
-      "name": "gavelhouse.com Thoroughbred 6 July 2026 auction",
-      "sale_type": "Mixed",
-      "start_date": "2026-07-06",
-      "end_date": null,
-      "is_active": true,
-      "is_new": false,
-      "status": "Active",
-      "url": "https://gavelhouse.co.nz",
-      "house_url": "https://gavelhouse.co.nz",
-      "online": true,
-      "first_seen": "2026-06-22",
-      "lots_error": "",
-      "lots": [
-        {
-          "lot_no": "10",
-          "horse_name": "Grey Invador",
-          "sex": "4",
-          "colour": "15",
-          "sire": "Reliable Man",
-          "dam": "My Game",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "28",
-          "horse_name": "Shamexpress",
-          "sex": "2",
-          "colour": "3",
-          "sire": "O'Reilly",
-          "dam": "Volkrose",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "3",
-          "horse_name": "Unnamed",
-          "sex": "2",
-          "colour": "3",
-          "sire": "Ardrossan",
-          "dam": "Jahzara",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "25",
-          "horse_name": "Powerful Story",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Written Tycoon",
-          "dam": "Rich Esprit",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "19",
-          "horse_name": "Central Park",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Darci Brahma",
-          "dam": "Merle Park",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "13",
-          "horse_name": "Osaka Girl",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Staphanos",
-          "dam": "Dressed",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "20",
-          "horse_name": "Fearless Choice",
-          "sex": "5",
-          "colour": "6",
-          "sire": "Lonhro",
-          "dam": "Ravishing Choice",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1",
-          "horse_name": "Unnamed",
-          "sex": "3",
-          "colour": "3",
-          "sire": "U S Navy Flag",
-          "dam": "Dominance",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "2",
-          "horse_name": "Unnamed",
-          "sex": "3",
-          "colour": "11",
-          "sire": "Reliable Man",
-          "dam": "Recollect",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "9",
-          "horse_name": "G'Day Goldie",
-          "sex": "3",
-          "colour": "10",
-          "sire": "Turn Me Loose",
-          "dam": "Scorpio",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "14",
-          "horse_name": "Rezinate",
-          "sex": "4",
-          "colour": "3",
-          "sire": "Per Incanto",
-          "dam": "Zaborei",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "8",
-          "horse_name": "Brazen Affair",
-          "sex": "5",
-          "colour": "6",
-          "sire": "Brazen Beau",
-          "dam": "Southern Romance",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "11",
-          "horse_name": "La Reina",
-          "sex": "3",
-          "colour": "3",
-          "sire": "Tivaci",
-          "dam": "Queen Leonora",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "6",
-          "horse_name": "Allthekingshorses",
-          "sex": "3",
-          "colour": "3",
-          "sire": "King's Legacy",
-          "dam": "Malmoosa",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "16",
-          "horse_name": "Tale of the Gypsy",
-          "sex": "3",
-          "colour": "10",
-          "sire": "Written By",
-          "dam": "Gypsy Snitz",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "17",
-          "horse_name": "Vickezzmargaux",
-          "sex": "5",
-          "colour": "15",
-          "sire": "Eminent",
-          "dam": "Vickezzchardonnay",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "26",
-          "horse_name": "Top Note",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Burgundy",
-          "dam": "Arpeggio",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "18",
-          "horse_name": "Believe You Me",
-          "sex": "5",
-          "colour": "10",
-          "sire": "Thorn Park",
-          "dam": "Lady Alberton",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "22",
-          "horse_name": "Missoni",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Ocean Park",
-          "dam": "Fashionably",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "23",
-          "horse_name": "Oh to Be",
-          "sex": "5",
-          "colour": "10",
-          "sire": "Ocean Park",
-          "dam": "Famous",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "24",
-          "horse_name": "On Your Own",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Sacred Falls",
-          "dam": "Dee I Why",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "12",
-          "horse_name": "Pure Gold",
-          "sex": "4",
-          "colour": "10",
-          "sire": "Pure Champion",
-          "dam": "Libby Surprize",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "27",
-          "horse_name": "Vegas Lights",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Sacred Falls",
-          "dam": "Dazzling Heights",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "15",
-          "horse_name": "Scathach",
-          "sex": "3",
-          "colour": "5",
-          "sire": "Noverre",
-          "dam": "Skye Rose",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "21",
-          "horse_name": "Good Craic",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Per Incanto",
-          "dam": "Just Irish",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "4",
-          "horse_name": "Hanauma Bay",
-          "sex": "3",
-          "colour": "3",
-          "sire": "Ocean Park",
-          "dam": "Honolulu",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "5",
-          "horse_name": "Ice Skater",
-          "sex": "3",
-          "colour": "6",
-          "sire": "Tivaci",
-          "dam": "Tonya",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "7",
-          "horse_name": "Brave Spirit",
-          "sex": "4",
-          "colour": "3",
-          "sire": "Swiss Ace",
-          "dam": "Spirit of Joy",
-          "dam_sire": "",
-          "vendor": ""
-        }
-      ]
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=15, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=14, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=15, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=14, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=0"
   }
 }
