@@ -12,7 +12,7 @@
   "pedigree": null,
   "sales": [],
   "form": {
-    "starts": 1,
+    "starts": 2,
     "wins": 0,
     "seconds": 0,
     "thirds": 0,
@@ -20,10 +20,28 @@
     "currency": null,
     "black_type_wins": 0,
     "graded_wins": 0,
-    "last_run": "2026-04-29",
-    "form_string": "7"
+    "last_run": "2026-07-06",
+    "form_string": "7-11"
   },
   "results": [
+    {
+      "race_date": "2026-07-06",
+      "track": "ELP",
+      "race_name": "ELP MSW (07/06/2026-R4)",
+      "surface": "Dirt-Fast",
+      "distance_furlongs": 2.0,
+      "going": null,
+      "grade": null,
+      "finish_position": 11,
+      "field_size": null,
+      "margin": null,
+      "jockey": null,
+      "trainer": null,
+      "earnings": null,
+      "currency": null,
+      "speed_figure": null,
+      "comment": "1:04.94"
+    },
     {
       "race_date": "2026-04-29",
       "track": "CD",
@@ -55,5 +73,5 @@
   "sources": [
     "https://www.horseracingnation.com/horse/Just_Epic"
   ],
-  "last_updated": "2026-07-06T11:47:10.696473+00:00"
+  "last_updated": "2026-07-07T10:35:00.773482+00:00"
 }
