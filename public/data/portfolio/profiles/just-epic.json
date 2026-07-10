@@ -27,7 +27,7 @@
     {
       "race_date": "2026-07-06",
       "track": "ELP",
-      "race_name": "ELP MSW (07/06/2026-R4)",
+      "race_name": "Msw",
       "surface": "Dirt-Fast",
       "distance_furlongs": 2.0,
       "going": null,
@@ -73,5 +73,5 @@
   "sources": [
     "https://www.horseracingnation.com/horse/Just_Epic"
   ],
-  "last_updated": "2026-07-09T10:39:24.146468+00:00"
+  "last_updated": "2026-07-10T10:32:47.212361+00:00"
 }
