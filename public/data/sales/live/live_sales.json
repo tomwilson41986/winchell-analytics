@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T09:39:37+00:00",
+  "generated_at": "2026-07-14T08:19:40+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-august-sale|2026-08",
@@ -125,7 +125,308 @@
       "online": true,
       "first_seen": "2026-07-07",
       "lots_error": "",
-      "lots": []
+      "lots": [
+        {
+          "lot_no": "11",
+          "horse_name": "Au Fait",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Ocean Park",
+          "dam": "Aumale",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "5",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Ardrossan",
+          "dam": "Nowheretorun",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "28",
+          "horse_name": "Patriarca",
+          "sex": "5",
+          "colour": "6",
+          "sire": "Savabeel",
+          "dam": "Baby Shacks",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "18",
+          "horse_name": "Qiji Horizon",
+          "sex": "3",
+          "colour": "6",
+          "sire": "Vanbrugh",
+          "dam": "Qiji Melody",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "30",
+          "horse_name": "Shamexpress",
+          "sex": "2",
+          "colour": "3",
+          "sire": "O'Reilly",
+          "dam": "Volkrose",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "25",
+          "horse_name": "Berzallia",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Bernardini",
+          "dam": "Zalinda",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "15",
+          "horse_name": "Lovaci",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Tivaci",
+          "dam": "Loveable",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "12",
+          "horse_name": "Kenwood House",
+          "sex": "4",
+          "colour": "3",
+          "sire": "King's Legacy",
+          "dam": "Lady Iveagh",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "10",
+          "horse_name": "Annie Bling",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Embellish",
+          "dam": "Anahita",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "17",
+          "horse_name": "Pretty Fly",
+          "sex": "5",
+          "colour": "6",
+          "sire": "Flying Artie",
+          "dam": "Miss Alabama",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "19",
+          "horse_name": "Silky Shuba",
+          "sex": "5",
+          "colour": "6",
+          "sire": "Russian Revolution",
+          "dam": "Pelage",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "16",
+          "horse_name": "Orsome Dude",
+          "sex": "4",
+          "colour": "3",
+          "sire": "El Roca",
+          "dam": "The Migrator",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "20",
+          "horse_name": "Tarbeck",
+          "sex": "4",
+          "colour": "3",
+          "sire": "Tarzino",
+          "dam": "Remind Me",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "14",
+          "horse_name": "Loopy Farooki",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Shocking",
+          "dam": "Prado Red",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "6",
+          "horse_name": "Unnamed",
+          "sex": "4",
+          "colour": "26",
+          "sire": "Tivaci",
+          "dam": "Florist",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "7",
+          "horse_name": "Unnamed",
+          "sex": "2",
+          "colour": "3",
+          "sire": "Ace High",
+          "dam": "Toy Story",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "21",
+          "horse_name": "Up With Ace",
+          "sex": "4",
+          "colour": "6",
+          "sire": "Ace High",
+          "dam": "Ataahua Daydream",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "2",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Hello Youmzain",
+          "dam": "Familia",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "24",
+          "horse_name": "Arija",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Charm Spirit",
+          "dam": "The Mighty Lions",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "3",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Profondo",
+          "dam": "Irish Whistle",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Mr Mozart",
+          "dam": "Encosta Mint",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "23",
+          "horse_name": "Anything",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Showcasing",
+          "dam": "Everything",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "27",
+          "horse_name": "Molly Jensen",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Super Seth",
+          "dam": "Phoebe Snow",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "8",
+          "horse_name": "Clasina Belle",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Echoes of Heaven",
+          "dam": "Berlin Belle",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "13",
+          "horse_name": "Local Lass",
+          "sex": "5",
+          "colour": "6",
+          "sire": "Derryn",
+          "dam": "Genuine Offer",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "4",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "3",
+          "sire": "No Nay Never",
+          "dam": "Belonging",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "9",
+          "horse_name": "Just Sparkling",
+          "sex": "3",
+          "colour": "6",
+          "sire": "Embellish",
+          "dam": "Jonquil",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "29",
+          "horse_name": "Toa Tuahine",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Saxon Warrior",
+          "dam": "Alpine Julz",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "22",
+          "horse_name": "Alpine Julz",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Keeper",
+          "dam": "Alpine Delight",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "26",
+          "horse_name": "Betsy",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Redoute's Choice",
+          "dam": "Quays",
+          "dam_sire": "",
+          "vendor": ""
+        }
+      ]
     }
   ],
   "diagnostics": {
