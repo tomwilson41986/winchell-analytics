@@ -39,7 +39,7 @@
       "trainer": null,
       "earnings": null,
       "currency": null,
-      "speed_figure": null,
+      "speed_figure": 110,
       "comment": "1:43.17"
     },
     {
@@ -181,5 +181,5 @@
   "sources": [
     "https://www.horseracingnation.com/horse/Maximum_Effort"
   ],
-  "last_updated": "2026-07-13T10:40:24.953893+00:00"
+  "last_updated": "2026-07-14T09:17:46.195118+00:00"
 }

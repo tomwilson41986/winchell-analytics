@@ -39,7 +39,7 @@
       "trainer": null,
       "earnings": null,
       "currency": null,
-      "speed_figure": null,
+      "speed_figure": 40,
       "comment": "1:04.94"
     },
     {
@@ -65,7 +65,7 @@
     "earnings_per_start": null,
     "win_strike_rate": 0.0,
     "place_strike_rate": 0.0,
-    "best_speed_figure": 39,
+    "best_speed_figure": 40,
     "class_trajectory": null,
     "black_type": false,
     "value_flag": null
@@ -73,5 +73,5 @@
   "sources": [
     "https://www.horseracingnation.com/horse/Just_Epic"
   ],
-  "last_updated": "2026-07-13T10:38:39.329585+00:00"
+  "last_updated": "2026-07-14T09:15:59.417370+00:00"
 }
