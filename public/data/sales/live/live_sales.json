@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-07-14T08:19:40+00:00",
+  "generated_at": "2026-07-15T08:26:24+00:00",
   "catalogues": [
+    {
+      "id": "tattersalls-online|the-treo-eile-online-summer-sale|2026-07",
+      "house": "Tattersalls Online",
+      "country": "UK",
+      "name": "The Treo Eile Online Summer Sale",
+      "sale_type": "Mixed",
+      "start_date": "2026-07-27",
+      "end_date": "2026-07-28",
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://secure.tattersalls.com/online/OA226/Main",
+      "house_url": "https://www.tattersallsonline.com",
+      "online": true,
+      "first_seen": "2026-07-15",
+      "lots_error": "",
+      "lots": []
+    },
     {
       "id": "tattersalls-online|online-august-sale|2026-08",
       "house": "Tattersalls Online",
@@ -20,47 +38,11 @@
       "lots": []
     },
     {
-      "id": "fasig-tipton|july-selected-horses-of-racing-age|2026-07",
-      "house": "Fasig-Tipton",
-      "country": "US",
-      "name": "July Selected Horses of Racing Age",
-      "sale_type": "HIT",
-      "start_date": "2026-07-14",
-      "end_date": null,
-      "is_active": true,
-      "is_new": false,
-      "status": "Active",
-      "url": "https://www.fasigtipton.com/2026/July-Selected-HORA",
-      "house_url": "https://www.fasigtipton.com",
-      "online": false,
-      "first_seen": "2026-06-14",
-      "lots_error": "",
-      "lots": []
-    },
-    {
-      "id": "fasig-tipton|the-july-sale|2026-07",
-      "house": "Fasig-Tipton",
-      "country": "US",
-      "name": "The July Sale",
-      "sale_type": "Yearling",
-      "start_date": "2026-07-14",
-      "end_date": null,
-      "is_active": true,
-      "is_new": false,
-      "status": "Active",
-      "url": "https://www.fasigtipton.com/2026/The-July-Sale",
-      "house_url": "https://www.fasigtipton.com",
-      "online": false,
-      "first_seen": "2026-06-14",
-      "lots_error": "",
-      "lots": []
-    },
-    {
       "id": "fasig-tipton|july-digital-sale|2026-07",
       "house": "Fasig-Tipton",
       "country": "US",
       "name": "July Digital Sale",
-      "sale_type": "Mixed",
+      "sale_type": "Yearling",
       "start_date": "2026-07-23",
       "end_date": "2026-07-28",
       "is_active": false,
@@ -279,7 +261,7 @@
         {
           "lot_no": "7",
           "horse_name": "Unnamed",
-          "sex": "2",
+          "sex": "4",
           "colour": "3",
           "sire": "Ace High",
           "dam": "Toy Story",
@@ -430,6 +412,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=14, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=14, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=14, tattersalls_online=2, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=12, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
