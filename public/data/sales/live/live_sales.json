@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T08:26:24+00:00",
+  "generated_at": "2026-07-16T08:24:15+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|the-treo-eile-online-summer-sale|2026-07",
@@ -10,8 +10,8 @@
       "start_date": "2026-07-27",
       "end_date": "2026-07-28",
       "is_active": false,
-      "is_new": true,
-      "status": "New",
+      "is_new": false,
+      "status": "Upcoming",
       "url": "https://secure.tattersalls.com/online/OA226/Main",
       "house_url": "https://www.tattersallsonline.com",
       "online": true,
