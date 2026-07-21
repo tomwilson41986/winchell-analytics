@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T09:27:09+00:00",
+  "generated_at": "2026-07-21T08:38:35+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|the-treo-eile-online-summer-sale|2026-07",
@@ -45,9 +45,9 @@
       "sale_type": "Yearling",
       "start_date": "2026-07-23",
       "end_date": "2026-07-28",
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Upcoming",
+      "status": "Active",
       "url": "https://digital.fasigtipton.com/sales/",
       "house_url": "https://www.fasigtipton.com",
       "online": false,
@@ -108,9 +108,27 @@
       "first_seen": "2026-07-08",
       "lots_error": "",
       "lots": []
+    },
+    {
+      "id": "gavelhouse|gavelhouse-com-thoroughbred-3-august-2026-auction|2026-08",
+      "house": "Gavelhouse",
+      "country": "NZ",
+      "name": "gavelhouse.com Thoroughbred 3 August 2026 auction",
+      "sale_type": "Mixed",
+      "start_date": "2026-08-03",
+      "end_date": null,
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://gavelhouse.co.nz",
+      "house_url": "https://gavelhouse.co.nz",
+      "online": true,
+      "first_seen": "2026-07-21",
+      "lots_error": "",
+      "lots": []
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=14, tattersalls_online=2, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=12, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=0"
+    "source_status": "tattersalls=14, tattersalls_online=2, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=12, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
