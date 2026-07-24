@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T08:39:42+00:00",
+  "generated_at": "2026-07-24T08:35:31+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|the-treo-eile-online-summer-sale|2026-07",
@@ -118,8 +118,8 @@
       "start_date": null,
       "end_date": null,
       "is_active": true,
-      "is_new": true,
-      "status": "Active · New",
+      "is_new": false,
+      "status": "Active",
       "url": "https://gavelhouse.co.nz",
       "house_url": "https://gavelhouse.co.nz",
       "online": true,
