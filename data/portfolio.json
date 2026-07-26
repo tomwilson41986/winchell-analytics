@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T09:19:58.868933+00:00",
+  "generated_at": "2026-07-26T09:35:05.773096+00:00",
   "horse_count": 37,
   "active_count": 17,
   "total_earnings": 37528852,
@@ -504,7 +504,7 @@
       "dam": null,
       "trainer": "Steven M. Asmussen",
       "status": "Active",
-      "starts": 3,
+      "starts": 4,
       "wins": 0,
       "total_earnings": null,
       "currency": null,
