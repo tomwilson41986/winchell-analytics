@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T08:16:05+00:00",
+  "generated_at": "2026-07-26T08:34:50+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|the-treo-eile-online-summer-sale|2026-07",
@@ -110,233 +110,22 @@
       "lots": []
     },
     {
-      "id": "gavelhouse|nztba-charity-auction|nd",
+      "id": "gavelhouse|gavelhouse-com-thoroughbred-3-august-2026-auction|2026-08",
       "house": "Gavelhouse",
       "country": "NZ",
-      "name": "NZTBA Charity Auction",
+      "name": "gavelhouse.com Thoroughbred 3 August 2026 auction",
       "sale_type": "Mixed",
-      "start_date": null,
+      "start_date": "2026-08-03",
       "end_date": null,
-      "is_active": true,
+      "is_active": false,
       "is_new": false,
-      "status": "Active",
+      "status": "Live",
       "url": "https://gavelhouse.co.nz",
       "house_url": "https://gavelhouse.co.nz",
       "online": true,
-      "first_seen": "2026-07-23",
+      "first_seen": "2026-07-21",
       "lots_error": "",
-      "lots": [
-        {
-          "lot_no": "1",
-          "horse_name": "Aeliana",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Castelvecchio",
-          "dam": "Temolie",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "2",
-          "horse_name": "Belle Cheval",
-          "sex": "3",
-          "colour": "26",
-          "sire": "Savabeel",
-          "dam": "Keepa Cheval",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "3",
-          "horse_name": "Ceolwulf",
-          "sex": "4",
-          "colour": "3",
-          "sire": "Tavistock",
-          "dam": "Las Brisas",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "4",
-          "horse_name": "Cosmic Crusader",
-          "sex": "4",
-          "colour": "3",
-          "sire": "Maurice",
-          "dam": "Cosmic Storm",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "6",
-          "horse_name": "First Five",
-          "sex": "4",
-          "colour": "6",
-          "sire": "Almanzor",
-          "dam": "Payette",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "5",
-          "horse_name": "Desert Lightning",
-          "sex": "4",
-          "colour": "3",
-          "sire": "Pride of Dubai",
-          "dam": "Isstoora",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "7",
-          "horse_name": "Globe",
-          "sex": "4",
-          "colour": "3",
-          "sire": "Charm Spirit",
-          "dam": "Bonnie Doon",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "8",
-          "horse_name": "Jaarffi",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Iffraaj",
-          "dam": "Pride of Tralee",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "9",
-          "horse_name": "Jimmysstar",
-          "sex": "4",
-          "colour": "10",
-          "sire": "Per Incanto",
-          "dam": "Anniesstar",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "10",
-          "horse_name": "Ka Ying Rising",
-          "sex": "4",
-          "colour": "3",
-          "sire": "Shamexpress",
-          "dam": "Missy Moo",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "11",
-          "horse_name": "Legarto",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Proisir",
-          "dam": "Geordie Girl",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "12",
-          "horse_name": "Mr Brightside",
-          "sex": "4",
-          "colour": "6",
-          "sire": "Bullbars",
-          "dam": "Lilahjay",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "13",
-          "horse_name": "Ohope Wins",
-          "sex": "3",
-          "colour": "3",
-          "sire": "Ocean Park",
-          "dam": "Choux Mania",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "16",
-          "horse_name": "Provence",
-          "sex": "5",
-          "colour": "26",
-          "sire": "Savabeel",
-          "dam": "Sombreuil",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "17",
-          "horse_name": "Quintessa",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Shamus Award",
-          "dam": "Chaquinta",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "18",
-          "horse_name": "Road to Paris",
-          "sex": "4",
-          "colour": "3",
-          "sire": "Circus Maximus",
-          "dam": "Spirit of Heaven",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "21",
-          "horse_name": "Wigmore",
-          "sex": "4",
-          "colour": "3",
-          "sire": "Sweynesse",
-          "dam": "Del Mondo",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "20",
-          "horse_name": "She's a Dealer",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Ace High",
-          "dam": "Say No More",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "15",
-          "horse_name": "Proisir",
-          "sex": "2",
-          "colour": "6",
-          "sire": "Choisir",
-          "dam": "Prophet Jewel",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "14",
-          "horse_name": "Per Incanto",
-          "sex": "2",
-          "colour": "3",
-          "sire": "Street Cry",
-          "dam": "Pappa Reale",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "19",
-          "horse_name": "Romanoff",
-          "sex": "2",
-          "colour": "3",
-          "sire": "Belardo",
-          "dam": "Tsarina Belle",
-          "dam_sire": "",
-          "vendor": ""
-        }
-      ]
+      "lots": []
     }
   ],
   "diagnostics": {
