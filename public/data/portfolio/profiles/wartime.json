@@ -27,7 +27,7 @@
     {
       "race_date": "2026-07-25",
       "track": "ELP",
-      "race_name": "ELP MSW (07/25/2026-R5)",
+      "race_name": "Msw",
       "surface": "Turf-Firm",
       "distance_furlongs": 2.0,
       "going": null,
@@ -109,5 +109,5 @@
   "sources": [
     "https://www.horseracingnation.com/horse/Wartime"
   ],
-  "last_updated": "2026-07-26T09:34:49.573497+00:00"
+  "last_updated": "2026-07-27T09:54:48.648808+00:00"
 }
