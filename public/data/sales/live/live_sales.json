@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T10:02:46+00:00",
+  "generated_at": "2026-07-28T08:45:16+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|the-treo-eile-online-summer-sale|2026-07",
@@ -52,6 +52,24 @@
       "house_url": "https://www.fasigtipton.com",
       "online": false,
       "first_seen": "2026-06-23",
+      "lots_error": "",
+      "lots": []
+    },
+    {
+      "id": "fasig-tipton|august-digital-sale|2026-08",
+      "house": "Fasig-Tipton",
+      "country": "US",
+      "name": "August Digital Sale",
+      "sale_type": "Mixed",
+      "start_date": "2026-08-27",
+      "end_date": "2026-09-01",
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://digital.fasigtipton.com/sales/",
+      "house_url": "https://www.fasigtipton.com",
+      "online": false,
+      "first_seen": "2026-07-28",
       "lots_error": "",
       "lots": []
     },
@@ -125,7 +143,328 @@
       "online": true,
       "first_seen": "2026-07-21",
       "lots_error": "",
-      "lots": []
+      "lots": [
+        {
+          "lot_no": "18",
+          "horse_name": "Local Lass",
+          "sex": "5",
+          "colour": "6",
+          "sire": "Derryn",
+          "dam": "Genuine Offer",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "20",
+          "horse_name": "Optimus Prime",
+          "sex": "4",
+          "colour": "6",
+          "sire": "U S Navy Flag",
+          "dam": "Empress Wu",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "10",
+          "horse_name": "Night Signal",
+          "sex": "3",
+          "colour": "3",
+          "sire": "U S Navy Flag",
+          "dam": "Nocturnal",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "8",
+          "horse_name": "Clasina Belle",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Echoes of Heaven",
+          "dam": "Berlin Belle",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "22",
+          "horse_name": "Royal Canter",
+          "sex": "4",
+          "colour": "3",
+          "sire": "King of Comedy",
+          "dam": "Dare to Compare",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "5",
+          "horse_name": "Unnamed",
+          "sex": "2",
+          "colour": "6",
+          "sire": "Ghibellines",
+          "dam": "Lady Cora",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "30",
+          "horse_name": "Porshabelle",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Shamexpress",
+          "dam": "Stitchentyne",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "4",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Jon Snow",
+          "dam": "Smart Garden",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "19",
+          "horse_name": "Lochmara Bay",
+          "sex": "5",
+          "colour": "6",
+          "sire": "Sweynesse",
+          "dam": "Blanket Bay",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "6",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Echoes of Heaven",
+          "dam": "Natural Glow",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "12",
+          "horse_name": "American Woman",
+          "sex": "3",
+          "colour": "3",
+          "sire": "U S Navy Flag",
+          "dam": "White Lady",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "32",
+          "horse_name": "Spanish Moon",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Super Easy",
+          "dam": "Cutting Remark",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "15",
+          "horse_name": "Flutterbelle",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Sacred Falls",
+          "dam": "Flutter",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "26",
+          "horse_name": "Epiphany",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Darci Brahma",
+          "dam": "Special Dream",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "31",
+          "horse_name": "Regent Diamond",
+          "sex": "5",
+          "colour": "26",
+          "sire": "Roc de Cambes",
+          "dam": "Outshine",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1",
+          "horse_name": "Unnamed",
+          "sex": "2",
+          "colour": "26",
+          "sire": "Ace High",
+          "dam": "Hembrook",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "3",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "10",
+          "sire": "Circus Maximus",
+          "dam": "Rabaab",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "21",
+          "horse_name": "Rio Grande",
+          "sex": "4",
+          "colour": "3",
+          "sire": "Vadamos",
+          "dam": "Grandissima",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "14",
+          "horse_name": "Fast Net",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Swiss Ace",
+          "dam": "Internet",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "23",
+          "horse_name": "Alphabetical",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Sepoy",
+          "dam": "She's Due",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "16",
+          "horse_name": "I'm Feeling Lucky",
+          "sex": "5",
+          "colour": "10",
+          "sire": "Ferrando",
+          "dam": "You're Sensational",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "27",
+          "horse_name": "Hembrook",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Fastnet Rock",
+          "dam": "Flamingo Guitar",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "9",
+          "horse_name": "Destinys Dream",
+          "sex": "5",
+          "colour": "26",
+          "sire": "Eminent",
+          "dam": "It's My Destiny",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "11",
+          "horse_name": "Terrestrial",
+          "sex": "4",
+          "colour": "10",
+          "sire": "El Roca",
+          "dam": "Beyondtheuniverse",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "29",
+          "horse_name": "Patriarca",
+          "sex": "5",
+          "colour": "6",
+          "sire": "Savabeel",
+          "dam": "Baby Shacks",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "13",
+          "horse_name": "Delz Abeel",
+          "sex": "4",
+          "colour": "10",
+          "sire": "Swiss Ace",
+          "dam": "Annzabeel",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "24",
+          "horse_name": "Betty Spaghetti",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Stratum Star",
+          "dam": "Swiss Beauty",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "25",
+          "horse_name": "Darting",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Darci Brahma",
+          "dam": "Artemesia",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "7",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Turn Me Loose",
+          "dam": "Sea Major",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "2",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Almanzor",
+          "dam": "Savalona",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "17",
+          "horse_name": "Imperial Empress",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Satono Aladdin",
+          "dam": "Inthespotlight",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "28",
+          "horse_name": "Lady in Charge",
+          "sex": "5",
+          "colour": "10",
+          "sire": "General Nediym",
+          "dam": "Femme Liberte",
+          "dam_sire": "",
+          "vendor": ""
+        }
+      ]
     }
   ],
   "diagnostics": {
