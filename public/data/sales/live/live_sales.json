@@ -1,24 +1,6 @@
 {
-  "generated_at": "2026-07-28T08:45:16+00:00",
+  "generated_at": "2026-07-29T08:50:01+00:00",
   "catalogues": [
-    {
-      "id": "tattersalls-online|the-treo-eile-online-summer-sale|2026-07",
-      "house": "Tattersalls Online",
-      "country": "UK",
-      "name": "The Treo Eile Online Summer Sale",
-      "sale_type": "Mixed",
-      "start_date": "2026-07-27",
-      "end_date": "2026-07-28",
-      "is_active": true,
-      "is_new": false,
-      "status": "Active",
-      "url": "https://secure.tattersalls.com/online/OA226/Main",
-      "house_url": "https://www.tattersallsonline.com",
-      "online": true,
-      "first_seen": "2026-07-15",
-      "lots_error": "",
-      "lots": []
-    },
     {
       "id": "tattersalls-online|online-august-sale|2026-08",
       "house": "Tattersalls Online",
@@ -34,42 +16,6 @@
       "house_url": "https://www.tattersallsonline.com",
       "online": true,
       "first_seen": "2026-07-11",
-      "lots_error": "",
-      "lots": []
-    },
-    {
-      "id": "fasig-tipton|july-digital-sale|2026-07",
-      "house": "Fasig-Tipton",
-      "country": "US",
-      "name": "July Digital Sale",
-      "sale_type": "Yearling",
-      "start_date": "2026-07-23",
-      "end_date": "2026-07-28",
-      "is_active": true,
-      "is_new": false,
-      "status": "Active",
-      "url": "https://digital.fasigtipton.com/sales/",
-      "house_url": "https://www.fasigtipton.com",
-      "online": false,
-      "first_seen": "2026-06-23",
-      "lots_error": "",
-      "lots": []
-    },
-    {
-      "id": "fasig-tipton|august-digital-sale|2026-08",
-      "house": "Fasig-Tipton",
-      "country": "US",
-      "name": "August Digital Sale",
-      "sale_type": "Mixed",
-      "start_date": "2026-08-27",
-      "end_date": "2026-09-01",
-      "is_active": false,
-      "is_new": true,
-      "status": "New",
-      "url": "https://digital.fasigtipton.com/sales/",
-      "house_url": "https://www.fasigtipton.com",
-      "online": false,
-      "first_seen": "2026-07-28",
       "lots_error": "",
       "lots": []
     },
@@ -106,6 +52,42 @@
       "house_url": "https://www.fasigtipton.com",
       "online": false,
       "first_seen": "2026-07-17",
+      "lots_error": "",
+      "lots": []
+    },
+    {
+      "id": "fasig-tipton|august-digital-sale|2026-08",
+      "house": "Fasig-Tipton",
+      "country": "US",
+      "name": "August Digital Sale",
+      "sale_type": "Mixed",
+      "start_date": "2026-08-27",
+      "end_date": "2026-09-01",
+      "is_active": false,
+      "is_new": false,
+      "status": "Upcoming",
+      "url": "https://digital.fasigtipton.com/sales/",
+      "house_url": "https://www.fasigtipton.com",
+      "online": false,
+      "first_seen": "2026-07-28",
+      "lots_error": "",
+      "lots": []
+    },
+    {
+      "id": "magic-millions|2026-trnt-select-tried-horse-sale-darwin|2026-07",
+      "house": "Magic Millions",
+      "country": "AUS",
+      "name": "2026 TRNT Select Tried Horse Sale (Darwin)",
+      "sale_type": "HIT",
+      "start_date": "2026-07-30",
+      "end_date": null,
+      "is_active": true,
+      "is_new": true,
+      "status": "Active · New",
+      "url": "https://www.magicmillions.com.au/calendar/2026-trnt-select-tried-horse-sale-darwin/",
+      "house_url": "https://www.magicmillions.com.au",
+      "online": false,
+      "first_seen": "2026-07-29",
       "lots_error": "",
       "lots": []
     },
@@ -197,7 +179,7 @@
         {
           "lot_no": "5",
           "horse_name": "Unnamed",
-          "sex": "2",
+          "sex": "4",
           "colour": "6",
           "sire": "Ghibellines",
           "dam": "Lady Cora",
@@ -468,6 +450,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=14, tattersalls_online=2, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=12, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=14, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=12, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
