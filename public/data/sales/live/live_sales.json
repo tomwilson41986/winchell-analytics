@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T08:50:01+00:00",
+  "generated_at": "2026-07-30T08:38:42+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-august-sale|2026-08",
@@ -82,8 +82,8 @@
       "start_date": "2026-07-30",
       "end_date": null,
       "is_active": true,
-      "is_new": true,
-      "status": "Active · New",
+      "is_new": false,
+      "status": "Active",
       "url": "https://www.magicmillions.com.au/calendar/2026-trnt-select-tried-horse-sale-darwin/",
       "house_url": "https://www.magicmillions.com.au",
       "online": false,
@@ -450,6 +450,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=14, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=12, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=14, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=11, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
