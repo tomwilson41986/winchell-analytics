@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T08:38:42+00:00",
+  "generated_at": "2026-07-31T09:10:34+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-august-sale|2026-08",
@@ -70,24 +70,6 @@
       "house_url": "https://www.fasigtipton.com",
       "online": false,
       "first_seen": "2026-07-28",
-      "lots_error": "",
-      "lots": []
-    },
-    {
-      "id": "magic-millions|2026-trnt-select-tried-horse-sale-darwin|2026-07",
-      "house": "Magic Millions",
-      "country": "AUS",
-      "name": "2026 TRNT Select Tried Horse Sale (Darwin)",
-      "sale_type": "HIT",
-      "start_date": "2026-07-30",
-      "end_date": null,
-      "is_active": true,
-      "is_new": false,
-      "status": "Active",
-      "url": "https://www.magicmillions.com.au/calendar/2026-trnt-select-tried-horse-sale-darwin/",
-      "house_url": "https://www.magicmillions.com.au",
-      "online": false,
-      "first_seen": "2026-07-29",
       "lots_error": "",
       "lots": []
     },
