@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T09:10:34+00:00",
+  "generated_at": "2026-08-01T08:29:13+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-august-sale|2026-08",
@@ -99,9 +99,9 @@
       "sale_type": "Mixed",
       "start_date": "2026-08-03",
       "end_date": null,
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Live",
+      "status": "Active",
       "url": "https://gavelhouse.co.nz",
       "house_url": "https://gavelhouse.co.nz",
       "online": true,
