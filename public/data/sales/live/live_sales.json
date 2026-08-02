@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T08:29:13+00:00",
+  "generated_at": "2026-08-02T08:32:02+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-august-sale|2026-08",
@@ -16,6 +16,24 @@
       "house_url": "https://www.tattersallsonline.com",
       "online": true,
       "first_seen": "2026-07-11",
+      "lots_error": "",
+      "lots": []
+    },
+    {
+      "id": "keeneland|september-yearling-sale|2026-09",
+      "house": "Keeneland",
+      "country": "US",
+      "name": "September Yearling Sale",
+      "sale_type": "Yearling",
+      "start_date": "2026-09-01",
+      "end_date": null,
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://www.keeneland.com/sales/2026/12/september-yearling-sale/",
+      "house_url": "https://www.keeneland.com",
+      "online": false,
+      "first_seen": "2026-08-02",
       "lots_error": "",
       "lots": []
     },
@@ -432,6 +450,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=14, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=11, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=14, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=11, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
