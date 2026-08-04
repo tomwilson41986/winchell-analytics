@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-08-03T09:57:55+00:00",
+  "generated_at": "2026-08-04T08:48:20+00:00",
   "catalogues": [
+    {
+      "id": "tattersalls-online|online-august-sale|2026-08",
+      "house": "Tattersalls Online",
+      "country": "UK",
+      "name": "Online August Sale",
+      "sale_type": "Mixed",
+      "start_date": "2026-08-10",
+      "end_date": "2026-08-11",
+      "is_active": false,
+      "is_new": false,
+      "status": "Upcoming",
+      "url": "https://secure.tattersalls.com/online/OAU26/Main/Overview",
+      "house_url": "https://www.tattersallsonline.com",
+      "online": true,
+      "first_seen": "2026-07-11",
+      "lots_error": "",
+      "lots": []
+    },
     {
       "id": "tattersalls|somerville-yearling-sale|2026-09",
       "house": "Tattersalls",
@@ -10,8 +28,8 @@
       "start_date": "2026-09-02",
       "end_date": null,
       "is_active": false,
-      "is_new": true,
-      "status": "New",
+      "is_new": false,
+      "status": "Catalogue Available",
       "url": "https://www.tattersalls.com/sales/somerville-yearling-sale/4DCGI/Sale/SOM26/Main",
       "house_url": "https://www.tattersalls.com",
       "online": false,
@@ -2881,24 +2899,6 @@
       ]
     },
     {
-      "id": "tattersalls-online|online-august-sale|2026-08",
-      "house": "Tattersalls Online",
-      "country": "UK",
-      "name": "Online August Sale",
-      "sale_type": "Mixed",
-      "start_date": "2026-08-10",
-      "end_date": "2026-08-11",
-      "is_active": false,
-      "is_new": false,
-      "status": "Upcoming",
-      "url": "https://secure.tattersalls.com/online/OAU26/Main/Overview",
-      "house_url": "https://www.tattersallsonline.com",
-      "online": true,
-      "first_seen": "2026-07-11",
-      "lots_error": "",
-      "lots": []
-    },
-    {
       "id": "fasig-tipton|the-saratoga-sale|2026-08",
       "house": "Fasig-Tipton",
       "country": "US",
@@ -2987,9 +2987,27 @@
       "first_seen": "2026-07-08",
       "lots_error": "",
       "lots": []
+    },
+    {
+      "id": "gavelhouse|gavelhouse-com-thoroughbred-17-august-2026-auction|2026-08",
+      "house": "Gavelhouse",
+      "country": "NZ",
+      "name": "gavelhouse.com Thoroughbred 17 August 2026 auction",
+      "sale_type": "Mixed",
+      "start_date": "2026-08-17",
+      "end_date": null,
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://gavelhouse.co.nz",
+      "house_url": "https://gavelhouse.co.nz",
+      "online": true,
+      "first_seen": "2026-08-04",
+      "lots_error": "",
+      "lots": []
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=14, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=11, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=0"
+    "source_status": "tattersalls=14, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=11, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
