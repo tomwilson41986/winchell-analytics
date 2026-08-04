@@ -4,7 +4,7 @@
   "year_of_birth": 2002,
   "sex": "Mare",
   "colour": "Chestnut",
-  "country": "[Add Data]",
+  "country": "[Login to add data]",
   "breeder": "Thomas F. Van Meter & Michael Lowenbaum",
   "current_trainer": "Steven M. Asmussen",
   "ownership_note": "Ownership confirmed (HRN): Winchell Thoroughbreds LLC. Sire (seed): Summer Squall.",
@@ -164,5 +164,5 @@
     "https://www.horseracingnation.com/horse/Summerly",
     "https://en.wikipedia.org/wiki/Summerly_%28horse%29"
   ],
-  "last_updated": "2026-08-03T10:59:16.182586+00:00"
+  "last_updated": "2026-08-04T09:53:01.169213+00:00"
 }
