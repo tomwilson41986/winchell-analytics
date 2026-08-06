@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-05T08:45:41+00:00",
+  "generated_at": "2026-08-06T08:46:58+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-august-sale|2026-08",
       "house": "Tattersalls Online",
       "country": "UK",
       "name": "Online August Sale",
-      "sale_type": "Mixed",
+      "sale_type": "Yearling",
       "start_date": "2026-08-10",
       "end_date": "2026-08-11",
       "is_active": false,
@@ -2997,8 +2997,8 @@
       "start_date": "2026-09-04",
       "end_date": null,
       "is_active": false,
-      "is_new": true,
-      "status": "New",
+      "is_new": false,
+      "status": "Upcoming",
       "url": "https://inglisdigital.com/",
       "house_url": "https://inglis.com.au",
       "online": false,
