@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T07:43:14+00:00",
+  "generated_at": "2026-08-14T07:40:45+00:00",
   "catalogues": [
     {
       "id": "tattersalls|somerville-yearling-sale|2026-09",
@@ -2888,9 +2888,9 @@
       "sale_type": "Yearling",
       "start_date": "2026-08-16",
       "end_date": "2026-08-17",
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Upcoming",
+      "status": "Active",
       "url": "https://www.fasigtipton.com/2026/NY-Bred-Yearlings",
       "house_url": "https://www.fasigtipton.com",
       "online": false,
@@ -3233,6 +3233,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=14, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=10, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=13, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=10, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
