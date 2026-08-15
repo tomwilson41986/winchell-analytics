@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T07:40:45+00:00",
+  "generated_at": "2026-08-15T06:48:56+00:00",
   "catalogues": [
     {
       "id": "tattersalls|somerville-yearling-sale|2026-09",
@@ -2960,9 +2960,9 @@
       "sale_type": "Mixed",
       "start_date": "2026-08-17",
       "end_date": null,
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Live",
+      "status": "Active",
       "url": "https://gavelhouse.co.nz",
       "house_url": "https://gavelhouse.co.nz",
       "online": true,
