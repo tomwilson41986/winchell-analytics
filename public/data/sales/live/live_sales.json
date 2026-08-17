@@ -1,24 +1,6 @@
 {
-  "generated_at": "2026-08-16T06:50:14+00:00",
+  "generated_at": "2026-08-17T07:06:29+00:00",
   "catalogues": [
-    {
-      "id": "tattersalls-online|online-september-sale|2026-09",
-      "house": "Tattersalls Online",
-      "country": "UK",
-      "name": "Online September Sale",
-      "sale_type": "Yearling",
-      "start_date": "2026-09-15",
-      "end_date": "2026-09-16",
-      "is_active": false,
-      "is_new": true,
-      "status": "New",
-      "url": "https://secure.tattersalls.com/online/OSE26/Main/Overview",
-      "house_url": "https://www.tattersallsonline.com",
-      "online": true,
-      "first_seen": "2026-08-16",
-      "lots_error": "",
-      "lots": []
-    },
     {
       "id": "tattersalls|somerville-yearling-sale|2026-09",
       "house": "Tattersalls",
@@ -2897,6 +2879,24 @@
           "vendor": ""
         }
       ]
+    },
+    {
+      "id": "tattersalls-online|online-september-sale|2026-09",
+      "house": "Tattersalls Online",
+      "country": "UK",
+      "name": "Online September Sale",
+      "sale_type": "Yearling",
+      "start_date": "2026-09-15",
+      "end_date": "2026-09-16",
+      "is_active": false,
+      "is_new": false,
+      "status": "Upcoming",
+      "url": "https://secure.tattersalls.com/online/OSE26/Main/Overview",
+      "house_url": "https://www.tattersallsonline.com",
+      "online": true,
+      "first_seen": "2026-08-16",
+      "lots_error": "",
+      "lots": []
     },
     {
       "id": "fasig-tipton|new-york-bred-yearlings|2026-08",
