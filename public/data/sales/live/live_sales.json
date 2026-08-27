@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T06:16:35+00:00",
+  "generated_at": "2026-08-27T09:16:06+00:00",
   "catalogues": [
     {
       "id": "tattersalls|somerville-yearling-sale|2026-09",
@@ -11,7 +11,7 @@
       "end_date": null,
       "is_active": false,
       "is_new": false,
-      "status": "Catalogue Available",
+      "status": "Sale Live",
       "url": "https://www.tattersalls.com/sales/somerville-yearling-sale/4DCGI/Sale/SOM26/Main",
       "house_url": "https://www.tattersalls.com",
       "online": false,
@@ -2879,6 +2879,24 @@
           "vendor": ""
         }
       ]
+    },
+    {
+      "id": "tattersalls-online|online-september-sale|2026-09",
+      "house": "Tattersalls Online",
+      "country": "UK",
+      "name": "Online September Sale",
+      "sale_type": "Yearling",
+      "start_date": "2026-09-15",
+      "end_date": "2026-09-16",
+      "is_active": false,
+      "is_new": false,
+      "status": "Upcoming",
+      "url": "https://secure.tattersalls.com/online/OSE26/Main/Overview",
+      "house_url": "https://www.tattersallsonline.com",
+      "online": true,
+      "first_seen": "2026-08-16",
+      "lots_error": "",
+      "lots": []
     },
     {
       "id": "tattersalls-ireland|september-yearling-sale|2026-09",
@@ -10883,6 +10901,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=13, tattersalls_online=ERR:HTTPError, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=9, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=13, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=9, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
