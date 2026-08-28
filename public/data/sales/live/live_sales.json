@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T09:16:06+00:00",
+  "generated_at": "2026-08-28T09:20:17+00:00",
   "catalogues": [
     {
       "id": "tattersalls|somerville-yearling-sale|2026-09",
@@ -570,7 +570,7 @@
         },
         {
           "lot_no": "56",
-          "horse_name": "Ghaiyyath (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -1240,7 +1240,7 @@
         },
         {
           "lot_no": "123",
-          "horse_name": "El Caballo (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Black",
           "sire": "",
@@ -4447,7 +4447,7 @@
         },
         {
           "lot_no": "154",
-          "horse_name": "Mehmas (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
