@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T06:26:27+00:00",
+  "generated_at": "2026-08-30T06:27:20+00:00",
   "catalogues": [
     {
       "id": "tattersalls|somerville-yearling-sale|2026-09",
@@ -1610,7 +1610,7 @@
         },
         {
           "lot_no": "160",
-          "horse_name": "Blackbeard (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -10514,9 +10514,9 @@
       "sale_type": "Yearling",
       "start_date": "2026-09-01",
       "end_date": null,
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Upcoming",
+      "status": "Active",
       "url": "https://www.keeneland.com/sales/2026/12/september-yearling-sale/",
       "house_url": "https://www.keeneland.com",
       "online": false,
