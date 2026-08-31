@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T06:27:20+00:00",
+  "generated_at": "2026-08-31T06:39:09+00:00",
   "catalogues": [
     {
       "id": "tattersalls|somerville-yearling-sale|2026-09",
@@ -9,9 +9,9 @@
       "sale_type": "Yearling",
       "start_date": "2026-09-02",
       "end_date": null,
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Sale Live",
+      "status": "Active",
       "url": "https://www.tattersalls.com/sales/somerville-yearling-sale/4DCGI/Sale/SOM26/Main",
       "house_url": "https://www.tattersalls.com",
       "online": false,
@@ -160,7 +160,7 @@
         },
         {
           "lot_no": "15",
-          "horse_name": "Little Big Bear (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -1420,7 +1420,7 @@
         },
         {
           "lot_no": "141",
-          "horse_name": "Soldier's Call (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -10521,6 +10521,24 @@
       "house_url": "https://www.keeneland.com",
       "online": false,
       "first_seen": "2026-08-02",
+      "lots_error": "",
+      "lots": []
+    },
+    {
+      "id": "fasig-tipton|california-fall-yearlings|2026-09",
+      "house": "Fasig-Tipton",
+      "country": "US",
+      "name": "California Fall Yearlings",
+      "sale_type": "Yearling",
+      "start_date": "2026-09-30",
+      "end_date": null,
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://www.fasigtipton.com/2026/California-Fall-Yearlings",
+      "house_url": "https://www.fasigtipton.com",
+      "online": false,
+      "first_seen": "2026-08-31",
       "lots_error": "",
       "lots": []
     },
