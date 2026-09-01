@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-08-31T06:39:09+00:00",
+  "generated_at": "2026-09-01T06:32:15+00:00",
   "catalogues": [
+    {
+      "id": "tattersalls-online|barrier-trials-pop-up-sale|2026-09",
+      "house": "Tattersalls Online",
+      "country": "UK",
+      "name": "Barrier Trials Pop-Up Sale",
+      "sale_type": "Yearling",
+      "start_date": "2026-09-03",
+      "end_date": "2026-09-04",
+      "is_active": true,
+      "is_new": true,
+      "status": "Active · New",
+      "url": "https://secure.tattersalls.com/online/OA426/Main/Overview",
+      "house_url": "https://www.tattersallsonline.com",
+      "online": true,
+      "first_seen": "2026-09-01",
+      "lots_error": "",
+      "lots": []
+    },
     {
       "id": "tattersalls|somerville-yearling-sale|2026-09",
       "house": "Tattersalls",
@@ -200,7 +218,7 @@
         },
         {
           "lot_no": "19",
-          "horse_name": "Shaquille (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -5739,7 +5757,7 @@
         },
         {
           "lot_no": "285",
-          "horse_name": "Ace Impact (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -6419,7 +6437,7 @@
         },
         {
           "lot_no": "353",
-          "horse_name": "Ardad (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -8488,7 +8506,7 @@
         },
         {
           "lot_no": "558",
-          "horse_name": "Shaman (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -10348,7 +10366,7 @@
         },
         {
           "lot_no": "747",
-          "horse_name": "Perfect Power (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -10525,6 +10543,24 @@
       "lots": []
     },
     {
+      "id": "keeneland|championship-sale|2026-10",
+      "house": "Keeneland",
+      "country": "US",
+      "name": "Championship Sale",
+      "sale_type": "Mixed",
+      "start_date": "2026-10-01",
+      "end_date": null,
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://www.keeneland.com/sales/2026/13/championship-sale/",
+      "house_url": "https://www.keeneland.com",
+      "online": false,
+      "first_seen": "2026-09-01",
+      "lots_error": "",
+      "lots": []
+    },
+    {
       "id": "fasig-tipton|california-fall-yearlings|2026-09",
       "house": "Fasig-Tipton",
       "country": "US",
@@ -10533,8 +10569,8 @@
       "start_date": "2026-09-30",
       "end_date": null,
       "is_active": false,
-      "is_new": true,
-      "status": "New",
+      "is_new": false,
+      "status": "Upcoming",
       "url": "https://www.fasigtipton.com/2026/California-Fall-Yearlings",
       "house_url": "https://www.fasigtipton.com",
       "online": false,
@@ -10561,343 +10597,22 @@
       "lots": []
     },
     {
-      "id": "gavelhouse|gavelhouse-com-thoroughbred-31-august-2026-auction|2026-08",
+      "id": "gavelhouse|gavelhouse-com-thoroughbred-14-september-2026-auction|2026-09",
       "house": "Gavelhouse",
       "country": "NZ",
-      "name": "gavelhouse.com Thoroughbred 31 August 2026 auction",
+      "name": "gavelhouse.com Thoroughbred 14 September 2026 auction",
       "sale_type": "Mixed",
-      "start_date": "2026-08-31",
+      "start_date": "2026-09-14",
       "end_date": null,
-      "is_active": true,
-      "is_new": false,
-      "status": "Active",
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
       "url": "https://gavelhouse.co.nz",
       "house_url": "https://gavelhouse.co.nz",
       "online": true,
-      "first_seen": "2026-08-18",
+      "first_seen": "2026-09-01",
       "lots_error": "",
-      "lots": [
-        {
-          "lot_no": "17",
-          "horse_name": "Alphabetical",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Sepoy",
-          "dam": "She's Due",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "21",
-          "horse_name": "Hembrook",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Fastnet Rock",
-          "dam": "Flamingo Guitar",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "3",
-          "horse_name": "Unnamed",
-          "sex": "3",
-          "colour": "10",
-          "sire": "Circus Maximus",
-          "dam": "Rabaab",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "28",
-          "horse_name": "Semi Sweet",
-          "sex": "5",
-          "colour": "15",
-          "sire": "Ocean Park",
-          "dam": "Pinot Gris",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "30",
-          "horse_name": "Travessia",
-          "sex": "5",
-          "colour": "26",
-          "sire": "Deep Impact",
-          "dam": "Manfath",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "5",
-          "horse_name": "Unnamed",
-          "sex": "3",
-          "colour": "8",
-          "sire": "U S Navy Flag",
-          "dam": "Violetta",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1",
-          "horse_name": "Unnamed",
-          "sex": "3",
-          "colour": "3",
-          "sire": "U S Navy Flag",
-          "dam": "Cautious Cordial",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "11",
-          "horse_name": "Midnight Flair",
-          "sex": "4",
-          "colour": "6",
-          "sire": "Better Than Ready",
-          "dam": "Hidden Flair",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "22",
-          "horse_name": "I Love Friday",
-          "sex": "5",
-          "colour": "3",
-          "sire": "High Chaparral",
-          "dam": "Freja",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "29",
-          "horse_name": "Tennessee Girl",
-          "sex": "5",
-          "colour": "6",
-          "sire": "Sacred Falls",
-          "dam": "Royal Kiss",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "16",
-          "horse_name": "Salacia Princess",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Shocking",
-          "dam": "Edmonton",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "10",
-          "horse_name": "Fool Me Once",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Staphanos",
-          "dam": "Blacken",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "18",
-          "horse_name": "Charm Zafarm",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Charm Spirit",
-          "dam": "Zafrenzy",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "12",
-          "horse_name": "Mivirgo",
-          "sex": "4",
-          "colour": "3",
-          "sire": "Vespa",
-          "dam": "Marissa",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "20",
-          "horse_name": "Ears Back",
-          "sex": "5",
-          "colour": "10",
-          "sire": "Jakkalberry",
-          "dam": "Makesmewonder",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "9",
-          "horse_name": "El Vallo",
-          "sex": "4",
-          "colour": "3",
-          "sire": "Tivaci",
-          "dam": "Kiwi Park",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "27",
-          "horse_name": "Salohcin",
-          "sex": "3",
-          "colour": "3",
-          "sire": "Turn Me Loose",
-          "dam": "Testadrop",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "4",
-          "horse_name": "Unnamed",
-          "sex": "3",
-          "colour": "3",
-          "sire": "Jon Snow",
-          "dam": "Smart Garden",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "31",
-          "horse_name": "Wicked Trick",
-          "sex": "5",
-          "colour": "6",
-          "sire": "Savabeel",
-          "dam": "Bewitching",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "25",
-          "horse_name": "Musigny Lass",
-          "sex": "5",
-          "colour": "10",
-          "sire": "Iffraaj",
-          "dam": "Lady Pinot",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "15",
-          "horse_name": "Ridgemount Road",
-          "sex": "4",
-          "colour": "3",
-          "sire": "Ribchester",
-          "dam": "Ireland's Teardrop",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "19",
-          "horse_name": "Deliciano",
-          "sex": "5",
-          "colour": "26",
-          "sire": "Darci Brahma",
-          "dam": "Santagostino",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "8",
-          "horse_name": "Asvakan",
-          "sex": "4",
-          "colour": "3",
-          "sire": "Tarzino",
-          "dam": "Afghanistan",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "13",
-          "horse_name": "New York",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Ribchester",
-          "dam": "Kate Cross",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "24",
-          "horse_name": "Miss Adventure",
-          "sex": "5",
-          "colour": "10",
-          "sire": "Rios",
-          "dam": "Macavelli Miss",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "26",
-          "horse_name": "Pico Turquino",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Teofilo",
-          "dam": "Snow Peak",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "14",
-          "horse_name": "Richard Farrell",
-          "sex": "4",
-          "colour": "3",
-          "sire": "Staphanos",
-          "dam": "It's Eleanor",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "23",
-          "horse_name": "Irish Girl",
-          "sex": "5",
-          "colour": "3",
-          "sire": "El Roca",
-          "dam": "Aimees Babe",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "6",
-          "horse_name": "Unnamed",
-          "sex": "4",
-          "colour": "3",
-          "sire": "Redwood",
-          "dam": "Callystar",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "7",
-          "horse_name": "Alikat",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Almanzor",
-          "dam": "Champagne Katie",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "2",
-          "horse_name": "Unnamed",
-          "sex": "2",
-          "colour": "3",
-          "sire": "Almanzor",
-          "dam": "Critical Angel",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "32",
-          "horse_name": "Ocean Park",
-          "sex": "2",
-          "colour": "3",
-          "sire": "Thorn Park",
-          "dam": "Sayyida",
-          "dam_sire": "",
-          "vendor": ""
-        }
-      ]
+      "lots": []
     }
   ],
   "diagnostics": {
