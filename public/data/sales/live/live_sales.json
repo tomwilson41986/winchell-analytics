@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-09-04T06:30:16+00:00",
+  "generated_at": "2026-09-05T06:26:46+00:00",
   "catalogues": [
     {
-      "id": "tattersalls-online|barrier-trials-pop-up-sale|2026-09",
+      "id": "tattersalls-online|online-september-sale|2026-09",
       "house": "Tattersalls Online",
       "country": "UK",
-      "name": "Barrier Trials Pop-Up Sale",
+      "name": "Online September Sale",
       "sale_type": "Yearling",
-      "start_date": "2026-09-03",
-      "end_date": "2026-09-04",
-      "is_active": true,
+      "start_date": "2026-09-15",
+      "end_date": "2026-09-16",
+      "is_active": false,
       "is_new": false,
-      "status": "Active",
-      "url": "https://secure.tattersalls.com/online/OA426/Main/Overview",
+      "status": "Upcoming",
+      "url": "https://secure.tattersalls.com/online/OSE26/Main",
       "house_url": "https://www.tattersallsonline.com",
       "online": true,
-      "first_seen": "2026-09-01",
+      "first_seen": "2026-08-16",
       "lots_error": "",
       "lots": []
     },
@@ -7664,24 +7664,6 @@
       "lots": []
     },
     {
-      "id": "inglis|inglis-digital-aus|2026-09",
-      "house": "Inglis",
-      "country": "AUS",
-      "name": "Inglis Digital AUS",
-      "sale_type": "Mixed",
-      "start_date": "2026-09-04",
-      "end_date": null,
-      "is_active": true,
-      "is_new": false,
-      "status": "Active",
-      "url": "https://inglisdigital.com/",
-      "house_url": "https://inglis.com.au",
-      "online": false,
-      "first_seen": "2026-08-05",
-      "lots_error": "",
-      "lots": []
-    },
-    {
       "id": "inglis|inglis-digital-aus|2026-10",
       "house": "Inglis",
       "country": "AUS",
@@ -7737,6 +7719,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=12, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=9, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=15, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=9, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
