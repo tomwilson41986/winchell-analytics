@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-09-06T06:27:26+00:00",
+  "generated_at": "2026-09-07T06:39:29+00:00",
   "catalogues": [
+    {
+      "id": "tattersalls-online|online-september-sale|2026-09",
+      "house": "Tattersalls Online",
+      "country": "UK",
+      "name": "Online September Sale",
+      "sale_type": "Yearling",
+      "start_date": "2026-09-15",
+      "end_date": "2026-09-16",
+      "is_active": false,
+      "is_new": false,
+      "status": "Upcoming",
+      "url": "https://secure.tattersalls.com/online/OSE26/Main",
+      "house_url": "https://www.tattersallsonline.com",
+      "online": true,
+      "first_seen": "2026-08-16",
+      "lots_error": "",
+      "lots": []
+    },
     {
       "id": "tattersalls|october-yearling-sale-book-1|2026-10",
       "house": "Tattersalls",
@@ -10,8 +28,8 @@
       "start_date": "2026-10-06",
       "end_date": "2026-10-08",
       "is_active": false,
-      "is_new": true,
-      "status": "New",
+      "is_new": false,
+      "status": "Catalogue Available",
       "url": "https://www.tattersalls.com/sales/october-yearling-sale-book-1/4DCGI/Sale/OC126/Main",
       "house_url": "https://www.tattersalls.com",
       "online": false,
@@ -4709,24 +4727,6 @@
           "vendor": ""
         }
       ]
-    },
-    {
-      "id": "tattersalls-online|online-september-sale|2026-09",
-      "house": "Tattersalls Online",
-      "country": "UK",
-      "name": "Online September Sale",
-      "sale_type": "Yearling",
-      "start_date": "2026-09-15",
-      "end_date": "2026-09-16",
-      "is_active": false,
-      "is_new": false,
-      "status": "Upcoming",
-      "url": "https://secure.tattersalls.com/online/OSE26/Main",
-      "house_url": "https://www.tattersallsonline.com",
-      "online": true,
-      "first_seen": "2026-08-16",
-      "lots_error": "",
-      "lots": []
     },
     {
       "id": "tattersalls-ireland|september-yearling-sale|2026-09",
@@ -12337,24 +12337,6 @@
       ]
     },
     {
-      "id": "obs|2026-october-yearling-sale|2026-10",
-      "house": "OBS",
-      "country": "US",
-      "name": "2026 October Yearling Sale",
-      "sale_type": "Yearling",
-      "start_date": "2026-10-06",
-      "end_date": null,
-      "is_active": false,
-      "is_new": true,
-      "status": "New",
-      "url": "https://obssales.com/catalog/#/155",
-      "house_url": "https://obssales.com",
-      "online": false,
-      "first_seen": "2026-09-06",
-      "lots_error": "",
-      "lots": []
-    },
-    {
       "id": "fasig-tipton|california-fall-yearlings|2026-09",
       "house": "Fasig-Tipton",
       "country": "US",
@@ -12387,6 +12369,24 @@
       "house_url": "https://www.keeneland.com",
       "online": false,
       "first_seen": "2026-09-01",
+      "lots_error": "",
+      "lots": []
+    },
+    {
+      "id": "obs|2026-october-yearling-sale|2026-10",
+      "house": "OBS",
+      "country": "US",
+      "name": "2026 October Yearling Sale",
+      "sale_type": "Yearling",
+      "start_date": "2026-10-06",
+      "end_date": null,
+      "is_active": false,
+      "is_new": false,
+      "status": "Upcoming",
+      "url": "https://obssales.com/catalog/#/155",
+      "house_url": "https://obssales.com",
+      "online": false,
+      "first_seen": "2026-09-06",
       "lots_error": "",
       "lots": []
     },
