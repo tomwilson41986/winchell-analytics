@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T06:39:29+00:00",
+  "generated_at": "2026-09-08T06:30:18+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-september-sale|2026-09",
@@ -1991,6 +1991,16 @@
           "horse_name": "Sea The Stars (IRE)",
           "sex": "Colt",
           "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "196A",
+          "horse_name": "Frankel (GB)",
+          "sex": "Filly",
+          "colour": "Chestnut",
           "sire": "",
           "dam": "",
           "dam_sire": "",
@@ -11026,7 +11036,7 @@
         },
         {
           "lot_no": "628",
-          "horse_name": "Shaman (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Grey",
           "sire": "",
@@ -12337,6 +12347,24 @@
       ]
     },
     {
+      "id": "fasig-tipton|october-digital-sale|2026-10",
+      "house": "Fasig-Tipton",
+      "country": "US",
+      "name": "October Digital Sale",
+      "sale_type": "Mixed",
+      "start_date": "2026-10-08",
+      "end_date": "2026-10-13",
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://digital.fasigtipton.com/sales/",
+      "house_url": "https://www.fasigtipton.com",
+      "online": false,
+      "first_seen": "2026-09-08",
+      "lots_error": "",
+      "lots": []
+    },
+    {
       "id": "fasig-tipton|california-fall-yearlings|2026-09",
       "house": "Fasig-Tipton",
       "country": "US",
@@ -12442,7 +12470,398 @@
       "online": true,
       "first_seen": "2026-09-01",
       "lots_error": "",
-      "lots": []
+      "lots": [
+        {
+          "lot_no": "1",
+          "horse_name": "Unnamed",
+          "sex": "2",
+          "colour": "3",
+          "sire": "U S Navy Flag",
+          "dam": "Fixation",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "2",
+          "horse_name": "Unnamed",
+          "sex": "2",
+          "colour": "3",
+          "sire": "U S Navy Flag",
+          "dam": "Powerful Story",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "26",
+          "horse_name": "Want More",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Super Seth",
+          "dam": "Greedy",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "39",
+          "horse_name": "Sophistical",
+          "sex": "5",
+          "colour": "6",
+          "sire": "Hinchinbrook",
+          "dam": "Precious Sophia",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "25",
+          "horse_name": "Takes Time",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Time Test",
+          "dam": "Whiffle",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "22",
+          "horse_name": "Elite Choice",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Contributer",
+          "dam": "Exquisite Choice",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "27",
+          "horse_name": "Alphabetical",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Sepoy",
+          "dam": "She's Due",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "30",
+          "horse_name": "Cheney",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Vespa",
+          "dam": "Bonney Pepper",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "8",
+          "horse_name": "Beyond Happier",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Super Seth",
+          "dam": "Happier",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "34",
+          "horse_name": "Lady Pinot",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Starspangledbanner",
+          "dam": "Madame Echezeaux",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "6",
+          "horse_name": "Unnamed",
+          "sex": "2",
+          "colour": "3",
+          "sire": "Noverre",
+          "dam": "Frankly",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "9",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Sword of State",
+          "dam": "Sade",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "17",
+          "horse_name": "Sanae",
+          "sex": "3",
+          "colour": "6",
+          "sire": "Tarzino",
+          "dam": "Dwelt",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "29",
+          "horse_name": "Caitlyns Wish",
+          "sex": "5",
+          "colour": "10",
+          "sire": "Belardo",
+          "dam": "Sinalot",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "31",
+          "horse_name": "Gioia Magica",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Per Incanto",
+          "dam": "Joy of Life",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "36",
+          "horse_name": "Musigny Lass",
+          "sex": "5",
+          "colour": "10",
+          "sire": "Iffraaj",
+          "dam": "Lady Pinot",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "21",
+          "horse_name": "Buccino",
+          "sex": "5",
+          "colour": "7",
+          "sire": "Lonhro",
+          "dam": "Shuffled",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "28",
+          "horse_name": "Anne Again",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Tavistock",
+          "dam": "Keep Her Free",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "33",
+          "horse_name": "Jaffa",
+          "sex": "5",
+          "colour": "10",
+          "sire": "Proisir",
+          "dam": "Tip Top Lass",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "32",
+          "horse_name": "Kimberley Star",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Tavistock",
+          "dam": "Diamonds Forever",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "15",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Vanbrugh",
+          "dam": "Selenelion",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "18",
+          "horse_name": "Tension",
+          "sex": "4",
+          "colour": "3",
+          "sire": "Reliable Man",
+          "dam": "Dramatist",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "20",
+          "horse_name": "Bowman",
+          "sex": "4",
+          "colour": "3",
+          "sire": "Tarzino",
+          "dam": "So it Begins",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "16",
+          "horse_name": "Nero Decree",
+          "sex": "4",
+          "colour": "3",
+          "sire": "War Decree",
+          "dam": "Cattledog",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "23",
+          "horse_name": "Loose Thinking",
+          "sex": "4",
+          "colour": "3",
+          "sire": "Turn Me Loose",
+          "dam": "Keep Thinking",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "38",
+          "horse_name": "Prioress",
+          "sex": "5",
+          "colour": "6",
+          "sire": "Proisir",
+          "dam": "Shahbab",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "13",
+          "horse_name": "Unnamed",
+          "sex": "2",
+          "colour": "3",
+          "sire": "Savile Row",
+          "dam": "Miss Primitivo",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "35",
+          "horse_name": "Miss Adventure",
+          "sex": "5",
+          "colour": "10",
+          "sire": "Rios",
+          "dam": "Macavelli Miss",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "10",
+          "horse_name": "Unnamed",
+          "sex": "4",
+          "colour": "26",
+          "sire": "Redwood",
+          "dam": "Shutters",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "24",
+          "horse_name": "President Fir",
+          "sex": "4",
+          "colour": "3",
+          "sire": "Swiss Ace",
+          "dam": "Lady Linwood",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "19",
+          "horse_name": "American Woman",
+          "sex": "5",
+          "colour": "3",
+          "sire": "U S Navy Flag",
+          "dam": "White Lady",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "37",
+          "horse_name": "Pertinacity",
+          "sex": "5",
+          "colour": "10",
+          "sire": "Sebring",
+          "dam": "Smashing",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "5",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Eminent",
+          "dam": "Danni's Girl",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "12",
+          "horse_name": "Unnamed",
+          "sex": "2",
+          "colour": "3",
+          "sire": "Sweynesse",
+          "dam": "Goyescas",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "7",
+          "horse_name": "Unnamed",
+          "sex": "2",
+          "colour": "3",
+          "sire": "Banquo",
+          "dam": "Goyescas",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "11",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "3",
+          "sire": "King of Comedy",
+          "dam": "Danni's Girl",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "3",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Almanzor",
+          "dam": "Tears of an Angel",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "4",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Almanzor",
+          "dam": "Versilia",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "14",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "10",
+          "sire": "Almanzor",
+          "dam": "Miss Ricky Bobby",
+          "dam_sire": "",
+          "vendor": ""
+        }
+      ]
     }
   ],
   "diagnostics": {
