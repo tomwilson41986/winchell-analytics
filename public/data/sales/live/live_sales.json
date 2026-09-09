@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T06:30:18+00:00",
+  "generated_at": "2026-09-09T06:31:16+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-september-sale|2026-09",
@@ -5057,7 +5057,7 @@
         },
         {
           "lot_no": "31",
-          "horse_name": "Chaldean (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -7217,7 +7217,7 @@
         },
         {
           "lot_no": "247",
-          "horse_name": "Sands of Mali (FR)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -12347,24 +12347,6 @@
       ]
     },
     {
-      "id": "fasig-tipton|october-digital-sale|2026-10",
-      "house": "Fasig-Tipton",
-      "country": "US",
-      "name": "October Digital Sale",
-      "sale_type": "Mixed",
-      "start_date": "2026-10-08",
-      "end_date": "2026-10-13",
-      "is_active": false,
-      "is_new": true,
-      "status": "New",
-      "url": "https://digital.fasigtipton.com/sales/",
-      "house_url": "https://www.fasigtipton.com",
-      "online": false,
-      "first_seen": "2026-09-08",
-      "lots_error": "",
-      "lots": []
-    },
-    {
       "id": "fasig-tipton|california-fall-yearlings|2026-09",
       "house": "Fasig-Tipton",
       "country": "US",
@@ -12415,6 +12397,24 @@
       "house_url": "https://obssales.com",
       "online": false,
       "first_seen": "2026-09-06",
+      "lots_error": "",
+      "lots": []
+    },
+    {
+      "id": "fasig-tipton|october-digital-sale|2026-10",
+      "house": "Fasig-Tipton",
+      "country": "US",
+      "name": "October Digital Sale",
+      "sale_type": "Mixed",
+      "start_date": "2026-10-08",
+      "end_date": "2026-10-13",
+      "is_active": false,
+      "is_new": false,
+      "status": "Upcoming",
+      "url": "https://digital.fasigtipton.com/sales/",
+      "house_url": "https://www.fasigtipton.com",
+      "online": false,
+      "first_seen": "2026-09-08",
       "lots_error": "",
       "lots": []
     },
@@ -12865,6 +12865,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=15, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=9, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=15, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=8, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
