@@ -1,653 +1,6 @@
 {
-  "generated_at": "2026-09-16T06:31:13+00:00",
+  "generated_at": "2026-09-17T06:31:55+00:00",
   "catalogues": [
-    {
-      "id": "tattersalls-online|online-september-sale|2026-09",
-      "house": "Tattersalls Online",
-      "country": "UK",
-      "name": "Online September Sale",
-      "sale_type": "Yearling",
-      "start_date": "2026-09-15",
-      "end_date": "2026-09-16",
-      "is_active": true,
-      "is_new": false,
-      "status": "Active",
-      "url": "https://secure.tattersalls.com/online/OSE26/Main",
-      "house_url": "https://www.tattersallsonline.com",
-      "online": true,
-      "first_seen": "2026-08-16",
-      "lots_error": "",
-      "lots": []
-    },
-    {
-      "id": "tattersalls|october-yearling-sale-book-4|2026-10",
-      "house": "Tattersalls",
-      "country": "UK",
-      "name": "October Yearling Sale Book 4",
-      "sale_type": "Yearling",
-      "start_date": "2026-10-16",
-      "end_date": null,
-      "is_active": false,
-      "is_new": true,
-      "status": "New",
-      "url": "https://www.tattersalls.com/sales/october-yearling-sale-book-4/4DCGI/Sale/OC426/Main",
-      "house_url": "https://www.tattersalls.com",
-      "online": false,
-      "first_seen": "2026-09-16",
-      "lots_error": "",
-      "lots": [
-        {
-          "lot_no": "1783",
-          "horse_name": "A'Ali (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1784",
-          "horse_name": "Ubettabelieveit (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1785",
-          "horse_name": "Sergei Prokofiev (CAN)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1786",
-          "horse_name": "Shaquille (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1787",
-          "horse_name": "Stradivarius (IRE)",
-          "sex": "Filly",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1788",
-          "horse_name": "Mohaather (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1789",
-          "horse_name": "Lope Y Fernandez (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1790",
-          "horse_name": "Dream Ahead (USA)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1791",
-          "horse_name": "Harry Angel (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1792",
-          "horse_name": "Far Above (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1793",
-          "horse_name": "Sergei Prokofiev (CAN)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1794",
-          "horse_name": "Caturra (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1795",
-          "horse_name": "Rajasinghe (IRE)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1796",
-          "horse_name": "Massaat (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1797",
-          "horse_name": "",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1798",
-          "horse_name": "Perfect Power (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1799",
-          "horse_name": "Harry Angel (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1800",
-          "horse_name": "Sergei Prokofiev (CAN)",
-          "sex": "Colt",
-          "colour": "Brown",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1801",
-          "horse_name": "King of Change (GB)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1802",
-          "horse_name": "Time Test (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1803",
-          "horse_name": "Kameko (USA)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1804",
-          "horse_name": "Sergei Prokofiev (CAN)",
-          "sex": "Filly",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1805",
-          "horse_name": "Ubettabelieveit (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1806",
-          "horse_name": "El Caballo (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1807",
-          "horse_name": "Ubettabelieveit (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1808",
-          "horse_name": "Lope Y Fernandez (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1809",
-          "horse_name": "Lope Y Fernandez (IRE)",
-          "sex": "Colt",
-          "colour": "Brown",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1810",
-          "horse_name": "Showcasing (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1811",
-          "horse_name": "Perfect Power (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1812",
-          "horse_name": "Stradivarius (IRE)",
-          "sex": "Filly",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1813",
-          "horse_name": "Nando Parrado (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1814",
-          "horse_name": "Lope Y Fernandez (IRE)",
-          "sex": "Colt",
-          "colour": "Grey",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1815",
-          "horse_name": "Space Traveller (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1816",
-          "horse_name": "Iffraaj (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1817",
-          "horse_name": "Soldier's Call (GB)",
-          "sex": "Filly",
-          "colour": "Brown",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1818",
-          "horse_name": "Mohaather (GB)",
-          "sex": "Colt",
-          "colour": "Brown",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1819",
-          "horse_name": "Triple Time (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1820",
-          "horse_name": "Caturra (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1821",
-          "horse_name": "Caturra (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1822",
-          "horse_name": "Space Traveller (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1823",
-          "horse_name": "Mutasaabeq (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1824",
-          "horse_name": "Far Above (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1825",
-          "horse_name": "A'Ali (IRE)",
-          "sex": "Gelding",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1826",
-          "horse_name": "Mostahdaf (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1827",
-          "horse_name": "Caturra (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1828",
-          "horse_name": "El Caballo (GB)",
-          "sex": "Filly",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1829",
-          "horse_name": "Armor (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1830",
-          "horse_name": "Lope Y Fernandez (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1831",
-          "horse_name": "Sergei Prokofiev (CAN)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1832",
-          "horse_name": "Lope Y Fernandez (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1833",
-          "horse_name": "Mostahdaf (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1834",
-          "horse_name": "Bated Breath (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1835",
-          "horse_name": "Belardo (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1836",
-          "horse_name": "Sands of Mali (FR)",
-          "sex": "Colt",
-          "colour": "Brown",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1837",
-          "horse_name": "Land Force (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1838",
-          "horse_name": "Lope Y Fernandez (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1839",
-          "horse_name": "Perfect Power (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1840",
-          "horse_name": "Caturra (IRE)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1841",
-          "horse_name": "Caturra (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1842",
-          "horse_name": "Without Parole (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1843",
-          "horse_name": "Century Dream (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        }
-      ]
-    },
     {
       "id": "tattersalls|october-yearling-sale-book-1|2026-10",
       "house": "Tattersalls",
@@ -10246,7 +9599,7 @@
         },
         {
           "lot_no": "956",
-          "horse_name": "No Nay Never (USA)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -16665,7 +16018,7 @@
         },
         {
           "lot_no": "1596",
-          "horse_name": "Oasis Dream (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -18536,6 +17889,635 @@
       ]
     },
     {
+      "id": "tattersalls|october-yearling-sale-book-4|2026-10",
+      "house": "Tattersalls",
+      "country": "UK",
+      "name": "October Yearling Sale Book 4",
+      "sale_type": "Yearling",
+      "start_date": "2026-10-16",
+      "end_date": null,
+      "is_active": false,
+      "is_new": false,
+      "status": "Catalogue Available",
+      "url": "https://www.tattersalls.com/sales/october-yearling-sale-book-4/4DCGI/Sale/OC426/Main",
+      "house_url": "https://www.tattersalls.com",
+      "online": false,
+      "first_seen": "2026-09-16",
+      "lots_error": "",
+      "lots": [
+        {
+          "lot_no": "1783",
+          "horse_name": "A'Ali (IRE)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1784",
+          "horse_name": "Ubettabelieveit (IRE)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1785",
+          "horse_name": "Sergei Prokofiev (CAN)",
+          "sex": "Colt",
+          "colour": "Chestnut",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1786",
+          "horse_name": "Shaquille (GB)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1787",
+          "horse_name": "Stradivarius (IRE)",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1788",
+          "horse_name": "Mohaather (GB)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1789",
+          "horse_name": "Lope Y Fernandez (IRE)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1790",
+          "horse_name": "Dream Ahead (USA)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1791",
+          "horse_name": "Harry Angel (IRE)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1792",
+          "horse_name": "Far Above (IRE)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1793",
+          "horse_name": "Sergei Prokofiev (CAN)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1794",
+          "horse_name": "Caturra (IRE)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1795",
+          "horse_name": "Rajasinghe (IRE)",
+          "sex": "Colt",
+          "colour": "Chestnut",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1796",
+          "horse_name": "Massaat (IRE)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1797",
+          "horse_name": "",
+          "sex": "Colt",
+          "colour": "Chestnut",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1798",
+          "horse_name": "Perfect Power (IRE)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1799",
+          "horse_name": "Harry Angel (IRE)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1800",
+          "horse_name": "Sergei Prokofiev (CAN)",
+          "sex": "Colt",
+          "colour": "Brown",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1801",
+          "horse_name": "King of Change (GB)",
+          "sex": "Colt",
+          "colour": "Chestnut",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1802",
+          "horse_name": "Time Test (GB)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1803",
+          "horse_name": "Kameko (USA)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1804",
+          "horse_name": "Sergei Prokofiev (CAN)",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1805",
+          "horse_name": "Ubettabelieveit (IRE)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1806",
+          "horse_name": "El Caballo (GB)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1807",
+          "horse_name": "Ubettabelieveit (IRE)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1808",
+          "horse_name": "Lope Y Fernandez (IRE)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1809",
+          "horse_name": "Lope Y Fernandez (IRE)",
+          "sex": "Colt",
+          "colour": "Brown",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1810",
+          "horse_name": "Showcasing (GB)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1811",
+          "horse_name": "Perfect Power (IRE)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1812",
+          "horse_name": "Stradivarius (IRE)",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1813",
+          "horse_name": "Nando Parrado (GB)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1814",
+          "horse_name": "Lope Y Fernandez (IRE)",
+          "sex": "Colt",
+          "colour": "Grey",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1815",
+          "horse_name": "Space Traveller (GB)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1816",
+          "horse_name": "Iffraaj (GB)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1817",
+          "horse_name": "Soldier's Call (GB)",
+          "sex": "Filly",
+          "colour": "Brown",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1818",
+          "horse_name": "Mohaather (GB)",
+          "sex": "Colt",
+          "colour": "Brown",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1819",
+          "horse_name": "Triple Time (IRE)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1820",
+          "horse_name": "Caturra (IRE)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1821",
+          "horse_name": "Caturra (IRE)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1822",
+          "horse_name": "Space Traveller (GB)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1823",
+          "horse_name": "Mutasaabeq (GB)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1824",
+          "horse_name": "Far Above (IRE)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1825",
+          "horse_name": "A'Ali (IRE)",
+          "sex": "Gelding",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1826",
+          "horse_name": "Mostahdaf (IRE)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1827",
+          "horse_name": "Caturra (IRE)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1828",
+          "horse_name": "El Caballo (GB)",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1829",
+          "horse_name": "Armor (GB)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1830",
+          "horse_name": "Lope Y Fernandez (IRE)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1831",
+          "horse_name": "Sergei Prokofiev (CAN)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1832",
+          "horse_name": "Lope Y Fernandez (IRE)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1833",
+          "horse_name": "Mostahdaf (IRE)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1834",
+          "horse_name": "Bated Breath (GB)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1835",
+          "horse_name": "Belardo (IRE)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1836",
+          "horse_name": "Sands of Mali (FR)",
+          "sex": "Colt",
+          "colour": "Brown",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1837",
+          "horse_name": "Land Force (IRE)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1838",
+          "horse_name": "Lope Y Fernandez (IRE)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1839",
+          "horse_name": "Perfect Power (IRE)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1840",
+          "horse_name": "Caturra (IRE)",
+          "sex": "Colt",
+          "colour": "Chestnut",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1841",
+          "horse_name": "Caturra (IRE)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1842",
+          "horse_name": "Without Parole (GB)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1843",
+          "horse_name": "Century Dream (IRE)",
+          "sex": "Colt",
+          "colour": "Bay",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        }
+      ]
+    },
+    {
       "id": "tattersalls-ireland|september-yearling-sale|2026-09",
       "house": "Tattersalls Ireland",
       "country": "IRE",
@@ -18545,7 +18527,7 @@
       "end_date": "2026-09-23",
       "is_active": false,
       "is_new": false,
-      "status": "Catalogue Available",
+      "status": "Sale Live",
       "url": "https://www.tattersalls.ie/sales/september-yearling/4DCGI/Sale/SYL26/Main",
       "house_url": "https://www.tattersalls.ie",
       "online": false,
@@ -20924,7 +20906,7 @@
         },
         {
           "lot_no": "238",
-          "horse_name": "Havana Grey (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -22954,7 +22936,7 @@
         },
         {
           "lot_no": "441",
-          "horse_name": "Mehmas (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
