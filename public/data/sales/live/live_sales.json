@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T06:30:33+00:00",
+  "generated_at": "2026-09-19T06:27:35+00:00",
   "catalogues": [
     {
       "id": "tattersalls|october-yearling-sale-book-1|2026-10",
@@ -1670,7 +1670,7 @@
         },
         {
           "lot_no": "166",
-          "horse_name": "Blue Point (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -18676,7 +18676,7 @@
         },
         {
           "lot_no": "15",
-          "horse_name": "Phoenix of Spain (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -19926,7 +19926,7 @@
         },
         {
           "lot_no": "140",
-          "horse_name": "Minzaal (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Brown",
           "sire": "",
@@ -20226,7 +20226,7 @@
         },
         {
           "lot_no": "170",
-          "horse_name": "Mehmas (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -21076,7 +21076,7 @@
         },
         {
           "lot_no": "255",
-          "horse_name": "Ghaiyyath (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -23706,7 +23706,7 @@
         },
         {
           "lot_no": "518",
-          "horse_name": "Mohaather (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -26124,6 +26124,24 @@
           "vendor": ""
         }
       ]
+    },
+    {
+      "id": "fasig-tipton|kentucky-october-yearlings|2026-10",
+      "house": "Fasig-Tipton",
+      "country": "US",
+      "name": "Kentucky October Yearlings",
+      "sale_type": "Yearling",
+      "start_date": "2026-10-19",
+      "end_date": "2026-10-22",
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://www.fasigtipton.com/2026/Kentucky-October-Yearlings",
+      "house_url": "https://www.fasigtipton.com",
+      "online": false,
+      "first_seen": "2026-09-19",
+      "lots_error": "",
+      "lots": []
     },
     {
       "id": "fasig-tipton|california-fall-yearlings|2026-09",
