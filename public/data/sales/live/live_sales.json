@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T06:27:35+00:00",
+  "generated_at": "2026-09-20T06:27:35+00:00",
   "catalogues": [
     {
       "id": "tattersalls|october-yearling-sale-book-1|2026-10",
@@ -18525,9 +18525,9 @@
       "sale_type": "Yearling",
       "start_date": "2026-09-22",
       "end_date": "2026-09-23",
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Sale Live",
+      "status": "Active",
       "url": "https://www.tattersalls.ie/sales/september-yearling/4DCGI/Sale/SYL26/Main",
       "house_url": "https://www.tattersalls.ie",
       "online": false,
@@ -23716,7 +23716,7 @@
         },
         {
           "lot_no": "519",
-          "horse_name": "Sioux Nation (USA)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -26126,24 +26126,6 @@
       ]
     },
     {
-      "id": "fasig-tipton|kentucky-october-yearlings|2026-10",
-      "house": "Fasig-Tipton",
-      "country": "US",
-      "name": "Kentucky October Yearlings",
-      "sale_type": "Yearling",
-      "start_date": "2026-10-19",
-      "end_date": "2026-10-22",
-      "is_active": false,
-      "is_new": true,
-      "status": "New",
-      "url": "https://www.fasigtipton.com/2026/Kentucky-October-Yearlings",
-      "house_url": "https://www.fasigtipton.com",
-      "online": false,
-      "first_seen": "2026-09-19",
-      "lots_error": "",
-      "lots": []
-    },
-    {
       "id": "fasig-tipton|california-fall-yearlings|2026-09",
       "house": "Fasig-Tipton",
       "country": "US",
@@ -26230,6 +26212,24 @@
       "house_url": "https://www.fasigtipton.com",
       "online": false,
       "first_seen": "2026-09-12",
+      "lots_error": "",
+      "lots": []
+    },
+    {
+      "id": "fasig-tipton|kentucky-october-yearlings|2026-10",
+      "house": "Fasig-Tipton",
+      "country": "US",
+      "name": "Kentucky October Yearlings",
+      "sale_type": "Yearling",
+      "start_date": "2026-10-19",
+      "end_date": "2026-10-22",
+      "is_active": false,
+      "is_new": false,
+      "status": "Upcoming",
+      "url": "https://www.fasigtipton.com/2026/Kentucky-October-Yearlings",
+      "house_url": "https://www.fasigtipton.com",
+      "online": false,
+      "first_seen": "2026-09-19",
       "lots_error": "",
       "lots": []
     },
