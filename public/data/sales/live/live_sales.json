@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-09-20T06:27:35+00:00",
+  "generated_at": "2026-09-21T06:41:06+00:00",
   "catalogues": [
+    {
+      "id": "tattersalls-online|online-october-sale|2026-10",
+      "house": "Tattersalls Online",
+      "country": "UK",
+      "name": "Online October Sale",
+      "sale_type": "Yearling",
+      "start_date": "2026-10-21",
+      "end_date": "2026-10-22",
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://secure.tattersalls.com/online/OOC26/Main",
+      "house_url": "https://www.tattersallsonline.com",
+      "online": true,
+      "first_seen": "2026-09-21",
+      "lots_error": "",
+      "lots": []
+    },
     {
       "id": "tattersalls|october-yearling-sale-book-1|2026-10",
       "house": "Tattersalls",
@@ -19306,7 +19324,7 @@
         },
         {
           "lot_no": "78",
-          "horse_name": "Naval Crown (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -19466,7 +19484,7 @@
         },
         {
           "lot_no": "94",
-          "horse_name": "Starspangledbanner (AUS)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -20026,7 +20044,7 @@
         },
         {
           "lot_no": "150",
-          "horse_name": "Mehmas (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -20556,7 +20574,7 @@
         },
         {
           "lot_no": "203",
-          "horse_name": "Blackbeard (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -26307,6 +26325,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=21, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=4, fasigtipton=8, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=21, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=4, fasigtipton=8, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
