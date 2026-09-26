@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-09-25T06:31:44+00:00",
+  "generated_at": "2026-09-26T06:28:36+00:00",
   "catalogues": [
+    {
+      "id": "tattersalls|autumn-horses-in-training-sale|2026-10",
+      "house": "Tattersalls",
+      "country": "UK",
+      "name": "Autumn Horses in Training Sale",
+      "sale_type": "HIT",
+      "start_date": "2026-10-26",
+      "end_date": "2026-10-30",
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://www.tattersalls.com/sales/autumn-horses-in-training-sale/4DCGI/Sale/AUT26/Main/Overview",
+      "house_url": "https://www.tattersalls.com",
+      "online": false,
+      "first_seen": "2026-09-26",
+      "lots_error": "",
+      "lots": []
+    },
     {
       "id": "tattersalls|october-yearling-sale-book-1|2026-10",
       "house": "Tattersalls",
@@ -18705,9 +18723,9 @@
       "sale_type": "Mixed",
       "start_date": "2026-09-28",
       "end_date": null,
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Live",
+      "status": "Active",
       "url": "https://gavelhouse.co.nz",
       "house_url": "https://gavelhouse.co.nz",
       "online": true,
