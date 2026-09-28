@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T06:30:15+00:00",
+  "generated_at": "2026-09-28T06:44:18+00:00",
   "catalogues": [
     {
       "id": "tattersalls|october-yearling-sale-book-1|2026-10",
@@ -18554,24 +18554,6 @@
       "lots": []
     },
     {
-      "id": "fasig-tipton|eastern-fall-yearlings|2026-10",
-      "house": "Fasig-Tipton",
-      "country": "US",
-      "name": "Eastern Fall Yearlings",
-      "sale_type": "Yearling",
-      "start_date": "2026-10-27",
-      "end_date": null,
-      "is_active": false,
-      "is_new": true,
-      "status": "New",
-      "url": "https://www.fasigtipton.com/2026/Eastern-Fall-Yearlings",
-      "house_url": "https://www.fasigtipton.com",
-      "online": false,
-      "first_seen": "2026-09-27",
-      "lots_error": "",
-      "lots": []
-    },
-    {
       "id": "fasig-tipton|california-fall-yearlings|2026-09",
       "house": "Fasig-Tipton",
       "country": "US",
@@ -18579,9 +18561,9 @@
       "sale_type": "Yearling",
       "start_date": "2026-09-30",
       "end_date": null,
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Upcoming",
+      "status": "Active",
       "url": "https://www.fasigtipton.com/2026/California-Fall-Yearlings",
       "house_url": "https://www.fasigtipton.com",
       "online": false,
@@ -18676,6 +18658,24 @@
       "house_url": "https://www.fasigtipton.com",
       "online": false,
       "first_seen": "2026-09-19",
+      "lots_error": "",
+      "lots": []
+    },
+    {
+      "id": "fasig-tipton|eastern-fall-yearlings|2026-10",
+      "house": "Fasig-Tipton",
+      "country": "US",
+      "name": "Eastern Fall Yearlings",
+      "sale_type": "Yearling",
+      "start_date": "2026-10-27",
+      "end_date": null,
+      "is_active": false,
+      "is_new": false,
+      "status": "Upcoming",
+      "url": "https://www.fasigtipton.com/2026/Eastern-Fall-Yearlings",
+      "house_url": "https://www.fasigtipton.com",
+      "online": false,
+      "first_seen": "2026-09-27",
       "lots_error": "",
       "lots": []
     },
