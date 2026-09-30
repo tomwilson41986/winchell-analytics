@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T06:32:41+00:00",
+  "generated_at": "2026-09-30T06:33:13+00:00",
   "catalogues": [
     {
       "id": "tattersalls|october-yearling-sale-book-1|2026-10",
@@ -360,7 +360,7 @@
         },
         {
           "lot_no": "35",
-          "horse_name": "Too Darn Hot (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -680,7 +680,7 @@
         },
         {
           "lot_no": "67",
-          "horse_name": "Mehmas (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -690,7 +690,7 @@
         },
         {
           "lot_no": "68",
-          "horse_name": "Lope de Vega (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -2130,7 +2130,7 @@
         },
         {
           "lot_no": "211",
-          "horse_name": "Palace Pier (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -3090,7 +3090,7 @@
         },
         {
           "lot_no": "307",
-          "horse_name": "Havana Grey (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -3220,7 +3220,7 @@
         },
         {
           "lot_no": "320",
-          "horse_name": "Wootton Bassett (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -3760,7 +3760,7 @@
         },
         {
           "lot_no": "374",
-          "horse_name": "Night of Thunder (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Chestnut",
           "sire": "",
@@ -3790,7 +3790,7 @@
         },
         {
           "lot_no": "377",
-          "horse_name": "Blue Point (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -5709,7 +5709,7 @@
         },
         {
           "lot_no": "567",
-          "horse_name": "Modern Games (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Chestnut",
           "sire": "",
@@ -14128,7 +14128,7 @@
         },
         {
           "lot_no": "1407",
-          "horse_name": "Good Guess (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -18687,9 +18687,9 @@
       "sale_type": "Mixed",
       "start_date": "2026-10-02",
       "end_date": null,
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Upcoming",
+      "status": "Active",
       "url": "https://inglisdigital.com/",
       "house_url": "https://inglis.com.au",
       "online": false,
@@ -18705,9 +18705,9 @@
       "sale_type": "Mixed",
       "start_date": "2026-10-02",
       "end_date": null,
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Upcoming",
+      "status": "Active",
       "url": "https://inglis.com.au/locations/riverside-stables",
       "house_url": "https://inglis.com.au",
       "online": false,
@@ -18742,8 +18742,8 @@
       "start_date": "2026-10-12",
       "end_date": null,
       "is_active": false,
-      "is_new": true,
-      "status": "New",
+      "is_new": false,
+      "status": "Live",
       "url": "https://gavelhouse.co.nz",
       "house_url": "https://gavelhouse.co.nz",
       "online": true,
