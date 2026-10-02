@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T06:33:42+00:00",
+  "generated_at": "2026-10-02T06:32:16+00:00",
   "catalogues": [
     {
       "id": "tattersalls|october-yearling-sale-book-1|2026-10",
@@ -700,7 +700,7 @@
         },
         {
           "lot_no": "69",
-          "horse_name": "No Nay Never (USA)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Brown",
           "sire": "",
@@ -2260,7 +2260,7 @@
         },
         {
           "lot_no": "224",
-          "horse_name": "Native Trail (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -2950,7 +2950,7 @@
         },
         {
           "lot_no": "293",
-          "horse_name": "Lope de Vega (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -10469,7 +10469,7 @@
         },
         {
           "lot_no": "1043",
-          "horse_name": "Blue Point (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Chestnut",
           "sire": "",
@@ -11179,7 +11179,7 @@
         },
         {
           "lot_no": "1114",
-          "horse_name": "Too Darn Hot (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -34385,20 +34385,38 @@
       ]
     },
     {
-      "id": "keeneland|championship-sale|2026-10",
+      "id": "keeneland|november-breeding-stock-sale|2026-11",
       "house": "Keeneland",
       "country": "US",
-      "name": "Championship Sale",
-      "sale_type": "Mixed",
-      "start_date": "2026-10-01",
-      "end_date": null,
-      "is_active": true,
-      "is_new": false,
-      "status": "Active",
-      "url": "https://www.keeneland.com/sales/2026/13/championship-sale/",
+      "name": "November Breeding Stock Sale",
+      "sale_type": "Broodmare",
+      "start_date": "2026-11-01",
+      "end_date": "2026-11-11",
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://www.keeneland.com/sales/2026/14/november-breeding-stock-sale/",
       "house_url": "https://www.keeneland.com",
       "online": false,
-      "first_seen": "2026-09-01",
+      "first_seen": "2026-10-02",
+      "lots_error": "",
+      "lots": []
+    },
+    {
+      "id": "keeneland|november-horses-of-racing-age-sale|2026-11",
+      "house": "Keeneland",
+      "country": "US",
+      "name": "November Horses of Racing Age Sale",
+      "sale_type": "HIT",
+      "start_date": "2026-11-01",
+      "end_date": "2026-11-12",
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://www.keeneland.com/sales/2026/15/november-horses-of-racing-age-sale/",
+      "house_url": "https://www.keeneland.com",
+      "online": false,
+      "first_seen": "2026-10-02",
       "lots_error": "",
       "lots": []
     },
