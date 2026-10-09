@@ -1,1585 +1,6 @@
 {
-  "generated_at": "2026-10-08T06:34:07+00:00",
+  "generated_at": "2026-10-09T06:33:06+00:00",
   "catalogues": [
-    {
-      "id": "tattersalls|october-yearling-sale-book-1|2026-10",
-      "house": "Tattersalls",
-      "country": "UK",
-      "name": "October Yearling Sale Book 1",
-      "sale_type": "Yearling",
-      "start_date": "2026-10-06",
-      "end_date": "2026-10-08",
-      "is_active": true,
-      "is_new": false,
-      "status": "Active",
-      "url": "https://www.tattersalls.com/sales/october-yearling-sale-book-1/4DCGI/Sale/OC126/Main",
-      "house_url": "https://www.tattersalls.com",
-      "online": false,
-      "first_seen": "2026-09-06",
-      "lots_error": "",
-      "lots": [
-        {
-          "lot_no": "314",
-          "horse_name": "Night of Thunder (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "315",
-          "horse_name": "Baaeed (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "316",
-          "horse_name": "Little Big Bear (IRE)",
-          "sex": "Filly",
-          "colour": "Brown",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "317",
-          "horse_name": "Kingman (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "318",
-          "horse_name": "Equinox (JPN)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "319",
-          "horse_name": "Too Darn Hot (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "320",
-          "horse_name": "",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "321",
-          "horse_name": "Lusail (IRE)",
-          "sex": "",
-          "colour": "",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "322",
-          "horse_name": "Wootton Bassett (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "323",
-          "horse_name": "Baaeed (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "324",
-          "horse_name": "Wootton Bassett (GB)",
-          "sex": "Filly",
-          "colour": "Brown",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "325",
-          "horse_name": "",
-          "sex": "Filly",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "326",
-          "horse_name": "No Nay Never (USA)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "327",
-          "horse_name": "Siyouni (FR)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "328",
-          "horse_name": "Justify (USA)",
-          "sex": "Filly",
-          "colour": "Grey",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "329",
-          "horse_name": "",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "330",
-          "horse_name": "Too Darn Hot (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "331",
-          "horse_name": "Wootton Bassett (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "332",
-          "horse_name": "No Nay Never (USA)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "333",
-          "horse_name": "Study of Man (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "334",
-          "horse_name": "Wootton Bassett (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "335",
-          "horse_name": "Frankel (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "336",
-          "horse_name": "Dubawi (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "337",
-          "horse_name": "Too Darn Hot (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "338",
-          "horse_name": "Gleneagles (IRE)",
-          "sex": "Colt",
-          "colour": "Brown",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "339",
-          "horse_name": "Sea The Stars (IRE)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "340",
-          "horse_name": "Night of Thunder (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "341",
-          "horse_name": "Night of Thunder (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "342",
-          "horse_name": "New Bay (GB)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "343",
-          "horse_name": "Havana Grey (GB)",
-          "sex": "Colt",
-          "colour": "Grey",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "344",
-          "horse_name": "Baaeed (GB)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "345",
-          "horse_name": "Chaldean (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "346",
-          "horse_name": "Frankel (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "347",
-          "horse_name": "St Mark's Basilica (FR)",
-          "sex": "Filly",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "348",
-          "horse_name": "Blue Point (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "349",
-          "horse_name": "Wootton Bassett (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "350",
-          "horse_name": "Starman (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "351",
-          "horse_name": "No Nay Never (USA)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "352",
-          "horse_name": "Frankel (GB)",
-          "sex": "Colt",
-          "colour": "Grey",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "353",
-          "horse_name": "No Nay Never (USA)",
-          "sex": "Filly",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "354",
-          "horse_name": "Kodiac (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "355",
-          "horse_name": "Havana Grey (GB)",
-          "sex": "Colt",
-          "colour": "Grey",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "356",
-          "horse_name": "Dark Angel (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "357",
-          "horse_name": "Dubawi (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "358",
-          "horse_name": "Sea The Stars (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "359",
-          "horse_name": "Native Trail (GB)",
-          "sex": "Filly",
-          "colour": "Brown",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "360",
-          "horse_name": "Galiway (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "361",
-          "horse_name": "",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "362",
-          "horse_name": "Harry Angel (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "363",
-          "horse_name": "Teofilo (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "364",
-          "horse_name": "Gleneagles (IRE)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "365",
-          "horse_name": "Churchill (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "366",
-          "horse_name": "Chaldean (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "367",
-          "horse_name": "Kingman (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "368",
-          "horse_name": "Blue Point (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "369",
-          "horse_name": "Dark Angel (IRE)",
-          "sex": "Filly",
-          "colour": "Grey",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "370",
-          "horse_name": "Frankel (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "371",
-          "horse_name": "Sea The Stars (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "372",
-          "horse_name": "New Bay (GB)",
-          "sex": "Filly",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "373",
-          "horse_name": "Too Darn Hot (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "374",
-          "horse_name": "",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "375",
-          "horse_name": "Little Big Bear (IRE)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "376",
-          "horse_name": "Lope de Vega (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "377",
-          "horse_name": "",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "378",
-          "horse_name": "Justify (USA)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "379",
-          "horse_name": "El Caballo (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "380",
-          "horse_name": "Good Guess (GB)",
-          "sex": "Filly",
-          "colour": "Brown",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "381",
-          "horse_name": "Shaquille (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "382",
-          "horse_name": "Dark Angel (IRE)",
-          "sex": "Filly",
-          "colour": "Grey",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "383",
-          "horse_name": "",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "384",
-          "horse_name": "Baaeed (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "385",
-          "horse_name": "Vadeni (FR)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "386",
-          "horse_name": "",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "387",
-          "horse_name": "Night of Thunder (IRE)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "388",
-          "horse_name": "Justify (USA)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "389",
-          "horse_name": "Starman (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "390",
-          "horse_name": "Phoenix of Spain (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "391",
-          "horse_name": "Palace Pier (GB)",
-          "sex": "Filly",
-          "colour": "Brown",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "392",
-          "horse_name": "Sea The Stars (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "393",
-          "horse_name": "Dark Angel (IRE)",
-          "sex": "Filly",
-          "colour": "Grey",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "394",
-          "horse_name": "Sea The Stars (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "395",
-          "horse_name": "Native Trail (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "396",
-          "horse_name": "Ghaiyyath (IRE)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "397",
-          "horse_name": "Kingman (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "398",
-          "horse_name": "Too Darn Hot (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "399",
-          "horse_name": "Blackbeard (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "400",
-          "horse_name": "Too Darn Hot (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "401",
-          "horse_name": "Sea The Stars (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "402",
-          "horse_name": "Too Darn Hot (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "403",
-          "horse_name": "Kingman (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "404",
-          "horse_name": "Night of Thunder (IRE)",
-          "sex": "Filly",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "405",
-          "horse_name": "Night of Thunder (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "406",
-          "horse_name": "Starman (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "407",
-          "horse_name": "Palace Pier (GB)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "408",
-          "horse_name": "Study of Man (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "409",
-          "horse_name": "Night of Thunder (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "410",
-          "horse_name": "Frankel (GB)",
-          "sex": "Colt",
-          "colour": "Roan",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "411",
-          "horse_name": "Wootton Bassett (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "412",
-          "horse_name": "Shaquille (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "413",
-          "horse_name": "New Bay (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "414",
-          "horse_name": "Mehmas (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "415",
-          "horse_name": "Baaeed (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "416",
-          "horse_name": "Lope de Vega (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "417",
-          "horse_name": "St Mark's Basilica (FR)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "418",
-          "horse_name": "Little Big Bear (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "419",
-          "horse_name": "Blue Point (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "420",
-          "horse_name": "Wootton Bassett (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "421",
-          "horse_name": "No Nay Never (USA)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "422",
-          "horse_name": "Triple Time (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "423",
-          "horse_name": "Shaquille (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "424",
-          "horse_name": "St Mark's Basilica (FR)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "425",
-          "horse_name": "Siyouni (FR)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "426",
-          "horse_name": "Kingman (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "427",
-          "horse_name": "Night of Thunder (IRE)",
-          "sex": "Filly",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "428",
-          "horse_name": "Blue Point (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "429",
-          "horse_name": "Lope de Vega (IRE)",
-          "sex": "Filly",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "430",
-          "horse_name": "Kingman (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "431",
-          "horse_name": "",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "432",
-          "horse_name": "Lope de Vega (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "433",
-          "horse_name": "Frankel (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "434",
-          "horse_name": "Mehmas (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "435",
-          "horse_name": "Lope de Vega (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "436",
-          "horse_name": "Siyouni (FR)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "437",
-          "horse_name": "Vadeni (FR)",
-          "sex": "Colt",
-          "colour": "Grey",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "438",
-          "horse_name": "Ecu d'Or (FR)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "Starman (GB)",
-          "dam": "Dame Freya Stark (GB)",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "439",
-          "horse_name": "New Bay (GB)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "440",
-          "horse_name": "Wootton Bassett (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "441",
-          "horse_name": "Mehmas (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "442",
-          "horse_name": "Starspangledbanner (AUS)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "443",
-          "horse_name": "Justify (USA)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "444",
-          "horse_name": "Baaeed (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "445",
-          "horse_name": "Nathaniel (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "446",
-          "horse_name": "Too Darn Hot (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "447",
-          "horse_name": "Muhaarar (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "448",
-          "horse_name": "Native Trail (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "449",
-          "horse_name": "Mehmas (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "450",
-          "horse_name": "Baaeed (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "451",
-          "horse_name": "Chaldean (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "452",
-          "horse_name": "Chaldean (GB)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "453",
-          "horse_name": "Havana Grey (GB)",
-          "sex": "Colt",
-          "colour": "Grey",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "454",
-          "horse_name": "Justify (USA)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "455",
-          "horse_name": "Sioux Nation (USA)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "456",
-          "horse_name": "Camelot (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "457",
-          "horse_name": "Nathaniel (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "458",
-          "horse_name": "Kameko (USA)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "459",
-          "horse_name": "Blue Point (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "460",
-          "horse_name": "Little Big Bear (IRE)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "461",
-          "horse_name": "Starman (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "462",
-          "horse_name": "Justify (USA)",
-          "sex": "Colt",
-          "colour": "Chestnut",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "463",
-          "horse_name": "Corniche (USA)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "464",
-          "horse_name": "Blue Point (IRE)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "465",
-          "horse_name": "Starspangledbanner (AUS)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "466",
-          "horse_name": "Starman (GB)",
-          "sex": "Filly",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "467",
-          "horse_name": "Havana Grey (GB)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "468",
-          "horse_name": "Sioux Nation (USA)",
-          "sex": "Colt",
-          "colour": "Bay",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "469",
-          "horse_name": "Sea The Stars (IRE)",
-          "sex": "Filly",
-          "colour": "Brown",
-          "sire": "",
-          "dam": "",
-          "dam_sire": "",
-          "vendor": ""
-        }
-      ]
-    },
     {
       "id": "tattersalls|october-yearling-sale-book-2|2026-10",
       "house": "Tattersalls",
@@ -1772,6 +193,16 @@
           "horse_name": "Paddington (GB)",
           "sex": "Colt",
           "colour": "Chestnut",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "487A",
+          "horse_name": "Blue Point (IRE)",
+          "sex": "Colt",
+          "colour": "Bay",
           "sire": "",
           "dam": "",
           "dam_sire": "",
@@ -1999,7 +430,7 @@
         },
         {
           "lot_no": "510",
-          "horse_name": "Camelot (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -3939,7 +2370,7 @@
         },
         {
           "lot_no": "704",
-          "horse_name": "Too Darn Hot (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -4429,7 +2860,7 @@
         },
         {
           "lot_no": "753",
-          "horse_name": "Saxon Warrior (JPN)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -5499,7 +3930,7 @@
         },
         {
           "lot_no": "860",
-          "horse_name": "Baaeed (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -6159,7 +4590,7 @@
         },
         {
           "lot_no": "926",
-          "horse_name": "Palace Pier (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -6169,7 +4600,7 @@
         },
         {
           "lot_no": "927",
-          "horse_name": "American Pharoah (USA)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -6538,6 +4969,16 @@
           "vendor": ""
         },
         {
+          "lot_no": "963A",
+          "horse_name": "Havana Grey (GB)",
+          "sex": "Colt",
+          "colour": "Grey",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
           "lot_no": "964",
           "horse_name": "Palace Pier (GB)",
           "sex": "Colt",
@@ -6549,7 +4990,7 @@
         },
         {
           "lot_no": "965",
-          "horse_name": "Sergei Prokofiev (CAN)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -6649,7 +5090,7 @@
         },
         {
           "lot_no": "975",
-          "horse_name": "Good Guess (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -6842,6 +5283,16 @@
           "horse_name": "Modern Games (IRE)",
           "sex": "Filly",
           "colour": "Chestnut",
+          "sire": "",
+          "dam": "",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "994A",
+          "horse_name": "Night of Thunder (IRE)",
+          "sex": "Filly",
+          "colour": "Bay",
           "sire": "",
           "dam": "",
           "dam_sire": "",
@@ -7119,7 +5570,7 @@
         },
         {
           "lot_no": "1022",
-          "horse_name": "New Bay (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -7229,7 +5680,7 @@
         },
         {
           "lot_no": "1033",
-          "horse_name": "Chaldean (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -7249,7 +5700,7 @@
         },
         {
           "lot_no": "1035",
-          "horse_name": "Night of Thunder (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -7849,7 +6300,7 @@
         },
         {
           "lot_no": "1095",
-          "horse_name": "Paddington (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -8129,7 +6580,7 @@
         },
         {
           "lot_no": "1123",
-          "horse_name": "Triple Time (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Brown",
           "sire": "",
@@ -8429,7 +6880,7 @@
         },
         {
           "lot_no": "1153",
-          "horse_name": "Modern Games (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -8559,7 +7010,7 @@
         },
         {
           "lot_no": "1166",
-          "horse_name": "Pinatubo (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -14378,7 +12829,7 @@
         },
         {
           "lot_no": "1746",
-          "horse_name": "Rajasinghe (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -31679,6 +30130,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=22, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=4, fasigtipton=7, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=21, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=4, fasigtipton=7, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
