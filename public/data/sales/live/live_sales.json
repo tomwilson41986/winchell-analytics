@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T06:26:58+00:00",
+  "generated_at": "2026-10-19T06:40:32+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-october-sale|2026-10",
@@ -9,9 +9,9 @@
       "sale_type": "Yearling",
       "start_date": "2026-10-21",
       "end_date": "2026-10-22",
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Upcoming",
+      "status": "Active",
       "url": "https://secure.tattersalls.com/online/OOC26/Main",
       "house_url": "https://www.tattersallsonline.com",
       "online": true,
@@ -15978,6 +15978,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=18, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=4, fasigtipton=6, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=18, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=4, fasigtipton=6, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
