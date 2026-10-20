@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T06:40:32+00:00",
+  "generated_at": "2026-10-20T06:29:43+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-october-sale|2026-10",
@@ -1768,7 +1768,7 @@
         },
         {
           "lot_no": "174",
-          "horse_name": "Playin Cool (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Belardo (IRE)",
@@ -5768,7 +5768,7 @@
         },
         {
           "lot_no": "575",
-          "horse_name": "Noble Agenda (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "King of Change (GB)",
@@ -6778,7 +6778,7 @@
         },
         {
           "lot_no": "676",
-          "horse_name": "King Cuan (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Tasleet (GB)",
@@ -6798,7 +6798,7 @@
         },
         {
           "lot_no": "678",
-          "horse_name": "Hi Corbett Court (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Grey",
           "sire": "Starman (GB)",
@@ -7158,7 +7158,7 @@
         },
         {
           "lot_no": "714",
-          "horse_name": "Maximinus (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "Frankel (GB)",
@@ -7168,7 +7168,7 @@
         },
         {
           "lot_no": "715",
-          "horse_name": "Brussels (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Brown",
           "sire": "Wootton Bassett (GB)",
@@ -7178,7 +7178,7 @@
         },
         {
           "lot_no": "716",
-          "horse_name": "Come What May (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "Nathaniel (IRE)",
@@ -7598,7 +7598,7 @@
         },
         {
           "lot_no": "759",
-          "horse_name": "Gleneagle Bay (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Gleneagles (IRE)",
@@ -8198,7 +8198,7 @@
         },
         {
           "lot_no": "819",
-          "horse_name": "Bran Galad (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Camelot (GB)",
@@ -11338,7 +11338,7 @@
         },
         {
           "lot_no": "1133",
-          "horse_name": "Lunar Approach (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Lope de Vega (IRE)",
@@ -12548,7 +12548,7 @@
         },
         {
           "lot_no": "1255",
-          "horse_name": "House Music (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "Minzaal (IRE)",
@@ -12778,7 +12778,7 @@
         },
         {
           "lot_no": "1278",
-          "horse_name": "Remember The Dream (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Nathaniel (IRE)",
@@ -15738,7 +15738,7 @@
         },
         {
           "lot_no": "1575",
-          "horse_name": "Saxon Lodge (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Chestnut",
           "sire": "Saxon Warrior (JPN)",
@@ -15974,7 +15974,178 @@
       "online": true,
       "first_seen": "2026-10-13",
       "lots_error": "",
-      "lots": []
+      "lots": [
+        {
+          "lot_no": "5",
+          "horse_name": "Sanae",
+          "sex": "3",
+          "colour": "6",
+          "sire": "Tarzino",
+          "dam": "Dwelt",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "17",
+          "horse_name": "Sweys Charm",
+          "sex": "5",
+          "colour": "7",
+          "sire": "Sweynesse",
+          "dam": "Tastefully",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "13",
+          "horse_name": "Sweyinthebreeze",
+          "sex": "5",
+          "colour": "6",
+          "sire": "Sweynesse",
+          "dam": "Prist",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "12",
+          "horse_name": "Sunshine Ale",
+          "sex": "5",
+          "colour": "10",
+          "sire": "Telperion",
+          "dam": "Red Carpet",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "2",
+          "horse_name": "Unnamed",
+          "sex": "4",
+          "colour": "3",
+          "sire": "Shocking",
+          "dam": "Bright Kiwi",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "7",
+          "horse_name": "Fleurs Star",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Circus Maximus",
+          "dam": "Midnite Rendezvous",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "3",
+          "horse_name": "Baby Warrior",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Satono Aladdin",
+          "dam": "Shock Shock",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "9",
+          "horse_name": "Izola",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Tivaci",
+          "dam": "Adriatico",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "8",
+          "horse_name": "Hollaback Girl",
+          "sex": "5",
+          "colour": "10",
+          "sire": "Telperion",
+          "dam": "Miss Heartbeat",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1",
+          "horse_name": "Unnamed",
+          "sex": "2",
+          "colour": "3",
+          "sire": "Ardrossan",
+          "dam": "Eva Daniela",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "16",
+          "horse_name": "Shutters",
+          "sex": "5",
+          "colour": "6",
+          "sire": "Highly Recommended",
+          "dam": "Skite",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "10",
+          "horse_name": "King of the Jungle",
+          "sex": "4",
+          "colour": "3",
+          "sire": "Tarzino",
+          "dam": "Gold Water",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "6",
+          "horse_name": "Declare",
+          "sex": "5",
+          "colour": "3",
+          "sire": "War Decree",
+          "dam": "The Duke's Secret",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "11",
+          "horse_name": "Sir Fergus",
+          "sex": "4",
+          "colour": "3",
+          "sire": "Ardrossan",
+          "dam": "Underthemoonlight",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "14",
+          "horse_name": "Aishiteru",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Satono Aladdin",
+          "dam": "Cuddles for Layla",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "4",
+          "horse_name": "Madame d'Arcy",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Darci Brahma",
+          "dam": "Miss Challenger",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "15",
+          "horse_name": "Perfect Test",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Time Test",
+          "dam": "Perfect Vision",
+          "dam_sire": "",
+          "vendor": ""
+        }
+      ]
     }
   ],
   "diagnostics": {
