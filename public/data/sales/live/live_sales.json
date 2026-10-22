@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T06:30:21+00:00",
+  "generated_at": "2026-10-22T06:30:03+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-october-sale|2026-10",
@@ -38,7 +38,7 @@
       "lots": [
         {
           "lot_no": "1",
-          "horse_name": "Caitlin G (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Bangkok (IRE)",
@@ -78,7 +78,7 @@
         },
         {
           "lot_no": "5",
-          "horse_name": "True Charm (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Ardad (IRE)",
@@ -468,7 +468,7 @@
         },
         {
           "lot_no": "44",
-          "horse_name": "Clear Code (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Kodi Bear (IRE)",
@@ -728,7 +728,7 @@
         },
         {
           "lot_no": "70",
-          "horse_name": "Akabusi (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Mohaather (GB)",
@@ -738,7 +738,7 @@
         },
         {
           "lot_no": "71",
-          "horse_name": "Molly Mac (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Ardad (IRE)",
@@ -988,7 +988,7 @@
         },
         {
           "lot_no": "96",
-          "horse_name": "My Mate Kennedy (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Zoustar (AUS)",
@@ -1008,7 +1008,7 @@
         },
         {
           "lot_no": "98",
-          "horse_name": "Moon Sand (FR)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Grey",
           "sire": "Sea The Moon (GER)",
@@ -1218,7 +1218,7 @@
         },
         {
           "lot_no": "119",
-          "horse_name": "Hamadhan (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Lope de Vega (IRE)",
@@ -1428,7 +1428,7 @@
         },
         {
           "lot_no": "140",
-          "horse_name": "Ar Son Na Cuise (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Churchill (IRE)",
@@ -1828,7 +1828,7 @@
         },
         {
           "lot_no": "180",
-          "horse_name": "Scarlet Dream (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Ardad (IRE)",
@@ -3238,7 +3238,7 @@
         },
         {
           "lot_no": "314",
-          "horse_name": "We Dare To Dream (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Dark Angel (IRE)",
@@ -3258,7 +3258,7 @@
         },
         {
           "lot_no": "316",
-          "horse_name": "Matter of Britain (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Victor Ludorum (GB)",
@@ -3298,7 +3298,7 @@
         },
         {
           "lot_no": "320",
-          "horse_name": "Victory Ace (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Zoustar (AUS)",
@@ -3378,7 +3378,7 @@
         },
         {
           "lot_no": "328",
-          "horse_name": "Frankies Dream (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Brown",
           "sire": "Belardo (IRE)",
@@ -3478,7 +3478,7 @@
         },
         {
           "lot_no": "338",
-          "horse_name": "Magnum Cor (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "Sea The Stars (IRE)",
@@ -3628,7 +3628,7 @@
         },
         {
           "lot_no": "353",
-          "horse_name": "Barefoot Warrior (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Saxon Warrior (JPN)",
@@ -4218,7 +4218,7 @@
         },
         {
           "lot_no": "412",
-          "horse_name": "Sea The Light (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Sea The Stars (IRE)",
@@ -4258,7 +4258,7 @@
         },
         {
           "lot_no": "416",
-          "horse_name": "Go For It (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Supremacy (IRE)",
@@ -4338,7 +4338,7 @@
         },
         {
           "lot_no": "424",
-          "horse_name": "Catalistic (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Calyx (GB)",
@@ -4658,7 +4658,7 @@
         },
         {
           "lot_no": "456",
-          "horse_name": "Palace Fever (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "Palace Pier (GB)",
@@ -6698,7 +6698,7 @@
         },
         {
           "lot_no": "660",
-          "horse_name": "Barzambition (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "Frankel (GB)",
@@ -6958,7 +6958,7 @@
         },
         {
           "lot_no": "686",
-          "horse_name": "Alphonsus Liguori (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "Study of Man (IRE)",
@@ -7848,7 +7848,7 @@
         },
         {
           "lot_no": "768",
-          "horse_name": "Urchin (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Ulysses (IRE)",
@@ -7938,7 +7938,7 @@
         },
         {
           "lot_no": "777",
-          "horse_name": "Thankfully (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "St Mark's Basilica (FR)",
@@ -7948,7 +7948,7 @@
         },
         {
           "lot_no": "778",
-          "horse_name": "East Hampton (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Cracksman (GB)",
@@ -7958,7 +7958,7 @@
         },
         {
           "lot_no": "779",
-          "horse_name": "Manton Bay (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "Ulysses (IRE)",
@@ -9148,7 +9148,7 @@
         },
         {
           "lot_no": "898",
-          "horse_name": "French Dawn (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Chestnut",
           "sire": "Dawn Approach (IRE)",
@@ -9158,7 +9158,7 @@
         },
         {
           "lot_no": "899",
-          "horse_name": "Ballaghkeen (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Teofilo (IRE)",
@@ -9168,7 +9168,7 @@
         },
         {
           "lot_no": "900",
-          "horse_name": "Solas Na Gealai (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Teofilo (IRE)",
@@ -10188,7 +10188,7 @@
         },
         {
           "lot_no": "1002",
-          "horse_name": "Gaelic Drills (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "Parish Hall (IRE)",
@@ -10198,7 +10198,7 @@
         },
         {
           "lot_no": "1003",
-          "horse_name": "Parish Team (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Parish Hall (IRE)",
@@ -11418,7 +11418,7 @@
         },
         {
           "lot_no": "1125",
-          "horse_name": "Warrant Holder (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Frankel (GB)",
@@ -11598,7 +11598,7 @@
         },
         {
           "lot_no": "1143",
-          "horse_name": "Port of London (IRE)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Night of Thunder (IRE)",
@@ -13498,7 +13498,7 @@
         },
         {
           "lot_no": "1329",
-          "horse_name": "Quiet Radiance (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Ghaiyyath (IRE)",
@@ -14608,7 +14608,7 @@
         },
         {
           "lot_no": "1441",
-          "horse_name": "Zaraquelle (FR)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Zarak (FR)",
@@ -14628,7 +14628,7 @@
         },
         {
           "lot_no": "1443",
-          "horse_name": "Tricky Jenny (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Ardad (IRE)",
@@ -14678,7 +14678,7 @@
         },
         {
           "lot_no": "1448",
-          "horse_name": "Cold Fish (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "No Nay Never (USA)",
@@ -15418,7 +15418,7 @@
         },
         {
           "lot_no": "1522",
-          "horse_name": "From The Stars (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "Holy Roman Emperor (IRE)",
@@ -15558,7 +15558,7 @@
         },
         {
           "lot_no": "1536",
-          "horse_name": "Roland Garros (GB)",
+          "horse_name": "",
           "sex": "Gelding",
           "colour": "Bay",
           "sire": "Nathaniel (IRE)",
@@ -16038,7 +16038,7 @@
         },
         {
           "lot_no": "1584",
-          "horse_name": "Ghazalia (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Blue Point (IRE)",
@@ -16349,6 +16349,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=18, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=4, fasigtipton=6, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=22, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=4, fasigtipton=6, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
