@@ -12,7 +12,7 @@
   "pedigree": null,
   "sales": [],
   "form": {
-    "starts": 14,
+    "starts": 15,
     "wins": 8,
     "seconds": 2,
     "thirds": 1,
@@ -25,9 +25,9 @@
   },
   "results": [],
   "scores": {
-    "earnings_per_start": 698740.36,
-    "win_strike_rate": 0.5714,
-    "place_strike_rate": 0.7857,
+    "earnings_per_start": 652157.67,
+    "win_strike_rate": 0.5333,
+    "place_strike_rate": 0.7333,
     "best_speed_figure": null,
     "class_trajectory": null,
     "black_type": true,
@@ -36,5 +36,5 @@
   "sources": [
     "https://en.wikipedia.org/wiki/Magnitude_%28horse%29"
   ],
-  "last_updated": "2026-10-26T07:46:50.472381+00:00"
+  "last_updated": "2026-10-27T07:35:19.702404+00:00"
 }
