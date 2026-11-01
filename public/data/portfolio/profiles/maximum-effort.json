@@ -7,9 +7,101 @@
   "country": null,
   "breeder": null,
   "current_trainer": null,
-  "ownership_note": "Roster match via seed. Sire (seed): Maxfield.",
+  "ownership_note": "Roster match via seed.",
   "status": null,
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "MAXFIELD",
+      "year_of_birth": 2017,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "LOVE CAME TO TOWN",
+      "year_of_birth": 2012,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "MEDALLIST",
+      "year_of_birth": 2001,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "MAXFIELD",
+        "year_of_birth": 2017,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "STREET SENSE",
+        "year_of_birth": 2004,
+        "country": "USA"
+      },
+      "sire_sire_sire": {
+        "name": "STREET CRY",
+        "year_of_birth": 1998,
+        "country": "IRE"
+      },
+      "sire_sire_dam": {
+        "name": "BEDAZZLE",
+        "year_of_birth": 1997,
+        "country": "USA"
+      },
+      "sire_dam": {
+        "name": "VELVETY",
+        "year_of_birth": 2010,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "BERNARDINI",
+        "year_of_birth": 2003,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "CARESS",
+        "year_of_birth": 1991,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "LOVE CAME TO TOWN",
+        "year_of_birth": 2012,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "MEDALLIST",
+        "year_of_birth": 2001,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "TOUCH GOLD",
+        "year_of_birth": 1994,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "SANTARIA",
+        "year_of_birth": 1995,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "TALKIN ABOUT LOVE",
+        "year_of_birth": 2004,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "NOT FOR LOVE",
+        "year_of_birth": 1990,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "SHE'S JANE",
+        "year_of_birth": 1997,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Mr. Prospector 4x5",
+      "Northern Dancer 5x5"
+    ]
+  },
   "sales": [],
   "form": null,
   "results": [],
@@ -22,6 +114,8 @@
     "black_type": false,
     "value_flag": null
   },
-  "sources": [],
-  "last_updated": "2026-10-31T07:22:31.344557+00:00"
+  "sources": [
+    "https://www.pedigreequery.com/maximum+effort7"
+  ],
+  "last_updated": "2026-11-01T07:20:41.899728+00:00"
 }

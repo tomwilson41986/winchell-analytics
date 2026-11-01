@@ -7,9 +7,98 @@
   "country": null,
   "breeder": null,
   "current_trainer": null,
-  "ownership_note": "Roster match via seed. Sire (seed): Bolger.",
+  "ownership_note": "Roster match via seed.",
   "status": null,
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "BOLGER",
+      "year_of_birth": 1976,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "HATTAB GAL",
+      "year_of_birth": 1981,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "AL HATTAB",
+      "year_of_birth": 1966,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "BOLGER",
+        "year_of_birth": 1976,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "DAMASCUS",
+        "year_of_birth": 1964,
+        "country": "USA"
+      },
+      "sire_sire_sire": {
+        "name": "SWORD DANCER",
+        "year_of_birth": 1956,
+        "country": "USA"
+      },
+      "sire_sire_dam": {
+        "name": "KERALA",
+        "year_of_birth": 1958,
+        "country": "USA"
+      },
+      "sire_dam": {
+        "name": "DANCEALOT",
+        "year_of_birth": 1971,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "ROUND TABLE",
+        "year_of_birth": 1954,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "MUSIC PLEASE",
+        "year_of_birth": 1963,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "HATTAB GAL",
+        "year_of_birth": 1981,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "AL HATTAB",
+        "year_of_birth": 1966,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "THE AXE II",
+        "year_of_birth": 1958,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "ABYSSINIA",
+        "year_of_birth": 1953,
+        "country": "GB"
+      },
+      "dam_dam": {
+        "name": "FOREST PRINCESS",
+        "year_of_birth": 1973,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "FLEET NASRULLAH",
+        "year_of_birth": 1955,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "QUEEN HOSTESS",
+        "year_of_birth": 1962,
+        "country": "USA"
+      }
+    },
+    "inbreeding": []
+  },
   "sales": [],
   "form": null,
   "results": [],
@@ -22,6 +111,8 @@
     "black_type": false,
     "value_flag": null
   },
-  "sources": [],
-  "last_updated": "2026-10-31T07:25:34.580594+00:00"
+  "sources": [
+    "https://www.pedigreequery.com/sea+cadet"
+  ],
+  "last_updated": "2026-11-01T07:22:37.157992+00:00"
 }

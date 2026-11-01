@@ -7,9 +7,103 @@
   "country": null,
   "breeder": null,
   "current_trainer": null,
-  "ownership_note": "Roster match via seed. Sire (seed): Gun Runner.",
+  "ownership_note": "Roster match via seed.",
   "status": null,
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "GUN RUNNER",
+      "year_of_birth": 2013,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "SPEEDINTHRUTHECITY",
+      "year_of_birth": 2010,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "CITY ZIP",
+      "year_of_birth": 1998,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "GUN RUNNER",
+        "year_of_birth": 2013,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "CANDY RIDE",
+        "year_of_birth": 1999,
+        "country": "ARG"
+      },
+      "sire_sire_sire": {
+        "name": "RIDE THE RAILS",
+        "year_of_birth": 1991,
+        "country": "USA"
+      },
+      "sire_sire_dam": {
+        "name": "CANDY GIRL",
+        "year_of_birth": 1990,
+        "country": "ARG"
+      },
+      "sire_dam": {
+        "name": "QUIET GIANT",
+        "year_of_birth": 2007,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "GIANTS CAUSEWAY",
+        "year_of_birth": 1997,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "QUIET DANCE",
+        "year_of_birth": 1993,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "SPEEDINTHRUTHECITY",
+        "year_of_birth": 2010,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "CITY ZIP",
+        "year_of_birth": 1998,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "CARSON CITY",
+        "year_of_birth": 1987,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "BABY ZIP",
+        "year_of_birth": 1991,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "LICENSE TO SPEED",
+        "year_of_birth": 1999,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "THUNDER GULCH",
+        "year_of_birth": 1992,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "CADILLAC WOMEN",
+        "year_of_birth": 1989,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Blushing Groom 5x5",
+      "Fappiano 5x5",
+      "Mr. Prospector 4x5",
+      "Storm Bird 5x5"
+    ]
+  },
   "sales": [],
   "form": null,
   "results": [],
@@ -22,6 +116,8 @@
     "black_type": false,
     "value_flag": null
   },
-  "sources": [],
-  "last_updated": "2026-10-31T07:16:26.051011+00:00"
+  "sources": [
+    "https://www.pedigreequery.com/express+success4"
+  ],
+  "last_updated": "2026-11-01T07:15:40.038372+00:00"
 }

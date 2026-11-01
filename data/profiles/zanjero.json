@@ -7,9 +7,100 @@
   "country": null,
   "breeder": null,
   "current_trainer": null,
-  "ownership_note": "Roster match via seed. Sire (seed): Cherokee Run.",
+  "ownership_note": "Roster match via seed.",
   "status": null,
-  "pedigree": null,
+  "pedigree": {
+    "sire": {
+      "name": "CHEROKEE RUN",
+      "year_of_birth": 1990,
+      "country": "USA"
+    },
+    "dam": {
+      "name": "CHECKERED FLAG",
+      "year_of_birth": 1998,
+      "country": "USA"
+    },
+    "damsire": {
+      "name": "A.P. INDY",
+      "year_of_birth": 1989,
+      "country": "USA"
+    },
+    "extended": {
+      "sire": {
+        "name": "CHEROKEE RUN",
+        "year_of_birth": 1990,
+        "country": "USA"
+      },
+      "sire_sire": {
+        "name": "RUNAWAY GROOM",
+        "year_of_birth": 1979,
+        "country": "CAN"
+      },
+      "sire_sire_sire": {
+        "name": "BLUSHING GROOM",
+        "year_of_birth": 1974,
+        "country": "FR"
+      },
+      "sire_sire_dam": {
+        "name": "YONNIE GIRL",
+        "year_of_birth": 1966,
+        "country": "USA"
+      },
+      "sire_dam": {
+        "name": "CHEROKEE DAME",
+        "year_of_birth": 1980,
+        "country": "USA"
+      },
+      "sire_dam_sire": {
+        "name": "SILVER SABER",
+        "year_of_birth": 1972,
+        "country": "USA"
+      },
+      "sire_dam_dam": {
+        "name": "DAME FRANCESCA",
+        "year_of_birth": 1966,
+        "country": "USA"
+      },
+      "dam": {
+        "name": "CHECKERED FLAG",
+        "year_of_birth": 1998,
+        "country": "USA"
+      },
+      "dam_sire": {
+        "name": "A.P. INDY",
+        "year_of_birth": 1989,
+        "country": "USA"
+      },
+      "dam_sire_sire": {
+        "name": "SEATTLE SLEW",
+        "year_of_birth": 1974,
+        "country": "USA"
+      },
+      "dam_sire_dam": {
+        "name": "WEEKEND SURPRISE",
+        "year_of_birth": 1980,
+        "country": "USA"
+      },
+      "dam_dam": {
+        "name": "SHAWNEE CREEK",
+        "year_of_birth": 1980,
+        "country": "USA"
+      },
+      "dam_dam_sire": {
+        "name": "MR. PROSPECTOR",
+        "year_of_birth": 1970,
+        "country": "USA"
+      },
+      "dam_dam_dam": {
+        "name": "BACK ACK",
+        "year_of_birth": 1976,
+        "country": "USA"
+      }
+    },
+    "inbreeding": [
+      "Nasrullah 5x5"
+    ]
+  },
   "sales": [],
   "form": null,
   "results": [],
@@ -22,6 +113,8 @@
     "black_type": false,
     "value_flag": null
   },
-  "sources": [],
-  "last_updated": "2026-10-31T07:33:58.199702+00:00"
+  "sources": [
+    "https://www.pedigreequery.com/zanjero"
+  ],
+  "last_updated": "2026-11-01T07:28:28.609939+00:00"
 }
