@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T06:26:20+00:00",
+  "generated_at": "2026-11-03T06:19:24+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|era-online-november-sale|2026-11",
@@ -9,9 +9,9 @@
       "sale_type": "Mixed",
       "start_date": "2026-11-05",
       "end_date": "2026-11-10",
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Upcoming",
+      "status": "Active",
       "url": "https://secure.tattersalls.com/online/ER326/Main",
       "house_url": "https://www.tattersallsonline.com",
       "online": true,
@@ -20995,24 +20995,6 @@
       ]
     },
     {
-      "id": "keeneland|november-breeding-stock-sale|2026-11",
-      "house": "Keeneland",
-      "country": "US",
-      "name": "November Breeding Stock Sale",
-      "sale_type": "Broodmare",
-      "start_date": "2026-11-01",
-      "end_date": "2026-11-11",
-      "is_active": true,
-      "is_new": false,
-      "status": "Active",
-      "url": "https://www.keeneland.com/sales/2026/14/november-breeding-stock-sale/",
-      "house_url": "https://www.keeneland.com",
-      "online": false,
-      "first_seen": "2026-10-02",
-      "lots_error": "",
-      "lots": []
-    },
-    {
       "id": "keeneland|november-horses-of-racing-age-sale|2026-11",
       "house": "Keeneland",
       "country": "US",
@@ -21031,20 +21013,20 @@
       "lots": []
     },
     {
-      "id": "fasig-tipton|the-november-sale|2026-11",
+      "id": "fasig-tipton|december-digital-sale|2026-12",
       "house": "Fasig-Tipton",
       "country": "US",
-      "name": "The November Sale",
-      "sale_type": "Broodmare",
-      "start_date": "2026-11-02",
-      "end_date": null,
-      "is_active": true,
-      "is_new": false,
-      "status": "Active",
-      "url": "https://www.fasigtipton.com/2026/The-November-Sale",
+      "name": "December Digital Sale",
+      "sale_type": "Mixed",
+      "start_date": "2026-12-03",
+      "end_date": "2026-12-08",
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://digital.fasigtipton.com/sales/",
       "house_url": "https://www.fasigtipton.com",
       "online": false,
-      "first_seen": "2026-10-03",
+      "first_seen": "2026-11-03",
       "lots_error": "",
       "lots": []
     },
@@ -21082,10 +21064,81 @@
       "online": true,
       "first_seen": "2026-10-27",
       "lots_error": "",
-      "lots": []
+      "lots": [
+        {
+          "lot_no": "2",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Ardrossan",
+          "dam": "Ziggyzou",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "7",
+          "horse_name": "Mosinvader",
+          "sex": "4",
+          "colour": "3",
+          "sire": "Vadamos",
+          "dam": "Devil's Melody",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "6",
+          "horse_name": "Farravallo",
+          "sex": "4",
+          "colour": "3",
+          "sire": "Belardo",
+          "dam": "Manurewa",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "5",
+          "horse_name": "Bellaforza",
+          "sex": "3",
+          "colour": "26",
+          "sire": "Captivant",
+          "dam": "Irish Goodbye",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "3",
+          "horse_name": "The Witness",
+          "sex": "2",
+          "colour": "3",
+          "sire": "So You Think",
+          "dam": "Sacred Witness",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "4",
+          "horse_name": "Traversa Gold",
+          "sex": "5",
+          "colour": "3",
+          "sire": "The Autumn Sun",
+          "dam": "Travessia",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Ace High",
+          "dam": "Game of Love",
+          "dam_sire": "",
+          "vendor": ""
+        }
+      ]
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=21, tattersalls_online=2, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=3, fasigtipton=3, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=21, tattersalls_online=2, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=2, fasigtipton=3, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
