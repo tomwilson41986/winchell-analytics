@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T06:19:24+00:00",
+  "generated_at": "2026-11-04T06:19:42+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|era-online-november-sale|2026-11",
@@ -21021,8 +21021,8 @@
       "start_date": "2026-12-03",
       "end_date": "2026-12-08",
       "is_active": false,
-      "is_new": true,
-      "status": "New",
+      "is_new": false,
+      "status": "Upcoming",
       "url": "https://digital.fasigtipton.com/sales/",
       "house_url": "https://www.fasigtipton.com",
       "online": false,
@@ -21139,6 +21139,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=21, tattersalls_online=2, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=2, fasigtipton=3, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=21, tattersalls_online=2, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=2, fasigtipton=2, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
