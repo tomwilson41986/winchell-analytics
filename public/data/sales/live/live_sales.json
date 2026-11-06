@@ -1,24 +1,6 @@
 {
-  "generated_at": "2026-11-05T06:19:33+00:00",
+  "generated_at": "2026-11-06T06:20:16+00:00",
   "catalogues": [
-    {
-      "id": "tattersalls-online|era-online-november-sale|2026-11",
-      "house": "Tattersalls Online",
-      "country": "UK",
-      "name": "ERA Online November Sale",
-      "sale_type": "Mixed",
-      "start_date": "2026-11-05",
-      "end_date": "2026-11-10",
-      "is_active": true,
-      "is_new": false,
-      "status": "Active",
-      "url": "https://secure.tattersalls.com/online/ER326/Main",
-      "house_url": "https://www.tattersallsonline.com",
-      "online": true,
-      "first_seen": "2026-10-28",
-      "lots_error": "",
-      "lots": []
-    },
     {
       "id": "tattersalls-online|online-november-sale|2026-11",
       "house": "Tattersalls Online",
@@ -21139,6 +21121,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=21, tattersalls_online=2, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=2, fasigtipton=2, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=21, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=2, fasigtipton=2, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
