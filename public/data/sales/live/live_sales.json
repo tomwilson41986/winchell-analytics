@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T06:20:16+00:00",
+  "generated_at": "2026-11-07T06:17:17+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-november-sale|2026-11",
@@ -7,8 +7,8 @@
       "country": "UK",
       "name": "Online November Sale",
       "sale_type": "Yearling",
-      "start_date": "2026-11-17",
-      "end_date": "2026-11-18",
+      "start_date": "2026-11-13",
+      "end_date": null,
       "is_active": false,
       "is_new": false,
       "status": "Upcoming",
@@ -21038,9 +21038,9 @@
       "sale_type": "Mixed",
       "start_date": "2026-11-09",
       "end_date": null,
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Live",
+      "status": "Active",
       "url": "https://gavelhouse.co.nz",
       "house_url": "https://gavelhouse.co.nz",
       "online": true,
