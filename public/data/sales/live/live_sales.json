@@ -1,24 +1,6 @@
 {
-  "generated_at": "2026-11-10T06:18:48+00:00",
+  "generated_at": "2026-11-11T06:19:17+00:00",
   "catalogues": [
-    {
-      "id": "tattersalls-online|online-november-sale|2026-11",
-      "house": "Tattersalls Online",
-      "country": "UK",
-      "name": "Online November Sale",
-      "sale_type": "Yearling",
-      "start_date": "2026-11-13",
-      "end_date": null,
-      "is_active": false,
-      "is_new": false,
-      "status": "Upcoming",
-      "url": "https://secure.tattersalls.com/online/ONO26/Main/Overview",
-      "house_url": "https://www.tattersallsonline.com",
-      "online": true,
-      "first_seen": "2026-10-24",
-      "lots_error": "",
-      "lots": []
-    },
     {
       "id": "tattersalls|december-yearling-sale|2026-11",
       "house": "Tattersalls",
@@ -38,7 +20,7 @@
       "lots": [
         {
           "lot_no": "1",
-          "horse_name": "Lope de Vega (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -938,7 +920,7 @@
         },
         {
           "lot_no": "91",
-          "horse_name": "No Nay Never (USA)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -1478,7 +1460,7 @@
         },
         {
           "lot_no": "148",
-          "horse_name": "Blue Point (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -1748,7 +1730,7 @@
         },
         {
           "lot_no": "175",
-          "horse_name": "Showcasing (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -12376,7 +12358,7 @@
         },
         {
           "lot_no": "1235",
-          "horse_name": "Franberri (GB)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Frankel (GB)",
@@ -15946,7 +15928,7 @@
         },
         {
           "lot_no": "1593",
-          "horse_name": "Twinkle Belle (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Brown",
           "sire": "Sea The Stars (IRE)",
@@ -16866,7 +16848,7 @@
         },
         {
           "lot_no": "1685",
-          "horse_name": "Edrosa (FR)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Sea The Stars (IRE)",
@@ -17746,7 +17728,7 @@
         },
         {
           "lot_no": "1773",
-          "horse_name": "Alwaysanangel (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Harry Angel (IRE)",
@@ -19646,7 +19628,7 @@
         },
         {
           "lot_no": "1964",
-          "horse_name": "Katiola (IRE)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Oratorio (IRE)",
@@ -19656,7 +19638,7 @@
         },
         {
           "lot_no": "1965",
-          "horse_name": "Elizabetty (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Inns of Court (IRE)",
@@ -19966,7 +19948,7 @@
         },
         {
           "lot_no": "1996",
-          "horse_name": "Dei Gratia Regina (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Grey",
           "sire": "Ten Sovereigns (IRE)",
@@ -21039,8 +21021,8 @@
       "start_date": "2026-11-23",
       "end_date": null,
       "is_active": false,
-      "is_new": true,
-      "status": "New",
+      "is_new": false,
+      "status": "Live",
       "url": "https://gavelhouse.co.nz",
       "house_url": "https://gavelhouse.co.nz",
       "online": true,
@@ -21050,6 +21032,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=22, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=2, fasigtipton=2, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=22, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=3, fasigtipton=2, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
