@@ -1,6 +1,24 @@
 {
-  "generated_at": "2026-11-11T06:19:17+00:00",
+  "generated_at": "2026-11-12T06:20:00+00:00",
   "catalogues": [
+    {
+      "id": "tattersalls-online|online-november-sale|2026-11",
+      "house": "Tattersalls Online",
+      "country": "UK",
+      "name": "Online November Sale",
+      "sale_type": "Yearling",
+      "start_date": "2026-11-11",
+      "end_date": "2026-11-17",
+      "is_active": true,
+      "is_new": false,
+      "status": "Active",
+      "url": "https://secure.tattersalls.com/online/ONO26/Main",
+      "house_url": "https://www.tattersallsonline.com",
+      "online": true,
+      "first_seen": "2026-10-24",
+      "lots_error": "",
+      "lots": []
+    },
     {
       "id": "tattersalls|december-yearling-sale|2026-11",
       "house": "Tattersalls",
@@ -2419,7 +2437,7 @@
         },
         {
           "lot_no": "242",
-          "horse_name": "Soldier's Call (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -9509,7 +9527,7 @@
         },
         {
           "lot_no": "952",
-          "horse_name": "Sioux Nation (USA)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -10529,7 +10547,7 @@
         },
         {
           "lot_no": "1054",
-          "horse_name": "Kameko (USA)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -15238,7 +15256,7 @@
         },
         {
           "lot_no": "1524",
-          "horse_name": "Venetian Sky (FR)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "St Mark's Basilica (FR)",
@@ -16298,7 +16316,7 @@
         },
         {
           "lot_no": "1630",
-          "horse_name": "Dove Tale (GER)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Brown",
           "sire": "Study of Man (IRE)",
@@ -18688,7 +18706,7 @@
         },
         {
           "lot_no": "1870",
-          "horse_name": "Tropicana Bay (GB)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Oasis Dream (GB)",
@@ -18768,7 +18786,7 @@
         },
         {
           "lot_no": "1878",
-          "horse_name": "Miss Saigon (IRE)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Galileo (IRE)",
@@ -19178,7 +19196,7 @@
         },
         {
           "lot_no": "1919",
-          "horse_name": "Weapon of Love (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Lope de Vega (IRE)",
@@ -20959,24 +20977,6 @@
       ]
     },
     {
-      "id": "keeneland|november-horses-of-racing-age-sale|2026-11",
-      "house": "Keeneland",
-      "country": "US",
-      "name": "November Horses of Racing Age Sale",
-      "sale_type": "HIT",
-      "start_date": "2026-11-01",
-      "end_date": "2026-11-12",
-      "is_active": true,
-      "is_new": false,
-      "status": "Active",
-      "url": "https://www.keeneland.com/sales/2026/15/november-horses-of-racing-age-sale/",
-      "house_url": "https://www.keeneland.com",
-      "online": false,
-      "first_seen": "2026-10-02",
-      "lots_error": "",
-      "lots": []
-    },
-    {
       "id": "fasig-tipton|december-digital-sale|2026-12",
       "house": "Fasig-Tipton",
       "country": "US",
@@ -21032,6 +21032,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=22, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=3, fasigtipton=2, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=21, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=2, fasigtipton=2, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
