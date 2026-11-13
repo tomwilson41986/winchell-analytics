@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T06:20:00+00:00",
+  "generated_at": "2026-11-13T06:19:35+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-november-sale|2026-11",
@@ -248,7 +248,7 @@
         },
         {
           "lot_no": "22",
-          "horse_name": "Mostahdaf (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -2887,7 +2887,7 @@
         },
         {
           "lot_no": "287",
-          "horse_name": "Bradsell (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -8927,7 +8927,7 @@
         },
         {
           "lot_no": "892",
-          "horse_name": "Auguste Rodin (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -16736,7 +16736,7 @@
         },
         {
           "lot_no": "1672",
-          "horse_name": "Not My Type (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "No Nay Never (USA)",
