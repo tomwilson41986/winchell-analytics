@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T06:19:35+00:00",
+  "generated_at": "2026-11-14T06:17:34+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-november-sale|2026-11",
@@ -8857,7 +8857,7 @@
         },
         {
           "lot_no": "885",
-          "horse_name": "Ghaiyyath (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -8877,7 +8877,7 @@
         },
         {
           "lot_no": "887",
-          "horse_name": "Too Darn Hot (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -13036,7 +13036,7 @@
         },
         {
           "lot_no": "1301",
-          "horse_name": "Desert Spring (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Grey",
           "sire": "Oasis Dream (GB)",
@@ -21032,6 +21032,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=21, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=2, fasigtipton=2, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=21, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=3, fasigtipton=2, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
