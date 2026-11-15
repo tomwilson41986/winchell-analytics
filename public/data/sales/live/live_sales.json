@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T06:17:34+00:00",
+  "generated_at": "2026-11-15T06:17:48+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-november-sale|2026-11",
@@ -20975,6 +20975,24 @@
           "vendor": "EMW Equine Ltd."
         }
       ]
+    },
+    {
+      "id": "tattersalls-ireland|sapphire-sale|2026-12",
+      "house": "Tattersalls Ireland",
+      "country": "IRE",
+      "name": "Sapphire Sale",
+      "sale_type": "Mixed",
+      "start_date": "2026-12-15",
+      "end_date": null,
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://www.tattersalls.ie/sales/sapphire-sale/4DCGI/Sale/BFS26/Main/Overview",
+      "house_url": "https://www.tattersalls.ie",
+      "online": false,
+      "first_seen": "2026-11-15",
+      "lots_error": "",
+      "lots": []
     },
     {
       "id": "fasig-tipton|december-digital-sale|2026-12",
