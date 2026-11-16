@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T06:17:48+00:00",
+  "generated_at": "2026-11-16T06:29:45+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-november-sale|2026-11",
@@ -20985,8 +20985,8 @@
       "start_date": "2026-12-15",
       "end_date": null,
       "is_active": false,
-      "is_new": true,
-      "status": "New",
+      "is_new": false,
+      "status": "Entries Open",
       "url": "https://www.tattersalls.ie/sales/sapphire-sale/4DCGI/Sale/BFS26/Main/Overview",
       "house_url": "https://www.tattersalls.ie",
       "online": false,
@@ -21050,6 +21050,6 @@
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=21, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=3, fasigtipton=2, obs=1, inglis=26, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=21, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=3, fasigtipton=2, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
