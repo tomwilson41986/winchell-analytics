@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T06:29:45+00:00",
+  "generated_at": "2026-11-17T06:20:21+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-november-sale|2026-11",
@@ -58,7 +58,7 @@
         },
         {
           "lot_no": "3",
-          "horse_name": "New Bay (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Chestnut",
           "sire": "",
@@ -278,7 +278,7 @@
         },
         {
           "lot_no": "25",
-          "horse_name": "Sea The Stars (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -538,7 +538,7 @@
         },
         {
           "lot_no": "51",
-          "horse_name": "Wootton Bassett (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -828,7 +828,7 @@
         },
         {
           "lot_no": "80",
-          "horse_name": "Lope de Vega (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Chestnut",
           "sire": "",
@@ -1278,7 +1278,7 @@
         },
         {
           "lot_no": "126",
-          "horse_name": "Ghaiyyath (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -1918,7 +1918,7 @@
         },
         {
           "lot_no": "192",
-          "horse_name": "Muhaarar (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -2797,7 +2797,7 @@
         },
         {
           "lot_no": "278",
-          "horse_name": "Ardad (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -3017,7 +3017,7 @@
         },
         {
           "lot_no": "300",
-          "horse_name": "Havana Grey (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Grey",
           "sire": "",
@@ -3027,7 +3027,7 @@
         },
         {
           "lot_no": "301",
-          "horse_name": "Persian King (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -3547,7 +3547,7 @@
         },
         {
           "lot_no": "353",
-          "horse_name": "Teofilo (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -4017,7 +4017,7 @@
         },
         {
           "lot_no": "400",
-          "horse_name": "Perfect Power (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -5567,7 +5567,7 @@
         },
         {
           "lot_no": "555",
-          "horse_name": "Teofilo (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -6247,7 +6247,7 @@
         },
         {
           "lot_no": "623",
-          "horse_name": "Chaldean (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -7087,7 +7087,7 @@
         },
         {
           "lot_no": "707",
-          "horse_name": "Study of Man (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -7617,7 +7617,7 @@
         },
         {
           "lot_no": "760",
-          "horse_name": "Showcasing (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -8337,7 +8337,7 @@
         },
         {
           "lot_no": "832",
-          "horse_name": "City of Troy (USA)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -8517,7 +8517,7 @@
         },
         {
           "lot_no": "850",
-          "horse_name": "City of Troy (USA)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -8957,7 +8957,7 @@
         },
         {
           "lot_no": "895",
-          "horse_name": "Blue Point (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -9057,7 +9057,7 @@
         },
         {
           "lot_no": "905",
-          "horse_name": "Ghaiyyath (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -9457,7 +9457,7 @@
         },
         {
           "lot_no": "945",
-          "horse_name": "Night of Thunder (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -9637,7 +9637,7 @@
         },
         {
           "lot_no": "963",
-          "horse_name": "Blue Point (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -9687,7 +9687,7 @@
         },
         {
           "lot_no": "968",
-          "horse_name": "Mehmas (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -9697,7 +9697,7 @@
         },
         {
           "lot_no": "969",
-          "horse_name": "Kingman (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -10117,7 +10117,7 @@
         },
         {
           "lot_no": "1011",
-          "horse_name": "A'Ali (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -10777,7 +10777,7 @@
         },
         {
           "lot_no": "1077",
-          "horse_name": "Dragon Symbol (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -11147,7 +11147,7 @@
         },
         {
           "lot_no": "1114",
-          "horse_name": "Dragon Symbol (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Grey",
           "sire": "",
@@ -11637,7 +11637,7 @@
         },
         {
           "lot_no": "1163",
-          "horse_name": "Aesop's Fables (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -11897,7 +11897,7 @@
         },
         {
           "lot_no": "1189",
-          "horse_name": "A'Ali (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Chestnut",
           "sire": "",
@@ -14776,7 +14776,7 @@
         },
         {
           "lot_no": "1475",
-          "horse_name": "Spiritual (IRE)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Invincible Spirit (IRE)",
@@ -15306,7 +15306,7 @@
         },
         {
           "lot_no": "1529",
-          "horse_name": "Shes Thunder (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Mehmas (IRE)",
@@ -16306,7 +16306,7 @@
         },
         {
           "lot_no": "1629",
-          "horse_name": "Excellent Times (GB)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Excelebration (IRE)",
@@ -19086,7 +19086,7 @@
         },
         {
           "lot_no": "1908",
-          "horse_name": "Carouselle (IRE)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Grey",
           "sire": "Dark Angel (IRE)",
@@ -19366,7 +19366,7 @@
         },
         {
           "lot_no": "1936",
-          "horse_name": "Westray (GB)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Time Test (GB)",
@@ -21046,10 +21046,111 @@
       "online": true,
       "first_seen": "2026-11-10",
       "lots_error": "",
-      "lots": []
+      "lots": [
+        {
+          "lot_no": "7",
+          "horse_name": "Italian Connection",
+          "sex": "4",
+          "colour": "15",
+          "sire": "Sweynesse",
+          "dam": "Snow Line",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "9",
+          "horse_name": "Golden Aidos",
+          "sex": "5",
+          "colour": "10",
+          "sire": "Captain Rio",
+          "dam": "Joan's Girl",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "5",
+          "horse_name": "Libre",
+          "sex": "4",
+          "colour": "3",
+          "sire": "Proisir",
+          "dam": "Chenille",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "8",
+          "horse_name": "Rio Benito",
+          "sex": "4",
+          "colour": "3",
+          "sire": "El Roca",
+          "dam": "Secluded",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "2",
+          "horse_name": "Unnamed",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Time Test",
+          "dam": "Dancing Attendance",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "3",
+          "horse_name": "Unnamed",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Tivaci",
+          "dam": "Jahzara",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "1",
+          "horse_name": "Unnamed",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Hello Youmzain",
+          "dam": "Costarosa",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "10",
+          "horse_name": "Still Bangon",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Satono Aladdin",
+          "dam": "Shebang",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "6",
+          "horse_name": "Fabulous Gal",
+          "sex": "5",
+          "colour": "3",
+          "sire": "Fabulous",
+          "dam": "Butcher's Daughter",
+          "dam_sire": "",
+          "vendor": ""
+        },
+        {
+          "lot_no": "4",
+          "horse_name": "Doesyourmotherkno",
+          "sex": "3",
+          "colour": "3",
+          "sire": "Satono Aladdin",
+          "dam": "Cobbley",
+          "dam_sire": "",
+          "vendor": ""
+        }
+      ]
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=21, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=3, fasigtipton=2, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=21, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=2, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
   }
 }
