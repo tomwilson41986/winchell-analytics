@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T06:20:21+00:00",
+  "generated_at": "2026-11-18T06:20:04+00:00",
   "catalogues": [
     {
       "id": "tattersalls-online|online-november-sale|2026-11",
@@ -7,8 +7,8 @@
       "country": "UK",
       "name": "Online November Sale",
       "sale_type": "Yearling",
-      "start_date": "2026-11-11",
-      "end_date": "2026-11-17",
+      "start_date": "2026-11-17",
+      "end_date": "2026-11-18",
       "is_active": true,
       "is_new": false,
       "status": "Active",
@@ -488,7 +488,7 @@
         },
         {
           "lot_no": "46",
-          "horse_name": "Mehmas (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -968,7 +968,7 @@
         },
         {
           "lot_no": "94",
-          "horse_name": "Kodi Bear (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -1008,7 +1008,7 @@
         },
         {
           "lot_no": "98",
-          "horse_name": "El Caballo (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Black",
           "sire": "",
@@ -2167,7 +2167,7 @@
         },
         {
           "lot_no": "215",
-          "horse_name": "Dragon Symbol (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Grey",
           "sire": "",
@@ -2537,7 +2537,7 @@
         },
         {
           "lot_no": "252",
-          "horse_name": "Nathaniel (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -2957,7 +2957,7 @@
         },
         {
           "lot_no": "294",
-          "horse_name": "Shaquille (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -3917,7 +3917,7 @@
         },
         {
           "lot_no": "390",
-          "horse_name": "Sands of Mali (FR)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -4607,7 +4607,7 @@
         },
         {
           "lot_no": "459",
-          "horse_name": "Pinatubo (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -4617,7 +4617,7 @@
         },
         {
           "lot_no": "460",
-          "horse_name": "Triple Time (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -4697,7 +4697,7 @@
         },
         {
           "lot_no": "468",
-          "horse_name": "Starspangledbanner (AUS)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -7707,7 +7707,7 @@
         },
         {
           "lot_no": "769",
-          "horse_name": "Sioux Nation (USA)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -8787,7 +8787,7 @@
         },
         {
           "lot_no": "878",
-          "horse_name": "New Bay (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -9217,7 +9217,7 @@
         },
         {
           "lot_no": "921",
-          "horse_name": "Sea The Stars (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -9257,7 +9257,7 @@
         },
         {
           "lot_no": "925",
-          "horse_name": "Frankel (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -9487,7 +9487,7 @@
         },
         {
           "lot_no": "948",
-          "horse_name": "Baaeed (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -11227,7 +11227,7 @@
         },
         {
           "lot_no": "1122",
-          "horse_name": "Cracksman (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Grey",
           "sire": "",
@@ -13806,7 +13806,7 @@
         },
         {
           "lot_no": "1378",
-          "horse_name": "Golden Splendour (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Golden Horn (GB)",
@@ -14925,6 +14925,26 @@
           "vendor": "Goldford Stud (Agent)"
         },
         {
+          "lot_no": "1489A",
+          "horse_name": "Frances Ethel (SAF)",
+          "sex": "Mare",
+          "colour": "Bay",
+          "sire": "Rafeef (AUS)",
+          "dam": "Daphne Garland (SAF)",
+          "dam_sire": "",
+          "vendor": "Avenue Sales"
+        },
+        {
+          "lot_no": "1490A",
+          "horse_name": "April Mist (IRE)",
+          "sex": "Filly",
+          "colour": "Chestnut",
+          "sire": "Cotai Glory (GB)",
+          "dam": "Summerseat Mist (IRE)",
+          "dam_sire": "",
+          "vendor": "The Castlebridge Consignment"
+        },
+        {
           "lot_no": "1491",
           "horse_name": "Thankfully (IRE)",
           "sex": "Filly",
@@ -15016,7 +15036,7 @@
         },
         {
           "lot_no": "1500",
-          "horse_name": "Tempestra (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "Sea The Stars (IRE)",
@@ -16676,7 +16696,7 @@
         },
         {
           "lot_no": "1666",
-          "horse_name": "Josh's Joy (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Wootton Bassett (GB)",
@@ -17176,7 +17196,7 @@
         },
         {
           "lot_no": "1716",
-          "horse_name": "Queen Maedbh (IRE)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Chestnut",
           "sire": "Gleneagles (IRE)",
@@ -17935,6 +17955,26 @@
           "vendor": "West Ilsley Stables (J. Channon)"
         },
         {
+          "lot_no": "1791A",
+          "horse_name": "Ginalyah (IRE)",
+          "sex": "Filly",
+          "colour": "Bay",
+          "sire": "Chachnak (FR)",
+          "dam": "Creamcake (USA)",
+          "dam_sire": "",
+          "vendor": "European Sales Management"
+        },
+        {
+          "lot_no": "1792A",
+          "horse_name": "Southern Boulevard (IRE)",
+          "sex": "Filly",
+          "colour": "Roan",
+          "sire": "No Nay Never (USA)",
+          "dam": "Sans Equivoque (GER)",
+          "dam_sire": "",
+          "vendor": "Ashtown House Stud, Ireland (Agent)"
+        },
+        {
           "lot_no": "1793",
           "horse_name": "Elis Eliz (IRE)",
           "sex": "Mare",
@@ -18256,7 +18296,7 @@
         },
         {
           "lot_no": "1825",
-          "horse_name": "Zermatt Star (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Lucky Vega (IRE)",
@@ -18536,7 +18576,7 @@
         },
         {
           "lot_no": "1853",
-          "horse_name": "All Out (GB)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Acclamation (GB)",
@@ -18636,7 +18676,7 @@
         },
         {
           "lot_no": "1863",
-          "horse_name": "Vanilla Skies (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Pinatubo (IRE)",
@@ -19566,7 +19606,7 @@
         },
         {
           "lot_no": "1956",
-          "horse_name": "Drama School (IRE)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Lawman (FR)",
