@@ -1,24 +1,6 @@
 {
-  "generated_at": "2026-11-18T06:20:04+00:00",
+  "generated_at": "2026-11-19T06:20:41+00:00",
   "catalogues": [
-    {
-      "id": "tattersalls-online|online-november-sale|2026-11",
-      "house": "Tattersalls Online",
-      "country": "UK",
-      "name": "Online November Sale",
-      "sale_type": "Yearling",
-      "start_date": "2026-11-17",
-      "end_date": "2026-11-18",
-      "is_active": true,
-      "is_new": false,
-      "status": "Active",
-      "url": "https://secure.tattersalls.com/online/ONO26/Main",
-      "house_url": "https://www.tattersallsonline.com",
-      "online": true,
-      "first_seen": "2026-10-24",
-      "lots_error": "",
-      "lots": []
-    },
     {
       "id": "tattersalls|december-yearling-sale|2026-11",
       "house": "Tattersalls",
@@ -29,7 +11,7 @@
       "end_date": null,
       "is_active": false,
       "is_new": false,
-      "status": "Catalogue Available",
+      "status": "Sale Live",
       "url": "https://www.tattersalls.com/sales/december-yearling-sale/4DCGI/Sale/DEY26/Main",
       "house_url": "https://www.tattersalls.com",
       "online": false,
@@ -718,7 +700,7 @@
         },
         {
           "lot_no": "69",
-          "horse_name": "Palace Pier (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -2367,7 +2349,7 @@
         },
         {
           "lot_no": "235",
-          "horse_name": "A'Ali (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -16796,7 +16778,7 @@
         },
         {
           "lot_no": "1676",
-          "horse_name": "Santa Savana (GB)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Grey",
           "sire": "Havana Grey (GB)",
@@ -19736,7 +19718,7 @@
         },
         {
           "lot_no": "1969",
-          "horse_name": "Fiorella Princess (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Sands of Mali (FR)",
@@ -20366,7 +20348,7 @@
         },
         {
           "lot_no": "2032",
-          "horse_name": "Triumph (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "Ghaiyyath (IRE)",
@@ -20626,7 +20608,7 @@
         },
         {
           "lot_no": "2058",
-          "horse_name": "Chaise Longue (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "State of Rest (IRE)",
@@ -21006,7 +20988,7 @@
         },
         {
           "lot_no": "2096",
-          "horse_name": "Sergei Prokofiev (CAN)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Brown",
           "sire": "",
