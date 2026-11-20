@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T06:20:41+00:00",
+  "generated_at": "2026-11-20T06:20:10+00:00",
   "catalogues": [
     {
       "id": "tattersalls|december-yearling-sale|2026-11",
@@ -30,7 +30,7 @@
         },
         {
           "lot_no": "2",
-          "horse_name": "Lope de Vega (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Chestnut",
           "sire": "",
@@ -600,7 +600,7 @@
         },
         {
           "lot_no": "59",
-          "horse_name": "Camelot (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -930,7 +930,7 @@
         },
         {
           "lot_no": "92",
-          "horse_name": "Camelot (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -1350,7 +1350,7 @@
         },
         {
           "lot_no": "135",
-          "horse_name": "Gleneagles (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Grey",
           "sire": "",
@@ -2079,7 +2079,7 @@
         },
         {
           "lot_no": "208",
-          "horse_name": "Ubettabelieveit (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -3209,7 +3209,7 @@
         },
         {
           "lot_no": "321",
-          "horse_name": "Nirvana Du Berlais (FR)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -3219,7 +3219,7 @@
         },
         {
           "lot_no": "322",
-          "horse_name": "Dink (FR)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -3229,7 +3229,7 @@
         },
         {
           "lot_no": "323",
-          "horse_name": "Subjectivist (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -5129,7 +5129,7 @@
         },
         {
           "lot_no": "513",
-          "horse_name": "Vandeek (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -5599,7 +5599,7 @@
         },
         {
           "lot_no": "560",
-          "horse_name": "Nathaniel (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -6229,7 +6229,7 @@
         },
         {
           "lot_no": "623",
-          "horse_name": "",
+          "horse_name": "Chaldean (GB)",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -7299,7 +7299,7 @@
         },
         {
           "lot_no": "730",
-          "horse_name": "Palace Pier (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -10819,7 +10819,7 @@
         },
         {
           "lot_no": "1083",
-          "horse_name": "Mohaather (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -12588,7 +12588,7 @@
         },
         {
           "lot_no": "1258",
-          "horse_name": "Shetalkstoangels (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "Lope de Vega (IRE)",
@@ -12688,7 +12688,7 @@
         },
         {
           "lot_no": "1268",
-          "horse_name": "Sania (FR)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Grey",
           "sire": "Dark Angel (IRE)",
@@ -13228,7 +13228,7 @@
         },
         {
           "lot_no": "1322",
-          "horse_name": "Gracious Queen (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Persian King (IRE)",
@@ -13418,7 +13418,7 @@
         },
         {
           "lot_no": "1341",
-          "horse_name": "Electric Arc (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Postponed (IRE)",
@@ -14608,7 +14608,7 @@
         },
         {
           "lot_no": "1460",
-          "horse_name": "Alphecca (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Sioux Nation (USA)",
@@ -16508,7 +16508,7 @@
         },
         {
           "lot_no": "1649",
-          "horse_name": "Jousi (GB)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Chestnut",
           "sire": "Dubawi (IRE)",
@@ -18338,7 +18338,7 @@
         },
         {
           "lot_no": "1831",
-          "horse_name": "Green Sparkle (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Lope de Vega (IRE)",
@@ -19608,7 +19608,7 @@
         },
         {
           "lot_no": "1958",
-          "horse_name": "Wilbury Twist (GB)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Pivotal (GB)",
