@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T06:20:10+00:00",
+  "generated_at": "2026-11-21T06:18:00+00:00",
   "catalogues": [
     {
       "id": "tattersalls|december-yearling-sale|2026-11",
@@ -9,9 +9,9 @@
       "sale_type": "Yearling",
       "start_date": "2026-11-23",
       "end_date": null,
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Sale Live",
+      "status": "Active",
       "url": "https://www.tattersalls.com/sales/december-yearling-sale/4DCGI/Sale/DEY26/Main",
       "house_url": "https://www.tattersalls.com",
       "online": false,
@@ -50,7 +50,7 @@
         },
         {
           "lot_no": "4",
-          "horse_name": "Pinatubo (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -540,7 +540,7 @@
         },
         {
           "lot_no": "53",
-          "horse_name": "Shaquille (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -770,7 +770,7 @@
         },
         {
           "lot_no": "76",
-          "horse_name": "Ghaiyyath (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -1040,7 +1040,7 @@
         },
         {
           "lot_no": "103",
-          "horse_name": "Lope de Vega (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -1140,7 +1140,7 @@
         },
         {
           "lot_no": "114",
-          "horse_name": "Shaquille (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -1470,7 +1470,7 @@
         },
         {
           "lot_no": "149",
-          "horse_name": "Triple Time (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -1570,7 +1570,7 @@
         },
         {
           "lot_no": "159",
-          "horse_name": "Modern Games (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -1600,7 +1600,7 @@
         },
         {
           "lot_no": "162",
-          "horse_name": "Space Blues (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -1640,7 +1640,7 @@
         },
         {
           "lot_no": "166",
-          "horse_name": "Triple Time (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -1991,6 +1991,24 @@
       ]
     },
     {
+      "id": "tattersalls-online|online-december-sale|2026-12",
+      "house": "Tattersalls Online",
+      "country": "UK",
+      "name": "Online December Sale",
+      "sale_type": "Mixed",
+      "start_date": "2026-12-09",
+      "end_date": "2026-12-10",
+      "is_active": false,
+      "is_new": true,
+      "status": "New",
+      "url": "https://secure.tattersalls.com/online/ODE26/Main/Overview",
+      "house_url": "https://www.tattersallsonline.com",
+      "online": true,
+      "first_seen": "2026-11-21",
+      "lots_error": "",
+      "lots": []
+    },
+    {
       "id": "tattersalls|december-foal-sale|2026-11",
       "house": "Tattersalls",
       "country": "UK",
@@ -2309,7 +2327,7 @@
         },
         {
           "lot_no": "231",
-          "horse_name": "Perfect Power (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -4879,7 +4897,7 @@
         },
         {
           "lot_no": "488",
-          "horse_name": "Pinatubo (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -5449,7 +5467,7 @@
         },
         {
           "lot_no": "545",
-          "horse_name": "Big Evs (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -5509,7 +5527,7 @@
         },
         {
           "lot_no": "551",
-          "horse_name": "Kameko (USA)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -5759,7 +5777,7 @@
         },
         {
           "lot_no": "576",
-          "horse_name": "Henry Longfellow (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Chestnut",
           "sire": "",
@@ -5939,7 +5957,7 @@
         },
         {
           "lot_no": "594",
-          "horse_name": "Isaac Shelby (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Chestnut",
           "sire": "",
@@ -7259,7 +7277,7 @@
         },
         {
           "lot_no": "726",
-          "horse_name": "Chaldean (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -7369,7 +7387,7 @@
         },
         {
           "lot_no": "737",
-          "horse_name": "Vandeek (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -8009,7 +8027,7 @@
         },
         {
           "lot_no": "801",
-          "horse_name": "Havana Grey (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Grey",
           "sire": "",
@@ -8019,7 +8037,7 @@
         },
         {
           "lot_no": "802",
-          "horse_name": "Too Darn Hot (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -8569,7 +8587,7 @@
         },
         {
           "lot_no": "858",
-          "horse_name": "City of Troy (USA)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -9099,7 +9117,7 @@
         },
         {
           "lot_no": "911",
-          "horse_name": "St Mark's Basilica (FR)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -9389,7 +9407,7 @@
         },
         {
           "lot_no": "940",
-          "horse_name": "Wootton Bassett (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -10119,7 +10137,7 @@
         },
         {
           "lot_no": "1013",
-          "horse_name": "Vandeek (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -11419,7 +11437,7 @@
         },
         {
           "lot_no": "1143",
-          "horse_name": "Blackbeard (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -11749,7 +11767,7 @@
         },
         {
           "lot_no": "1176",
-          "horse_name": "Shaquille (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -11769,7 +11787,7 @@
         },
         {
           "lot_no": "1178",
-          "horse_name": "Persian Force (IRE)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -13268,7 +13286,7 @@
         },
         {
           "lot_no": "1326",
-          "horse_name": "Angel Orchid (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Grey",
           "sire": "Dark Angel (IRE)",
@@ -13498,7 +13516,7 @@
         },
         {
           "lot_no": "1349",
-          "horse_name": "Valdorcia (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Oasis Dream (GB)",
@@ -13528,7 +13546,7 @@
         },
         {
           "lot_no": "1352",
-          "horse_name": "Elle Eclipse (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Too Darn Hot (GB)",
@@ -14448,7 +14466,7 @@
         },
         {
           "lot_no": "1444",
-          "horse_name": "Twelve Bells (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Siyouni (FR)",
@@ -15208,7 +15226,7 @@
         },
         {
           "lot_no": "1519",
-          "horse_name": "Love Is (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Sioux Nation (USA)",
@@ -15348,7 +15366,7 @@
         },
         {
           "lot_no": "1533",
-          "horse_name": "Mishal Star (IRE)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Chestnut",
           "sire": "Mehmas (IRE)",
@@ -15548,7 +15566,7 @@
         },
         {
           "lot_no": "1553",
-          "horse_name": "Qasaayed (GB)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Lope de Vega (IRE)",
@@ -17038,7 +17056,7 @@
         },
         {
           "lot_no": "1702",
-          "horse_name": "King Power (GB)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Chestnut",
           "sire": "Frankel (GB)",
@@ -18528,7 +18546,7 @@
         },
         {
           "lot_no": "1850",
-          "horse_name": "Yamnah (FR)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Pinatubo (IRE)",
@@ -18588,7 +18606,7 @@
         },
         {
           "lot_no": "1856",
-          "horse_name": "Hanney Girl (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Cable Bay (IRE)",
@@ -19188,7 +19206,7 @@
         },
         {
           "lot_no": "1916",
-          "horse_name": "Veronique (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Night of Thunder (IRE)",
@@ -21023,7 +21041,7 @@
       "name": "December Digital Sale",
       "sale_type": "Mixed",
       "start_date": "2026-12-03",
-      "end_date": "2026-12-08",
+      "end_date": "2026-12-09",
       "is_active": false,
       "is_new": false,
       "status": "Upcoming",
@@ -21060,9 +21078,9 @@
       "sale_type": "Mixed",
       "start_date": "2026-11-23",
       "end_date": null,
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Live",
+      "status": "Active",
       "url": "https://gavelhouse.co.nz",
       "house_url": "https://gavelhouse.co.nz",
       "online": true,
