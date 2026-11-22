@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T06:18:00+00:00",
+  "generated_at": "2026-11-22T06:18:05+00:00",
   "catalogues": [
     {
       "id": "tattersalls|december-yearling-sale|2026-11",
@@ -1991,24 +1991,6 @@
       ]
     },
     {
-      "id": "tattersalls-online|online-december-sale|2026-12",
-      "house": "Tattersalls Online",
-      "country": "UK",
-      "name": "Online December Sale",
-      "sale_type": "Mixed",
-      "start_date": "2026-12-09",
-      "end_date": "2026-12-10",
-      "is_active": false,
-      "is_new": true,
-      "status": "New",
-      "url": "https://secure.tattersalls.com/online/ODE26/Main/Overview",
-      "house_url": "https://www.tattersallsonline.com",
-      "online": true,
-      "first_seen": "2026-11-21",
-      "lots_error": "",
-      "lots": []
-    },
-    {
       "id": "tattersalls|december-foal-sale|2026-11",
       "house": "Tattersalls",
       "country": "UK",
@@ -2016,9 +1998,9 @@
       "sale_type": "Foal / Weanling",
       "start_date": "2026-11-24",
       "end_date": "2026-11-28",
-      "is_active": false,
+      "is_active": true,
       "is_new": false,
-      "status": "Catalogue Available",
+      "status": "Active",
       "url": "https://www.tattersalls.com/sales/december-foal-sale/4DCGI/Sale/DEF26/Main",
       "house_url": "https://www.tattersalls.com",
       "online": false,
@@ -2217,7 +2199,7 @@
         },
         {
           "lot_no": "220",
-          "horse_name": "Sergei Prokofiev (CAN)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -5717,7 +5699,7 @@
         },
         {
           "lot_no": "570",
-          "horse_name": "Study of Man (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -6137,7 +6119,7 @@
         },
         {
           "lot_no": "612",
-          "horse_name": "New Bay (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -6387,7 +6369,7 @@
         },
         {
           "lot_no": "637",
-          "horse_name": "Sioux Nation (USA)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -6837,7 +6819,7 @@
         },
         {
           "lot_no": "682",
-          "horse_name": "Paddington (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Chestnut",
           "sire": "",
@@ -8567,7 +8549,7 @@
         },
         {
           "lot_no": "856",
-          "horse_name": "Camelot (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Bay",
           "sire": "",
@@ -9177,7 +9159,7 @@
         },
         {
           "lot_no": "917",
-          "horse_name": "Night of Thunder (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -19586,7 +19568,7 @@
         },
         {
           "lot_no": "1954",
-          "horse_name": "Lattaafa (IRE)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Chestnut",
           "sire": "Mehmas (IRE)",
@@ -19896,7 +19878,7 @@
         },
         {
           "lot_no": "1985",
-          "horse_name": "Star Run (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Zoustar (AUS)",
@@ -21015,6 +20997,24 @@
           "vendor": "EMW Equine Ltd."
         }
       ]
+    },
+    {
+      "id": "tattersalls-online|online-december-sale|2026-12",
+      "house": "Tattersalls Online",
+      "country": "UK",
+      "name": "Online December Sale",
+      "sale_type": "Mixed",
+      "start_date": "2026-12-09",
+      "end_date": "2026-12-10",
+      "is_active": false,
+      "is_new": false,
+      "status": "Upcoming",
+      "url": "https://secure.tattersalls.com/online/ODE26/Main/Overview",
+      "house_url": "https://www.tattersallsonline.com",
+      "online": true,
+      "first_seen": "2026-11-21",
+      "lots_error": "",
+      "lots": []
     },
     {
       "id": "tattersalls-ireland|sapphire-sale|2026-12",
