@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T06:18:05+00:00",
+  "generated_at": "2026-11-23T06:27:53+00:00",
   "catalogues": [
     {
       "id": "tattersalls|december-yearling-sale|2026-11",
@@ -1210,7 +1210,7 @@
         },
         {
           "lot_no": "121",
-          "horse_name": "Starspangledbanner (AUS)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -1850,7 +1850,7 @@
         },
         {
           "lot_no": "187",
-          "horse_name": "Starspangledbanner (AUS)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Chestnut",
           "sire": "",
@@ -2479,7 +2479,7 @@
         },
         {
           "lot_no": "248",
-          "horse_name": "Dragon Symbol (GB)",
+          "horse_name": "",
           "sex": "Colt",
           "colour": "Grey",
           "sire": "",
@@ -3509,7 +3509,7 @@
         },
         {
           "lot_no": "351",
-          "horse_name": "Kameko (USA)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "",
@@ -4239,7 +4239,7 @@
         },
         {
           "lot_no": "424",
-          "horse_name": "Showcasing (GB)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Chestnut",
           "sire": "",
@@ -14638,7 +14638,7 @@
         },
         {
           "lot_no": "1463",
-          "horse_name": "Sindria (IRE)",
+          "horse_name": "",
           "sex": "Filly",
           "colour": "Bay",
           "sire": "Kodiac (GB)",
@@ -17508,7 +17508,7 @@
         },
         {
           "lot_no": "1749",
-          "horse_name": "Qualixia (GER)",
+          "horse_name": "",
           "sex": "Mare",
           "colour": "Bay",
           "sire": "Blue Point (IRE)",
@@ -21069,128 +21069,9 @@
       "first_seen": "2026-10-31",
       "lots_error": "",
       "lots": []
-    },
-    {
-      "id": "gavelhouse|gavelhouse-com-thoroughbred-23-november-2026-auction|2026-11",
-      "house": "Gavelhouse",
-      "country": "NZ",
-      "name": "gavelhouse.com Thoroughbred 23 November 2026 auction",
-      "sale_type": "Mixed",
-      "start_date": "2026-11-23",
-      "end_date": null,
-      "is_active": true,
-      "is_new": false,
-      "status": "Active",
-      "url": "https://gavelhouse.co.nz",
-      "house_url": "https://gavelhouse.co.nz",
-      "online": true,
-      "first_seen": "2026-11-10",
-      "lots_error": "",
-      "lots": [
-        {
-          "lot_no": "7",
-          "horse_name": "Italian Connection",
-          "sex": "4",
-          "colour": "15",
-          "sire": "Sweynesse",
-          "dam": "Snow Line",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "9",
-          "horse_name": "Golden Aidos",
-          "sex": "5",
-          "colour": "10",
-          "sire": "Captain Rio",
-          "dam": "Joan's Girl",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "5",
-          "horse_name": "Libre",
-          "sex": "4",
-          "colour": "3",
-          "sire": "Proisir",
-          "dam": "Chenille",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "8",
-          "horse_name": "Rio Benito",
-          "sex": "4",
-          "colour": "3",
-          "sire": "El Roca",
-          "dam": "Secluded",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "2",
-          "horse_name": "Unnamed",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Time Test",
-          "dam": "Dancing Attendance",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "3",
-          "horse_name": "Unnamed",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Tivaci",
-          "dam": "Jahzara",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "1",
-          "horse_name": "Unnamed",
-          "sex": "3",
-          "colour": "3",
-          "sire": "Hello Youmzain",
-          "dam": "Costarosa",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "10",
-          "horse_name": "Still Bangon",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Satono Aladdin",
-          "dam": "Shebang",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "6",
-          "horse_name": "Fabulous Gal",
-          "sex": "5",
-          "colour": "3",
-          "sire": "Fabulous",
-          "dam": "Butcher's Daughter",
-          "dam_sire": "",
-          "vendor": ""
-        },
-        {
-          "lot_no": "4",
-          "horse_name": "Doesyourmotherkno",
-          "sex": "3",
-          "colour": "3",
-          "sire": "Satono Aladdin",
-          "dam": "Cobbley",
-          "dam_sire": "",
-          "vendor": ""
-        }
-      ]
     }
   ],
   "diagnostics": {
-    "source_status": "tattersalls=21, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=2, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=1"
+    "source_status": "tattersalls=21, tattersalls_online=1, goffs=ERR:HTTPError, arqana=0, bbag=0, keeneland=5, fasigtipton=2, obs=1, inglis=25, magicmillions=1, nzb=ERR:HTTPError, gavelhouse=0"
   }
 }
